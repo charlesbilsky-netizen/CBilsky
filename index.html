@@ -25,7 +25,7 @@
 <link rel="stylesheet" href="/styles.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
- {"@type":"Organization","@id":"https://yakincapital.eu/#org","name":"Yakin Capital","url":"https://yakincapital.eu/","logo":"https://yakincapital.eu/assets/icon-512.png","email":"yakincapital1@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Warsaw","addressCountry":"PL"},"founder":{"@id":"https://yakincapital.eu/#charles"}},
+ {"@type":"Organization","@id":"https://yakincapital.eu/#org","name":"Yakin Capital","url":"https://yakincapital.eu/","logo":"https://yakincapital.eu/assets/icon-512.png","email":"contact@yakincapital.eu","address":{"@type":"PostalAddress","addressLocality":"Warsaw","addressCountry":"PL"},"founder":{"@id":"https://yakincapital.eu/#charles"}},
  {"@type":"Person","@id":"https://yakincapital.eu/#charles","name":"Charles Bilsky","jobTitle":"Managing Principal","worksFor":{"@id":"https://yakincapital.eu/#org"},"sameAs":["https://www.linkedin.com/in/charles-bilsky/"]}
 ]}
 </script>
@@ -128,9 +128,9 @@
       <div class="rule"></div>
       <h2>Tell us where it's stuck</h2>
       <p>Access, narrative, counterparties or execution. We'll tell you plainly whether there's a fit.</p>
-      <p class="alt">Or write to <a href="mailto:yakincapital1@gmail.com">yakincapital1@gmail.com</a>.</p>
+      <p class="alt">Or write to <a href="mailto:contact@yakincapital.eu">contact@yakincapital.eu</a>.</p>
     </div>
-    <form id="f" action="mailto:yakincapital1@gmail.com" method="post" enctype="text/plain">
+    <form id="f" action="mailto:contact@yakincapital.eu" method="post" enctype="text/plain">
       <label for="n">Name</label><input id="n" name="Name" required autocomplete="name">
       <label for="c">Company</label><input id="c" name="Company" autocomplete="organization">
       <label for="e">Email</label><input id="e" name="Email" type="email" required autocomplete="email">
@@ -146,7 +146,7 @@
 
 <footer>
   <div class="wrap">
-    <p>Yakin Capital Charles Bilsky, Warsaw, Poland<br>NIP 9512501052, REGON 385987628<br><a href="mailto:yakincapital1@gmail.com">yakincapital1@gmail.com</a></p>
+    <p>Yakin Capital Charles Bilsky, Warsaw, Poland<br>NIP 9512501052, REGON 385987628<br><a href="mailto:contact@yakincapital.eu">contact@yakincapital.eu</a></p>
     <nav aria-label="Legal"><a href="/legal.html">Legal</a><a href="/legal.html#privacy">Privacy</a><a href="/legal.html#cookies">Cookies</a></nav>
   </div>
 </footer>
@@ -156,7 +156,7 @@ document.getElementById('f').addEventListener('submit',function(ev){
   ev.preventDefault();
   var d=new FormData(this),b='';
   d.forEach(function(v,k){b+=k.replace(/_/g,' ')+': '+v+'\n'});
-  location.href='mailto:yakincapital1@gmail.com?subject='+encodeURIComponent('Yakin Capital enquiry from '+d.get('Name'))+'&body='+encodeURIComponent(b);
+  location.href='mailto:contact@yakincapital.eu?subject='+encodeURIComponent('Yakin Capital enquiry from '+d.get('Name'))+'&body='+encodeURIComponent(b);
 });
 </script>
 </body>
