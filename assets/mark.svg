@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="t">
+  <title id="t">Yakin Capital mark</title>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFE27A"/>
+      <stop offset=".45" stop-color="#F2C230"/>
+      <stop offset="1" stop-color="#B8860B"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE27A"/>
+      <stop offset=".45" stop-color="#F2C230"/>
+      <stop offset="1" stop-color="#B8860B"/>
+    </linearGradient>
+  </defs>
+  <!-- central pillar -->
+  <path fill="url(#g)" d="M500 40 L585 110 L585 230 L555 250 L555 870 L500 920 L445 870 L445 250 L415 230 L415 110 Z"/>
+  <path fill="#B8860B" opacity=".55" d="M500 40 L500 920 L445 870 L445 250 L415 230 L415 110 Z"/>
+  <!-- left arm -->
+  <path fill="url(#g2)" d="M190 190 L395 330 L395 420 L190 275 Z"/>
+  <!-- right arm -->
+  <path fill="url(#g)" d="M810 190 L605 330 L605 420 L810 275 Z"/>
+  <!-- left bracket -->
+  <path fill="url(#g2)" d="M250 330 L250 700 L410 840 L410 760 L310 670 L310 370 Z"/>
+  <!-- right bracket -->
+  <path fill="url(#g)" d="M750 330 L750 700 L590 840 L590 760 L690 670 L690 370 Z"/>
+</svg>
