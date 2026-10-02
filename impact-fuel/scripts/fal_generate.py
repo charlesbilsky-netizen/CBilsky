@@ -34,10 +34,10 @@ LOG = ROOT / "public/refs/fal_log.jsonl"
 
 IMAGE_MODEL = "bytedance/seedream/v5/pro/text-to-image"
 IMAGE_EDIT_MODEL = "bytedance/seedream/v5/pro/edit"
-# Hybrid cut: Kling first for cost; Seedance stays available via --model.
+# All-video cut: Kling O3 Pro for every beat; Seedance stays available via --model.
 VIDEO_MODEL = "fal-ai/kling-video/o3/pro/reference-to-video"
 KLING_MAX_REFS = 4
-VIDEO_MODEL_T2V = "bytedance/seedance-2.5/text-to-video"
+VIDEO_MODEL_T2V = "fal-ai/kling-video/o3/pro/text-to-video"
 RESOLUTION = "1080p"
 
 
@@ -46,6 +46,7 @@ def code_blocks(text):
 
 
 NEGATIVE = code_blocks(PROMPTS.split("**Universal negative prompt")[1])[0].strip()
+LOOK = code_blocks(PROMPTS.split("**Universal look line")[1])[0].strip()
 
 
 def parse_refs():
@@ -202,7 +203,7 @@ def build_still(sid, use_fallback, model=None):
     prompt = (
         "Single photoreal cinematic film still, 16:9, the decisive frozen moment of this shot, "
         "tack sharp, no motion blur, one frame, no collage, no split screen. "
-        f"{text}\n\nAvoid: {NEGATIVE}"
+        f"{text}\n\n{LOOK}\n\nAvoid: {NEGATIVE}"
     )
     payload = {"prompt": prompt, "image_size": {"width": 1920, "height": 1080},
                "num_images": 1, "output_format": "png"}
@@ -256,7 +257,7 @@ def build_shot(sid, model, use_fallback):
     if model is None:
         model = VIDEO_MODEL if shot["refs"] else VIDEO_MODEL_T2V
     text, urls = tag_refs(shot, text, "@Image{}", KLING_MAX_REFS if "kling" in model else None)
-    prompt = f"{text}\n\nAvoid: {NEGATIVE}"
+    prompt = f"{text}\n\n{LOOK}\n\nAvoid: {NEGATIVE}"
     payload = {"prompt": prompt, "aspect_ratio": "16:9", "duration": str(shot["duration"]),
                "generate_audio": False}
     if "seedance" in model or "veo" in model:
