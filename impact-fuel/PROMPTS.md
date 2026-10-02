@@ -189,7 +189,7 @@ Interior of a run-down apartment, 35mm. The front door bursts inward off its fra
 
 **17 · VIDEO · 85.00–87.80 · "your whole family wire money from Chicago" · `shot_17_chicago.mp4`** · 2.8 s · generate 4 s
 ```
-85mm insert: a phone on tile buzzing with an incoming call labeled only "Chicago". Cut within the clip to an anxious adult Black Haitian couple at a money-transfer counter sliding cash under the glass. No readable numbers or account details.
+85mm insert: a phone on tile buzzing with an incoming call, screen glowing. Cut within the clip to an anxious Black Haitian couple in their 50s at a money-transfer counter sliding cash under the glass. No readable numbers or account details.
 ```
 
 **18 · VIDEO · 87.80–91.20 · "if you're a real G, tell your car where to go" · `shot_18_decision.mp4`** · 3.4 s · generate 4 s · REF-03, REF-06
