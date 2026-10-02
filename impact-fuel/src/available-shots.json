@@ -1,6 +1,23 @@
 {
   "audio": true,
   "files": [
-    "shot_19_opa_locka.mp4"
+    "shot_01_opening.mp4",
+    "shot_02_descent.mp4",
+    "shot_03_dade_welcome.mp4",
+    "shot_04_rocks.mp4",
+    "shot_05_ride_along.mp4",
+    "shot_08_i395.mp4",
+    "shot_09_street_crew.mp4",
+    "shot_10_little_havana.mp4",
+    "shot_11_tony_montana.mp4",
+    "shot_12_palm_graveyard.mp4",
+    "shot_13_brownsville.mp4",
+    "shot_15_little_haiti.mp4",
+    "shot_17_chicago.mp4",
+    "shot_18_decision.mp4",
+    "shot_19_opa_locka.mp4",
+    "shot_22_vest_pyrex.mp4",
+    "shot_24_welcome_real.mp4",
+    "shot_25_live_to_die.mp4"
   ]
 }
