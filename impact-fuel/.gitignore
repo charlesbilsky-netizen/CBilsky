@@ -12,3 +12,4 @@ public/shots/*
 !public/audio/.gitkeep
 !public/shots/.gitkeep
 out_draft.log
+public/refs/*
