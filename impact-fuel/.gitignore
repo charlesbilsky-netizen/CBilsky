@@ -1,0 +1,14 @@
+node_modules
+dist
+.DS_Store
+.env
+
+# Ignore the output video from Git but not videos you import into src/.
+out
+
+# Copyrighted soundtrack and generated footage stay local. Never commit them.
+public/audio/*
+public/shots/*
+!public/audio/.gitkeep
+!public/shots/.gitkeep
+out_draft.log

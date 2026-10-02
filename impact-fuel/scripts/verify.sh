@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+# Verifies an exported MP4: container, streams, dimensions, frame rate,
+# duration, full decode, and (if a master is given) bit-exact audio.
+# Extracts a frame either side of every shot boundary for visual review.
+# Usage: scripts/verify.sh <video.mp4> [original-audio-master]
+set -euo pipefail
+cd "$(dirname "$0")/.."
+F="$1"
+MASTER="${2:-}"
+fail() { echo "FAIL: $*"; exit 1; }
+
+[[ -s "$F" ]] || fail "$F missing or empty"
+FMT=$(ffprobe -v error -show_entries format=format_name,duration -of default=nw=1 "$F")
+V=$(ffprobe -v error -select_streams v:0 -show_entries stream=codec_name,width,height,r_frame_rate,nb_frames -of default=nw=1 "$F")
+A=$(ffprobe -v error -select_streams a:0 -show_entries stream=codec_name,sample_rate,channels -of default=nw=1 "$F")
+echo "== $F"; echo "$FMT"; echo "$V"; echo "$A"
+
+grep -q "format_name=mov,mp4" <<<"$FMT" || fail "not an MP4 container"
+grep -Eq "width=(1920|3840)" <<<"$V" && grep -Eq "height=(1080|2160)" <<<"$V" || fail "not 1080p or 2160p 16:9"
+grep -q "r_frame_rate=24/1" <<<"$V" || fail "frame rate is not 24 fps"
+grep -q "nb_frames=2808" <<<"$V" || fail "picture is not 2808 frames"
+grep -q "channels=2" <<<"$A" || fail "audio is not stereo"
+grep -q "sample_rate=48000" <<<"$A" || fail "audio is not 48 kHz"
+DUR=$(sed -n 's/^duration=//p' <<<"$FMT")
+awk -v d="$DUR" 'BEGIN { exit !(d > 117.0 && d < 117.05) }' || fail "duration $DUR, expected ~117.0075"
+ffmpeg -v error -i "$F" -f null - || fail "decode errors"
+
+if [[ -n "$MASTER" ]]; then
+  H1=$(ffmpeg -v error -i "$MASTER" -map 0:a -c copy -f md5 -)
+  H2=$(ffmpeg -v error -i "$F" -map 0:a -c copy -f md5 -)
+  [[ "$H1" == "$H2" ]] || fail "audio packets differ from master"
+  echo "audio: bit-identical to master ($H1)"
+fi
+
+mkdir -p out/qc
+for t in 0.5 12.9 13.1 22.9 23.1 28.9 29.1 31.9 32.1 36.9 37.1 40.9 41.1 45.9 46.1 49.9 50.1 53.9 54.1 61.9 62.1 68.9 69.1 75.9 76.1 79.9 80.1 86.9 87.1 90.9 91.1 94.9 95.1 98.9 99.1 102.9 103.1 105.9 106.1 108.9 109.1 113.9 114.1 116.9; do
+  ffmpeg -v error -y -ss "$t" -i "$F" -frames:v 1 -q:v 3 "out/qc/frame_${t}s.jpg"
+done
+echo "PASS: $F (QC frames in out/qc/)"
