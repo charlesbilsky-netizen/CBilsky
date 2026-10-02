@@ -13,3 +13,4 @@ public/shots/*
 !public/shots/.gitkeep
 out_draft.log
 public/refs/*
+__pycache__/
