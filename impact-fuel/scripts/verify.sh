@@ -39,7 +39,13 @@ if [[ -n "$MASTER" ]]; then
 fi
 
 mkdir -p out/qc
-for t in 0.5 12.9 13.1 22.9 23.1 28.9 29.1 31.9 32.1 36.9 37.1 40.9 41.1 45.9 46.1 49.9 50.1 53.9 54.1 61.9 62.1 68.9 69.1 75.9 76.1 79.9 80.1 86.9 87.1 90.9 91.1 94.9 95.1 98.9 99.1 102.9 103.1 105.9 106.1 108.9 109.1 113.9 114.1 116.9; do
+TIMES=$(node --no-warnings -e '
+  import("./src/shots.ts").then(({ SHOTS, startFrame, endFrame, FPS }) => {
+    const t = [0.5];
+    for (const s of SHOTS) t.push(startFrame(s) / FPS + 0.1, endFrame(s) / FPS - 0.1);
+    console.log(t.slice(0, -1).map((x) => x.toFixed(2)).join(" "), "116.90");
+  });')
+for t in $TIMES; do
   ffmpeg -v error -y -ss "$t" -i "$F" -frames:v 1 -q:v 3 "out/qc/frame_${t}s.jpg"
 done
 echo "PASS: $F (QC frames in out/qc/)"

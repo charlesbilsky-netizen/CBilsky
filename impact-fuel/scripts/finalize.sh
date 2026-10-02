@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Renders the picture (muted), lays the untouched soundtrack over it, and
 # verifies the result. Usage:
-#   scripts/finalize.sh            # final: all 22 shots required
+#   scripts/finalize.sh            # final: all 25 shots required
 #   scripts/finalize.sh --draft    # draft: missing shots shown as labelled slates
 set -euo pipefail
 cd "$(dirname "$0")/.."

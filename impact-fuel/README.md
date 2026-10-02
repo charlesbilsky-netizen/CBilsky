@@ -16,7 +16,7 @@ cp /path/to/Pitbull-Intro.opus public/audio/Pitbull-Intro.opus   # never committ
 3. `npm run status` probes the clips, updates `impact_fuel_production_manifest.json` and prints the dashboard.
 4. Review each clip and set `"qc_passed": true` in the manifest.
 5. `npm run draft` renders whatever exists. Empty slots show as labelled slates.
-6. `npm run final` refuses to run until all 22 shots are QC_PASSED. It then renders, muxes, verifies, and marks every shot CONFORMED.
+6. `npm run final` refuses to run until all 25 shots are QC_PASSED. It then renders, muxes, verifies, and marks every shot CONFORMED.
 7. `npx remotion studio` gives a live preview with the soundtrack.
 
 ## Outputs (`out/`)
