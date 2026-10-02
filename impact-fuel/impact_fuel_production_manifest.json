@@ -18,6 +18,7 @@
     {
       "id": "01",
       "label": "Intro: black to aerial rooftops",
+      "kind": "video",
       "output_filename": "shot_01_opening.mp4",
       "slot_start_sec": 0,
       "slot_duration_sec": 10.5,
@@ -38,6 +39,7 @@
     {
       "id": "02",
       "label": "Intro: descend to street, Guide appears",
+      "kind": "video",
       "output_filename": "shot_02_descent.mp4",
       "slot_start_sec": 10.5,
       "slot_duration_sec": 10.583333333333334,
@@ -59,6 +61,7 @@
     {
       "id": "03",
       "label": "Welcome to Dade County: Guide walks the block",
+      "kind": "video",
       "output_filename": "shot_03_dade_welcome.mp4",
       "slot_start_sec": 21.083333333333332,
       "slot_duration_sec": 3.4166666666666665,
@@ -70,19 +73,16 @@
       "regenerations": 0,
       "notes": "Seedance 2.5 reference-to-video refused (likeness filter on REF-01, partner_validation_failed). Same prompt on Kling O3 Pro. prompt as written, seed None",
       "audio_state": "muted in assembly",
-      "qc_passed": true,
+      "qc_passed": false,
       "qc_notes": "Face, wardrobe, chain match REF-01. Mouth closed, looks into lens, bus behind, residents watching. No readable text. Block reads Northeast brick rather than Miami (prompt has no location).",
       "conformed": false,
-      "status": "QC_PASSED",
-      "error": null,
-      "clip_mtime": 1790954479961.1653,
-      "clip_duration_sec": 5.041667,
-      "clip_dimensions": "1920x1080",
-      "clip_fps": "24/1"
+      "status": "PROMPTED",
+      "error": null
     },
     {
       "id": "04",
       "label": "Rocks, blocks, red and blue lights: hand-to-hand",
+      "kind": "video",
       "output_filename": "shot_04_rocks.mp4",
       "slot_start_sec": 24.5,
       "slot_duration_sec": 4.708333333333333,
@@ -101,6 +101,7 @@
     {
       "id": "05",
       "label": "Ride with me: Guide enters sedan",
+      "kind": "video",
       "output_filename": "shot_05_ride_along.mp4",
       "slot_start_sec": 29.208333333333332,
       "slot_duration_sec": 3.5416666666666665,
@@ -123,6 +124,7 @@
     {
       "id": "06",
       "label": "Don't be fooled by South Beach",
+      "kind": "video",
       "output_filename": "shot_06_south_beach.mp4",
       "slot_start_sec": 32.75,
       "slot_duration_sec": 4.833333333333333,
@@ -144,6 +146,7 @@
     {
       "id": "07",
       "label": "Jewels like a menu: Visitor is marked",
+      "kind": "video",
       "output_filename": "shot_07_jewels.mp4",
       "slot_start_sec": 37.583333333333336,
       "slot_duration_sec": 4.666666666666667,
@@ -164,6 +167,7 @@
     {
       "id": "08",
       "label": "Cross I-395, dead-end streets",
+      "kind": "video",
       "output_filename": "shot_08_i395.mp4",
       "slot_start_sec": 42.25,
       "slot_duration_sec": 4.458333333333333,
@@ -186,6 +190,7 @@
     {
       "id": "09",
       "label": "White beaters, bare feet, goon style",
+      "kind": "video",
       "output_filename": "shot_09_street_crew.mp4",
       "slot_start_sec": 46.708333333333336,
       "slot_duration_sec": 5.041666666666667,
@@ -206,6 +211,7 @@
     {
       "id": "10",
       "label": "Entering Little Havana",
+      "kind": "video",
       "output_filename": "shot_10_little_havana.mp4",
       "slot_start_sec": 51.75,
       "slot_duration_sec": 2.8333333333333335,
@@ -228,6 +234,7 @@
     {
       "id": "11",
       "label": "Studio gangsters, meet the real one",
+      "kind": "video",
       "output_filename": "shot_11_tony_montana.mp4",
       "slot_start_sec": 54.583333333333336,
       "slot_duration_sec": 7.333333333333333,
@@ -248,6 +255,7 @@
     {
       "id": "12",
       "label": "Palm trees out, graveyard in",
+      "kind": "video",
       "output_filename": "shot_12_palm_graveyard.mp4",
       "slot_start_sec": 61.916666666666664,
       "slot_duration_sec": 4,
@@ -268,6 +276,7 @@
     {
       "id": "13",
       "label": "Brownsville graveyard, generations deep",
+      "kind": "video",
       "output_filename": "shot_13_brownsville.mp4",
       "slot_start_sec": 65.91666666666667,
       "slot_duration_sec": 4.5,
@@ -289,6 +298,7 @@
     {
       "id": "14",
       "label": "Grandfather to grandmother, stacked",
+      "kind": "video",
       "output_filename": "shot_14_generations.mp4",
       "slot_start_sec": 70.41666666666667,
       "slot_duration_sec": 4.5,
@@ -309,6 +319,7 @@
     {
       "id": "15",
       "label": "Little Haiti connection, the real one",
+      "kind": "video",
       "output_filename": "shot_15_little_haiti.mp4",
       "slot_start_sec": 74.91666666666667,
       "slot_duration_sec": 6.5,
@@ -330,6 +341,7 @@
     {
       "id": "16",
       "label": "Kick in your door, face down on the floor",
+      "kind": "video",
       "output_filename": "shot_16_door_kick.mp4",
       "slot_start_sec": 81.41666666666667,
       "slot_duration_sec": 3.5833333333333335,
@@ -350,6 +362,7 @@
     {
       "id": "17",
       "label": "Family wires money from Chicago",
+      "kind": "video",
       "output_filename": "shot_17_chicago.mp4",
       "slot_start_sec": 85,
       "slot_duration_sec": 2.7916666666666665,
@@ -368,6 +381,7 @@
     {
       "id": "18",
       "label": "Real G, tell your car where to go",
+      "kind": "video",
       "output_filename": "shot_18_decision.mp4",
       "slot_start_sec": 87.79166666666667,
       "slot_duration_sec": 3.4166666666666665,
@@ -390,6 +404,7 @@
     {
       "id": "19",
       "label": "Opa-locka, helicopters, choppers",
+      "kind": "video",
       "output_filename": "shot_19_opa_locka.mp4",
       "slot_start_sec": 91.20833333333333,
       "slot_duration_sec": 4.541666666666667,
@@ -403,15 +418,20 @@
       "regenerations": 0,
       "notes": "prompt as written, seed None",
       "audio_state": "muted in assembly",
-      "qc_passed": false,
-      "qc_notes": "",
+      "qc_passed": true,
+      "qc_notes": "Kept from the hybrid pass. Domes and arches, two helicopters sweeping searchlights, three silhouetted adult men with rifles beside the sedan, haze. No text or logos. People read as silhouettes, so the recast does not affect it. Rifles read only in the middle of the clip.",
       "conformed": false,
-      "status": "PROMPTED",
-      "error": null
+      "status": "QC_PASSED",
+      "error": null,
+      "clip_mtime": 1790956095484.8262,
+      "clip_duration_sec": 5.041667,
+      "clip_dimensions": "1920x1080",
+      "clip_fps": "24/1"
     },
     {
       "id": "20",
       "label": "Carol City, holes doctors can't plug",
+      "kind": "video",
       "output_filename": "shot_20_carol_city.mp4",
       "slot_start_sec": 95.75,
       "slot_duration_sec": 3.5833333333333335,
@@ -434,6 +454,7 @@
     {
       "id": "21",
       "label": "Soldiers from birth to the hearse",
+      "kind": "video",
       "output_filename": "shot_21_birth_to_hearse.mp4",
       "slot_start_sec": 99.33333333333333,
       "slot_duration_sec": 4.166666666666667,
@@ -452,6 +473,7 @@
     {
       "id": "22",
       "label": "Bulletproof vest and a pyrex",
+      "kind": "video",
       "output_filename": "shot_22_vest_pyrex.mp4",
       "slot_start_sec": 103.5,
       "slot_duration_sec": 3.0833333333333335,
@@ -470,6 +492,7 @@
     {
       "id": "23",
       "label": "Haven't seen the real Miami yet",
+      "kind": "video",
       "output_filename": "shot_23_real_miami.mp4",
       "slot_start_sec": 106.58333333333333,
       "slot_duration_sec": 2.5,
@@ -491,6 +514,7 @@
     {
       "id": "24",
       "label": "Welcome to the real Miami",
+      "kind": "video",
       "output_filename": "shot_24_welcome_real.mp4",
       "slot_start_sec": 109.08333333333333,
       "slot_duration_sec": 2.9166666666666665,
@@ -509,6 +533,7 @@
     {
       "id": "25",
       "label": "Live to die, die, die: final eyes",
+      "kind": "video",
       "output_filename": "shot_25_live_to_die.mp4",
       "slot_start_sec": 112,
       "slot_duration_sec": 5,
