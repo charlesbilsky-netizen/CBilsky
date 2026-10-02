@@ -57,17 +57,23 @@
       "output_filename": "shot_03_dade_welcome.mp4",
       "slot_start_sec": 21.083333333333332,
       "slot_duration_sec": 3.4166666666666665,
-      "references": [],
-      "generator": null,
-      "generation_id": null,
+      "references": [
+        "ref_guide.png"
+      ],
+      "generator": "fal-ai/kling-video/o3/pro/reference-to-video",
+      "generation_id": "01a0fd30-e79c-7193-9751-64dbc3fbf260",
       "regenerations": 0,
-      "notes": "",
+      "notes": "Seedance 2.5 reference-to-video refused (likeness filter on REF-01, partner_validation_failed). Same prompt on Kling O3 Pro. prompt as written, seed None",
       "audio_state": "muted in assembly",
-      "qc_passed": false,
-      "qc_notes": "",
+      "qc_passed": true,
+      "qc_notes": "Face, wardrobe, chain match REF-01. Mouth closed, looks into lens, bus behind, residents watching. No readable text. Block reads Northeast brick rather than Miami (prompt has no location).",
       "conformed": false,
-      "status": "PROMPTED",
-      "error": null
+      "status": "QC_PASSED",
+      "error": null,
+      "clip_mtime": 1790954479961.1653,
+      "clip_duration_sec": 5.041667,
+      "clip_dimensions": "1920x1080",
+      "clip_fps": "24/1"
     },
     {
       "id": "04",

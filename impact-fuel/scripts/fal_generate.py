@@ -179,16 +179,15 @@ def build_shot(sid, model, use_fallback):
         tags[ref] = " ".join(f"@Image{len(urls) - len(REF_FILES[ref]) + i + 1}" for i in range(len(REF_FILES[ref])))
     for ref, tag in tags.items():
         text = text.replace(f"({ref})", f"({tag})")
-    if urls:
-        legend = " ".join(f"{tags[r]} is {r}." for r in shot["refs"])
-        text = f"{legend} {text}"
     prompt = f"{text}\n\nAvoid: {NEGATIVE}"
     if model is None:
         model = VIDEO_MODEL if urls else VIDEO_MODEL_T2V
     payload = {"prompt": prompt, "aspect_ratio": "16:9", "duration": str(shot["duration"]),
                "generate_audio": False}
-    if "seedance" in model:
+    if "seedance" in model or "veo" in model:
         payload["resolution"] = RESOLUTION
+    if "veo" in model:
+        payload["duration"] = f"{shot['duration']}s"
     if urls:
         payload["image_urls"] = urls
     return shot, model, payload
