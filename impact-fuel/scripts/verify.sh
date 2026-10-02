@@ -21,15 +21,21 @@ grep -q "r_frame_rate=24/1" <<<"$V" || fail "frame rate is not 24 fps"
 grep -q "nb_frames=2808" <<<"$V" || fail "picture is not 2808 frames"
 grep -q "channels=2" <<<"$A" || fail "audio is not stereo"
 grep -q "sample_rate=48000" <<<"$A" || fail "audio is not 48 kHz"
-DUR=$(sed -n 's/^duration=//p' <<<"$FMT")
-awk -v d="$DUR" 'BEGIN { exit !(d > 117.0 && d < 117.05) }' || fail "duration $DUR, expected ~117.0075"
+# Picture: exactly 2808 frames (checked above) = 117.000 s. Audio: count the
+# decoded samples, because MP4 reports Opus duration net of its 6.5 ms
+# pre-roll and AAC adds encoder priming.
+SAMPLES=$(ffmpeg -v error -i "$F" -map 0:a -f s16le -ac 2 -ar 48000 - | wc -c | awk '{print $1/4}')
+awk -v n="$SAMPLES" 'BEGIN { d = n / 48000; printf "decoded audio: %d samples = %.4fs\n", n, d; exit !(d > 116.99 && d < 117.03) }' || fail "decoded audio length off from 117.0075 s"
 ffmpeg -v error -i "$F" -f null - || fail "decode errors"
 
 if [[ -n "$MASTER" ]]; then
   H1=$(ffmpeg -v error -i "$MASTER" -map 0:a -c copy -f md5 -)
   H2=$(ffmpeg -v error -i "$F" -map 0:a -c copy -f md5 -)
   [[ "$H1" == "$H2" ]] || fail "audio packets differ from master"
-  echo "audio: bit-identical to master ($H1)"
+  P1=$(ffmpeg -v error -i "$MASTER" -map 0:a -f md5 -)
+  P2=$(ffmpeg -v error -i "$F" -map 0:a -f md5 -)
+  [[ "$P1" == "$P2" ]] || fail "decoded audio differs from master"
+  echo "audio: packets and decoded PCM bit-identical to master"
 fi
 
 mkdir -p out/qc
