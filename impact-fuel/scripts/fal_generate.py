@@ -9,6 +9,7 @@ The environment proxy adds the fal auth header, so no key is read here.
   scripts/fal_generate.py shot 03 --model fal-ai/kling-video/o3/pro/reference-to-video
   scripts/fal_generate.py shot 04 --fallback  # use the shot's fallback line
   scripts/fal_generate.py still 04            # one STILL beat (hybrid cut)
+  scripts/fal_generate.py still 04 --model fal-ai/flux-pro/v1.1-ultra
 
 Prompts are parsed from PROMPTS.md, unchanged. "(REF-01)" style mentions are
 mapped to the model's reference syntax (@Image1 ...). Reference image URLs and
@@ -16,6 +17,7 @@ generation IDs are recorded in public/refs/refs.json and the manifest.
 """
 import json
 import re
+import subprocess
 import sys
 import time
 import urllib.error
@@ -189,7 +191,7 @@ def tag_refs(shot, text, tag_fmt, max_refs=None):
     return text, urls
 
 
-def build_still(sid, use_fallback):
+def build_still(sid, use_fallback, model=None):
     shot = parse_shots()[sid]
     if shot["kind"] != "still":
         raise SystemExit(f"shot {sid} is a VIDEO beat; use: shot {sid}")
@@ -204,16 +206,28 @@ def build_still(sid, use_fallback):
     )
     payload = {"prompt": prompt, "image_size": {"width": 1920, "height": 1080},
                "num_images": 1, "output_format": "png"}
+    if model is None:
+        model = IMAGE_EDIT_MODEL if urls else IMAGE_MODEL
+    elif "seedream" not in model:
+        # Fallback image models take an aspect ratio instead of a pixel size.
+        del payload["image_size"]
+        payload["aspect_ratio"] = "16:9"
     if urls:
         payload["image_urls"] = urls
-    return shot, (IMAGE_EDIT_MODEL if urls else IMAGE_MODEL), payload
+    return shot, model, payload
 
 
-def gen_still(sid, use_fallback):
-    shot, model, payload = build_still(sid, use_fallback)
+def gen_still(sid, use_fallback, model=None):
+    shot, model, payload = build_still(sid, use_fallback, model)
     rid, res = run(model, payload, f"still {sid}")
     SHOTS_DIR.mkdir(parents=True, exist_ok=True)
-    download(res["images"][0]["url"], SHOTS_DIR / shot["file"])
+    dest = SHOTS_DIR / shot["file"]
+    download(res["images"][0]["url"], dest)
+    # Conform any other output size to the 1920x1080 frame.
+    subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", str(dest), "-vf",
+                    "scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080",
+                    str(dest) + ".tmp.png"], check=True)
+    Path(str(dest) + ".tmp.png").replace(dest)
     record(sid, shot, model, rid, use_fallback, res)
     print(f"[still {sid}] saved {shot['file']}", flush=True)
 
@@ -273,7 +287,8 @@ if __name__ == "__main__":
         model = args[args.index("--model") + 1] if "--model" in args else None
         gen_shot(args[1], model, "--fallback" in args)
     elif args[0] == "still":
-        gen_still(args[1], "--fallback" in args)
+        model = args[args.index("--model") + 1] if "--model" in args else None
+        gen_still(args[1], "--fallback" in args, model)
     elif args[0] == "show":
         kind = parse_shots()[args[1]]["kind"]
         built = (build_still(args[1], "--fallback" in args) if kind == "still"
