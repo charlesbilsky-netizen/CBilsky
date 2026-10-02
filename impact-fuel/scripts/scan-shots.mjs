@@ -56,6 +56,7 @@ const shots = SHOTS.map((shot) => {
   const entry = {
     id: shot.id,
     label: shot.label,
+    kind: shot.kind,
     output_filename: shot.file,
     slot_start_sec: startFrame(shot) / FPS,
     slot_duration_sec: slotSec,
@@ -77,7 +78,9 @@ const shots = SHOTS.map((shot) => {
   }
   const p = probe(path);
   const v = p.streams.find((s) => s.codec_type === "video");
-  const usable = Number(p.format.duration) - shot.trimBefore / FPS;
+  // A still holds for any length; only video clips can run short.
+  const usable =
+    shot.kind === "still" ? Infinity : Number(p.format.duration) - shot.trimBefore / FPS;
   const short = usable + 1 / FPS < slotSec;
   const error = short
     ? `${usable.toFixed(2)}s usable, slot needs ${slotSec.toFixed(2)}s`
@@ -96,7 +99,7 @@ const shots = SHOTS.map((shot) => {
     conformed,
     error,
     clip_mtime: statSync(path).mtimeMs,
-    clip_duration_sec: Number(p.format.duration),
+    clip_duration_sec: shot.kind === "still" ? null : Number(p.format.duration),
     clip_dimensions: `${v.width}x${v.height}`,
     clip_fps: v.r_frame_rate,
   };
@@ -132,7 +135,7 @@ for (const st of order.slice(1)) {
 console.log("");
 for (const s of shots) {
   console.log(
-    `${s.id}  ${s.status.padEnd(10)} ${String(s.slot_duration_sec.toFixed(3)).padStart(6)}s  ${s.output_filename}${s.error ? `  ERROR ${s.error}` : ""}`,
+    `${s.id}  ${s.kind.padEnd(5)} ${s.status.padEnd(10)} ${String(s.slot_duration_sec.toFixed(3)).padStart(6)}s  ${s.output_filename}${s.error ? `  ERROR ${s.error}` : ""}`,
   );
 }
 if (problems.length) console.log(`\nBLOCKERS: ${problems.length} clip(s) too short. Regenerate longer, or set trimBefore lower in src/shots.ts.`);

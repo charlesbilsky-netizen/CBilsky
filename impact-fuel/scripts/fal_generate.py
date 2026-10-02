@@ -8,6 +8,7 @@ The environment proxy adds the fal auth header, so no key is read here.
   scripts/fal_generate.py shot 03             # one shot, primary model
   scripts/fal_generate.py shot 03 --model fal-ai/kling-video/o3/pro/reference-to-video
   scripts/fal_generate.py shot 04 --fallback  # use the shot's fallback line
+  scripts/fal_generate.py still 04            # one STILL beat (hybrid cut)
 
 Prompts are parsed from PROMPTS.md, unchanged. "(REF-01)" style mentions are
 mapped to the model's reference syntax (@Image1 ...). Reference image URLs and
@@ -30,7 +31,10 @@ MANIFEST = ROOT / "impact_fuel_production_manifest.json"
 LOG = ROOT / "public/refs/fal_log.jsonl"
 
 IMAGE_MODEL = "bytedance/seedream/v5/pro/text-to-image"
-VIDEO_MODEL = "bytedance/seedance-2.5/reference-to-video"
+IMAGE_EDIT_MODEL = "bytedance/seedream/v5/pro/edit"
+# Hybrid cut: Kling first for cost; Seedance stays available via --model.
+VIDEO_MODEL = "fal-ai/kling-video/o3/pro/reference-to-video"
+KLING_MAX_REFS = 4
 VIDEO_MODEL_T2V = "bytedance/seedance-2.5/text-to-video"
 RESOLUTION = "1080p"
 
@@ -65,17 +69,18 @@ def parse_shots():
     shots = {}
     parts = re.split(r"\n(?=\*\*\d\d · )", phase3)
     for part in parts:
-        m = re.match(r"\*\*(\d\d) · [^`]*`(shot_[^`]+\.mp4)`\*\*(.*)", part)
+        m = re.match(r"\*\*(\d\d) · (STILL|VIDEO) · [^`]*`(shot_[^`]+\.(?:mp4|png))`\*\*(.*)", part)
         if not m:
             continue
-        sid, fname, tail = m.group(1), m.group(2), m.group(3).split("\n")[0]
+        sid, kind, fname, tail = m.group(1), m.group(2), m.group(3), m.group(4).split("\n")[0]
         gen = re.search(r"generate (\d+)(?:–(\d+))? s", tail)
         refs = re.findall(r"REF-\d\d", tail)
         prompt = code_blocks(part)[0].strip()
         fb = re.search(r"\*Fallback:\* `([^`]+)`", part)
         shots[sid] = {
+            "kind": kind.lower(),
             "file": fname,
-            "duration": int(gen.group(2) or gen.group(1)),
+            "duration": int(gen.group(2) or gen.group(1)) if gen else None,
             "refs": refs,
             "prompt": prompt,
             "fallback": fb.group(1) if fb else None,
@@ -166,22 +171,78 @@ REF_FILES = {
 }
 
 
-def build_shot(sid, model, use_fallback):
+def tag_refs(shot, text, tag_fmt, max_refs=None):
+    """Swaps "(REF-01)" mentions for the model's image tags; returns (text, urls)."""
+    known = json.loads(REFS_JSON.read_text()) if REFS_JSON.exists() else {}
+    urls, tags = [], {}
+    for ref in shot["refs"]:
+        names = REF_FILES[ref]
+        if max_refs is not None:
+            names = names[: max(0, max_refs - len(urls))]
+        if not names:
+            continue
+        for name in names:
+            urls.append(known[name]["url"])
+        tags[ref] = " ".join(tag_fmt.format(len(urls) - len(names) + i + 1) for i in range(len(names)))
+    for ref, tag in tags.items():
+        text = text.replace(f"({ref})", f"({tag})")
+    return text, urls
+
+
+def build_still(sid, use_fallback):
     shot = parse_shots()[sid]
-    known = json.loads(REFS_JSON.read_text())
+    if shot["kind"] != "still":
+        raise SystemExit(f"shot {sid} is a VIDEO beat; use: shot {sid}")
     text = shot["fallback"] if use_fallback else shot["prompt"]
     if use_fallback and not text:
         raise SystemExit(f"shot {sid} has no fallback line")
-    urls, tags = [], {}
-    for ref in shot["refs"]:
-        for name in REF_FILES[ref]:
-            urls.append(known[name]["url"])
-        tags[ref] = " ".join(f"@Image{len(urls) - len(REF_FILES[ref]) + i + 1}" for i in range(len(REF_FILES[ref])))
-    for ref, tag in tags.items():
-        text = text.replace(f"({ref})", f"({tag})")
-    prompt = f"{text}\n\nAvoid: {NEGATIVE}"
+    text, urls = tag_refs(shot, text, "Image {}")
+    prompt = (
+        "Single photoreal cinematic film still, 16:9, the decisive frozen moment of this shot, "
+        "tack sharp, no motion blur, one frame, no collage, no split screen. "
+        f"{text}\n\nAvoid: {NEGATIVE}"
+    )
+    payload = {"prompt": prompt, "image_size": {"width": 1920, "height": 1080},
+               "num_images": 1, "output_format": "png"}
+    if urls:
+        payload["image_urls"] = urls
+    return shot, (IMAGE_EDIT_MODEL if urls else IMAGE_MODEL), payload
+
+
+def gen_still(sid, use_fallback):
+    shot, model, payload = build_still(sid, use_fallback)
+    rid, res = run(model, payload, f"still {sid}")
+    SHOTS_DIR.mkdir(parents=True, exist_ok=True)
+    download(res["images"][0]["url"], SHOTS_DIR / shot["file"])
+    record(sid, shot, model, rid, use_fallback, res)
+    print(f"[still {sid}] saved {shot['file']}", flush=True)
+
+
+def record(sid, shot, model, rid, use_fallback, res):
+    m = json.loads(MANIFEST.read_text())
+    for s in m["shots"]:
+        if s["id"] == sid:
+            first = s["generator"] is None
+            s["generator"] = model
+            s["generation_id"] = rid
+            s["regenerations"] = s["regenerations"] if first else s["regenerations"] + 1
+            s["references"] = [n for r in shot["refs"] for n in REF_FILES[r]]
+            s["notes"] = ("fallback line" if use_fallback else "prompt as written") + f", seed {res.get('seed')}"
+            s["qc_passed"] = False
+    MANIFEST.write_text(json.dumps(m, indent=2) + "\n")
+
+
+def build_shot(sid, model, use_fallback):
+    shot = parse_shots()[sid]
+    if shot["kind"] != "video":
+        raise SystemExit(f"shot {sid} is a STILL beat; use: still {sid}")
+    text = shot["fallback"] if use_fallback else shot["prompt"]
+    if use_fallback and not text:
+        raise SystemExit(f"shot {sid} has no fallback line")
     if model is None:
-        model = VIDEO_MODEL if urls else VIDEO_MODEL_T2V
+        model = VIDEO_MODEL if shot["refs"] else VIDEO_MODEL_T2V
+    text, urls = tag_refs(shot, text, "@Image{}", KLING_MAX_REFS if "kling" in model else None)
+    prompt = f"{text}\n\nAvoid: {NEGATIVE}"
     payload = {"prompt": prompt, "aspect_ratio": "16:9", "duration": str(shot["duration"]),
                "generate_audio": False}
     if "seedance" in model or "veo" in model:
@@ -198,17 +259,7 @@ def gen_shot(sid, model, use_fallback):
     rid, res = run(model, payload, f"shot {sid}")
     SHOTS_DIR.mkdir(parents=True, exist_ok=True)
     download(res["video"]["url"], SHOTS_DIR / shot["file"])
-    m = json.loads(MANIFEST.read_text())
-    for s in m["shots"]:
-        if s["id"] == sid:
-            first = s["generator"] is None
-            s["generator"] = model
-            s["generation_id"] = rid
-            s["regenerations"] = s["regenerations"] if first else s["regenerations"] + 1
-            s["references"] = [n for r in shot["refs"] for n in REF_FILES[r]]
-            s["notes"] = ("fallback line" if use_fallback else "prompt as written") + f", seed {res.get('seed')}"
-            s["qc_passed"] = False
-    MANIFEST.write_text(json.dumps(m, indent=2) + "\n")
+    record(sid, shot, model, rid, use_fallback, res)
     print(f"[shot {sid}] saved {shot['file']}", flush=True)
 
 
@@ -221,7 +272,12 @@ if __name__ == "__main__":
     elif args[0] == "shot":
         model = args[args.index("--model") + 1] if "--model" in args else None
         gen_shot(args[1], model, "--fallback" in args)
+    elif args[0] == "still":
+        gen_still(args[1], "--fallback" in args)
     elif args[0] == "show":
-        print(json.dumps(build_shot(args[1], None, "--fallback" in args)[1:], indent=2))
+        kind = parse_shots()[args[1]]["kind"]
+        built = (build_still(args[1], "--fallback" in args) if kind == "still"
+                 else build_shot(args[1], None, "--fallback" in args))
+        print(json.dumps(built[1:], indent=2))
     else:
         raise SystemExit(__doc__)

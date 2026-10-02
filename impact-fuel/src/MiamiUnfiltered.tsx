@@ -2,6 +2,7 @@ import { Audio, Video } from "@remotion/media";
 import { AbsoluteFill, Sequence, staticFile, useVideoConfig } from "remotion";
 import available from "./available-shots.json";
 import { SHOTS, Shot, slotFrames, startFrame } from "./shots";
+import { StillShot } from "./StillShot";
 
 export type MiamiUnfilteredProps = {
   // Draft mode labels empty slots so gaps are obvious. Final mode keeps them black.
@@ -35,7 +36,7 @@ const EmptySlot: React.FC<{ shot: Shot; draft: boolean }> = ({
         </div>
         <div style={{ fontSize: 40 }}>{shot.label}</div>
         <div style={{ fontSize: 32, marginTop: 24 }}>
-          {shot.startSec.toFixed(3)}s to {shot.endSec.toFixed(3)}s · missing{" "}
+          {shot.kind} · {shot.startSec.toFixed(3)}s to {shot.endSec.toFixed(3)}s · missing{" "}
           {shot.file}
         </div>
       </div>
@@ -55,7 +56,14 @@ export const MiamiUnfiltered: React.FC<MiamiUnfilteredProps> = ({ draft }) => {
           durationInFrames={slotFrames(shot)}
           premountFor={fps}
         >
-          {present.has(shot.file) ? (
+          {present.has(shot.file) && shot.kind === "still" ? (
+            <StillShot
+              src={`shots/${shot.file}`}
+              motion={shot.motion}
+              durationInFrames={slotFrames(shot)}
+              seed={shot.id}
+            />
+          ) : present.has(shot.file) ? (
             <Video
               src={staticFile(`shots/${shot.file}`)}
               trimBefore={shot.trimBefore}

@@ -24,6 +24,18 @@ animation, anime, illustration, CGI, 3D render, videogame look, plastic skin, wa
 
 ---
 
+## Hybrid cut (current plan)
+
+The film is 18 **STILL** beats and 7 **VIDEO** beats (03, 05, 16, 19, 20, 22, 25). Shot 03 is already generated on Kling and QC-passed.
+
+- **STILL:** one photoreal 1920x1080 frame of the decisive moment of the shot's prompt. The edit adds the camera move, rain, light sweeps and flicker (`src/shots.ts` → `motion`), so the image itself must be a sharp, frozen moment: no motion blur, no split screens, no collage. Save it as the `.png` named in the heading.
+- **VIDEO:** generated as before. Use the cheaper video model first (Kling O3 Pro on fal) and fall back to Seedance only if Kling refuses or fails QC.
+- `scripts/fal_generate.py still 04` and `scripts/fal_generate.py shot 05` do one of each.
+
+Estimated spend at fal's listed prices: references and stills about $2.50, six more 5–6 s Kling clips about $13, so about $15–20 with redos.
+
+---
+
 ## Phase 2 — Reference images
 
 Every reference prompt ends with: `no text, no watermarks, no logos, no labels, no annotations`
@@ -87,132 +99,132 @@ Hard lines, unchanged: every person visibly 25 or older, no wound anatomy or gor
 
 Format: slot · generate · references.
 
-**01 · 0.00–10.50 · Intro · `shot_01_opening.mp4`** · 10.5 s · generate 10–11 s · REF-07
+**01 · STILL · 0.00–10.50 · Intro · `shot_01_opening.png`** · 10.5 s · still · REF-07
 ```
 Opens on near-black. Slow 24mm aerial push over humid Miami-Dade rooftops at night: scattered lit windows, wet streets, dripping power lines, distant skyline glow through haze. One continuous physically plausible drone move, no people in focus.
 ```
 
-**02 · 10.50–21.10 · Intro · `shot_02_descent.mp4`** · 10.6 s · generate 11 s · REF-07, REF-01
+**02 · STILL · 10.50–21.10 · Intro · `shot_02_descent.png`** · 10.6 s · still · REF-07, REF-01
 ```
 Continuous 24mm crane descent from roof height to a sodium-lit wet street. As the camera reaches eye level, the Guide (REF-01) steps into frame from a side street and starts walking toward camera.
 ```
 
-**03 · 21.10–24.50 · "welcome to Dade County" · `shot_03_dade_welcome.mp4`** · 3.4 s · generate 5 s · REF-01
+**03 · VIDEO · 21.10–24.50 · "welcome to Dade County" · `shot_03_dade_welcome.mp4`** · 3.4 s · generate 5 s · REF-01
 ```
 35mm tracking shot moving backward in front of the Guide (REF-01) walking a narrow lived-in block. Adult residents watch silently from stoops. A city bus passes behind him. He looks straight into the lens, mouth closed.
 ```
 
-**04 · 24.50–29.20 · "rocks … red and blue lights" · `shot_04_rocks.mp4`** · 4.7 s · generate 5 s
+**04 · STILL · 24.50–29.20 · "rocks … red and blue lights" · `shot_04_rocks.png`** · 4.7 s · still
 ```
 85mm insert, corner of a concrete block at night. An adult hand opens to show a small clear baggie of off-white crack rocks; another adult hand pays with a folded wad of cash. Red-blue police light sweeps across both hands and wet concrete. Both freeze, then the baggie vanishes into a jacket pocket.
 ```
 *Fallback:* `85mm insert, two adult hands swap a small wrapped package for folded cash as red-blue police light sweeps across them.`
 
-**05 · 29.20–32.75 · "ride with me" · `shot_05_ride_along.mp4`** · 3.55 s · generate 5 s · REF-01, REF-06
+**05 · VIDEO · 29.20–32.75 · "ride with me" · `shot_05_ride_along.mp4`** · 3.55 s · generate 5 s · REF-01, REF-06
 ```
 Low tracking shot alongside the charcoal sedan (REF-06) in the rain. The Guide (REF-01) drops into the driver's seat, door slams, rain beads on the glass, amber dash glow on his face, and the car pulls out into the night.
 ```
 
-**06 · 32.75–37.60 · "don't be fooled by South Beach" · `shot_06_south_beach.mp4`** · 4.85 s · generate 5 s · REF-03, REF-08
+**06 · STILL · 32.75–37.60 · "don't be fooled by South Beach" · `shot_06_south_beach.png`** · 4.85 s · still · REF-03, REF-08
 ```
 50mm, South Beach at night: neon on art-deco facades, valet line, adult tourists. The Visitor (REF-03) steps out of a valet car, gold watch and chain catching the light. A dark van passes close in the foreground left to right, wiping the frame to black.
 ```
 
-**07 · 37.60–42.25 · "your jewels are like a menu … we intend to eat" · `shot_07_jewels.mp4`** · 4.65 s · generate 5 s · REF-03
+**07 · STILL · 37.60–42.25 · "your jewels are like a menu … we intend to eat" · `shot_07_jewels.png`** · 4.65 s · still · REF-03
 ```
 85mm close-up of the Visitor's gold watch and chain. Focus racks to two adult men across the street watching him; one lifts his shirt just enough to show a pistol grip in his waistband. Focus racks back: the Visitor pulls his sleeve over the watch and his face drops.
 ```
 
-**08 · 42.25–46.70 · "cross that I-395 … dead-end streets" · `shot_08_i395.mp4`** · 4.45 s · generate 5 s · REF-06, REF-09
+**08 · STILL · 42.25–46.70 · "cross that I-395 … dead-end streets" · `shot_08_i395.png`** · 4.45 s · still · REF-06, REF-09
 ```
 Low-angle 24mm tracking shot following the charcoal sedan (REF-06) under an elevated concrete highway at night. Columns pass in rhythm. The sedan turns into a narrowing side street and brakes hard at a locked chain-link gate, brake lights red on wet asphalt.
 ```
 
-**09 · 46.70–51.75 · "white beaters and bare feet … goon style" · `shot_09_street_crew.mp4`** · 5.05 s · generate 5–6 s · REF-02
+**09 · STILL · 46.70–51.75 · "white beaters and bare feet … goon style" · `shot_09_street_crew.png`** · 5.05 s · still · REF-02
 ```
 Slow 50mm dolly-in on the three adult Street Crew members (REF-02) on a cramped stoop: white beaters, one barefoot. One slides a metal security gate shut, one stares down the road, one sets a coffee cup next to a handgun resting on the step. Total stillness and menace.
 ```
 
-**10 · 51.75–54.58 · "entering the infamous Little Havana" · `shot_10_little_havana.mp4`** · 2.83 s · generate 5 s · REF-10, REF-06
+**10 · STILL · 51.75–54.58 · "entering the infamous Little Havana" · `shot_10_little_havana.png`** · 2.83 s · still · REF-10, REF-06
 ```
 35mm tracking from the street to a Little Havana ventanita at night: warm light, coffee steam, checkered tile, adult domino players under the awning, a Cuban flag. The charcoal sedan's reflection slides across the storefront glass.
 ```
 
-**11 · 54.58–61.90 · "studio gangsters … meet the real Tony Montana" · `shot_11_tony_montana.mp4`** · 7.32 s · generate 8 s · REF-04
+**11 · STILL · 54.58–61.90 · "studio gangsters … meet the real Tony Montana" · `shot_11_tony_montana.png`** · 7.32 s · still · REF-04
 ```
 Dim apartment. An adult man in a flashy shirt watches an unbranded 1980s-style crime film on a small CRT, mimicking a tough-guy pose. He turns. The intermediary (REF-04) stands in the hallway behind him, calm, a revolver held low at her side. She takes one step forward. Warm lamp light gives way to hard green fluorescent. No speech.
 ```
 
-**12 · 61.90–65.90 · "fuck them palm trees" · `shot_12_palm_graveyard.mp4`** · 4.0 s · generate 5 s · REF-11
+**12 · STILL · 61.90–65.90 · "fuck them palm trees" · `shot_12_palm_graveyard.png`** · 4.0 s · still · REF-11
 ```
 A palm tree silhouette fills the frame, then the camera tracks past it to reveal a cemetery entrance at night: cracked mausoleums, chain-link, rain-dark headstones, distant amber lamp.
 ```
 
-**13 · 65.90–70.40 · "graveyard in Brownsville … four generations deep" · `shot_13_brownsville.mp4`** · 4.5 s · generate 5 s · REF-01, REF-11
+**13 · STILL · 65.90–70.40 · "graveyard in Brownsville … four generations deep" · `shot_13_brownsville.png`** · 4.5 s · still · REF-01, REF-11
 ```
 The Guide (REF-01) walks a gravel path between rows of old weathered headstones and family mausoleums. Slow 24mm crane down toward a wet stone.
 ```
 
-**14 · 70.40–74.90 · "granddaddy to grandmother, piled up" · `shot_14_generations.mp4`** · 4.5 s · generate 5 s · REF-11
+**14 · STILL · 70.40–74.90 · "granddaddy to grandmother, piled up" · `shot_14_generations.png`** · 4.5 s · still · REF-11
 ```
 Slow lateral 50mm dolly across stacked family crypt markers in a wall, names and dates too soft to read, several generations side by side. An adult hand brushes rainwater off one. A single adult mourner stands still in the background.
 ```
 
-**15 · 74.90–81.40 · "your Little Haiti connections … a real one" · `shot_15_little_haiti.mp4`** · 6.5 s · generate 7 s · REF-05, REF-12
+**15 · STILL · 74.90–81.40 · "your Little Haiti connections … a real one" · `shot_15_little_haiti.png`** · 6.5 s · still · REF-05, REF-12
 ```
 35mm follow shot behind the Little Haiti enforcer (REF-05) walking a lived-in Little Haiti street at night (worn colorful storefronts, metal roll gates, a church facade) and climbing the wooden porch steps of a multi-family house. He stops at the door and looks back over his shoulder at camera.
 ```
 
-**16 · 81.40–85.00 · "kick in your door, put you face down on the floor" · `shot_16_door_kick.mp4`** · 3.6 s · generate 5 s · REF-05
+**16 · VIDEO · 81.40–85.00 · "kick in your door, put you face down on the floor" · `shot_16_door_kick.mp4`** · 3.6 s · generate 5 s · REF-05
 ```
 Interior apartment, 35mm. The front door bursts inward off its frame, splinters and paint dust in the air. The enforcer (REF-05) steps through and pins an adult man face down on the floor with a knee in his back, a pistol held at his side. No beating.
 ```
 *Fallback:* `The front door bursts inward in a cloud of dust; an adult man drops face down on the floor, hands behind his head, as a figure steps through.`
 
-**17 · 85.00–87.80 · "your whole family wire money from Chicago" · `shot_17_chicago.mp4`** · 2.8 s · generate 5 s
+**17 · STILL · 85.00–87.80 · "your whole family wire money from Chicago" · `shot_17_chicago.png`** · 2.8 s · still
 ```
 85mm insert: a phone on tile buzzing with an incoming call labeled only "Chicago". Cut within the clip to an anxious adult couple at a money-transfer counter sliding cash under the glass. No readable numbers or account details.
 ```
 
-**18 · 87.80–91.20 · "if you're a real G, tell your car where to go" · `shot_18_decision.mp4`** · 3.4 s · generate 5 s · REF-03, REF-06
+**18 · STILL · 87.80–91.20 · "if you're a real G, tell your car where to go" · `shot_18_decision.png`** · 3.4 s · still · REF-03, REF-06
 ```
 50mm, empty alley. The Visitor (REF-03) tucks his chain inside his shirt, gets into the charcoal sedan, grips the wheel with white knuckles, and pulls out fast.
 ```
 
-**19 · 91.20–95.75 · "Opa-locka … spotlight helicopters, a triangle full of choppers" · `shot_19_opa_locka.mp4`** · 4.55 s · generate 5 s · REF-13, REF-06
+**19 · VIDEO · 91.20–95.75 · "Opa-locka … spotlight helicopters, a triangle full of choppers" · `shot_19_opa_locka.mp4`** · 4.55 s · generate 5 s · REF-13, REF-06
 ```
 24mm crane rise over Opa-locka at night: Moorish domes and arches at an industrial edge, haze. Two police helicopters sweep searchlights in a shifting triangle. On the road below, three adult men stand beside a car holding automatic rifles; a searchlight beam lands on the charcoal sedan's windshield.
 ```
 *Fallback:* `Opa-locka at night, Moorish domes, two helicopters sweep searchlights through haze; the final beam lands on a sedan's windshield.`
 
-**20 · 95.75–99.35 · "Carol City makes holes … can't be plugged by doctors" · `shot_20_carol_city.mp4`** · 3.6 s · generate 5 s · REF-06, REF-14
+**20 · VIDEO · 95.75–99.35 · "Carol City makes holes … can't be plugged by doctors" · `shot_20_carol_city.mp4`** · 3.6 s · generate 5 s · REF-06, REF-14
 ```
 Interior of the charcoal sedan, Carol City at night. Muzzle flashes outside, bullet holes punch through the windshield, glass sprays, the car jolts to a stop. The adult driver slumps over the wheel, blood soaking his shirt; the adult passenger ducks under the dash screaming. No wound close-ups.
 ```
 *Fallback:* `Interior of a sedan at night; the windshield shatters under sudden impacts, the car jolts to a stop, the driver slumps forward, an adult passenger ducks in terror.`
 
-**21 · 99.35–103.50 · "soldiers from birth to the hearse" · `shot_21_birth_to_hearse.mp4`** · 4.15 s · generate 5 s
+**21 · STILL · 99.35–103.50 · "soldiers from birth to the hearse" · `shot_21_birth_to_hearse.png`** · 4.15 s · still
 ```
 Match-cut sequence: an adult hand rests on a wall of family photos; an adult buttons a black wool coat; a hearse rolls slowly past a chain-link fence with adult mourners behind it in rain.
 ```
 
-**22 · 103.50–106.60 · "a bulletproof vest and a pyrex" · `shot_22_vest_pyrex.mp4`** · 3.1 s · generate 5 s
+**22 · VIDEO · 103.50–106.60 · "a bulletproof vest and a pyrex" · `shot_22_vest_pyrex.mp4`** · 3.1 s · generate 5 s
 ```
 85mm macro under a flickering fluorescent tube. Adult hands cinch the strap of a worn bulletproof vest. On a grimy stovetop beside it, a scratched Pyrex measuring cup with a dried white residue ring. One hand trembles once.
 ```
 Adult hands only, even though the lyric says "childhood". No children anywhere in the film.
 
-**23 · 106.60–109.10 · "you ain't even seen the real Miami yet" · `shot_23_real_miami.mp4`** · 2.5 s · generate 5 s · REF-01, REF-07
+**23 · STILL · 106.60–109.10 · "you ain't even seen the real Miami yet" · `shot_23_real_miami.png`** · 2.5 s · still · REF-01, REF-07
 ```
 Blue pre-dawn. The Guide (REF-01) steps out of a dark doorway. Fast 24mm crane from his boots up to a wide view of low-rise blocks, a canal, utility wires, distant highway lights.
 ```
 
-**24 · 109.10–112.00 · "welcome to the real Miami" · `shot_24_welcome_real.mp4`** · 2.9 s · generate 5 s
+**24 · STILL · 109.10–112.00 · "welcome to the real Miami" · `shot_24_welcome_real.png`** · 2.9 s · still
 ```
 Fast montage of established places in their aftermath at dawn: the ventanita shutter slams down; police tape across the Little Haiti porch; the shot-up charcoal sedan on a Carol City shoulder; first light on the cemetery stones.
 ```
 
-**25 · 112.00–117.0075 · "where we live to die, die, die" · `shot_25_live_to_die.mp4`** · 5.0 s · generate 5–6 s · REF-01
+**25 · VIDEO · 112.00–117.0075 · "where we live to die, die, die" · `shot_25_live_to_die.mp4`** · 5.0 s · generate 5–6 s · REF-01
 ```
 85mm close-up of the Guide's (REF-01) eyes reflected in a rain-streaked car side window. Streetlights and one helicopter searchlight sweep across the glass in a steady pulse. He doesn't move or blink. Mouth closed.
 ```

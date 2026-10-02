@@ -11,8 +11,8 @@ cp /path/to/Pitbull-Intro.opus public/audio/Pitbull-Intro.opus   # never committ
 
 ## Workflow
 
-1. Generate the reference images and shots from `PROMPTS.md`.
-2. Save the clips as `public/shots/shot_XX_<name>.mp4`. Filenames are listed in `src/shots.ts` and by `npm run status`.
+1. Generate the reference images, then each beat from `PROMPTS.md`: `python3 scripts/fal_generate.py still 04` for STILL beats (animated in the edit), `python3 scripts/fal_generate.py shot 05` for VIDEO beats.
+2. Outputs land in `public/shots/` as `shot_XX_<name>.png` (stills) or `.mp4` (video). Filenames are listed in `src/shots.ts` and by `npm run status`.
 3. `npm run status` probes the clips, updates `impact_fuel_production_manifest.json` and prints the dashboard.
 4. Review each clip and set `"qc_passed": true` in the manifest.
 5. `npm run draft` renders whatever exists. Empty slots show as labelled slates.
