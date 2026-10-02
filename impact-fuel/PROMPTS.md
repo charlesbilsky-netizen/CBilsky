@@ -143,7 +143,7 @@ Low tracking shot alongside the charcoal sedan (REF-06) in the rain. The Guide (
 
 **08 · VIDEO · 42.25–46.70 · "cross that I-395 … dead-end streets" · `shot_08_i395.mp4`** · 4.45 s · generate 5 s · REF-06, REF-09
 ```
-Low-angle 24mm tracking shot following the charcoal sedan (REF-06) under an elevated concrete highway at night. Columns pass in rhythm. The sedan turns into a narrowing side street and brakes hard at a locked chain-link gate, brake lights red on wet asphalt.
+Low-angle 24mm tracking shot following the charcoal sedan (REF-06) under an elevated concrete highway at night. Columns pass in rhythm. The sedan turns into a narrowing side street and brakes hard at a locked chain-link gate, brake lights red on wet asphalt. The rear plate is blank and unlettered.
 ```
 
 **09 · VIDEO · 46.70–51.75 · "white beaters and bare feet … goon style" · `shot_09_street_crew.mp4`** · 5.05 s · generate 6 s · REF-02
@@ -168,7 +168,7 @@ A palm tree silhouette fills the frame, then the camera tracks past it to reveal
 
 **13 · VIDEO · 65.90–70.40 · "graveyard in Brownsville … four generations deep" · `shot_13_brownsville.mp4`** · 4.5 s · generate 5 s · REF-01, REF-11
 ```
-The Guide (REF-01) walks a gravel path between rows of old weathered headstones and family mausoleums. Slow 24mm crane down toward a wet stone.
+The Guide (REF-01) walks a gravel path between rows of old weathered headstones and family mausoleums. Slow 24mm crane down toward a wet, weathered stone worn smooth, with no inscription.
 ```
 
 **14 · VIDEO · 70.40–74.90 · "granddaddy to grandmother, piled up" · `shot_14_generations.mp4`** · 4.5 s · generate 5 s · REF-11
@@ -227,7 +227,7 @@ Blue pre-dawn. The Guide (REF-01) steps out of a dark doorway. Fast 24mm crane f
 
 **24 · VIDEO · 109.10–112.00 · "welcome to the real Miami" · `shot_24_welcome_real.mp4`** · 2.9 s · generate 4 s
 ```
-Fast montage of established places in their aftermath at dawn: the ventanita shutter slams down; police tape across the Little Haiti porch; the shot-up charcoal sedan on a Carol City shoulder; first light on the cemetery stones.
+Fast montage of established places in their aftermath at dawn: the ventanita shutter slams down; plain unprinted yellow barrier tape across the Little Haiti porch; the shot-up charcoal sedan on a Carol City shoulder; first light on the cemetery stones.
 ```
 
 **25 · VIDEO · 112.00–117.0075 · "where we live to die, die, die" · `shot_25_live_to_die.mp4`** · 5.0 s · generate 6 s · REF-01
