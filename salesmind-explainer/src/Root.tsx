@@ -5,6 +5,7 @@ import { Ground, Stage } from "./ui/Stage";
 import { TrainingBadge } from "./ui/TrainingBadge";
 import { Dashboard } from "./screens/Dashboard";
 import { TitleCard } from "./ui/TitleCard";
+import { Gallery, GALLERY } from "./Gallery";
 
 const DashTest: React.FC = () => (
   <AbsoluteFill>
@@ -18,6 +19,7 @@ const DashTest: React.FC = () => (
 
 export const Root: React.FC = () => (
   <>
+    <Composition id="Gallery" component={Gallery} durationInFrames={GALLERY.length} fps={FPS} width={W} height={H} />
     <Composition id="DashTest" component={DashTest} durationInFrames={150} fps={FPS} width={W} height={H} />
     <Composition
       id="TitleTest"

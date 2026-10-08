@@ -10,7 +10,6 @@ import { prog, reveal, stagger } from "../ui/anim";
 // round training values or none at all.
 export const Performance: React.FC<{ start?: number; tab?: number }> = ({ start = 0, tab = 0 }) => {
   const f = useCurrentFrame() - start;
-  const bars = [3, 4, 4, 5, 6, 7];
   return (
     <AppShell page="Performance" title="Performance">
       <div style={{ fontFamily, display: "flex", flexDirection: "column", gap: 18, height: "100%" }}>
@@ -32,18 +31,16 @@ export const Performance: React.FC<{ start?: number; tab?: number }> = ({ start 
         </div>
         <Panel style={{ padding: 24, flex: 1, ...reveal(stagger(f, 2, 4, 3)) }}>
           <Label>Milestones by tenure</Label>
-          <div style={{ display: "flex", gap: 18, marginTop: 18, alignItems: "flex-end", height: 260 }}>
+          <div style={{ display: "flex", gap: 18, marginTop: 18, alignItems: "flex-end", height: 420 }}>
             {["Month 3 · own liquid NAV", "Month 6 · total liquid NAV", "Month 12", "Month 24", "Month 36"].map((m, i) => (
               <div key={m} style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center", gap: 10 }}>
-                <div style={{ width: "70%", height: 40 + i * 44 * prog(f, 10 + i * 3, 18), borderRadius: 8, background: i === 0 ? C.bright : `rgba(38,191,107,${0.5 - i * 0.07})` }} />
+                <div style={{ width: "70%", height: (60 + i * 72) * prog(f, 10 + i * 3, 18), borderRadius: 8, background: i === 0 ? C.bright : `rgba(38,191,107,${0.5 - i * 0.07})` }} />
                 <div style={{ fontSize: 15, color: C.text, textAlign: "center" }}>{m}</div>
               </div>
             ))}
           </div>
-          <div style={{ display: "flex", gap: 8, marginTop: 22, alignItems: "flex-end", height: 60 }}>
-            {bars.map((b, i) => (
-              <div key={i} style={{ flex: 1, height: b * 8 * prog(f, 20 + i * 2, 14), background: "rgba(255,255,255,0.08)", borderRadius: 4 }} />
-            ))}
+          <div style={{ marginTop: 26, paddingTop: 18, borderTop: `1px solid ${C.line}`, fontSize: 15, color: C.muted }}>
+            Milestones follow your tenure, not the analytics period. Figures are synthetic.
           </div>
         </Panel>
       </div>
@@ -75,7 +72,7 @@ export const SalesPlan: React.FC<{ start?: number; hi?: string | null }> = ({ st
     na: e.na_reason ?? <span style={{ color: C.faint }}>—</span>,
   }));
   const panels: [string, string][] = [
-    ["Plan summary", "Total Entries 3 · Est. Total AUM · Total NAV Target"],
+    ["Plan summary", `Total Entries 3 · Est. Total AUM ${eur(1500000)} · Total NAV Target ${eur(1000000)}`],
     ["Sales Plan Progress", "Client funnel · NAV progress · activity"],
     ["Entries Requiring Attention", "1 entry"],
     ["Forecasted NAV", "Synthetic"],
@@ -239,12 +236,13 @@ export const Requests: React.FC<{ start?: number; tab?: number }> = ({ start = 0
     { key: "status", label: "Status", w: 170 },
     { key: "updated", label: "Updated", w: 160 },
   ];
-  const rows = D.requests.map((r) => ({ key: r.key, summary: r.summary, project: "Training", priority: "Medium", status: r.status, updated: "Day 1" }));
+  const tabs = ["Jira", "Onboarding", "KYC", "Intercom"];
+  const rows = D.requests.filter((r) => r.tab === tabs[tab]).map((r) => ({ key: r.key, summary: r.summary, project: r.tab, priority: "Medium", status: r.status, updated: "Day 1" }));
   return (
     <AppShell page="Internal requests" title="Internal requests">
       <div style={{ fontFamily, display: "flex", flexDirection: "column", gap: 18 }}>
         <div style={{ display: "flex", alignItems: "center" }}>
-          <Tabs items={["Jira", "Onboarding", "KYC", "Intercom"]} active={tab} counts={[1, 1, 1, 1]} style={{ flex: 1 }} />
+          <Tabs items={tabs} active={tab} counts={tabs.map((t) => D.requests.filter((r) => r.tab === t).length)} style={{ flex: 1 }} />
           <Button primary style={{ marginLeft: 16 }}>Raise a request</Button>
         </div>
         <div style={{ display: "flex", gap: 16 }}>

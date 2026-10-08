@@ -46,7 +46,7 @@ export const DealCard: React.FC<{ d: DealX; style?: React.CSSProperties; focus?:
         <span style={{ color: C.muted }}>{"status" in d ? (d as { status?: string }).status : ""}</span>
       </div>
       <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
-        {d.alert ? <AlertBadge alert={d.alert} /> : null}
+        {d.alert ? <AlertBadge alert={d.alert} wrap /> : null}
         {d.blocker ? <span style={{ fontSize: 13, color: C.warning, border: `1px solid ${C.warning}66`, borderRadius: 6, padding: "3px 8px" }}>Blocked</span> : null}
       </div>
     </div>
@@ -125,7 +125,7 @@ export const PipelineBoard: React.FC<{ start?: number; focusId?: string | null; 
         <Board stages={NB_STAGES} list={filtersOn ? nb.filter((d) => d.alert) : nb} f={f} focusId={focusId} menuId={menuId} />
       </div>
       {menuId ? (
-        <Panel style={{ position: "absolute", left: 940, top: 300, width: 240, padding: 8, fontFamily, ...reveal(prog(f, 4, 10)) }}>
+        <Panel style={{ position: "absolute", left: 555, top: 273, width: 240, boxShadow: "0 24px 60px rgba(0,0,0,0.6)", padding: 8, fontFamily, ...reveal(prog(f, 4, 10)) }}>
           {["Put on hold", "Close deal", "Add task", "Open in CRM"].map((x) => (
             <div key={x} style={{ padding: "10px 12px", fontSize: 16, color: C.text, borderRadius: 8 }}>
               {x}

@@ -72,12 +72,12 @@ export const Dashboard: React.FC<DashProps> = ({ tab = 2, highlightRow = null, p
     rows = D.requests.slice(0, 2).map((r, i) => ({ client: <span>{person(i === 0 ? "p3" : "p5").company === "co3" ? "Atlas Quant Partners" : "Horizon Asset Practice"}<Demo /></span>, req: r.key, sum: r.summary, status: r.status }));
   } else {
     cols = [
-      { key: "client", label: "Client", w: 250 },
-      { key: "stage", label: "Stage", w: 168 },
+      { key: "client", label: "Client", w: 238 },
+      { key: "stage", label: "Stage", w: 164 },
       { key: "dep", label: "Expected deposit", w: 150, align: "right" as const },
-      { key: "gap", label: "", w: 22 },
-      { key: "next", label: "Next stage action", w: 222 },
-      { key: "last", label: "Last contact", w: 112 },
+      { key: "gap", label: "", w: 14 },
+      { key: "next", label: "Next stage action", w: 258 },
+      { key: "last", label: "Last contact", w: 100 },
       { key: "alert", label: "Alerts", w: 262 },
     ];
     rows = openDealsSorted.map((d, i) => ({

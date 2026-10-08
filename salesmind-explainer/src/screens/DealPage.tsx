@@ -252,7 +252,7 @@ export const CreateDeal: React.FC<{ start?: number; typed?: string; picked?: boo
         </div>
         <div style={{ display: "flex", gap: 16 }}>
           <div style={{ flex: 1 }}>
-            <Box label="Expected deposit" hint="optional" value={`${eur(1000000)} · Day 5 (Fri)`} />
+            <Box label="Expected deposit" hint="optional" value={eur(1000000)} />
           </div>
           <div style={{ flex: 1 }}>
             <Box label="Chance of closing" hint="optional" value="Medium" />

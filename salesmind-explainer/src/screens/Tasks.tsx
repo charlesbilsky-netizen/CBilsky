@@ -246,7 +246,7 @@ export const PlanTheDay: React.FC<{ step: 0 | 1; start?: number; startPressed?: 
   return (
     <AppShell page="Task management" title="Plan the day">
       <div style={{ fontFamily, display: "flex", gap: 24, height: "100%" }}>
-        <Panel style={{ width: 520, padding: 30, display: "flex", flexDirection: "column", alignItems: "center", gap: 18 }}>
+        <Panel style={{ width: 460, flexShrink: 0, padding: 30, display: "flex", flexDirection: "column", alignItems: "center", gap: 18 }}>
           <Label>{step === 0 ? "Step 1 · Recap" : "Step 2 · Plan"}</Label>
           {step === 0 ? (
             <div style={{ width: "100%", display: "flex", flexDirection: "column", gap: 12, marginTop: 10 }}>
@@ -270,8 +270,11 @@ export const PlanTheDay: React.FC<{ step: 0 | 1; start?: number; startPressed?: 
                 <text x="140" y="138" textAnchor="middle" fill={C.off} fontFamily={fontFamily} fontWeight={600} fontSize={40}>
                   {(4.3 * fill).toFixed(1)}h
                 </text>
-                <text x="140" y="168" textAnchor="middle" fill={C.muted} fontFamily={fontFamily} fontSize={16}>
-                  of {total}h already spoken for
+                <text x="140" y="166" textAnchor="middle" fill={C.muted} fontFamily={fontFamily} fontSize={15}>
+                  of {total}h
+                </text>
+                <text x="140" y="186" textAnchor="middle" fill={C.muted} fontFamily={fontFamily} fontSize={15}>
+                  already spoken for
                 </text>
               </svg>
               <div style={{ display: "flex", gap: 16 }}>
@@ -281,6 +284,11 @@ export const PlanTheDay: React.FC<{ step: 0 | 1; start?: number; startPressed?: 
                     {p.l}
                   </span>
                 ))}
+              </div>
+              <div style={{ marginTop: "auto" }}>
+                <Button primary pressed={startPressed} style={{ fontSize: 20, padding: "14px 26px" }}>
+                  Start my day!
+                </Button>
               </div>
             </>
           )}
@@ -292,19 +300,15 @@ export const PlanTheDay: React.FC<{ step: 0 | 1; start?: number; startPressed?: 
               {D.tasks
                 .filter((t) => (col === "Inbox" ? step === 0 && t.horizon === "Inbox" : t.horizon === col))
                 .map((t, i) => (
-                  <TaskRow key={i} t={t} style={reveal(stagger(f, i + ci, 4, 3))} />
+                  <div key={i} style={{ padding: "12px 14px", borderRadius: 10, background: "rgba(255,255,255,0.02)", border: `1px solid ${C.line}`, boxShadow: `inset 4px 0 0 ${spine(t)}`, ...reveal(stagger(f, i + ci, 4, 3)) }}>
+                    <div style={{ fontSize: 16, color: C.off, fontWeight: 500, lineHeight: 1.3 }}>{t.title}</div>
+                    <div style={{ fontSize: 13, color: C.muted, marginTop: 6 }}>{[t.time, t.duration].filter(Boolean).join(" · ")}</div>
+                  </div>
                 ))}
             </Panel>
           ))}
         </div>
       </div>
-      {step === 1 ? (
-        <div style={{ position: "absolute", right: 40, bottom: 40 }}>
-          <Button primary pressed={startPressed} style={{ fontSize: 20, padding: "14px 26px" }}>
-            Start my day!
-          </Button>
-        </div>
-      ) : null}
     </AppShell>
   );
 };

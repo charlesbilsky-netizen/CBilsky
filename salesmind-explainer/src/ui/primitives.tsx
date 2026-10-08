@@ -124,7 +124,7 @@ export const alertLevel = (a: string | null | undefined): AlertLevel | null => {
 };
 const levelColor = { critical: C.critical, warning: C.warning, info: C.info };
 
-export const AlertBadge: React.FC<{ alert: string; glow?: number }> = ({ alert, glow = 0 }) => {
+export const AlertBadge: React.FC<{ alert: string; glow?: number; wrap?: boolean }> = ({ alert, glow = 0, wrap = false }) => {
   const lvl = alertLevel(alert) ?? "info";
   const col = levelColor[lvl];
   return (
@@ -142,10 +142,12 @@ export const AlertBadge: React.FC<{ alert: string; glow?: number }> = ({ alert, 
         background: `${col}1F`,
         border: `1px solid ${col}66`,
         boxShadow: glow ? `0 0 ${16 * glow}px ${C.gold}` : undefined,
-        whiteSpace: "nowrap",
+        whiteSpace: wrap ? "normal" : "nowrap",
+        maxWidth: wrap ? "100%" : undefined,
+        lineHeight: 1.3,
       }}
     >
-      <span style={{ width: 7, height: 7, borderRadius: 7, background: col }} />
+      <span style={{ width: 7, height: 7, borderRadius: 7, background: col, flexShrink: 0 }} />
       {alert}
     </span>
   );

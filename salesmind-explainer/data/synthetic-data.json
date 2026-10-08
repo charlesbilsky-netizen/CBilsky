@@ -81,14 +81,14 @@
     { "day": "Day -4 (Mon)", "client": "p5", "type": "KYC passed", "details": "Synthetic KYC passed", "tags": ["Documents"] }
   ],
   "ownership_checks": [
-    { "query": "greenfield-lab.example.com", "verdict": "Available" },
-    { "query": "contact@northstar-capital.example.com", "verdict": "Claimed" },
-    { "query": "atlas-quant.example.com", "verdict": "Restricted" },
-    { "query": "Daniel", "verdict": "Needs narrowing" },
+    { "query": "harbourline-capital.example.com", "verdict": "Available" },
+    { "query": "ops@kestrel-partners.example.com", "verdict": "Claimed" },
+    { "query": "silverbirch-fund.example.com", "verdict": "Restricted" },
+    { "query": "Jordan", "verdict": "Needs narrowing" },
     { "query": "new.prospect@example.com", "verdict": "Not found" }
   ],
   "sales_plan": [
-    { "client": "Alex Morgan training contact", "type": "Individual", "crm_link": null, "na_reason": "Training contact, not created in CRM because this is a demo entry", "probability": "Low" },
+    { "client": "Harbourline Capital prospect", "type": "Corporate", "crm_link": null, "na_reason": "Not in the CRM yet. Ownership checked Day 1: Available. Contact to be created after the intro call.", "probability": "Low" },
     { "client": "Northstar Capital Training", "type": "Corporate", "crm_link": "CRM-DEMO-001", "na_reason": null, "probability": "High" },
     { "client": "Greenfield Institutional Lab", "type": "Corporate", "crm_link": "CRM-DEMO-004", "na_reason": null, "probability": "Medium" }
   ],
