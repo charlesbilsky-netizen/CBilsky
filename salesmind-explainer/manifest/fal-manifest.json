@@ -2184,6 +2184,455 @@
       "status": "failed",
       "request_id": "01a11d44-5c02-77e2-afb6-7bc52af26d21",
       "error": "HTTP 403 https://queue.fal.run/fal-ai/kling-video/requests/01a11d44-5c02-77e2-afb6-7bc52af26d21: {\"detail\":\"User is locked. Reason: TOP_UP.\"}"
+    },
+    {
+      "id": "insert-f15c",
+      "model": "fal-ai/kling-video/o3/pro/text-to-video",
+      "kind": "insert",
+      "cost": 0.56,
+      "out": "public/fal/f15.mp4",
+      "input": {
+        "prompt": "Two interlocking rings of light turn slowly, centred in an empty dark space with nothing else in frame and no foreground objects; a brief spark of friction where two touch resolves into smooth, aligned motion; macro, shallow depth of field. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+        "aspect_ratio": "16:9",
+        "duration": "5",
+        "generate_audio": false
+      },
+      "status": "done",
+      "request_id": "01a11d58-139f-7811-a8a9-9d0f4ed6acce",
+      "error": null
+    },
+    {
+      "id": "plate-p_signal",
+      "model": "fal-ai/kling-video/o3/pro/text-to-video",
+      "kind": "insert",
+      "cost": 0.56,
+      "out": "public/fal/p_signal.mp4",
+      "input": {
+        "prompt": "Macro shot of a single thin rectangular card of frosted dark glass floating in darkness, a fine line of green light travels slowly along its edge and its surface glows softly; extreme shallow depth of field, slow push in. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+        "aspect_ratio": "16:9",
+        "duration": "5",
+        "generate_audio": false
+      },
+      "status": "failed",
+      "error": "HTTP 403 https://queue.fal.run/fal-ai/kling-video/o3/pro/text-to-video: {\"detail\":\"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing.\"}"
+    },
+    {
+      "id": "plate-p_paths",
+      "model": "fal-ai/kling-video/o3/pro/text-to-video",
+      "kind": "insert",
+      "cost": 0.56,
+      "out": "public/fal/p_paths.mp4",
+      "input": {
+        "prompt": "A deep parallax field of fine luminous data paths, thin curved lines of green light at many depths flowing gently in one direction, calm and ordered; slow lateral track. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+        "aspect_ratio": "16:9",
+        "duration": "5",
+        "generate_audio": false
+      },
+      "status": "done",
+      "request_id": "01a11d58-13ff-75b3-9d05-c8af6d239ec1",
+      "error": null
+    },
+    {
+      "id": "plate-p_orbit",
+      "model": "fal-ai/kling-video/o3/pro/text-to-video",
+      "kind": "insert",
+      "cost": 0.56,
+      "out": "public/fal/p_orbit.mp4",
+      "input": {
+        "prompt": "A thin-line glowing green icosahedron wireframe suspended in a near-black void with a faint green horizon glow below it; slow, steady orbit around it. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+        "aspect_ratio": "16:9",
+        "duration": "5",
+        "generate_audio": false
+      },
+      "status": "done",
+      "request_id": "01a11d58-143e-70f3-98b7-7e7b023eb292",
+      "error": null
+    },
+    {
+      "id": "plate-p_order",
+      "model": "fal-ai/kling-video/o3/pro/text-to-video",
+      "kind": "insert",
+      "cost": 0.56,
+      "out": "public/fal/p_order.mp4",
+      "input": {
+        "prompt": "Many small soft points of green light drift, then settle calmly into a precise, evenly spaced grid on a dark reflective plane; a sense of order being restored; slow overhead push in. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+        "aspect_ratio": "16:9",
+        "duration": "5",
+        "generate_audio": false
+      },
+      "status": "done",
+      "request_id": "01a11d58-147a-7c70-900b-7e7dde885b78",
+      "error": null
+    },
+    {
+      "id": "score-m1",
+      "model": "fal-ai/stable-audio-25/text-to-audio",
+      "kind": "music",
+      "cost": 0.2,
+      "out": "public/audio/score/m1.wav",
+      "input": {
+        "prompt": "Atmospheric electronic underscore. Pulsing modular synth sequence, evolving ambient textures, subtle side-chained pads, light minimal techno hi-hats far in the background, 110 BPM, D minor, cool, focused, sophisticated, instrumental, no vocals, sparse mid-range that leaves room for a narrator. Opening: begins almost silent with a soft pad and a single pulsing sequence, slowly building layers, no drums for the first 30 seconds.",
+        "seconds_total": 120
+      },
+      "status": "done",
+      "request_id": "01a11d58-1415-7822-9e22-c40c4b3ff075",
+      "error": null
+    },
+    {
+      "id": "score-m2",
+      "model": "fal-ai/stable-audio-25/text-to-audio",
+      "kind": "music",
+      "cost": 0.2,
+      "out": "public/audio/score/m2.wav",
+      "input": {
+        "prompt": "Atmospheric electronic underscore. Pulsing modular synth sequence, evolving ambient textures, subtle side-chained pads, light minimal techno hi-hats far in the background, 110 BPM, D minor, cool, focused, sophisticated, instrumental, no vocals, sparse mid-range that leaves room for a narrator. Steady and composed, the sequence settles into a calm groove.",
+        "seconds_total": 152
+      },
+      "status": "done",
+      "request_id": "01a11d58-1439-7563-9562-2f442d9ac4a2",
+      "error": null
+    },
+    {
+      "id": "score-m3",
+      "model": "fal-ai/stable-audio-25/text-to-audio",
+      "kind": "music",
+      "cost": 0.2,
+      "out": "public/audio/score/m3.wav",
+      "input": {
+        "prompt": "Atmospheric electronic underscore. Pulsing modular synth sequence, evolving ambient textures, subtle side-chained pads, light minimal techno hi-hats far in the background, 110 BPM, D minor, cool, focused, sophisticated, instrumental, no vocals, sparse mid-range that leaves room for a narrator. Focused and precise, a little more forward motion, restrained.",
+        "seconds_total": 117
+      },
+      "status": "done",
+      "request_id": "01a11d58-142b-71b3-8327-348c3bedf156",
+      "error": null
+    },
+    {
+      "id": "score-m4",
+      "model": "fal-ai/stable-audio-25/text-to-audio",
+      "kind": "music",
+      "cost": 0.2,
+      "out": "public/audio/score/m4.wav",
+      "input": {
+        "prompt": "Atmospheric electronic underscore. Pulsing modular synth sequence, evolving ambient textures, subtle side-chained pads, light minimal techno hi-hats far in the background, 110 BPM, D minor, cool, focused, sophisticated, instrumental, no vocals, sparse mid-range that leaves room for a narrator. Steady, confident, slightly warmer pads, consistent energy, no big drops.",
+        "seconds_total": 176
+      },
+      "status": "done",
+      "request_id": "01a11d58-1446-7163-87aa-1fb151b1f1c9",
+      "error": null
+    },
+    {
+      "id": "score-m5",
+      "model": "fal-ai/stable-audio-25/text-to-audio",
+      "kind": "music",
+      "cost": 0.2,
+      "out": "public/audio/score/m5.wav",
+      "input": {
+        "prompt": "Atmospheric electronic underscore. Pulsing modular synth sequence, evolving ambient textures, subtle side-chained pads, light minimal techno hi-hats far in the background, 110 BPM, D minor, cool, focused, sophisticated, instrumental, no vocals, sparse mid-range that leaves room for a narrator. Calm and deliberate, thinner arrangement, gentle pulse.",
+        "seconds_total": 155
+      },
+      "status": "done",
+      "request_id": "01a11d58-13d3-75f3-9a99-70cf33401f54",
+      "error": null
+    },
+    {
+      "id": "score-m6",
+      "model": "fal-ai/stable-audio-25/text-to-audio",
+      "kind": "music",
+      "cost": 0.2,
+      "out": "public/audio/score/m6.wav",
+      "input": {
+        "prompt": "Atmospheric electronic underscore. Pulsing modular synth sequence, evolving ambient textures, subtle side-chained pads, light minimal techno hi-hats far in the background, 110 BPM, D minor, cool, focused, sophisticated, instrumental, no vocals, sparse mid-range that leaves room for a narrator. Light and clear, airy pads, soft pulse, unhurried.",
+        "seconds_total": 130
+      },
+      "status": "done",
+      "request_id": "01a11d58-147f-7540-9404-88af1021dae1",
+      "error": null
+    },
+    {
+      "id": "score-m7",
+      "model": "fal-ai/stable-audio-25/text-to-audio",
+      "kind": "music",
+      "cost": 0.2,
+      "out": "public/audio/score/m7.wav",
+      "input": {
+        "prompt": "Atmospheric electronic underscore. Pulsing modular synth sequence, evolving ambient textures, subtle side-chained pads, light minimal techno hi-hats far in the background, 110 BPM, D minor, cool, focused, sophisticated, instrumental, no vocals, sparse mid-range that leaves room for a narrator. Resolving close: the sequence simplifies, pads open up, then a clean, gentle ending that fades out completely in the last 8 seconds.",
+        "seconds_total": 92
+      },
+      "status": "done",
+      "request_id": "01a11d58-149c-76f0-bbce-6ef0540ca6a2",
+      "error": null
+    },
+    {
+      "id": "sfx-click1",
+      "model": "fal-ai/elevenlabs/sound-effects/v2",
+      "kind": "sfx",
+      "cost": 0.01,
+      "out": "public/audio/sfx/click1.mp3",
+      "input": {
+        "text": "A single soft, premium user-interface click, muted and tactile, very short, no reverb",
+        "duration_seconds": 0.5,
+        "prompt_influence": 0.6,
+        "output_format": "mp3_44100_192"
+      },
+      "status": "done",
+      "request_id": "01a11d58-1448-7741-9120-45d24519b564",
+      "error": null
+    },
+    {
+      "id": "sfx-click2",
+      "model": "fal-ai/elevenlabs/sound-effects/v2",
+      "kind": "sfx",
+      "cost": 0.01,
+      "out": "public/audio/sfx/click2.mp3",
+      "input": {
+        "text": "A soft rounded mouse click on a quality trackpad, subtle and dry, very short",
+        "duration_seconds": 0.5,
+        "prompt_influence": 0.6,
+        "output_format": "mp3_44100_192"
+      },
+      "status": "done",
+      "request_id": "01a11d58-2d0c-7b91-8c5d-76083c18e75d",
+      "error": null
+    },
+    {
+      "id": "sfx-toggle",
+      "model": "fal-ai/elevenlabs/sound-effects/v2",
+      "kind": "sfx",
+      "cost": 0.01,
+      "out": "public/audio/sfx/toggle.mp3",
+      "input": {
+        "text": "A gentle UI toggle switch sound, soft and tactile, short",
+        "duration_seconds": 0.6,
+        "prompt_influence": 0.6,
+        "output_format": "mp3_44100_192"
+      },
+      "status": "done",
+      "request_id": "01a11d59-5c1f-70f3-964e-0bc978e25e47",
+      "error": null
+    },
+    {
+      "id": "sfx-chip",
+      "model": "fal-ai/elevenlabs/sound-effects/v2",
+      "kind": "sfx",
+      "cost": 0.01,
+      "out": "public/audio/sfx/chip.mp3",
+      "input": {
+        "text": "A light glassy tap for selecting a filter chip in an app, delicate, short",
+        "duration_seconds": 0.5,
+        "prompt_influence": 0.6,
+        "output_format": "mp3_44100_192"
+      },
+      "status": "done",
+      "request_id": "01a11d59-5da5-7af1-84e3-522815ee2692",
+      "error": null
+    },
+    {
+      "id": "sfx-drop",
+      "model": "fal-ai/elevenlabs/sound-effects/v2",
+      "kind": "sfx",
+      "cost": 0.01,
+      "out": "public/audio/sfx/drop.mp3",
+      "input": {
+        "text": "A soft card placing down on a felt surface, muted thud, short",
+        "duration_seconds": 0.6,
+        "prompt_influence": 0.6,
+        "output_format": "mp3_44100_192"
+      },
+      "status": "done",
+      "request_id": "01a11d59-5dd6-75a1-ac73-a69004448577",
+      "error": null
+    },
+    {
+      "id": "sfx-confirm",
+      "model": "fal-ai/elevenlabs/sound-effects/v2",
+      "kind": "sfx",
+      "cost": 0.01,
+      "out": "public/audio/sfx/confirm.mp3",
+      "input": {
+        "text": "A refined, calm two-note confirmation chime, warm and soft, rising, premium software sound, not cheerful",
+        "duration_seconds": 1.2,
+        "prompt_influence": 0.6,
+        "output_format": "mp3_44100_192"
+      },
+      "status": "done",
+      "request_id": "01a11d59-5f0e-7333-8889-d29f7e030b62",
+      "error": null
+    },
+    {
+      "id": "sfx-tick",
+      "model": "fal-ai/elevenlabs/sound-effects/v2",
+      "kind": "sfx",
+      "cost": 0.01,
+      "out": "public/audio/sfx/tick.mp3",
+      "input": {
+        "text": "A low, soft wooden tick for a checklist item being completed, very short and subtle",
+        "duration_seconds": 0.5,
+        "prompt_influence": 0.6,
+        "output_format": "mp3_44100_192"
+      },
+      "status": "done",
+      "request_id": "01a11d59-71e1-7ab1-9873-558099d4b94e",
+      "error": null
+    },
+    {
+      "id": "sfx-alert",
+      "model": "fal-ai/elevenlabs/sound-effects/v2",
+      "kind": "sfx",
+      "cost": 0.01,
+      "out": "public/audio/sfx/alert.mp3",
+      "input": {
+        "text": "A restrained, low two-note notification tone, calm and serious, soft attack, not alarming",
+        "duration_seconds": 1.2,
+        "prompt_influence": 0.6,
+        "output_format": "mp3_44100_192"
+      },
+      "status": "done",
+      "request_id": "01a11d59-71e3-7632-aed9-6432d6a0b9b4",
+      "error": null
+    },
+    {
+      "id": "sfx-whoosh",
+      "model": "fal-ai/elevenlabs/sound-effects/v2",
+      "kind": "sfx",
+      "cost": 0.01,
+      "out": "public/audio/sfx/whoosh.mp3",
+      "input": {
+        "text": "A soft airy whoosh for a chapter transition, smooth and quiet, cinematic, no harsh highs",
+        "duration_seconds": 1.5,
+        "prompt_influence": 0.6,
+        "output_format": "mp3_44100_192"
+      },
+      "status": "done",
+      "request_id": "01a11d59-7362-7bf2-b851-ca3c55dcd3e8",
+      "error": null
+    },
+    {
+      "id": "sfx-riser",
+      "model": "fal-ai/elevenlabs/sound-effects/v2",
+      "kind": "sfx",
+      "cost": 0.01,
+      "out": "public/audio/sfx/riser.mp3",
+      "input": {
+        "text": "A gentle soft cinematic riser that swells smoothly and ends cleanly, airy and restrained",
+        "duration_seconds": 2.5,
+        "prompt_influence": 0.6,
+        "output_format": "mp3_44100_192"
+      },
+      "status": "done",
+      "request_id": "01a11d59-7510-78a0-9ff2-1cab329bd950",
+      "error": null
+    },
+    {
+      "id": "sfx-impact",
+      "model": "fal-ai/elevenlabs/sound-effects/v2",
+      "kind": "sfx",
+      "cost": 0.01,
+      "out": "public/audio/sfx/impact.mp3",
+      "input": {
+        "text": "A deep soft sub-bass impact with a long gentle tail, cinematic logo hit, restrained",
+        "duration_seconds": 3.0,
+        "prompt_influence": 0.6,
+        "output_format": "mp3_44100_192"
+      },
+      "status": "done",
+      "request_id": "01a11d59-7561-7120-a1f7-cdac5e074ab3",
+      "error": null
+    },
+    {
+      "id": "sfx-keys",
+      "model": "fal-ai/elevenlabs/sound-effects/v2",
+      "kind": "sfx",
+      "cost": 0.01,
+      "out": "public/audio/sfx/keys.mp3",
+      "input": {
+        "text": "Three soft mechanical keyboard key presses, quiet and close, premium keyboard",
+        "duration_seconds": 1.0,
+        "prompt_influence": 0.6,
+        "output_format": "mp3_44100_192"
+      },
+      "status": "done",
+      "request_id": "01a11d59-760d-7b83-b751-753aac2780e4",
+      "error": null
+    },
+    {
+      "id": "sfx-typing",
+      "model": "fal-ai/elevenlabs/sound-effects/v2",
+      "kind": "sfx",
+      "cost": 0.01,
+      "out": "public/audio/sfx/typing.mp3",
+      "input": {
+        "text": "Short burst of quiet, soft typing on a premium laptop keyboard",
+        "duration_seconds": 1.6,
+        "prompt_influence": 0.6,
+        "output_format": "mp3_44100_192"
+      },
+      "status": "done",
+      "request_id": "01a11d59-7639-76c0-ad73-354c1eae3c00",
+      "error": null
+    },
+    {
+      "id": "sfx-shimmer",
+      "model": "fal-ai/elevenlabs/sound-effects/v2",
+      "kind": "sfx",
+      "cost": 0.01,
+      "out": "public/audio/sfx/shimmer.mp3",
+      "input": {
+        "text": "A delicate glassy shimmer as a text card appears, soft and short",
+        "duration_seconds": 1.0,
+        "prompt_influence": 0.6,
+        "output_format": "mp3_44100_192"
+      },
+      "status": "done",
+      "request_id": "01a11d59-86c2-77a3-9498-d6a153620f64",
+      "error": null
+    },
+    {
+      "id": "sfx-stamp",
+      "model": "fal-ai/elevenlabs/sound-effects/v2",
+      "kind": "sfx",
+      "cost": 0.01,
+      "out": "public/audio/sfx/stamp.mp3",
+      "input": {
+        "text": "A muted soft stamp sound on paper, low and dull, short",
+        "duration_seconds": 0.6,
+        "prompt_influence": 0.6,
+        "output_format": "mp3_44100_192"
+      },
+      "status": "done",
+      "request_id": "01a11d59-8943-7831-96a4-868ee91aff09",
+      "error": null
+    },
+    {
+      "id": "sfx-swipe",
+      "model": "fal-ai/elevenlabs/sound-effects/v2",
+      "kind": "sfx",
+      "cost": 0.01,
+      "out": "public/audio/sfx/swipe.mp3",
+      "input": {
+        "text": "A soft short swipe sound for a panel sliding, quiet",
+        "duration_seconds": 0.6,
+        "prompt_influence": 0.6,
+        "output_format": "mp3_44100_192"
+      },
+      "status": "done",
+      "request_id": "01a11d59-8a92-76e3-88dd-1f255b2086fe",
+      "error": null
+    },
+    {
+      "id": "sfx-room",
+      "model": "fal-ai/elevenlabs/sound-effects/v2",
+      "kind": "sfx",
+      "cost": 0.044,
+      "out": "public/audio/sfx/room.mp3",
+      "input": {
+        "text": "Very quiet, warm, neutral room tone ambience of a calm modern office at night, no voices, no events",
+        "duration_seconds": 22.0,
+        "prompt_influence": 0.6,
+        "output_format": "mp3_44100_192"
+      },
+      "status": "done",
+      "request_id": "01a11d59-8aa0-7472-a35f-e5e226cc6fb0",
+      "error": null
     }
   ]
 }

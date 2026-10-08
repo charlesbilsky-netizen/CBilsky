@@ -32,9 +32,9 @@ const Spark: React.FC<{ w?: number; h?: number; pts?: number[] }> = ({ w = 220, 
   );
 };
 
-export type DashProps = { tab?: number; highlightRow?: number | null; period?: 0 | 1; start?: number };
+export type DashProps = { tab?: number; highlightRow?: number | null; period?: 0 | 1; start?: number; glow?: Record<string, number>; top?: "search" | "theme" | "account" | "collapse" | null; dim?: number };
 
-export const Dashboard: React.FC<DashProps> = ({ tab = 2, highlightRow = null, period = 1, start = 0 }) => {
+export const Dashboard: React.FC<DashProps> = ({ tab = 2, highlightRow = null, period = 1, start = 0, glow, top = null, dim = 1 }) => {
   const f = useCurrentFrame() - start;
   const m = D.dashboard;
   const tiles = [
@@ -92,8 +92,8 @@ export const Dashboard: React.FC<DashProps> = ({ tab = 2, highlightRow = null, p
   }
   const p0 = prog(f, 0, 14);
   return (
-    <AppShell page="Dashboard" title="Dashboard">
-      <div style={{ fontFamily, display: "flex", flexDirection: "column", gap: 20, height: "100%" }}>
+    <AppShell page="Dashboard" title="Dashboard" groupGlow={glow} highlightTop={top}>
+      <div style={{ fontFamily, display: "flex", flexDirection: "column", gap: 20, height: "100%", opacity: dim }}>
         <div style={{ display: "flex", alignItems: "baseline", gap: 16, ...reveal(p0) }}>
           <div style={{ fontSize: 30, fontWeight: 600, color: C.off }}>Good morning, Alex</div>
           <div style={{ fontSize: 17, color: C.muted }}>{D.rm.role} · {D.rm.region} · {D.rm.dataset}</div>

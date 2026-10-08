@@ -77,7 +77,7 @@ const Capture: React.FC<{ typed?: string; caret?: boolean; dest?: string }> = ({
 );
 
 // S07 / S08 · Inbox with reading pane; optional capture typing.
-export const TasksInbox: React.FC<{ typed?: string; selected?: number; triaged?: number; start?: number }> = ({ typed, selected = 0, triaged = 0, start = 0 }) => {
+export const TasksInbox: React.FC<{ typed?: string; selected?: number; triaged?: number; gone?: number | null; start?: number }> = ({ typed, selected = 0, triaged = 0, gone = null, start = 0 }) => {
   const f = useCurrentFrame() - start;
   const inbox = [
     D.tasks[2],
@@ -100,7 +100,7 @@ export const TasksInbox: React.FC<{ typed?: string; selected?: number; triaged?:
                 age={i === 1 ? "starred" : "1d ago"}
                 chips
                 selected={i === selected}
-                style={{ ...reveal(stagger(f, i, 4, 3)), opacity: i < triaged ? 0.25 : stagger(f, i, 4, 3) }}
+                style={{ ...reveal(stagger(f, i, 4, 3)), opacity: i < triaged || i === gone ? 0.25 : stagger(f, i, 4, 3) }}
               />
             ))}
             <div style={{ marginTop: "auto" }}>

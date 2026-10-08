@@ -6,6 +6,10 @@ import { TrainingBadge } from "./ui/TrainingBadge";
 import { Dashboard } from "./screens/Dashboard";
 import { TitleCard } from "./ui/TitleCard";
 import { Gallery, GALLERY } from "./Gallery";
+import { Film } from "./film/Film";
+import { TL } from "./film/tl";
+import { Samples } from "./Samples";
+import samples from "./generated/samples.json";
 
 const DashTest: React.FC = () => (
   <AbsoluteFill>
@@ -19,6 +23,8 @@ const DashTest: React.FC = () => (
 
 export const Root: React.FC = () => (
   <>
+    <Composition id="Samples" component={Samples} durationInFrames={samples.length} fps={FPS} width={W} height={H} />
+    <Composition id="Film" component={Film} durationInFrames={TL.total} fps={FPS} width={W} height={H} />
     <Composition id="Gallery" component={Gallery} durationInFrames={GALLERY.length} fps={FPS} width={W} height={H} />
     <Composition id="DashTest" component={DashTest} durationInFrames={150} fps={FPS} width={W} height={H} />
     <Composition

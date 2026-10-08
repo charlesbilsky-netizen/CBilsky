@@ -1,16 +1,17 @@
 import React from "react";
-import { AbsoluteFill, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
-import { Video } from "@remotion/media";
+import { AbsoluteFill, Loop, OffthreadVideo, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { C, fontFamily } from "../theme";
 import { prog } from "./anim";
 
 // Chapter title over its fal plate: number in green, title, a single rule
 // drawing across. The plate is graded down to the film's green-on-black.
-export const Plate: React.FC<{ src?: string; dim?: number; scaleFrom?: number; scaleTo?: number }> = ({
+export const Plate: React.FC<{ src?: string; dim?: number; scaleFrom?: number; scaleTo?: number; rate?: number; blur?: number }> = ({
   src,
   dim = 0.45,
   scaleFrom = 1.04,
   scaleTo = 1.1,
+  rate = 0.8,
+  blur = 0,
 }) => {
   const f = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
@@ -18,8 +19,10 @@ export const Plate: React.FC<{ src?: string; dim?: number; scaleFrom?: number; s
   return (
     <AbsoluteFill style={{ background: C.ground, overflow: "hidden" }}>
       {src ? (
-        <AbsoluteFill style={{ transform: `scale(${sc})`, filter: "saturate(0.85) contrast(1.12) brightness(0.8)" }}>
-          <Video src={staticFile(src)} muted loop objectFit="cover" />
+        <AbsoluteFill style={{ transform: `scale(${sc})`, filter: `saturate(0.85) contrast(1.12) brightness(0.8)${blur ? ` blur(${blur}px)` : ""}` }}>
+          <Loop durationInFrames={Math.floor((9.6 / rate) * 30)} layout="none">
+            <OffthreadVideo src={staticFile(src)} muted playbackRate={rate} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+          </Loop>
         </AbsoluteFill>
       ) : null}
       {/* Grade: crush the greys toward the film's ground, keep highlights luminous. */}

@@ -44,8 +44,18 @@ export const Stage: React.FC<{ cam?: Cam; children: React.ReactNode; overlay?: R
   const { durationInFrames } = useVideoConfig();
   const s = BASE_SCALE * cam.zoom;
   const drift = Math.sin((f / Math.max(durationInFrames, 1)) * Math.PI) * 6;
-  const tx = W / 2 - s * cam.cx;
-  const ty = H / 2 - s * cam.cy + drift * 0.4;
+  // Keep framing composed: when pushed in, the screen's edge never enters the
+  // frame; when wider than the frame allows, it stays centred.
+  const fit = (c: number, half: number, size: number) => {
+    const m = s >= 1 ? 14 / s : 0;
+    const a = half / s + m;
+    const b = size - half / s - m;
+    return a <= b ? Math.min(b, Math.max(a, c)) : Math.min(a, Math.max(b, c));
+  };
+  const cx = fit(cam.cx, W / 2, W);
+  const cy = fit(cam.cy, H / 2, H);
+  const tx = W / 2 - s * cx;
+  const ty = H / 2 - s * cy + drift * 0.4;
   return (
     <AbsoluteFill style={{ perspective: 2400 }}>
       <div

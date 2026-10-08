@@ -1,6 +1,6 @@
 import React from "react";
 import { AbsoluteFill, useCurrentFrame } from "remotion";
-import { AppShell } from "../ui/AppShell";
+import { Dashboard } from "./Dashboard";
 import { Avatar, Button, Label, Panel } from "../ui/primitives";
 import { C, fontFamily } from "../theme";
 import { D } from "../data";
@@ -44,11 +44,5 @@ export const SignIn: React.FC<{ press?: number }> = ({ press = 0 }) => {
 
 // S02 · Shell tour: the four menu groups light up in turn, then the top controls.
 export const NavTour: React.FC<{ glow: Record<string, number>; top?: "search" | "theme" | "account" | "collapse" | null }> = ({ glow, top = null }) => (
-  <AppShell page="Dashboard" title="Dashboard" groupGlow={glow} highlightTop={top}>
-    <div style={{ display: "flex", flexDirection: "column", gap: 20, opacity: 0.35 }}>
-      {[0, 1, 2].map((i) => (
-        <Panel key={i} style={{ height: i === 2 ? 420 : 150 }} />
-      ))}
-    </div>
-  </AppShell>
+  <Dashboard start={-240} glow={glow} top={top} dim={0.32} />
 );

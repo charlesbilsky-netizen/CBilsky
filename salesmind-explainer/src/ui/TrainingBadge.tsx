@@ -3,11 +3,12 @@ import { C, fontFamily } from "../theme";
 
 // The training label. Rendered on the composition's top layer, outside every
 // transition, so no fade or wipe can hide it while a product-like screen is up.
-export const TrainingBadge: React.FC<{ variant?: "training" | "simulated" }> = ({ variant = "training" }) => (
+export const TrainingBadge: React.FC<{ variant?: "training" | "simulated"; top?: number; opacity?: number; glow?: number }> = ({ variant = "training", top = 44, opacity = 1, glow = 0 }) => (
   <div
     style={{
       position: "absolute",
-      top: 44,
+      top,
+      opacity,
       right: 56,
       display: "flex",
       alignItems: "center",
@@ -16,7 +17,7 @@ export const TrainingBadge: React.FC<{ variant?: "training" | "simulated" }> = (
       borderRadius: 999,
       background: "rgba(15,20,21,0.92)",
       border: `1.5px solid ${C.bright}`,
-      boxShadow: "0 6px 24px rgba(0,0,0,0.45)",
+      boxShadow: `0 6px 24px rgba(0,0,0,0.45), 0 0 ${28 * glow}px rgba(38,191,107,${0.55 * glow})`,
       fontFamily,
       fontWeight: 600,
       fontSize: 15,
