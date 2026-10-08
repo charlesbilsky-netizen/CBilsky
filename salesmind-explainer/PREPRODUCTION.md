@@ -17,8 +17,9 @@ Contents:
 5. Privacy threat model
 6. Source conflict log
 7. Production architecture
-8. Estimated fal cost
-9. Decisions I need from you
+8. Estimated fal cost (revised for the studio layer)
+9. Studio production layer
+10. Decisions I need from you
 
 ---
 
@@ -453,27 +454,151 @@ salesmind-explainer/
 
 ---
 
-## 8 · Estimated fal cost
+## 8 · Estimated fal cost (revised for the studio layer)
 
-At fal's listed prices, checked today. These are estimates until your fal dashboard shows the real charges.
+At fal's listed prices, checked 8 Oct. These are estimates until your fal dashboard shows the real charges.
 
 | Item | Quantity | Price | Estimate |
 |---|---|---|---|
-| Test inserts | 2 × 5 s on O3 Pro + 2 × 5 s on O3 Standard | $0.112 / $0.084 per s | $0.98 |
-| Inserts | 16 × 5 s on O3 Pro | $0.112 per s | $8.96 |
-| Insert redos (allow 40%) | about 6 × 5 s | $0.112 per s | $3.36 |
-| Narration | about 2,300 words, about 14,000 characters | $0.10 per 1,000 | $1.40 |
-| Narration redos (allow 50%) | | | $0.70 |
-| **Total** | | | **about $15.40** |
+| Insert tests | 2 shots on O3 Pro + 2 on O3 Standard, 5 s each | $0.112 / $0.084 per s | $0.98 |
+| Inserts | 20 × 5 s on O3 Pro (16 chapter shots + 4 parallax and macro plates) | $0.112 per s | $11.20 |
+| Insert redos (allow 40%) | about 8 × 5 s | $0.112 per s | $4.48 |
+| Voice casting | 3 voices × a 40-second excerpt | $0.10 per 1,000 characters | $0.15 |
+| Narration | about 2,000 words for a 12–13 minute cut, about 12,000 characters, plus 50% for redos | $0.10 per 1,000 | $1.80 |
+| Music tests | one 60 s cue on ElevenLabs Music, one on Stable Audio 2.5 | $0.60 per min / $0.20 per track | $0.80 |
+| Music score | 5 cues totalling about 13 min (ElevenLabs Music; about $1 on Stable Audio 2.5) | $0.60 per min | $7.80 |
+| Sound effects | about 25 short UI and transition sounds, about 2 s each, plus redos | $0.002 per s | $0.20 |
+| **Total** | | | **about $27** |
 
-If the test shows O3 Standard holds up, the inserts drop to about $6.70 and the total to about $12. I'd set a cap of **$20**.
+Using Stable Audio for the score, or O3 Standard for the inserts if the test holds up, brings it to about $20. I'd set a cap of **$30**.
 
 ---
 
-## 9 · Decisions I need from you
+## 9 · Studio production layer
 
-1. **Budget.** Approve a fal cap of $20 for this film.
-2. **Polish phone format.** `+48 22 555 0101` is not a reserved fictional range, and it could be a real Warsaw number. I've left it out and use only the US 555-01xx and UK 7946 0xxx ranges. Keep it out?
-3. **Alex Morgan.** It's also the name of a well-known US footballer. As the on-screen RM, with the training badge always visible, it reads as a placeholder. Keep it, or swap to a less famous name?
-4. **Atlas Quant Partners and Horizon Asset Practice.** These could match real firms. They always carry the DEMO tag and an example.com domain. Keep them as they are?
-5. **Delivery.** The film comes as one file per chapter plus the two cuts, because of the chat size limit. OK?
+This layer covers craft only. Every privacy, synthetic-data, label and anti-capture rule above still applies and wins any conflict.
+
+### 9.1 Design system
+
+| Token | Value | Use |
+|---|---|---|
+| Ground | `#010E07` near-black, deep green gradient to `#004D24` | All abstract frames and the space around screens |
+| Brand green | `#007F39`, highlight `#26BF6B` used sparingly | One emphasised word or element per frame |
+| Charcoal panel | `#222A2C` | Screen chrome, cards |
+| Off-white | `#F2F4F1` | Body text on dark, light UI surfaces |
+| Critical accent | soft gold `#D9B26A` | Critical-alert emphasis in motion graphics only |
+| Suggested | violet | Kept on screens, because the source says suggestions show violet |
+| Task spines | slate · amber · rose · red | Kept as the source documents them |
+| Type | Inter (open licence), four sizes: 64 / 40 / 24 / 16 px at 1080p; tabular figures in tables | Every screen and title |
+| Radius, spacing, shadow | 12 px cards, 8 px controls; 8-point spacing grid; one soft shadow level | Every synthetic screen |
+
+The brand hex values come from the source guide's measurement of the July 2026 deck. No logo file is used.
+
+**Training label.**
+- A fixed pill, top right, inside the 16:9 title-safe area: "TRAINING ENVIRONMENT · SYNTHETIC DATA · NOT A LIVE ACCOUNT" in Inter Semibold, off-white on charcoal with a hairline green border.
+- Same size, place and contrast in every shot. It's part of the frame design, not a sticker.
+- It sits on the top layer, so no transition can cover it.
+
+### 9.2 Screen presentation
+
+- Screens are never full-bleed. Each sits on the green ground at about 82% scale, with soft perspective, a gentle 1–2% drift, shallow depth of field on the ground and a faint volumetric glow behind.
+- Reveals are staggered:
+  - cards and rows: 40 ms apart
+  - filters and chips: 60 ms apart
+  - easing: cubic in-out
+  - micro-interactions: 180–240 ms
+- Hover, press and toggle states are animated on every control that's clicked.
+- Call-outs use a thin animated leader line, a numbered marker and a soft highlight on the target. No default tooltips.
+- Holds: every key screen state stays on screen 1.5–2.5 s before the next change.
+
+### 9.3 Chapter titles and transitions
+
+- Each chapter opens on a 3–4 s title card: chapter number in green, title in Inter Display, a single thin rule drawing across. Under it, the matching fal plate with parallax.
+- No stock wipes. Transitions are:
+  - a light sweep across the ground
+  - a slow cross-dissolve between plates
+  - a push from a screen into the next title
+- Every chapter ends on a resolution beat: an alert clears, a next action is accepted, the day is planned or a checklist line ticks.
+
+### 9.4 Peak moments
+
+These four get extra visual and sonic weight. Each gets a slower hold, a push-in on the screen, a dedicated sound cue and a one-line principle on screen.
+
+1. **Prioritisation.** The Open deals order: critical alerts → overdue next actions → no next action → past the stage's time limit → blocked → other alerts.
+2. **Accepting the next action.** Violet Suggested becomes your task.
+3. **Check ownership.** Five verdicts, with Restricted landing as "Do not approach".
+4. **End of day.** The checklist completes, and "Your book is under control when the next action is clear."
+
+### 9.5 fal inserts, elevated brief
+
+The prompts in section 4 gain this direction:
+- scale and quiet power
+- controlled light and refined geometry
+- a sense of order being restored
+- slow push-ins, lateral tracks or gentle orbits
+- shallow depth of field and soft volumetric light
+- desaturated green in shadows, luminous in highlights
+
+Four extra plates:
+- a macro of a single abstract signal card
+- a parallax field of data paths for title backgrounds
+- a slow orbit of the icosahedron for the open and close
+- a "settled order" plate for resolution beats
+
+Any shot that reads as stock footage, tech-background cliché or noise fails QC alongside the text check.
+
+### 9.6 Sound
+
+**Score:**
+- Five original cues generated on fal: cold open, workspace, pipeline, discipline, close.
+- Sparse modern electronic with soft acoustic texture (felt piano, muted strings), instrumental only.
+- Each cue is generated to its chapter's length so nothing loops audibly. Cues crossfade under titles.
+
+**UI sounds:** about 25, generated on fal:
+- soft click
+- toggle
+- chip select
+- card drop
+- confirmation
+- low tick for checklist lines
+- restrained two-note cue for alerts
+- soft riser and air whoosh, for chapter titles only
+
+**Bed:** a quiet ambient bed runs under all narration.
+
+**Mix:**
+- Voice-forward. Music ducks 8–10 dB under speech, with a gentle EQ dip around 2–4 kHz under the voice.
+- Final loudness −16 LUFS integrated, −1 dBTP, for laptop and intranet playback. A −23 LUFS (EBU R128) version is available if it will be shown through a broadcast chain.
+
+### 9.7 Narration
+
+- **Voice:** calm, measured, slightly low register, a senior operator talking to peers. I'll cast three ElevenLabs voices on the same 40-second excerpt and send you the three files to pick from.
+- **Writing:** short declarative sentences, no filler, no questions to the viewer, written-in pauses (a full stop is a beat; a new paragraph is a breath).
+- **Reassurance line:** "The screen you are seeing is a synthetic training environment. No live client data is used."
+  - Said in full at six points: the first screen (chapter 3), the training deal (8), ownership (10), Sales Plan (13), the calendar (14) and the close (16).
+  - Everywhere else, the always-visible label carries it.
+  - Said on every screen, it would come round about once a minute and start to sound apologetic. Decision 7 covers this.
+- **Runtime:** aiming for the tighter end, about 12–13 minutes, with longer holds instead of more content.
+
+### 9.8 Production order (unchanged gates)
+
+1. Decisions in section 10.
+2. Build the design system and synthetic screens.
+3. Run the privacy lint.
+4. Voice casting, two insert tests and two music tests. About $2.
+5. You pick the voice, the insert model and the music engine.
+6. Full narration, inserts, score and sound effects.
+7. Rough cut, then the privacy QA gate, then the final mix and export.
+8. Subtitles, trailer, 90-second cut, thumbnail, end card and the reports.
+
+---
+
+## 10 · Decisions I need from you
+
+1. **Budget.** Approve a fal cap of $30. Estimate about $27, about $20 with the cheaper engines.
+2. **Polish phone format.** `+48 22 555 0101` is not a reserved fictional range, and it could be a real Warsaw number. I use only the US 555-01xx and UK 7946 0xxx ranges. Keep it out?
+3. **Alex Morgan.** It's also the name of a well-known US footballer. Keep it as the on-screen RM, or swap?
+4. **Atlas Quant Partners and Horizon Asset Practice.** These may match real firms. They always carry the DEMO tag and an example.com domain. Keep them?
+5. **Delivery.** One file per chapter plus the two cuts, because of the chat size limit. OK?
+6. **Alert accent.** Soft gold marks critical alerts in the motion graphics only. Product screens keep the colours the source documents (violet suggestions, task priority spines). OK?
+7. **Reassurance line.** Say it in full at the six points in 9.7, with the label always on screen? Or on every synthetic screen, as the brief literally says?
