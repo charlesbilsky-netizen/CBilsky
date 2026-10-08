@@ -4,3 +4,4 @@ public/fal
 public/voice
 .env
 __pycache__/
+public/tests

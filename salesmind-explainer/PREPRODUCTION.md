@@ -593,12 +593,22 @@ Any shot that reads as stock footage, tech-background cliché or noise fails QC 
 
 ---
 
-## 10 · Decisions I need from you
+## 10 · Decisions
 
-1. **Budget.** Approve a fal cap of $30. Estimate about $27, about $20 with the cheaper engines.
-2. **Polish phone format.** `+48 22 555 0101` is not a reserved fictional range, and it could be a real Warsaw number. I use only the US 555-01xx and UK 7946 0xxx ranges. Keep it out?
-3. **Alex Morgan.** It's also the name of a well-known US footballer. Keep it as the on-screen RM, or swap?
-4. **Atlas Quant Partners and Horizon Asset Practice.** These may match real firms. They always carry the DEMO tag and an example.com domain. Keep them?
-5. **Delivery.** One file per chapter plus the two cuts, because of the chat size limit. OK?
-6. **Alert accent.** Soft gold marks critical alerts in the motion graphics only. Product screens keep the colours the source documents (violet suggestions, task priority spines). OK?
-7. **Reassurance line.** Say it in full at the six points in 9.7, with the label always on screen? Or on every synthetic screen, as the brief literally says?
+Answered 8 Oct:
+
+1. **Budget:** fal cap **$20**, approved before the studio layer. The studio layer fits under it by using Stable Audio 2.5 for the score (about $1 instead of about $7.80) and Kling O3 Standard for the inserts if the test holds up. If it can't fit, I stop and ask.
+2. **Polish phone format:** kept out. Only the US 555-01xx and UK 7946 0xxx ranges.
+3. **Alex Morgan:** kept.
+4. **Atlas Quant Partners and Horizon Asset Practice:** kept, always with the DEMO tag and an example.com domain.
+5. **Delivery:** you asked for my advice; I recommend one file per chapter plus the trailer and the 90-second cut.
+   - In this chat a 24 MB file went through and a 44 MB one didn't.
+   - A 12–13 minute 1080p film with legible UI text runs about 150–250 MB.
+   - One file under the limit would blur the on-screen text.
+   - Chapter files also suit onboarding, because an RM can rewatch a single topic.
+   - The full master stays in `out/`.
+
+Proceeding on the recommended defaults unless overruled:
+
+6. **Alert accent:** soft gold for critical-alert emphasis in motion graphics only; product screens keep the documented colours.
+7. **Reassurance line:** spoken in full at the six points in 9.7; the training label is always on screen.

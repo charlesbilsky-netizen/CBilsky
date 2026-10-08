@@ -1,0 +1,2189 @@
+{
+  "cap_usd": 20.0,
+  "jobs": [
+    {
+      "id": "test-voice-george",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.044,
+      "out": "public/tests/voice_george.mp3",
+      "input": {
+        "text": "Start here. This is the control surface. The screen you are seeing is a synthetic training environment. No live client data is used. Every morning, the Dashboard tells you what moves first. Open deals are already sorted for you. Critical alerts. Then overdue next actions. Then deals with no next action at all. Past the stage's time limit. Blocked. Everything else. Work from the top. And do not leave an important deal without a next move.",
+        "voice": "George",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95
+      },
+      "status": "done",
+      "request_id": "01a11d31-4504-7f91-a656-6385ad856060",
+      "error": null
+    },
+    {
+      "id": "test-voice-daniel",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.044,
+      "out": "public/tests/voice_daniel.mp3",
+      "input": {
+        "text": "Start here. This is the control surface. The screen you are seeing is a synthetic training environment. No live client data is used. Every morning, the Dashboard tells you what moves first. Open deals are already sorted for you. Critical alerts. Then overdue next actions. Then deals with no next action at all. Past the stage's time limit. Blocked. Everything else. Work from the top. And do not leave an important deal without a next move.",
+        "voice": "Daniel",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95
+      },
+      "status": "done",
+      "request_id": "01a11d31-45e8-7653-89ed-188d4e182ff2",
+      "error": null
+    },
+    {
+      "id": "test-voice-brian",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.044,
+      "out": "public/tests/voice_brian.mp3",
+      "input": {
+        "text": "Start here. This is the control surface. The screen you are seeing is a synthetic training environment. No live client data is used. Every morning, the Dashboard tells you what moves first. Open deals are already sorted for you. Critical alerts. Then overdue next actions. Then deals with no next action at all. Past the stage's time limit. Blocked. Everything else. Work from the top. And do not leave an important deal without a next move.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95
+      },
+      "status": "done",
+      "request_id": "01a11d31-46c9-7831-bbde-6594a20ff069",
+      "error": null
+    },
+    {
+      "id": "test-f01-pro",
+      "model": "fal-ai/kling-video/o3/pro/text-to-video",
+      "kind": "insert",
+      "cost": 0.56,
+      "out": "public/tests/f01_pro.mp4",
+      "input": {
+        "prompt": "Slow push in through a near-black void toward a thin-line glowing green icosahedron suspended in space. Six small points of light on its vertices pulse softly one after another, as if signals are being weighed and ordered. Premium brand film. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean geometry, calm and precise, a sense of order. No text, no letters, no numbers, no logos, no user interface, no screens, no people, no faces, no watermark.",
+        "aspect_ratio": "16:9",
+        "duration": "5",
+        "generate_audio": false
+      },
+      "status": "done",
+      "request_id": "01a11d31-45c2-78e3-b5d9-86c5924e695f",
+      "error": null
+    },
+    {
+      "id": "test-f01-standard",
+      "model": "fal-ai/kling-video/o3/standard/text-to-video",
+      "kind": "insert",
+      "cost": 0.42,
+      "out": "public/tests/f01_standard.mp4",
+      "input": {
+        "prompt": "Slow push in through a near-black void toward a thin-line glowing green icosahedron suspended in space. Six small points of light on its vertices pulse softly one after another, as if signals are being weighed and ordered. Premium brand film. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean geometry, calm and precise, a sense of order. No text, no letters, no numbers, no logos, no user interface, no screens, no people, no faces, no watermark.",
+        "aspect_ratio": "16:9",
+        "duration": "5",
+        "generate_audio": false
+      },
+      "status": "done",
+      "request_id": "01a11d31-45ed-7b23-b563-25e26791e428",
+      "error": null
+    },
+    {
+      "id": "test-f06-pro",
+      "model": "fal-ai/kling-video/o3/pro/text-to-video",
+      "kind": "insert",
+      "cost": 0.56,
+      "out": "public/tests/f06_pro.mp4",
+      "input": {
+        "prompt": "Slow lateral tracking shot along a calm river of fine green light particles flowing through a series of luminous rectangular gates, each gate glowing a little brighter as the flow passes, orderly and unhurried. Premium brand film. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean geometry, calm and precise, a sense of order. No text, no letters, no numbers, no logos, no user interface, no screens, no people, no faces, no watermark.",
+        "aspect_ratio": "16:9",
+        "duration": "5",
+        "generate_audio": false
+      },
+      "status": "done",
+      "request_id": "01a11d31-45fe-7702-ae61-f529105d6e97",
+      "error": null
+    },
+    {
+      "id": "test-f06-standard",
+      "model": "fal-ai/kling-video/o3/standard/text-to-video",
+      "kind": "insert",
+      "cost": 0.42,
+      "out": "public/tests/f06_standard.mp4",
+      "input": {
+        "prompt": "Slow lateral tracking shot along a calm river of fine green light particles flowing through a series of luminous rectangular gates, each gate glowing a little brighter as the flow passes, orderly and unhurried. Premium brand film. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean geometry, calm and precise, a sense of order. No text, no letters, no numbers, no logos, no user interface, no screens, no people, no faces, no watermark.",
+        "aspect_ratio": "16:9",
+        "duration": "5",
+        "generate_audio": false
+      },
+      "status": "done",
+      "request_id": "01a11d31-45b3-7923-ac06-ffeae5652096",
+      "error": null
+    },
+    {
+      "id": "test-music-elevenlabs",
+      "model": "fal-ai/elevenlabs/music",
+      "kind": "music",
+      "cost": 0.6,
+      "out": "public/tests/music_elevenlabs.mp3",
+      "input": {
+        "prompt": "Restrained modern cinematic underscore for a premium enterprise product film. Sparse soft electronic pulses, warm analog pads, a few felt piano notes, muted strings far in the background. Slow, around 80 BPM, calm, confident, intelligent. No drums, no build-ups, no vocals, no hype. Spacious, leaving room for a narrator.",
+        "force_instrumental": true,
+        "music_length_ms": 60000,
+        "output_format": "mp3_44100_192"
+      },
+      "status": "done",
+      "request_id": "01a11d31-4595-78f1-be5d-d81bf448acf7",
+      "error": null
+    },
+    {
+      "id": "test-music-stableaudio",
+      "model": "fal-ai/stable-audio-25/text-to-audio",
+      "kind": "music",
+      "cost": 0.2,
+      "out": "public/tests/music_stableaudio.wav",
+      "input": {
+        "prompt": "Restrained modern cinematic underscore for a premium enterprise product film. Sparse soft electronic pulses, warm analog pads, a few felt piano notes, muted strings far in the background. Slow, around 80 BPM, calm, confident, intelligent. No drums, no build-ups, no vocals, no hype. Spacious, leaving room for a narrator.",
+        "seconds_total": 60
+      },
+      "status": "done",
+      "request_id": "01a11d31-45ab-7620-83a8-87b22061952a",
+      "error": null
+    },
+    {
+      "id": "test-music-electronic-1",
+      "model": "fal-ai/stable-audio-25/text-to-audio",
+      "kind": "music",
+      "cost": 0.2,
+      "out": "public/tests/music_C_electronic.wav",
+      "input": {
+        "prompt": "Minimal modern electronic score for a premium product film. Warm analog synth arpeggio, deep soft sub-bass pulse, crisp but quiet electronic percussion, glassy pads, steady 100 BPM, confident and precise, clean mix, instrumental, no vocals, leaves room for a narrator.",
+        "seconds_total": 60
+      },
+      "status": "done",
+      "request_id": "01a11d3b-c2b9-7070-9b56-fd04e113d94b",
+      "error": null
+    },
+    {
+      "id": "test-music-electronic-2",
+      "model": "fal-ai/stable-audio-25/text-to-audio",
+      "kind": "music",
+      "cost": 0.2,
+      "out": "public/tests/music_D_electronic.wav",
+      "input": {
+        "prompt": "Atmospheric electronic underscore. Pulsing modular synth sequence, evolving ambient textures, subtle side-chained pads, light minimal techno hi-hats far in the background, 110 BPM, cool, focused, sophisticated, instrumental, no vocals, leaves room for a narrator.",
+        "seconds_total": 60
+      },
+      "status": "done",
+      "request_id": "01a11d3b-c2d2-7642-bfcc-3b3faebcce18",
+      "error": null
+    },
+    {
+      "id": "vo-c01p00",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0047,
+      "out": "public/voice/c01p00.mp3",
+      "input": {
+        "text": "Every RM starts the day with competing signals.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "next_text": "A first contact coming due. A next action already overdue. A follow-up to send. A deal with no next step at all. An internal request still open. And a calendar with less room than it looks."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-66d8-77a1-be87-a9d41aad4461",
+      "error": null
+    },
+    {
+      "id": "vo-c01p01",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0189,
+      "out": "public/voice/c01p01.mp3",
+      "input": {
+        "text": "A first contact coming due. A next action already overdue. A follow-up to send. A deal with no next step at all. An internal request still open. And a calendar with less room than it looks.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Every RM starts the day with competing signals.",
+        "next_text": "Every RM starts with competing signals. The work is knowing what moves first."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-6655-7e51-abfb-c6c6e6374630",
+      "error": null
+    },
+    {
+      "id": "vo-c01p02",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0077,
+      "out": "public/voice/c01p02.mp3",
+      "input": {
+        "text": "Every RM starts with competing signals. The work is knowing what moves first.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "A first contact coming due. A next action already overdue. A follow-up to send. A deal with no next step at all. An internal request still open. And a calendar with less room than it looks."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-66a2-72a0-a5dd-4bde87532749",
+      "error": null
+    },
+    {
+      "id": "vo-c02p00",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0088,
+      "out": "public/voice/c02p00.mp3",
+      "input": {
+        "text": "SalesMind is EXANTE's RM workspace. One place for your book, your pipeline and your day.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "next_text": "Your deals. Your tasks. What your clients did. How you are performing. Your sales plan. Your requests to internal teams. The guidebook. The sales materials. And, once you connect it, your calendar beside your tasks."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-6676-7b53-bacf-cca2c37b42fe",
+      "error": null
+    },
+    {
+      "id": "vo-c02p01",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0215,
+      "out": "public/voice/c02p01.mp3",
+      "input": {
+        "text": "Your deals. Your tasks. What your clients did. How you are performing. Your sales plan. Your requests to internal teams. The guidebook. The sales materials. And, once you connect it, your calendar beside your tasks.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "SalesMind is EXANTE's RM workspace. One place for your book, your pipeline and your day.",
+        "next_text": "It reads from the CRM and writes back to it. So treat every click as real. Qualification you fill in, and loss reasons you choose, land in the CRM."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-6648-79f0-9e0b-d44516d6a0aa",
+      "error": null
+    },
+    {
+      "id": "vo-c02p02",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0147,
+      "out": "public/voice/c02p02.mp3",
+      "input": {
+        "text": "It reads from the CRM and writes back to it. So treat every click as real. Qualification you fill in, and loss reasons you choose, land in the CRM.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Your deals. Your tasks. What your clients did. How you are performing. Your sales plan. Your requests to internal teams. The guidebook. The sales materials. And, once you connect it, your calendar beside your tasks."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-6658-7480-92a4-f7aec3c7694f",
+      "error": null
+    },
+    {
+      "id": "vo-c03p00",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0091,
+      "out": "public/voice/c03p00.mp3",
+      "input": {
+        "text": "The screen you are seeing is a synthetic training environment. No live client data is used.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "next_text": "You sign in, and your workspace opens on the left-hand menu. It has four groups."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-6670-74a2-a9bb-611b7e653cec",
+      "error": null
+    },
+    {
+      "id": "vo-c03p01",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.008,
+      "out": "public/voice/c03p01.mp3",
+      "input": {
+        "text": "You sign in, and your workspace opens on the left-hand menu. It has four groups.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "The screen you are seeing is a synthetic training environment. No live client data is used.",
+        "next_text": "Workspace holds the Dashboard, Task management and Internal requests."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-6651-7f22-9c02-4b7f35e632e0",
+      "error": null
+    },
+    {
+      "id": "vo-c03p02",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0069,
+      "out": "public/voice/c03p02.mp3",
+      "input": {
+        "text": "Workspace holds the Dashboard, Task management and Internal requests.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "You sign in, and your workspace opens on the left-hand menu. It has four groups.",
+        "next_text": "Book holds Pipeline, Clients and Activity."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-6661-7511-bb75-342633b4baaf",
+      "error": null
+    },
+    {
+      "id": "vo-c03p03",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0042,
+      "out": "public/voice/c03p03.mp3",
+      "input": {
+        "text": "Book holds Pipeline, Clients and Activity.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Workspace holds the Dashboard, Task management and Internal requests.",
+        "next_text": "Results holds Performance and Bonus."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-664a-7c02-8abf-ec043d7640a9",
+      "error": null
+    },
+    {
+      "id": "vo-c03p04",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0036,
+      "out": "public/voice/c03p04.mp3",
+      "input": {
+        "text": "Results holds Performance and Bonus.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Book holds Pipeline, Clients and Activity.",
+        "next_text": "Support holds the Guidebook, Sales materials and the Changelog."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-6637-7640-a0b9-895a5ff4adb5",
+      "error": null
+    },
+    {
+      "id": "vo-c03p05",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0063,
+      "out": "public/voice/c03p05.mp3",
+      "input": {
+        "text": "Support holds the Guidebook, Sales materials and the Changelog.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Results holds Performance and Bonus.",
+        "next_text": "Across the top: Search, for pages and clients. Change theme. And your account menu. The menu collapses at its foot when you need the room."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-6775-7dd0-ae97-bf61a477b069",
+      "error": null
+    },
+    {
+      "id": "vo-c03p06",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0138,
+      "out": "public/voice/c03p06.mp3",
+      "input": {
+        "text": "Across the top: Search, for pages and clients. Change theme. And your account menu. The menu collapses at its foot when you need the room.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Support holds the Guidebook, Sales materials and the Changelog.",
+        "next_text": "Eleven pages. Most days, you work in a handful of them."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-7f8d-7f60-82bf-4665eff6336d",
+      "error": null
+    },
+    {
+      "id": "vo-c03p07",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0055,
+      "out": "public/voice/c03p07.mp3",
+      "input": {
+        "text": "Eleven pages. Most days, you work in a handful of them.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Across the top: Search, for pages and clients. Change theme. And your account menu. The menu collapses at its foot when you need the room."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-8054-7002-a37b-f5a52d901f6f",
+      "error": null
+    },
+    {
+      "id": "vo-c04p00",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.004,
+      "out": "public/voice/c04p00.mp3",
+      "input": {
+        "text": "Start here. This is the control surface.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "next_text": "Across the top, your active milestone: liquid NAV against the target, what remains, and the date it is checked. Beside it, net new money for the year against your goal. Then three tiles. My clients. Total NAV. Open deal value. Click Open deal value and you are in the Pipeline."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-8060-7023-b450-d2002c190331",
+      "error": null
+    },
+    {
+      "id": "vo-c04p01",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0277,
+      "out": "public/voice/c04p01.mp3",
+      "input": {
+        "text": "Across the top, your active milestone: liquid NAV against the target, what remains, and the date it is checked. Beside it, net new money for the year against your goal. Then three tiles. My clients. Total NAV. Open deal value. Click Open deal value and you are in the Pipeline.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Start here. This is the control surface.",
+        "next_text": "Below sits the list that runs your morning. Four tabs. Going quiet. New opportunities. Open deals. Open requests."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-810c-7092-82d1-ce29e24d34c2",
+      "error": null
+    },
+    {
+      "id": "vo-c04p02",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0113,
+      "out": "public/voice/c04p02.mp3",
+      "input": {
+        "text": "Below sits the list that runs your morning. Four tabs. Going quiet. New opportunities. Open deals. Open requests.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Across the top, your active milestone: liquid NAV against the target, what remains, and the date it is checked. Beside it, net new money for the year against your goal. Then three tiles. My clients. Total NAV. Open deal value. Click Open deal value and you are in the Pipeline.",
+        "next_text": "Open deals are already sorted, most urgent first."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-8203-7e22-a92c-392a521e01df",
+      "error": null
+    },
+    {
+      "id": "vo-c04p03",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0049,
+      "out": "public/voice/c04p03.mp3",
+      "input": {
+        "text": "Open deals are already sorted, most urgent first.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Below sits the list that runs your morning. Four tabs. Going quiet. New opportunities. Open deals. Open requests.",
+        "next_text": "Critical alerts. Then overdue next actions. Then deals with no next action. Then deals past the stage's time limit. Then blocked deals. Then everything else."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-81ed-7a51-8dab-138d761aeb2b",
+      "error": null
+    },
+    {
+      "id": "vo-c04p04",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0157,
+      "out": "public/voice/c04p04.mp3",
+      "input": {
+        "text": "Critical alerts. Then overdue next actions. Then deals with no next action. Then deals past the stage's time limit. Then blocked deals. Then everything else.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Open deals are already sorted, most urgent first.",
+        "next_text": "Sort by urgency. Work from the top."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-8175-7590-923e-5b61919e0375",
+      "error": null
+    },
+    {
+      "id": "vo-c04p05",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0035,
+      "out": "public/voice/c04p05.mp3",
+      "input": {
+        "text": "Sort by urgency. Work from the top.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Critical alerts. Then overdue next actions. Then deals with no next action. Then deals past the stage's time limit. Then blocked deals. Then everything else.",
+        "next_text": "On the right, recent activity. Switch between the last seven days and the last thirty. View all opens the full log."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-81bf-78b1-872c-4d771613f524",
+      "error": null
+    },
+    {
+      "id": "vo-c04p06",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0115,
+      "out": "public/voice/c04p06.mp3",
+      "input": {
+        "text": "On the right, recent activity. Switch between the last seven days and the last thirty. View all opens the full log.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Sort by urgency. Work from the top."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-81ce-7930-8864-7022858ae4a4",
+      "error": null
+    },
+    {
+      "id": "vo-c05p00",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0066,
+      "out": "public/voice/c05p00.mp3",
+      "input": {
+        "text": "Task management is where a task and an hour become the same thing.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "next_text": "Three tabs, in the order you use them. Inbox. Today. Planning."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-8236-7b33-bb9a-24d96d05f2e6",
+      "error": null
+    },
+    {
+      "id": "vo-c05p01",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0062,
+      "out": "public/voice/c05p01.mp3",
+      "input": {
+        "text": "Three tabs, in the order you use them. Inbox. Today. Planning.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Task management is where a task and an hour become the same thing.",
+        "next_text": "The Inbox holds everything without a day yet. Tasks you captured, and the emails you starred. Pick one, read it in the pane on the right, and give it a day. Today. Week. Month. Or Later. The keys are T, W, M and L."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-8252-7572-85a2-b1290597be39",
+      "error": null
+    },
+    {
+      "id": "vo-c05p02",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0214,
+      "out": "public/voice/c05p02.mp3",
+      "input": {
+        "text": "The Inbox holds everything without a day yet. Tasks you captured, and the emails you starred. Pick one, read it in the pane on the right, and give it a day. Today. Week. Month. Or Later. The keys are T, W, M and L.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Three tabs, in the order you use them. Inbox. Today. Planning.",
+        "next_text": "To capture, press C, type one line and press Enter. An at sign links a client. A time makes it a block on your calendar. An exclamation mark sets the horizon or the priority."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-834e-7e81-8af2-77f8060a64ac",
+      "error": null
+    },
+    {
+      "id": "vo-c05p03",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0174,
+      "out": "public/voice/c05p03.mp3",
+      "input": {
+        "text": "To capture, press C, type one line and press Enter. An at sign links a client. A time makes it a block on your calendar. An exclamation mark sets the horizon or the priority.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "The Inbox holds everything without a day yet. Tasks you captured, and the emails you starred. Pick one, read it in the pane on the right, and give it a day. Today. Week. Month. Or Later. The keys are T, W, M and L.",
+        "next_text": "Give the task a day."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-9726-78c2-8b37-ae15ae018908",
+      "error": null
+    },
+    {
+      "id": "vo-c05p04",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.002,
+      "out": "public/voice/c05p04.mp3",
+      "input": {
+        "text": "Give the task a day.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "To capture, press C, type one line and press Enter. An at sign links a client. A time makes it a block on your calendar. An exclamation mark sets the horizon or the priority.",
+        "next_text": "Today shows your list beside your calendar. Each task carries its age, its time if it has one, and how long it takes. Filter by client. Undo with Control Z."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-984f-7840-8640-2e4553a9febf",
+      "error": null
+    },
+    {
+      "id": "vo-c05p05",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0156,
+      "out": "public/voice/c05p05.mp3",
+      "input": {
+        "text": "Today shows your list beside your calendar. Each task carries its age, its time if it has one, and how long it takes. Filter by client. Undo with Control Z.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Give the task a day.",
+        "next_text": "Once a day, run Plan the day. First, yesterday as it really went. Then today, with a ring that shows how much of the day is already spoken for. Clear the Inbox. Fill Today. Start my day."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-995a-70b0-9c25-848331cd350c",
+      "error": null
+    },
+    {
+      "id": "vo-c05p06",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0186,
+      "out": "public/voice/c05p06.mp3",
+      "input": {
+        "text": "Once a day, run Plan the day. First, yesterday as it really went. Then today, with a ring that shows how much of the day is already spoken for. Clear the Inbox. Fill Today. Start my day.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Today shows your list beside your calendar. Each task carries its age, its time if it has one, and how long it takes. Filter by client. Undo with Control Z.",
+        "next_text": "Planning shows what is further out, as a board or a list. Inbox, Today, Coming week, Coming month, Later, Blocked and Done."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-99d0-7c41-92fd-0c0636023239",
+      "error": null
+    },
+    {
+      "id": "vo-c05p07",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0123,
+      "out": "public/voice/c05p07.mp3",
+      "input": {
+        "text": "Planning shows what is further out, as a board or a list. Inbox, Today, Coming week, Coming month, Later, Blocked and Done.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Once a day, run Plan the day. First, yesterday as it really went. Then today, with a ring that shows how much of the day is already spoken for. Clear the Inbox. Fill Today. Start my day."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-9a07-72a3-9cbe-9f4f8ed23943",
+      "error": null
+    },
+    {
+      "id": "vo-c06p00",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0182,
+      "out": "public/voice/c06p00.mp3",
+      "input": {
+        "text": "The Pipeline holds your deals, and only yours. Three tabs. New Business, for clients who have not funded yet. Client Growth, for new money from clients who have. And your Sales plan.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "next_text": "The toolbar: Search client. Filters. Closed window, which sets how far back closed deals stay visible. Views. Sort. And Board or Table."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-9b07-7580-a025-cc93e5ec1caa",
+      "error": null
+    },
+    {
+      "id": "vo-c06p01",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0135,
+      "out": "public/voice/c06p01.mp3",
+      "input": {
+        "text": "The toolbar: Search client. Filters. Closed window, which sets how far back closed deals stay visible. Views. Sort. And Board or Table.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "The Pipeline holds your deals, and only yours. Three tabs. New Business, for clients who have not funded yet. Client Growth, for new money from clients who have. And your Sales plan.",
+        "next_text": "The fastest filters are the focus chips. Overdue. Due this week. No contact in thirty days or more. With amount."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-9b21-71c3-89d2-f360bbfadcde",
+      "error": null
+    },
+    {
+      "id": "vo-c06p02",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0112,
+      "out": "public/voice/c06p02.mp3",
+      "input": {
+        "text": "The fastest filters are the focus chips. Overdue. Due this week. No contact in thirty days or more. With amount.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "The toolbar: Search client. Filters. Closed window, which sets how far back closed deals stay visible. Views. Sort. And Board or Table.",
+        "next_text": "Every morning, open Filters, then Alert, then Has alert. Overdue actions are included. Save it under Views, and it is one click tomorrow."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-9b16-7ba0-b6f0-3f1c5dd1f888",
+      "error": null
+    },
+    {
+      "id": "vo-c06p03",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0137,
+      "out": "public/voice/c06p03.mp3",
+      "input": {
+        "text": "Every morning, open Filters, then Alert, then Has alert. Overdue actions are included. Save it under Views, and it is one click tomorrow.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "The fastest filters are the focus chips. Overdue. Due this week. No contact in thirty days or more. With amount.",
+        "next_text": "Alerts tell you where to look first. Four are critical: SLA breach, Stopped responding to onboarding, Funding not arriving, and Qualification missing. The warnings are Lead untouched, Action overdue, Rescheduled repeatedly, Check contact details, and Back from Lost. Suspected duplicate is information. Alerts clear by themselves once you fix the problem. Back from Lost stays."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-9b3a-7f01-a35c-7f47bc2fc85f",
+      "error": null
+    },
+    {
+      "id": "vo-c06p04",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0377,
+      "out": "public/voice/c06p04.mp3",
+      "input": {
+        "text": "Alerts tell you where to look first. Four are critical: SLA breach, Stopped responding to onboarding, Funding not arriving, and Qualification missing. The warnings are Lead untouched, Action overdue, Rescheduled repeatedly, Check contact details, and Back from Lost. Suspected duplicate is information. Alerts clear by themselves once you fix the problem. Back from Lost stays.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Every morning, open Filters, then Alert, then Has alert. Overdue actions are included. Save it under Views, and it is one click tomorrow.",
+        "next_text": "The clock that matters most is first contact. Inbound leads: twenty-four hours, weekends excluded. Assigned Friday at three, due Monday at three. Outbound: one calendar month. Contact late, and the deal is marked late for good."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-9be4-7d53-bf8f-8e62b8a6442d",
+      "error": null
+    },
+    {
+      "id": "vo-c06p05",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0227,
+      "out": "public/voice/c06p05.mp3",
+      "input": {
+        "text": "The clock that matters most is first contact. Inbound leads: twenty-four hours, weekends excluded. Assigned Friday at three, due Monday at three. Outbound: one calendar month. Contact late, and the deal is marked late for good.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Alerts tell you where to look first. Four are critical: SLA breach, Stopped responding to onboarding, Funding not arriving, and Qualification missing. The warnings are Lead untouched, Action overdue, Rescheduled repeatedly, Check contact details, and Back from Lost. Suspected duplicate is information. Alerts clear by themselves once you fix the problem. Back from Lost stays.",
+        "next_text": "No answer? Follow the schedule. Day zero, call and email. Day one, call. Day three, call and email. Day seven, call: the last step for outbound leads. Day twelve, a break-up email for inbound. Then decide whether to close the deal as Lost."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-9c81-7412-bbe2-b816e138ef6d",
+      "error": null
+    },
+    {
+      "id": "vo-c06p06",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0239,
+      "out": "public/voice/c06p06.mp3",
+      "input": {
+        "text": "No answer? Follow the schedule. Day zero, call and email. Day one, call. Day three, call and email. Day seven, call: the last step for outbound leads. Day twelve, a break-up email for inbound. Then decide whether to close the deal as Lost.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "The clock that matters most is first contact. Inbound leads: twenty-four hours, weekends excluded. Assigned Friday at three, due Monday at three. Outbound: one calendar month. Contact late, and the deal is marked late for good."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-adf7-70c2-b7d1-c6a6097e40ad",
+      "error": null
+    },
+    {
+      "id": "vo-c07p00",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0084,
+      "out": "public/voice/c07p00.mp3",
+      "input": {
+        "text": "On the board, each column is a stage, with its count and its total expected deposit.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "next_text": "New Business runs from New Opportunity, to Contact Established, Qualified, Solution Presented, Onboarding, Funding Pending, Funded and Won. Lost and On Hold sit alongside."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-af04-7393-97a0-2a19a0d7e469",
+      "error": null
+    },
+    {
+      "id": "vo-c07p01",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0171,
+      "out": "public/voice/c07p01.mp3",
+      "input": {
+        "text": "New Business runs from New Opportunity, to Contact Established, Qualified, Solution Presented, Onboarding, Funding Pending, Funded and Won. Lost and On Hold sit alongside.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "On the board, each column is a stage, with its count and its total expected deposit.",
+        "next_text": "Most of it moves by itself. A reply, a call over ten seconds, or an accepted invite moves New Opportunity on. A submitted application, a passed KYC and arriving money move the rest. You move the stages that need judgement. New Business Funded, and every Won, are never set by hand."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-af64-7b02-a685-8bb83b3892e1",
+      "error": null
+    },
+    {
+      "id": "vo-c07p02",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0281,
+      "out": "public/voice/c07p02.mp3",
+      "input": {
+        "text": "Most of it moves by itself. A reply, a call over ten seconds, or an accepted invite moves New Opportunity on. A submitted application, a passed KYC and arriving money move the rest. You move the stages that need judgement. New Business Funded, and every Won, are never set by hand.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "New Business runs from New Opportunity, to Contact Established, Qualified, Solution Presented, Onboarding, Funding Pending, Funded and Won. Lost and On Hold sit alongside.",
+        "next_text": "A card answers three questions. How long in this stage. How long since contact. How much money. Days in stage turns bold when the deal is late."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-b11a-7f53-b138-0b03082f56f4",
+      "error": null
+    },
+    {
+      "id": "vo-c07p03",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0143,
+      "out": "public/voice/c07p03.mp3",
+      "input": {
+        "text": "A card answers three questions. How long in this stage. How long since contact. How much money. Days in stage turns bold when the deal is late.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Most of it moves by itself. A reply, a call over ten seconds, or an accepted invite moves New Opportunity on. A submitted application, a passed KYC and arriving money move the rest. You move the stages that need judgement. New Business Funded, and every Won, are never set by hand.",
+        "next_text": "Switch to Table for a review. The next stage action shows in violet while it is still a suggestion. The first contact column says Met, Late, Overdue, or the due date."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-b264-72a1-94a2-a29907fada1c",
+      "error": null
+    },
+    {
+      "id": "vo-c07p04",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0166,
+      "out": "public/voice/c07p04.mp3",
+      "input": {
+        "text": "Switch to Table for a review. The next stage action shows in violet while it is still a suggestion. The first contact column says Met, Late, Overdue, or the due date.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "A card answers three questions. How long in this stage. How long since contact. How much money. Days in stage turns bold when the deal is late.",
+        "next_text": "Client Growth has its own stages. Discovery, Validation, Negotiation, Approval, In Progress, Funded and Won. You move every one of them up to Funded."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-b347-7c50-88c4-630d2fc8190e",
+      "error": null
+    },
+    {
+      "id": "vo-c07p05",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0149,
+      "out": "public/voice/c07p05.mp3",
+      "input": {
+        "text": "Client Growth has its own stages. Discovery, Validation, Negotiation, Approval, In Progress, Funded and Won. You move every one of them up to Funded.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Switch to Table for a review. The next stage action shows in violet while it is still a suggestion. The first contact column says Met, Late, Overdue, or the due date."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-b356-7052-a77b-cb2cab8f1692",
+      "error": null
+    },
+    {
+      "id": "vo-c08p00",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0091,
+      "out": "public/voice/c08p00.mp3",
+      "input": {
+        "text": "The screen you are seeing is a synthetic training environment. No live client data is used.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "next_text": "This is Northstar Capital Training, a training deal at Contact Established, with an expected deposit of five hundred thousand euros."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-b3af-79e0-921f-5719400e6c01",
+      "error": null
+    },
+    {
+      "id": "vo-c08p01",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0132,
+      "out": "public/voice/c08p01.mp3",
+      "input": {
+        "text": "This is Northstar Capital Training, a training deal at Contact Established, with an expected deposit of five hundred thousand euros.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "The screen you are seeing is a synthetic training environment. No live client data is used.",
+        "next_text": "On the left: the stage, the money, the account lifecycle, and qualification. On the right: About this deal, the next stage action, the blocker, and the latest notes."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-b384-7020-9719-9e9fd78da45c",
+      "error": null
+    },
+    {
+      "id": "vo-c08p02",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0165,
+      "out": "public/voice/c08p02.mp3",
+      "input": {
+        "text": "On the left: the stage, the money, the account lifecycle, and qualification. On the right: About this deal, the next stage action, the blocker, and the latest notes.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "This is Northstar Capital Training, a training deal at Contact Established, with an expected deposit of five hundred thousand euros.",
+        "next_text": "Every active deal has exactly one next action. SalesMind suggests it, in violet. Change the words or the date if you need to. Then accept it."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-b399-7f62-95b0-471397932128",
+      "error": null
+    },
+    {
+      "id": "vo-c08p03",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0141,
+      "out": "public/voice/c08p03.mp3",
+      "input": {
+        "text": "Every active deal has exactly one next action. SalesMind suggests it, in violet. Change the words or the date if you need to. Then accept it.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "On the left: the stage, the money, the account lifecycle, and qualification. On the right: About this deal, the next stage action, the blocker, and the latest notes.",
+        "next_text": "Accept the next action. It becomes your task, with its due date."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-c474-7011-ab41-1cd73c9a624f",
+      "error": null
+    },
+    {
+      "id": "vo-c08p04",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0064,
+      "out": "public/voice/c08p04.mp3",
+      "input": {
+        "text": "Accept the next action. It becomes your task, with its due date.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Every active deal has exactly one next action. SalesMind suggests it, in violet. Change the words or the date if you need to. Then accept it.",
+        "next_text": "When it is done, mark it complete. Say what happened. Add a note if it helps. Set the next action, because a deal is never left without one. Here, choose Complete and move to Qualified."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-c6d3-7bb3-b6ca-e691a19e5393",
+      "error": null
+    },
+    {
+      "id": "vo-c08p05",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0185,
+      "out": "public/voice/c08p05.mp3",
+      "input": {
+        "text": "When it is done, mark it complete. Say what happened. Add a note if it helps. Set the next action, because a deal is never left without one. Here, choose Complete and move to Qualified.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Accept the next action. It becomes your task, with its due date.",
+        "next_text": "If something is missing, the move dialog tells you. It is a reminder, not a wall."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-c705-7ac1-9788-9f8505943bd9",
+      "error": null
+    },
+    {
+      "id": "vo-c08p06",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0081,
+      "out": "public/voice/c08p06.mp3",
+      "input": {
+        "text": "If something is missing, the move dialog tells you. It is a reminder, not a wall.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "When it is done, mark it complete. Say what happened. Add a note if it helps. Set the next action, because a deal is never left without one. Here, choose Complete and move to Qualified.",
+        "next_text": "Need a reminder about the client that is not the deal's next step? Add an ordinary task."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-c7fe-7231-952a-07723bf53e63",
+      "error": null
+    },
+    {
+      "id": "vo-c08p07",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0088,
+      "out": "public/voice/c08p07.mp3",
+      "input": {
+        "text": "Need a reminder about the client that is not the deal's next step? Add an ordinary task.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "If something is missing, the move dialog tells you. It is a reminder, not a wall.",
+        "next_text": "The client is real, but not now? Put the deal on hold, with a reason and, if you can, a follow-up date. It is over? Close the deal, pick the loss reason with care, and write why. The reason goes to the CRM."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-c8f1-75a2-b6fa-b97e2e9cba3c",
+      "error": null
+    },
+    {
+      "id": "vo-c08p08",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0206,
+      "out": "public/voice/c08p08.mp3",
+      "input": {
+        "text": "The client is real, but not now? Put the deal on hold, with a reason and, if you can, a follow-up date. It is over? Close the deal, pick the loss reason with care, and write why. The reason goes to the CRM.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Need a reminder about the client that is not the deal's next step? Add an ordinary task.",
+        "next_text": "Do not leave an important deal without a next move."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-ca79-7d31-a3da-f13283d2d41f",
+      "error": null
+    },
+    {
+      "id": "vo-c08p09",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0051,
+      "out": "public/voice/c08p09.mp3",
+      "input": {
+        "text": "Do not leave an important deal without a next move.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "The client is real, but not now? Put the deal on hold, with a reason and, if you can, a follow-up date. It is over? Close the deal, pick the loss reason with care, and write why. The reason goes to the CRM."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-cbad-7941-94d5-8157969de91d",
+      "error": null
+    },
+    {
+      "id": "vo-c09p00",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0064,
+      "out": "public/voice/c09p00.mp3",
+      "input": {
+        "text": "Client Growth is new money from clients who have already funded.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "next_text": "On the Client Growth tab, click Create deal. Type three or more letters of the client's name. Pick Meridian Family Office Demo, and the type. Brokerage, or White label. Add the expected deposit if you know it."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-cbb5-77e3-a325-5d3dd07f2ec3",
+      "error": null
+    },
+    {
+      "id": "vo-c09p01",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0209,
+      "out": "public/voice/c09p01.mp3",
+      "input": {
+        "text": "On the Client Growth tab, click Create deal. Type three or more letters of the client's name. Pick Meridian Family Office Demo, and the type. Brokerage, or White label. Add the expected deposit if you know it.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Client Growth is new money from clients who have already funded.",
+        "next_text": "A funded client gets a deal at Discovery, with a suggested next action."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-cc31-70a3-be3d-ee859895b6a0",
+      "error": null
+    },
+    {
+      "id": "vo-c09p02",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0071,
+      "out": "public/voice/c09p02.mp3",
+      "input": {
+        "text": "A funded client gets a deal at Discovery, with a suggested next action.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "On the Client Growth tab, click Create deal. Type three or more letters of the client's name. Pick Meridian Family Office Demo, and the type. Brokerage, or White label. Add the expected deposit if you know it.",
+        "next_text": "If the client already has an open deal, SalesMind will not open a second one. Edit the existing deal instead."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-cc2c-7232-a977-80e50e1fc88b",
+      "error": null
+    },
+    {
+      "id": "vo-c09p03",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0109,
+      "out": "public/voice/c09p03.mp3",
+      "input": {
+        "text": "If the client already has an open deal, SalesMind will not open a second one. Edit the existing deal instead.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "A funded client gets a deal at Discovery, with a suggested next action.",
+        "next_text": "From there you move it. Discovery. Validation. Negotiation. Approval. In Progress. Funded. Once deposits reach the expected deposit, Won is set by itself."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-cc8a-7752-a7d4-a587ad726bdc",
+      "error": null
+    },
+    {
+      "id": "vo-c09p04",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0154,
+      "out": "public/voice/c09p04.mp3",
+      "input": {
+        "text": "From there you move it. Discovery. Validation. Negotiation. Approval. In Progress. Funded. Once deposits reach the expected deposit, Won is set by itself.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "If the client already has an open deal, SalesMind will not open a second one. Edit the existing deal instead."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-cd13-7983-8f97-5b7e2bfbe186",
+      "error": null
+    },
+    {
+      "id": "vo-c10p00",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0091,
+      "out": "public/voice/c10p00.mp3",
+      "input": {
+        "text": "The screen you are seeing is a synthetic training environment. No live client data is used.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "next_text": "Clients lists your book. All, Clients or Contacts. Quick filters for high value, high risk and not funded. Compact or detailed. Filters, columns and saved views."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-dbde-7ce3-9385-480be5809c80",
+      "error": null
+    },
+    {
+      "id": "vo-c10p01",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0161,
+      "out": "public/voice/c10p01.mp3",
+      "input": {
+        "text": "Clients lists your book. All, Clients or Contacts. Quick filters for high value, high risk and not funded. Compact or detailed. Filters, columns and saved views.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "The screen you are seeing is a synthetic training environment. No live client data is used.",
+        "next_text": "Before you approach anyone new, check ownership."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-dee3-7f23-8d56-00e2aa0af805",
+      "error": null
+    },
+    {
+      "id": "vo-c10p02",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0048,
+      "out": "public/voice/c10p02.mp3",
+      "input": {
+        "text": "Before you approach anyone new, check ownership.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Clients lists your book. All, Clients or Contacts. Quick filters for high value, high risk and not funded. Compact or detailed. Filters, columns and saved views.",
+        "next_text": "Search by full name, exact email or phone, or the company domain. One search returns one verdict."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-e082-71e0-928f-8c2b6277bf44",
+      "error": null
+    },
+    {
+      "id": "vo-c10p03",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0097,
+      "out": "public/voice/c10p03.mp3",
+      "input": {
+        "text": "Search by full name, exact email or phone, or the company domain. One search returns one verdict.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Before you approach anyone new, check ownership.",
+        "next_text": "Available. Free to approach. Claimed. Another RM owns them. Request reassignment if you have a case. Restricted. A funded client or a protected company. Do not approach. Needs narrowing. Add the domain or a full email. Not found. Add the contact to the CRM, and it is assigned to you."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-df9f-7ca1-80ae-c4adb264240a",
+      "error": null
+    },
+    {
+      "id": "vo-c10p04",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0284,
+      "out": "public/voice/c10p04.mp3",
+      "input": {
+        "text": "Available. Free to approach. Claimed. Another RM owns them. Request reassignment if you have a case. Restricted. A funded client or a protected company. Do not approach. Needs narrowing. Add the domain or a full email. Not found. Add the contact to the CRM, and it is assigned to you.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Search by full name, exact email or phone, or the company domain. One search returns one verdict.",
+        "next_text": "You have one hundred searches a day."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-e0ff-7b71-be02-e0238b943baa",
+      "error": null
+    },
+    {
+      "id": "vo-c10p05",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0036,
+      "out": "public/voice/c10p05.mp3",
+      "input": {
+        "text": "You have one hundred searches a day.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Available. Free to approach. Claimed. Another RM owns them. Request reassignment if you have a case. Restricted. A funded client or a protected company. Do not approach. Needs narrowing. Add the domain or a full email. Not found. Add the contact to the CRM, and it is assigned to you.",
+        "next_text": "Check ownership before approaching the contact."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-e2de-7703-ac31-28c0bb9db2cf",
+      "error": null
+    },
+    {
+      "id": "vo-c10p06",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0047,
+      "out": "public/voice/c10p06.mp3",
+      "input": {
+        "text": "Check ownership before approaching the contact.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "You have one hundred searches a day."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-e380-7d73-a017-495f492b8582",
+      "error": null
+    },
+    {
+      "id": "vo-c11p00",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0171,
+      "out": "public/voice/c11p00.mp3",
+      "input": {
+        "text": "Activity is the full log of your book. Emails, calls, meetings, deposits, withdrawals, registrations, KYC events and requests. Topic tags tell you what each one was about.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "next_text": "Open an item to read it in full."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-e3b0-77f3-8f32-fa1a90f1a697",
+      "error": null
+    },
+    {
+      "id": "vo-c11p01",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0032,
+      "out": "public/voice/c11p01.mp3",
+      "input": {
+        "text": "Open an item to read it in full.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Activity is the full log of your book. Emails, calls, meetings, deposits, withdrawals, registrations, KYC events and requests. Topic tags tell you what each one was about.",
+        "next_text": "If something was recorded wrong, raise an issue from the item. Choose the category and the meeting type, and write a short, factual comment. The team reviews it within one to three business days."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-e461-7580-bf00-3793161e5cca",
+      "error": null
+    },
+    {
+      "id": "vo-c11p02",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0195,
+      "out": "public/voice/c11p02.mp3",
+      "input": {
+        "text": "If something was recorded wrong, raise an issue from the item. Choose the category and the meeting type, and write a short, factual comment. The team reviews it within one to three business days.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Open an item to read it in full.",
+        "next_text": "Record the activity. If it is not in the record, nobody else can see it."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-e4af-74f0-b66f-4b27f842c14d",
+      "error": null
+    },
+    {
+      "id": "vo-c11p03",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0072,
+      "out": "public/voice/c11p03.mp3",
+      "input": {
+        "text": "Record the activity. If it is not in the record, nobody else can see it.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "If something was recorded wrong, raise an issue from the item. Choose the category and the meeting type, and write a short, factual comment. The team reviews it within one to three business days."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-e4c4-7693-a569-17ced87c2e59",
+      "error": null
+    },
+    {
+      "id": "vo-c12p00",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0114,
+      "out": "public/voice/c12p00.mp3",
+      "input": {
+        "text": "Performance is one page with six sections. NAV milestones. Pipeline. Funding. Standing. Conversion. Communication.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "next_text": "The period filter covers this month to all time. NAV milestones follow your tenure instead: own liquid NAV at month three, then total liquid NAV at six, twelve, twenty-four and thirty-six months."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-e57f-7660-a275-9efc122fbf33",
+      "error": null
+    },
+    {
+      "id": "vo-c12p01",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0195,
+      "out": "public/voice/c12p01.mp3",
+      "input": {
+        "text": "The period filter covers this month to all time. NAV milestones follow your tenure instead: own liquid NAV at month three, then total liquid NAV at six, twelve, twenty-four and thirty-six months.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Performance is one page with six sections. NAV milestones. Pipeline. Funding. Standing. Conversion. Communication.",
+        "next_text": "The figures you see here are synthetic."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-f321-7bc2-951b-44878a6eefcc",
+      "error": null
+    },
+    {
+      "id": "vo-c12p02",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0039,
+      "out": "public/voice/c12p02.mp3",
+      "input": {
+        "text": "The figures you see here are synthetic.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "The period filter covers this month to all time. NAV milestones follow your tenure instead: own liquid NAV at month three, then total liquid NAV at six, twelve, twenty-four and thirty-six months."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-f5ff-72b1-bb59-b30c930adc9b",
+      "error": null
+    },
+    {
+      "id": "vo-c13p00",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0091,
+      "out": "public/voice/c13p00.mp3",
+      "input": {
+        "text": "The screen you are seeing is a synthetic training environment. No live client data is used.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "next_text": "Your sales plan lives inside the Pipeline, on its own tab."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-f76f-7ff0-91e4-007e7897bf8b",
+      "error": null
+    },
+    {
+      "id": "vo-c13p01",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0058,
+      "out": "public/voice/c13p01.mp3",
+      "input": {
+        "text": "Your sales plan lives inside the Pipeline, on its own tab.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "The screen you are seeing is a synthetic training environment. No live client data is used.",
+        "next_text": "Add an entry, and create the contact, or link the CRM record. Every entry needs a valid CRM link, or a written reason under Not Available. Be specific. N slash A is not a reason."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-f783-7051-97d4-f33dfe4182ab",
+      "error": null
+    },
+    {
+      "id": "vo-c13p02",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0178,
+      "out": "public/voice/c13p02.mp3",
+      "input": {
+        "text": "Add an entry, and create the contact, or link the CRM record. Every entry needs a valid CRM link, or a written reason under Not Available. Be specific. N slash A is not a reason.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Your sales plan lives inside the Pipeline, on its own tab.",
+        "next_text": "New RMs finalise the plan within their first ten days. It is a compliance step."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-fa52-7963-afc5-c7710d0e0c3d",
+      "error": null
+    },
+    {
+      "id": "vo-c13p03",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0079,
+      "out": "public/voice/c13p03.mp3",
+      "input": {
+        "text": "New RMs finalise the plan within their first ten days. It is a compliance step.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Add an entry, and create the contact, or link the CRM record. Every entry needs a valid CRM link, or a written reason under Not Available. Be specific. N slash A is not a reason.",
+        "next_text": "Link an entry to a CRM contact and a deal appears on the board at once. Filter by origin to see only plan deals. Sales Plan Progress, Entries Requiring Attention, Forecasted NAV, plan against reality, and plan history show where the plan stands."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-fb44-72c3-8cc6-dcc5a000ac61",
+      "error": null
+    },
+    {
+      "id": "vo-c13p04",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0245,
+      "out": "public/voice/c13p04.mp3",
+      "input": {
+        "text": "Link an entry to a CRM contact and a deal appears on the board at once. Filter by origin to see only plan deals. Sales Plan Progress, Entries Requiring Attention, Forecasted NAV, plan against reality, and plan history show where the plan stands.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "New RMs finalise the plan within their first ten days. It is a compliance step."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-fb75-7693-92a0-0ce242c596da",
+      "error": null
+    },
+    {
+      "id": "vo-c14p00",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0088,
+      "out": "public/voice/c14p00.mp3",
+      "input": {
+        "text": "The screen you are seeing is a simulated permissions screen. No live connection is made.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "next_text": "Connect Google once. Pick your work account, continue, select all, continue."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-fba1-7fd2-a5a8-ed8ff35b7566",
+      "error": null
+    },
+    {
+      "id": "vo-c14p01",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0076,
+      "out": "public/voice/c14p01.mp3",
+      "input": {
+        "text": "Connect Google once. Pick your work account, continue, select all, continue.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "The screen you are seeing is a simulated permissions screen. No live connection is made.",
+        "next_text": "From then on, your real meetings sit beside your tasks. A task with a time becomes a block in a separate calendar called SalesMind Tasks. Colleagues looking for a slot do not see it. A meeting you create does go to your main calendar."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-fcfe-7af0-9f75-f1fc3b9fc1d0",
+      "error": null
+    },
+    {
+      "id": "vo-c14p02",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0234,
+      "out": "public/voice/c14p02.mp3",
+      "input": {
+        "text": "From then on, your real meetings sit beside your tasks. A task with a time becomes a block in a separate calendar called SalesMind Tasks. Colleagues looking for a slot do not see it. A meeting you create does go to your main calendar.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Connect Google once. Pick your work account, continue, select all, continue.",
+        "next_text": "Deleting a time-blocked task deletes its calendar block too."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-fce3-7463-aec9-4d83e01f2465",
+      "error": null
+    },
+    {
+      "id": "vo-c14p03",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.006,
+      "out": "public/voice/c14p03.mp3",
+      "input": {
+        "text": "Deleting a time-blocked task deletes its calendar block too.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "From then on, your real meetings sit beside your tasks. A task with a time becomes a block in a separate calendar called SalesMind Tasks. Colleagues looking for a slot do not see it. A meeting you create does go to your main calendar.",
+        "next_text": "The screen you are seeing is a synthetic training environment. No live client data is used."
+      },
+      "status": "done",
+      "request_id": "01a11d3c-febb-7833-9bf9-4c122c815050",
+      "error": null
+    },
+    {
+      "id": "vo-c14p04",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0091,
+      "out": "public/voice/c14p04.mp3",
+      "input": {
+        "text": "The screen you are seeing is a synthetic training environment. No live client data is used.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Deleting a time-blocked task deletes its calendar block too."
+      },
+      "status": "done",
+      "request_id": "01a11d3d-0aca-7c41-b168-1a9e523408bb",
+      "error": null
+    },
+    {
+      "id": "vo-c15p00",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0127,
+      "out": "public/voice/c15p00.mp3",
+      "input": {
+        "text": "When you are unsure, the Guidebook has twenty short pages, from the new pipeline in one minute to the cheat sheet and glossary.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "next_text": "Sales materials collects the current playbooks and battle cards. Use the latest version in every client conversation."
+      },
+      "status": "done",
+      "request_id": "01a11d3d-0ccd-7df0-9c7b-d33711b89ea1",
+      "error": null
+    },
+    {
+      "id": "vo-c15p01",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0117,
+      "out": "public/voice/c15p01.mp3",
+      "input": {
+        "text": "Sales materials collects the current playbooks and battle cards. Use the latest version in every client conversation.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "When you are unsure, the Guidebook has twenty short pages, from the new pipeline in one minute to the cheat sheet and glossary.",
+        "next_text": "The Changelog tells you what changed."
+      },
+      "status": "done",
+      "request_id": "01a11d3d-0d37-7ac1-930a-d29d2c6e5a9a",
+      "error": null
+    },
+    {
+      "id": "vo-c15p02",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0037,
+      "out": "public/voice/c15p02.mp3",
+      "input": {
+        "text": "The Changelog tells you what changed.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Sales materials collects the current playbooks and battle cards. Use the latest version in every client conversation.",
+        "next_text": "Internal requests shows your open Jira, onboarding, KYC and Intercom requests. Raise a request from the top right. Open requests on a client show up under that deal's blocker."
+      },
+      "status": "done",
+      "request_id": "01a11d3d-0ec4-7171-a52d-07a1b3bd62b4",
+      "error": null
+    },
+    {
+      "id": "vo-c15p03",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0175,
+      "out": "public/voice/c15p03.mp3",
+      "input": {
+        "text": "Internal requests shows your open Jira, onboarding, KYC and Intercom requests. Raise a request from the top right. Open requests on a client show up under that deal's blocker.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "The Changelog tells you what changed."
+      },
+      "status": "done",
+      "request_id": "01a11d3d-0f2c-7db0-8bab-93ef790aadc0",
+      "error": null
+    },
+    {
+      "id": "vo-c16p00",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0037,
+      "out": "public/voice/c16p00.mp3",
+      "input": {
+        "text": "Close the day the same way every day.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "next_text": "Critical alerts cleared. First contact deadlines protected. Overdue actions worked. Inbox triaged. Today planned. Activity recorded. Ownership checked. Client Growth reviewed. Sales Plan reviewed. Requests reviewed. Calendar capacity checked. Tomorrow planned."
+      },
+      "status": "done",
+      "request_id": "01a11d3d-116a-7373-af13-6fc4f9177a68",
+      "error": null
+    },
+    {
+      "id": "vo-c16p01",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.026,
+      "out": "public/voice/c16p01.mp3",
+      "input": {
+        "text": "Critical alerts cleared. First contact deadlines protected. Overdue actions worked. Inbox triaged. Today planned. Activity recorded. Ownership checked. Client Growth reviewed. Sales Plan reviewed. Requests reviewed. Calendar capacity checked. Tomorrow planned.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Close the day the same way every day.",
+        "next_text": "And every important deal has a next action."
+      },
+      "status": "done",
+      "request_id": "01a11d3d-1249-7bf0-b425-e8ab5560ec90",
+      "error": null
+    },
+    {
+      "id": "vo-c16p02",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0043,
+      "out": "public/voice/c16p02.mp3",
+      "input": {
+        "text": "And every important deal has a next action.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Critical alerts cleared. First contact deadlines protected. Overdue actions worked. Inbox triaged. Today planned. Activity recorded. Ownership checked. Client Growth reviewed. Sales Plan reviewed. Requests reviewed. Calendar capacity checked. Tomorrow planned.",
+        "next_text": "The screen you are seeing is a synthetic training environment. No live client data is used."
+      },
+      "status": "done",
+      "request_id": "01a11d3d-128b-7da2-b14a-7a4fa3ad6622",
+      "error": null
+    },
+    {
+      "id": "vo-c16p03",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0091,
+      "out": "public/voice/c16p03.mp3",
+      "input": {
+        "text": "The screen you are seeing is a synthetic training environment. No live client data is used.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "And every important deal has a next action.",
+        "next_text": "Your book is under control when the next action is clear."
+      },
+      "status": "done",
+      "request_id": "01a11d3d-128f-7730-ae5a-1ff394e13ae9",
+      "error": null
+    },
+    {
+      "id": "vo-c16p04",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.0057,
+      "out": "public/voice/c16p04.mp3",
+      "input": {
+        "text": "Your book is under control when the next action is clear.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "The screen you are seeing is a synthetic training environment. No live client data is used."
+      },
+      "status": "done",
+      "request_id": "01a11d3d-157a-76f3-8411-5067e7915ffe",
+      "error": null
+    },
+    {
+      "id": "insert-f02",
+      "model": "fal-ai/kling-video/o3/pro/text-to-video",
+      "kind": "insert",
+      "cost": 0.56,
+      "out": "public/fal/f02.mp4",
+      "input": {
+        "prompt": "Fine threads of green light arrive from many directions and converge into one calm luminous hub suspended in darkness; slow orbit around the hub. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+        "aspect_ratio": "16:9",
+        "duration": "5",
+        "generate_audio": false
+      },
+      "status": "done",
+      "request_id": "01a11d3d-d66f-74c2-95d2-f72c9099a105",
+      "error": null
+    },
+    {
+      "id": "insert-f03",
+      "model": "fal-ai/kling-video/o3/pro/text-to-video",
+      "kind": "insert",
+      "cost": 0.56,
+      "out": "public/fal/f03.mp4",
+      "input": {
+        "prompt": "Layered translucent dark-glass panes float in depth and slide gently past one another; a soft green light sweep crosses them; slow lateral track with parallax. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+        "aspect_ratio": "16:9",
+        "duration": "5",
+        "generate_audio": false
+      },
+      "status": "done",
+      "request_id": "01a11d3d-d601-7343-a664-5a95fc8a8e2e",
+      "error": null
+    },
+    {
+      "id": "insert-f04",
+      "model": "fal-ai/kling-video/o3/pro/text-to-video",
+      "kind": "insert",
+      "cost": 0.56,
+      "out": "public/fal/f04.mp4",
+      "input": {
+        "prompt": "An abstract control surface of thin concentric rings of light on a dark plane; a few soft points of warm gold and cool grey glow and settle into an ordered row; slow push in. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+        "aspect_ratio": "16:9",
+        "duration": "5",
+        "generate_audio": false
+      },
+      "status": "done",
+      "request_id": "01a11d3d-d616-7663-a16f-690581ff48fa",
+      "error": null
+    },
+    {
+      "id": "insert-f05",
+      "model": "fal-ai/kling-video/o3/pro/text-to-video",
+      "kind": "insert",
+      "cost": 0.56,
+      "out": "public/fal/f05.mp4",
+      "input": {
+        "prompt": "Blank glowing tiles settle one by one into a precise lattice timeline floating in space; one tile lifts slightly and locks into place with a soft pulse; macro detail, slow push in. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+        "aspect_ratio": "16:9",
+        "duration": "5",
+        "generate_audio": false
+      },
+      "status": "done",
+      "request_id": "01a11d3d-d5fd-7513-9684-cb88a67df293",
+      "error": null
+    },
+    {
+      "id": "insert-f07",
+      "model": "fal-ai/kling-video/o3/pro/text-to-video",
+      "kind": "insert",
+      "cost": 0.56,
+      "out": "public/fal/f07.mp4",
+      "input": {
+        "prompt": "Blank luminous tiles rearrange from tidy columns into rows and back, precise and architectural, like a calm mechanism; slow overhead track. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+        "aspect_ratio": "16:9",
+        "duration": "5",
+        "generate_audio": false
+      },
+      "status": "done",
+      "request_id": "01a11d3d-d60e-7c11-9763-b5328d9b62c9",
+      "error": null
+    },
+    {
+      "id": "insert-f08",
+      "model": "fal-ai/kling-video/o3/pro/text-to-video",
+      "kind": "insert",
+      "cost": 0.56,
+      "out": "public/fal/f08.mp4",
+      "input": {
+        "prompt": "A single bright node travels along a gently curving path of light; one small point of light always waits ahead of it and moves forward as it arrives; slow tracking shot. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+        "aspect_ratio": "16:9",
+        "duration": "5",
+        "generate_audio": false
+      },
+      "status": "done",
+      "request_id": "01a11d3d-d6b8-74f3-82a6-9899a73ca844",
+      "error": null
+    },
+    {
+      "id": "insert-f09",
+      "model": "fal-ai/kling-video/o3/pro/text-to-video",
+      "kind": "insert",
+      "cost": 0.56,
+      "out": "public/fal/f09.mp4",
+      "input": {
+        "prompt": "Branches of green light grow outward from a calm, solid glowing core, unhurried and organic but precise; slow orbit. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+        "aspect_ratio": "16:9",
+        "duration": "5",
+        "generate_audio": false
+      },
+      "status": "done",
+      "request_id": "01a11d3d-d74a-7c42-aeed-d6f0fde76615",
+      "error": null
+    },
+    {
+      "id": "insert-f10",
+      "model": "fal-ai/kling-video/o3/pro/text-to-video",
+      "kind": "insert",
+      "cost": 0.56,
+      "out": "public/fal/f10.mp4",
+      "input": {
+        "prompt": "Thin beams of light scan slowly across a crystalline faceted landscape; a few facets lock into place with a soft glow while others stay dim; slow push in. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+        "aspect_ratio": "16:9",
+        "duration": "5",
+        "generate_audio": false
+      },
+      "status": "done",
+      "request_id": "01a11d3d-d679-7b40-a504-fbd4ed8cd905",
+      "error": null
+    },
+    {
+      "id": "insert-f11",
+      "model": "fal-ai/kling-video/o3/pro/text-to-video",
+      "kind": "insert",
+      "cost": 0.56,
+      "out": "public/fal/f11.mp4",
+      "input": {
+        "prompt": "Small pulses of light travel along thin parallel horizontal lines and leave short bright marks, like an ordered ledger being written; slow lateral track. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+        "aspect_ratio": "16:9",
+        "duration": "5",
+        "generate_audio": false
+      },
+      "status": "done",
+      "request_id": "01a11d3d-d699-7af0-b1e2-8470f64212ff",
+      "error": null
+    },
+    {
+      "id": "insert-f12",
+      "model": "fal-ai/kling-video/o3/pro/text-to-video",
+      "kind": "insert",
+      "cost": 0.56,
+      "out": "public/fal/f12.mp4",
+      "input": {
+        "prompt": "Columns of frosted green glass rise slowly from a dark reflective plane to different heights, calm and measured; low angle slow push in. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+        "aspect_ratio": "16:9",
+        "duration": "5",
+        "generate_audio": false
+      },
+      "status": "done",
+      "request_id": "01a11d3d-d6ab-71b2-ba04-6ecf0271f98e",
+      "error": null
+    },
+    {
+      "id": "insert-f13",
+      "model": "fal-ai/kling-video/o3/pro/text-to-video",
+      "kind": "insert",
+      "cost": 0.56,
+      "out": "public/fal/f13.mp4",
+      "input": {
+        "prompt": "Fine blueprint lines of green light draw themselves in space and resolve into a clean, balanced architectural structure; slow orbit. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+        "aspect_ratio": "16:9",
+        "duration": "5",
+        "generate_audio": false
+      },
+      "status": "done",
+      "request_id": "01a11d3d-d65b-74b1-9be1-888694518825",
+      "error": null
+    },
+    {
+      "id": "insert-f14",
+      "model": "fal-ai/kling-video/o3/pro/text-to-video",
+      "kind": "insert",
+      "cost": 0.56,
+      "out": "public/fal/f14.mp4",
+      "input": {
+        "prompt": "Soft daylight moves slowly across a grid of blank tiles on a dark surface, shifting from cool dawn to warm afternoon; slow top-down drift. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+        "aspect_ratio": "16:9",
+        "duration": "5",
+        "generate_audio": false
+      },
+      "status": "done",
+      "request_id": "01a11d3d-d65d-7c42-bc34-68a94e039577",
+      "error": null
+    },
+    {
+      "id": "insert-f15",
+      "model": "fal-ai/kling-video/o3/pro/text-to-video",
+      "kind": "insert",
+      "cost": 0.56,
+      "out": "public/fal/f15.mp4",
+      "input": {
+        "prompt": "Interlocking rings of light turn slowly; a brief spark of friction where two touch resolves into smooth, aligned motion; macro, shallow depth of field. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+        "aspect_ratio": "16:9",
+        "duration": "5",
+        "generate_audio": false
+      },
+      "status": "done",
+      "request_id": "01a11d3e-f649-7850-a7d8-d584ba75f6c7",
+      "error": null
+    },
+    {
+      "id": "insert-f16",
+      "model": "fal-ai/kling-video/o3/pro/text-to-video",
+      "kind": "insert",
+      "cost": 0.56,
+      "out": "public/fal/f16.mp4",
+      "input": {
+        "prompt": "A calm horizon of soft green light at the edge of darkness; a thin-line icosahedron slowly dissolves into fine motes of light that drift upward; slow push in. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+        "aspect_ratio": "16:9",
+        "duration": "5",
+        "generate_audio": false
+      },
+      "status": "done",
+      "request_id": "01a11d3e-f711-7d93-8185-51fef36c98e0",
+      "error": null
+    },
+    {
+      "id": "insert-f15b",
+      "model": "fal-ai/kling-video/o3/pro/text-to-video",
+      "kind": "insert",
+      "cost": 0.56,
+      "out": "public/fal/f15.mp4",
+      "input": {
+        "prompt": "Two interlocking rings of light turn slowly, centred in an empty dark space with nothing else in frame and no foreground objects; a brief spark of friction where two touch resolves into smooth, aligned motion; macro, shallow depth of field. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+        "aspect_ratio": "16:9",
+        "duration": "5",
+        "generate_audio": false
+      },
+      "status": "failed",
+      "request_id": "01a11d44-5c02-77e2-afb6-7bc52af26d21",
+      "error": "HTTP 403 https://queue.fal.run/fal-ai/kling-video/requests/01a11d44-5c02-77e2-afb6-7bc52af26d21: {\"detail\":\"User is locked. Reason: TOP_UP.\"}"
+    }
+  ]
+}

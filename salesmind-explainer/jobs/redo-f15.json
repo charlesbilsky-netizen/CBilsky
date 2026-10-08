@@ -1,0 +1,15 @@
+[
+ {
+  "id": "insert-f15b",
+  "kind": "insert",
+  "model": "fal-ai/kling-video/o3/pro/text-to-video",
+  "input": {
+   "prompt": "Two interlocking rings of light turn slowly, centred in an empty dark space with nothing else in frame and no foreground objects; a brief spark of friction where two touch resolves into smooth, aligned motion; macro, shallow depth of field. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+   "aspect_ratio": "16:9",
+   "duration": "5",
+   "generate_audio": false
+  },
+  "out": "public/fal/f15.mp4",
+  "cost": 0.56
+ }
+]
