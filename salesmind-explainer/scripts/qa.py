@@ -19,7 +19,7 @@ import numpy as np
 
 BOX = (1180, 36, 700, 60)  # x, y, w, h around the label pill
 STEP = 2.0
-BAD = re.compile(r"(https?://|www\.|exante\.(eu|com)|run\.exante|jira\.exante|confluence)", re.I)
+BAD = re.compile(r"(https?://|www\.|exante\.(eu|com))", re.I)  # catches every internal exante host too
 
 
 def frame(video, t, path):
