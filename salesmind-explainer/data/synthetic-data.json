@@ -1,0 +1,101 @@
+{
+  "_meta": {
+    "purpose": "Single source of every record shown in the SalesMind training film. Every value is fictional.",
+    "label": ["TRAINING ENVIRONMENT", "SYNTHETIC DATA", "NOT A LIVE ACCOUNT"],
+    "rules": {
+      "emails": "example.com or a subdomain of example.com only",
+      "phones": "+1 202 555 01xx (US fictional range) or +44 20 7946 0xxx (UK drama range) only",
+      "crm_ids": "CRM-DEMO-### only",
+      "application_ids": "APP-DEMO-### only",
+      "ticket_keys": "TRAIN-### only",
+      "money": "EUR, multiples of 250,000 only",
+      "dates": "Training week, Day 1 (Mon) to Day 5 (Fri). No calendar year, no real date",
+      "companies": "Always shown with the DEMO tag next to the name"
+    }
+  },
+  "rm": {
+    "name": "Alex Morgan",
+    "role": "Relationship Manager",
+    "workspace": "Synthetic RM Workspace",
+    "dataset": "Training dataset",
+    "region": "Demo region",
+    "initials_shown": "AM"
+  },
+  "companies": [
+    { "id": "co1", "name": "Northstar Capital Training", "domain": "northstar-capital.example.com" },
+    { "id": "co2", "name": "Meridian Family Office Demo", "domain": "meridian-fo.example.com" },
+    { "id": "co3", "name": "Atlas Quant Partners", "domain": "atlas-quant.example.com" },
+    { "id": "co4", "name": "Greenfield Institutional Lab", "domain": "greenfield-lab.example.com" },
+    { "id": "co5", "name": "Horizon Asset Practice", "domain": "horizon-asset.example.com" },
+    { "id": "co6", "name": "Redwood Trading Education", "domain": "redwood-trading.example.com" }
+  ],
+  "people": [
+    { "id": "p1", "name": "Elena Kovacs", "company": "co1", "email": "elena.kovacs@northstar-capital.example.com", "phone": "+44 20 7946 0101", "crm": "CRM-DEMO-001", "app": "APP-DEMO-001" },
+    { "id": "p2", "name": "Daniel Reed", "company": "co2", "email": "daniel.reed@meridian-fo.example.com", "phone": "+1 202 555 0102", "crm": "CRM-DEMO-002", "app": "APP-DEMO-002" },
+    { "id": "p3", "name": "Sofia Nowak", "company": "co3", "email": "sofia.nowak@atlas-quant.example.com", "phone": "+44 20 7946 0103", "crm": "CRM-DEMO-003", "app": "APP-DEMO-003" },
+    { "id": "p4", "name": "Martin Keller", "company": "co4", "email": "martin.keller@greenfield-lab.example.com", "phone": "+1 202 555 0104", "crm": "CRM-DEMO-004", "app": null },
+    { "id": "p5", "name": "Priya Shah", "company": "co5", "email": "priya.shah@horizon-asset.example.com", "phone": "+44 20 7946 0105", "crm": "CRM-DEMO-005", "app": "APP-DEMO-005" },
+    { "id": "p6", "name": "Tomasz Zielinski", "company": "co6", "email": "tomasz.zielinski@redwood-trading.example.com", "phone": "+1 202 555 0106", "crm": "CRM-DEMO-006", "app": null },
+    { "id": "p7", "name": "Claire Dubois", "company": null, "email": "claire.dubois@example.com", "phone": "+44 20 7946 0107", "crm": "CRM-DEMO-007", "app": null }
+  ],
+  "deals": [
+    { "id": "d1", "person": "p1", "journey": "New Business", "stage": "Contact Established", "lead": "Inbound", "expected_deposit": 500000, "potential_aum": 1000000, "status": "Contact", "days_in_stage": 1, "days_since_contact": 1, "first_contact_sla": "Met", "next_action": { "text": "Qualify the opportunity", "state": "Suggested", "due": "Day 3 (Wed)" }, "alert": null, "blocker": null, "origin": "Sales Plan", "about": "Training firm exploring multi-asset execution for a demo portfolio. Synthetic record." },
+    { "id": "d2", "person": "p2", "journey": "Client Growth", "stage": "Discovery", "type": "Brokerage", "expected_deposit": 1000000, "next_action": { "text": "Understand the client's need and size the opportunity", "state": "Suggested", "due": "Day 5 (Fri)" }, "alert": null, "blocker": null, "about": "Funded demo family office considering an additional allocation. Synthetic record." },
+    { "id": "d3", "person": "p3", "journey": "New Business", "stage": "Onboarding", "lead": "Inbound", "expected_deposit": 250000, "status": "Inactive", "days_in_stage": 9, "days_since_contact": 31, "first_contact_sla": "Met", "next_action": { "text": "Support the client through KYC", "state": "Accepted", "due": "Day 1 (Mon)" }, "alert": "Stopped responding to onboarding", "blocker": "Waiting for proof of address (synthetic)" },
+    { "id": "d4", "person": "p4", "journey": "New Business", "stage": "New Opportunity", "lead": "Inbound", "expected_deposit": null, "status": "Contact", "days_in_stage": 0, "days_since_contact": null, "first_contact_sla": "Due Day 1 (Mon) 15:00", "assigned": "Day 0 (Fri) 15:00", "next_action": { "text": "Make first contact", "state": "Suggested", "due": "Day 1 (Mon) 15:00" }, "alert": null, "blocker": null },
+    { "id": "d5", "person": "p5", "journey": "New Business", "stage": "Funding Pending", "lead": "Outbound", "expected_deposit": 250000, "status": "KYC Passed", "days_in_stage": 8, "days_since_contact": 6, "first_contact_sla": "Met", "next_action": { "text": "Follow up on funding", "state": "Accepted", "due": "Day 2 (Tue)" }, "alert": "Funding not arriving", "blocker": null },
+    { "id": "d6", "person": "p6", "journey": "New Business", "stage": "Qualified", "lead": "Outbound", "expected_deposit": 500000, "status": "Contact", "days_in_stage": 6, "days_since_contact": 4, "first_contact_sla": "Met", "next_action": { "text": "Present the solution & discuss terms", "state": "Accepted", "due": "Day 0 (Fri)" }, "alert": "Action overdue", "blocker": null },
+    { "id": "d7", "person": "p7", "journey": "New Business", "stage": "New Opportunity", "lead": "Outbound", "expected_deposit": null, "status": "Contact", "days_in_stage": 33, "days_since_contact": null, "first_contact_sla": "Overdue", "next_action": { "text": "Make first contact", "state": "Suggested", "due": "Overdue" }, "alert": "Lead untouched", "blocker": null }
+  ],
+  "dashboard": {
+    "active_milestone": { "liquid_nav": 500000, "target": 1000000, "percent": 50, "remaining": 500000, "label": "Training milestone", "check_by": "Day 5 (Fri)" },
+    "net_new_money": { "value": 250000, "goal": 1000000, "label": "Training year to date" },
+    "my_clients": { "count": 7, "contacted_30d": 5, "high_value": 1 },
+    "total_nav": 1000000,
+    "open_deal_value": { "value": 2500000, "deals": 7 },
+    "recent_activity_window": ["Last 7 days", "Last 30 days"]
+  },
+  "tasks": [
+    { "title": "Call Northstar Capital Training", "client": "p1", "horizon": "Today", "time": "10:00", "duration": "30m", "priority": "High" },
+    { "title": "Send Meridian Family Office Demo follow up", "client": "p2", "horizon": "Today", "time": "14:00", "duration": "20m", "priority": "Medium" },
+    { "title": "Review Atlas Quant Partners onboarding checklist", "client": "p3", "horizon": "Inbox", "time": null, "duration": "45m", "priority": "Normal" },
+    { "title": "Prepare Redwood Trading Education demo agenda", "client": "p6", "horizon": "Coming week", "time": null, "duration": "1h", "priority": "Medium" },
+    { "title": "Check Horizon Asset Practice funding status", "client": "p5", "horizon": "Today", "time": "11:30", "duration": "15m", "priority": "High" },
+    { "title": "Update Sales Plan comments", "client": null, "horizon": "Coming month", "time": null, "duration": "30m", "priority": "Normal" },
+    { "title": "Waiting on synthetic document review", "client": "p3", "horizon": "Blocked", "time": null, "duration": "15m", "priority": "Normal" },
+    { "title": "Synthetic welcome email sent", "client": "p1", "horizon": "Done", "time": null, "duration": "10m", "priority": "Normal" }
+  ],
+  "calendar": [
+    { "title": "Synthetic meeting with Northstar Capital Training", "day": "Day 1 (Mon)", "start": "09:00", "end": "09:30", "kind": "meeting" },
+    { "title": "Synthetic follow up block", "day": "Day 1 (Mon)", "start": "13:00", "end": "13:30", "kind": "task" },
+    { "title": "Synthetic onboarding review", "day": "Day 1 (Mon)", "start": "15:00", "end": "15:45", "kind": "task" },
+    { "title": "Synthetic internal request review", "day": "Day 1 (Mon)", "start": "16:30", "end": "17:00", "kind": "task" }
+  ],
+  "activities": [
+    { "day": "Day 1 (Mon)", "client": "p1", "type": "Emails", "details": "Synthetic introduction email", "tags": ["Meeting Scheduling"] },
+    { "day": "Day 1 (Mon)", "client": "p6", "type": "Calls", "details": "Synthetic call, 4 minutes", "tags": ["Onboarding"] },
+    { "day": "Day 0 (Fri)", "client": "p2", "type": "Meetings", "details": "Synthetic online meeting", "tags": ["Post-meeting Email"] },
+    { "day": "Day 0 (Fri)", "client": "p2", "type": "Deposits", "details": "Deposit EUR 250,000 (synthetic)", "tags": [] },
+    { "day": "Day -2 (Wed)", "client": "p2", "type": "Withdrawals", "details": "Withdrawal EUR 250,000 (synthetic)", "tags": [] },
+    { "day": "Day -3 (Tue)", "client": "p4", "type": "Registered", "details": "Synthetic registration", "tags": [] },
+    { "day": "Day -4 (Mon)", "client": "p5", "type": "KYC passed", "details": "Synthetic KYC passed", "tags": ["Documents"] }
+  ],
+  "ownership_checks": [
+    { "query": "greenfield-lab.example.com", "verdict": "Available" },
+    { "query": "contact@northstar-capital.example.com", "verdict": "Claimed" },
+    { "query": "atlas-quant.example.com", "verdict": "Restricted" },
+    { "query": "Daniel", "verdict": "Needs narrowing" },
+    { "query": "new.prospect@example.com", "verdict": "Not found" }
+  ],
+  "sales_plan": [
+    { "client": "Alex Morgan training contact", "type": "Individual", "crm_link": null, "na_reason": "Training contact, not created in CRM because this is a demo entry", "probability": "Low" },
+    { "client": "Northstar Capital Training", "type": "Corporate", "crm_link": "CRM-DEMO-001", "na_reason": null, "probability": "High" },
+    { "client": "Greenfield Institutional Lab", "type": "Corporate", "crm_link": "CRM-DEMO-004", "na_reason": null, "probability": "Medium" }
+  ],
+  "requests": [
+    { "key": "TRAIN-101", "summary": "Synthetic onboarding question for a demo client", "status": "Open", "tab": "Jira" },
+    { "key": "TRAIN-102", "summary": "Synthetic document check request", "status": "In progress", "tab": "Onboarding" },
+    { "key": "TRAIN-103", "summary": "Synthetic KYC follow up", "status": "Due soon", "tab": "KYC" },
+    { "key": "TRAIN-104", "summary": "Synthetic support conversation", "status": "Open", "tab": "Intercom" }
+  ]
+}
