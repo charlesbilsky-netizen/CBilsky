@@ -23,11 +23,11 @@ XF = 0.3
 CUTS = {
     "SalesMind_Trailer_30s": {
         "music": ("m4", 24.0),
-        "segs": ["c01p02", "MAIN", "c04p05", "c08p04", "c10p06", "c16p02", "c16p04", "END"],
+        "segs": ["c01p02", "MAIN", "c03p00", "c04p05", "c08p04", "c10p06", "c16p02", "c16p04", "END"],
     },
     "SalesMind_Onboarding_90s": {
         "music": ("m2", 20.0),
-        "segs": ["c01p02", "MAIN", "c02p00", "c02p02", "c03p00", "c04p00", "c04p04", "c04p05", "c05p00", "c08p03+c08p04", "c10p02", "c16p00", "c16p02", "c16p04", "END"],
+        "segs": ["c01p02", "MAIN", "c02p00", "c02p02", "c03p00", "c04p00", "c04p04", "c04p05", "c05p00", "c08p03+c08p04", "c10p02", "c10p03", "c16p00", "c16p02", "c16p04", "END"],
     },
 }
 
@@ -41,9 +41,9 @@ def tl_times():
             lines[l["id"]] = (s, s + (l["dur"] - 12) / FPS)
         if "main_title" in c:
             mt = (c["start"] + c["main_title"]["from"]) / FPS
-            lines["MAIN"] = (mt + 0.3, mt + 2.9)
+            lines["MAIN"] = (mt + 0.3, mt + 2.4)
     ec = tl["end_card"]["from"] / FPS
-    lines["END"] = (ec + 0.2, ec + 3.2)
+    lines["END"] = (ec + 0.2, ec + 2.6)
     return lines
 
 
