@@ -1,6 +1,6 @@
 @echo off
 rem Joins the 16 SalesMind chapter files into one film with chapter markers.
-rem Put this file, SalesMind_chapters.txt, SalesMind_soundtrack.m4a and the
+rem Put this file, SalesMind_chapters.txt, SalesMind_soundtrack.m4a, SalesMind_thumbnail.jpg and the
 rem 16 SalesMind_ChXX files in one folder, then double-click this file.
 cd /d "%~dp0"
 where ffmpeg >nul 2>nul
@@ -25,7 +25,13 @@ if not exist SalesMind_soundtrack.m4a (
   exit /b 1
 )
 (for %%n in (01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16) do @for %%f in (SalesMind_Ch%%n_*.mp4) do @echo file '%%f') > _list.txt
-ffmpeg -v error -stats -y -f concat -safe 0 -i _list.txt -i SalesMind_soundtrack.m4a -i SalesMind_chapters.txt -map 0:v -map 1:a -map_metadata 2 -map_chapters 2 -c copy -movflags +faststart "SalesMind_The_RM_Operating_System.mp4"
+set COVERIN=
+set COVERMAP=
+if exist SalesMind_thumbnail.jpg (
+  set COVERIN=-i SalesMind_thumbnail.jpg
+  set COVERMAP=-map 3 -disposition:v:1 attached_pic
+)
+ffmpeg -v error -stats -y -f concat -safe 0 -i _list.txt -i SalesMind_soundtrack.m4a -i SalesMind_chapters.txt %COVERIN% -map 0:v -map 1:a %COVERMAP% -map_metadata 2 -map_chapters 2 -c copy -movflags +faststart "SalesMind_The_RM_Operating_System.mp4"
 set RESULT=%errorlevel%
 del _list.txt
 if not "%RESULT%"=="0" (
@@ -34,5 +40,5 @@ if not "%RESULT%"=="0" (
   exit /b 1
 )
 echo.
-echo Done. SalesMind_The_RM_Operating_System.mp4 is in this folder, with 16 chapters.
+echo Done. SalesMind_The_RM_Operating_System.mp4 is in this folder, with 16 chapters and the cover image.
 pause
