@@ -10,6 +10,7 @@ import { Film } from "./film/Film";
 import { TL } from "./film/tl";
 import { Samples } from "./Samples";
 import { Thumb } from "./film/Thumb";
+import { Thumb3D } from "./film/Thumb3D";
 import samples from "./generated/samples.json";
 
 const DashTest: React.FC = () => (
@@ -24,6 +25,7 @@ const DashTest: React.FC = () => (
 
 export const Root: React.FC = () => (
   <>
+    <Composition id="Thumb3D" component={Thumb3D} durationInFrames={1} fps={FPS} width={W} height={H} />
     <Composition id="Thumb" component={Thumb} durationInFrames={1} fps={FPS} width={W} height={H} />
     <Composition id="Samples" component={Samples} durationInFrames={samples.length} fps={FPS} width={W} height={H} />
     <Composition id="Film" component={Film} durationInFrames={TL.total} fps={FPS} width={W} height={H} />
