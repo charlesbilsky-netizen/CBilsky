@@ -177,7 +177,7 @@ export const FiltersPanel: React.FC<{ start?: number; pick?: string | null; focu
             <Label style={{ width: 170, paddingTop: 8, color: focusGroup === g ? C.bright : C.muted }}>{g}</Label>
             <div style={{ display: "flex", gap: 8, flexWrap: "wrap", flex: 1 }}>
               {opts.map((o) => (
-                <Chip key={o} active={pick === o} style={{ fontSize: 14, padding: "5px 12px" }}>
+                <Chip key={o} active={pick === o && (!focusGroup || focusGroup === g)} style={{ fontSize: 14, padding: "5px 12px" }}>
                   {o}
                 </Chip>
               ))}
