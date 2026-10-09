@@ -1,0 +1,10 @@
+{
+ "frames_sampled": 449,
+ "label_template_min": 0.849,
+ "label_template_median": 0.993,
+ "label_ocr_confirmed": 449,
+ "label_missing_at": [],
+ "url_or_domain_hits": [],
+ "integrated_lufs": -16.0,
+ "true_peak_dbtp": -2.4
+}
