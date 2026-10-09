@@ -1,0 +1,730 @@
+{
+ "fps": 30,
+ "total": 26915,
+ "chapters": [
+  {
+   "n": 1,
+   "num": "01",
+   "title": "Cold open",
+   "start": 0,
+   "title_len": 0,
+   "body_len": 773,
+   "lines": [
+    {
+     "id": "c01p00",
+     "from": 54,
+     "dur": 92,
+     "text": "Every RM starts the day with competing signals."
+    },
+    {
+     "id": "c01p01",
+     "from": 152,
+     "dur": 397,
+     "text": "A first contact coming due. A next action already overdue. A follow-up to send. A deal with no next step at all. An internal request still open. And a calendar with less room than it looks."
+    },
+    {
+     "id": "c01p02",
+     "from": 567,
+     "dur": 146,
+     "text": "Every RM starts with competing signals. The work is knowing what moves first."
+    }
+   ],
+   "main_title": {
+    "from": 773,
+    "dur": 132
+   },
+   "len": 905
+  },
+  {
+   "n": 2,
+   "num": "02",
+   "title": "What SalesMind is",
+   "start": 905,
+   "title_len": 96,
+   "body_len": 1129,
+   "lines": [
+    {
+     "id": "c02p00",
+     "from": 10,
+     "dur": 222,
+     "text": "SalesMind is EXANTE's RM workspace. One place for your book, your pipeline and your day."
+    },
+    {
+     "id": "c02p01",
+     "from": 238,
+     "dur": 486,
+     "text": "Your deals. Your tasks. What your clients did. How you are performing. Your sales plan. Your requests to internal teams. The guidebook. The sales materials. And, once you connect it, your calendar beside your tasks."
+    },
+    {
+     "id": "c02p02",
+     "from": 740,
+     "dur": 341,
+     "text": "It reads from the CRM and writes back to it. So treat every click as real. Qualification you fill in, and loss reasons you choose, land in the CRM."
+    }
+   ],
+   "len": 1225
+  },
+  {
+   "n": 3,
+   "num": "03",
+   "title": "Getting in and finding your way",
+   "start": 2130,
+   "title_len": 96,
+   "body_len": 1235,
+   "lines": [
+    {
+     "id": "c03p00",
+     "from": 10,
+     "dur": 152,
+     "text": "The screen you are seeing is a synthetic training environment. No live client data is used."
+    },
+    {
+     "id": "c03p01",
+     "from": 168,
+     "dur": 159,
+     "text": "You sign in, and your workspace opens on the left-hand menu. It has four groups."
+    },
+    {
+     "id": "c03p02",
+     "from": 333,
+     "dur": 134,
+     "text": "Workspace holds the Dashboard, Task management and Internal requests."
+    },
+    {
+     "id": "c03p03",
+     "from": 473,
+     "dur": 108,
+     "text": "Book holds Pipeline, Clients and Activity."
+    },
+    {
+     "id": "c03p04",
+     "from": 587,
+     "dur": 73,
+     "text": "Results holds Performance and Bonus."
+    },
+    {
+     "id": "c03p05",
+     "from": 666,
+     "dur": 130,
+     "text": "Support holds the Guidebook, Sales materials and the Changelog."
+    },
+    {
+     "id": "c03p06",
+     "from": 802,
+     "dur": 264,
+     "text": "Across the top: Search, for pages and clients. Change theme. And your account menu. The menu collapses at its foot when you need the room."
+    },
+    {
+     "id": "c03p07",
+     "from": 1072,
+     "dur": 117,
+     "text": "Eleven pages. Most days, you work in a handful of them."
+    }
+   ],
+   "len": 1331
+  },
+  {
+   "n": 4,
+   "num": "04",
+   "title": "The Dashboard",
+   "start": 3461,
+   "title_len": 96,
+   "body_len": 1856,
+   "lines": [
+    {
+     "id": "c04p00",
+     "from": 10,
+     "dur": 87,
+     "text": "Start here. This is the control surface."
+    },
+    {
+     "id": "c04p01",
+     "from": 103,
+     "dur": 591,
+     "text": "Across the top, your active milestone: liquid NAV against the target, what remains, and the date it is checked. Beside it, net new money for the year against your goal. Then three tiles. My clients. Total NAV. Open deal value. Click Open deal value and you are in the Pipeline."
+    },
+    {
+     "id": "c04p02",
+     "from": 710,
+     "dur": 272,
+     "text": "Below sits the list that runs your morning. Four tabs. Going quiet. New opportunities. Open deals. Open requests."
+    },
+    {
+     "id": "c04p03",
+     "from": 988,
+     "dur": 105,
+     "text": "Open deals are already sorted, most urgent first."
+    },
+    {
+     "id": "c04p04",
+     "from": 1099,
+     "dur": 347,
+     "text": "Critical alerts. Then overdue next actions. Then deals with no next action. Then deals past the stage's time limit. Then blocked deals. Then everything else."
+    },
+    {
+     "id": "c04p05",
+     "from": 1470,
+     "dur": 81,
+     "text": "Sort by urgency. Work from the top."
+    },
+    {
+     "id": "c04p06",
+     "from": 1597,
+     "dur": 223,
+     "text": "On the right, recent activity. Switch between the last seven days and the last thirty. View all opens the full log."
+    }
+   ],
+   "len": 1952
+  },
+  {
+   "n": 5,
+   "num": "05",
+   "title": "Task management",
+   "start": 5413,
+   "title_len": 96,
+   "body_len": 2312,
+   "lines": [
+    {
+     "id": "c05p00",
+     "from": 10,
+     "dur": 119,
+     "text": "Task management is where a task and an hour become the same thing."
+    },
+    {
+     "id": "c05p01",
+     "from": 135,
+     "dur": 185,
+     "text": "Three tabs, in the order you use them. Inbox. Today. Planning."
+    },
+    {
+     "id": "c05p02",
+     "from": 326,
+     "dur": 474,
+     "text": "The Inbox holds everything without a day yet. Tasks you captured, and the emails you starred. Pick one, read it in the pane on the right, and give it a day. Today. Week. Month. Or Later. The keys are T, W, M and L."
+    },
+    {
+     "id": "c05p03",
+     "from": 816,
+     "dur": 343,
+     "text": "To capture, press C, type one line and press Enter. An at sign links a client. A time makes it a block on your calendar. An exclamation mark sets the horizon or the priority."
+    },
+    {
+     "id": "c05p04",
+     "from": 1165,
+     "dur": 53,
+     "text": "Give the task a day."
+    },
+    {
+     "id": "c05p05",
+     "from": 1224,
+     "dur": 363,
+     "text": "Today shows your list beside your calendar. Each task carries its age, its time if it has one, and how long it takes. Filter by client. Undo with Control Z."
+    },
+    {
+     "id": "c05p06",
+     "from": 1593,
+     "dur": 399,
+     "text": "Once a day, run Plan the day. First, yesterday as it really went. Then today, with a ring that shows how much of the day is already spoken for. Clear the Inbox. Fill Today. Start my day."
+    },
+    {
+     "id": "c05p07",
+     "from": 2014,
+     "dur": 262,
+     "text": "Planning shows what is further out, as a board or a list. Inbox, Today, Coming week, Coming month, Later, Blocked and Done."
+    }
+   ],
+   "len": 2408
+  },
+  {
+   "n": 6,
+   "num": "06",
+   "title": "The Pipeline",
+   "start": 7821,
+   "title_len": 96,
+   "body_len": 3217,
+   "lines": [
+    {
+     "id": "c06p00",
+     "from": 10,
+     "dur": 364,
+     "text": "The Pipeline holds your deals, and only yours. Three tabs. New Business, for clients who have not funded yet. Client Growth, for new money from clients who have. And your Sales plan."
+    },
+    {
+     "id": "c06p01",
+     "from": 380,
+     "dur": 319,
+     "text": "The toolbar: Search client. Filters. Closed window, which sets how far back closed deals stay visible. Views. Sort. And Board or Table."
+    },
+    {
+     "id": "c06p02",
+     "from": 705,
+     "dur": 291,
+     "text": "The fastest filters are the focus chips. Overdue. Due this week. No contact in thirty days or more. With amount."
+    },
+    {
+     "id": "c06p03",
+     "from": 1002,
+     "dur": 296,
+     "text": "Every morning, open Filters, then Alert, then Has alert. Overdue actions are included. Save it under Views, and it is one click tomorrow."
+    },
+    {
+     "id": "c06p04",
+     "from": 1304,
+     "dur": 782,
+     "text": "Alerts tell you where to look first. Four are critical: SLA breach, Stopped responding to onboarding, Funding not arriving, and Qualification missing. The warnings are Lead untouched, Action overdue, Rescheduled repeatedly, Check contact details, and Back from Lost. Suspected duplicate is information. Alerts clear by themselves once you fix the problem. Back from Lost stays."
+    },
+    {
+     "id": "c06p05",
+     "from": 2110,
+     "dur": 434,
+     "text": "The clock that matters most is first contact. Inbound leads: twenty-four hours, weekends excluded. Assigned Friday at three, due Monday at three. Outbound: one calendar month. Contact late, and the deal is marked late for good."
+    },
+    {
+     "id": "c06p06",
+     "from": 2564,
+     "dur": 599,
+     "text": "No answer? Follow the schedule. Day zero, call and email. Day one, call. Day three, call and email. Day seven, call: the last step for outbound leads. Day twelve, a break-up email for inbound. Then decide whether to close the deal as Lost."
+    }
+   ],
+   "len": 3313
+  },
+  {
+   "n": 7,
+   "num": "07",
+   "title": "Board and table",
+   "start": 11134,
+   "title_len": 96,
+   "body_len": 2292,
+   "lines": [
+    {
+     "id": "c07p00",
+     "from": 10,
+     "dur": 187,
+     "text": "On the board, each column is a stage, with its count and its total expected deposit."
+    },
+    {
+     "id": "c07p01",
+     "from": 203,
+     "dur": 420,
+     "text": "New Business runs from New Opportunity, to Contact Established, Qualified, Solution Presented, Onboarding, Funding Pending, Funded and Won. Lost and On Hold sit alongside."
+    },
+    {
+     "id": "c07p02",
+     "from": 629,
+     "dur": 584,
+     "text": "Most of it moves by itself. A reply, a call over ten seconds, or an accepted invite moves New Opportunity on. A submitted application, a passed KYC and arriving money move the rest. You move the stages that need judgement. New Business Funded, and every Won, are never set by hand."
+    },
+    {
+     "id": "c07p03",
+     "from": 1235,
+     "dur": 329,
+     "text": "A card answers three questions. How long in this stage. How long since contact. How much money. Days in stage turns bold when the deal is late."
+    },
+    {
+     "id": "c07p04",
+     "from": 1570,
+     "dur": 343,
+     "text": "Switch to Table for a review. The next stage action shows in violet while it is still a suggestion. The first contact column says Met, Late, Overdue, or the due date."
+    },
+    {
+     "id": "c07p05",
+     "from": 1929,
+     "dur": 327,
+     "text": "Client Growth has its own stages. Discovery, Validation, Negotiation, Approval, In Progress, Funded and Won. You move every one of them up to Funded."
+    }
+   ],
+   "len": 2388
+  },
+  {
+   "n": 8,
+   "num": "08",
+   "title": "Working a deal",
+   "start": 13522,
+   "title_len": 96,
+   "body_len": 2567,
+   "lines": [
+    {
+     "id": "c08p00",
+     "from": 10,
+     "dur": 169,
+     "text": "The screen you are seeing is a synthetic training environment. No live client data is used."
+    },
+    {
+     "id": "c08p01",
+     "from": 185,
+     "dur": 234,
+     "text": "This is Northstar Capital Training, a training deal at Contact Established, with an expected deposit of five hundred thousand euros."
+    },
+    {
+     "id": "c08p02",
+     "from": 425,
+     "dur": 312,
+     "text": "On the left: the stage, the money, the account lifecycle, and qualification. On the right: About this deal, the next stage action, the blocker, and the latest notes."
+    },
+    {
+     "id": "c08p03",
+     "from": 743,
+     "dur": 287,
+     "text": "Every active deal has exactly one next action. SalesMind suggests it, in violet. Change the words or the date if you need to. Then accept it."
+    },
+    {
+     "id": "c08p04",
+     "from": 1048,
+     "dur": 135,
+     "text": "Accept the next action. It becomes your task, with its due date."
+    },
+    {
+     "id": "c08p05",
+     "from": 1225,
+     "dur": 382,
+     "text": "When it is done, mark it complete. Say what happened. Add a note if it helps. Set the next action, because a deal is never left without one. Here, choose Complete and move to Qualified."
+    },
+    {
+     "id": "c08p06",
+     "from": 1631,
+     "dur": 160,
+     "text": "If something is missing, the move dialog tells you. It is a reminder, not a wall."
+    },
+    {
+     "id": "c08p07",
+     "from": 1797,
+     "dur": 167,
+     "text": "Need a reminder about the client that is not the deal's next step? Add an ordinary task."
+    },
+    {
+     "id": "c08p08",
+     "from": 1970,
+     "dur": 453,
+     "text": "The client is real, but not now? Put the deal on hold, with a reason and, if you can, a follow-up date. It is over? Close the deal, pick the loss reason with care, and write why. The reason goes to the CRM."
+    },
+    {
+     "id": "c08p09",
+     "from": 2429,
+     "dur": 78,
+     "text": "Do not leave an important deal without a next move."
+    }
+   ],
+   "len": 2663
+  },
+  {
+   "n": 9,
+   "num": "09",
+   "title": "Client Growth",
+   "start": 16185,
+   "title_len": 96,
+   "body_len": 1401,
+   "lines": [
+    {
+     "id": "c09p00",
+     "from": 10,
+     "dur": 109,
+     "text": "Client Growth is new money from clients who have already funded."
+    },
+    {
+     "id": "c09p01",
+     "from": 125,
+     "dur": 457,
+     "text": "On the Client Growth tab, click Create deal. Type three or more letters of the client's name. Pick Meridian Family Office Demo, and the type. Brokerage, or White label. Add the expected deposit if you know it."
+    },
+    {
+     "id": "c09p02",
+     "from": 588,
+     "dur": 141,
+     "text": "A funded client gets a deal at Discovery, with a suggested next action."
+    },
+    {
+     "id": "c09p03",
+     "from": 735,
+     "dur": 222,
+     "text": "If the client already has an open deal, SalesMind will not open a second one. Edit the existing deal instead."
+    },
+    {
+     "id": "c09p04",
+     "from": 973,
+     "dur": 392,
+     "text": "From there you move it. Discovery. Validation. Negotiation. Approval. In Progress. Funded. Once deposits reach the expected deposit, Won is set by itself."
+    }
+   ],
+   "len": 1497
+  },
+  {
+   "n": 10,
+   "num": "10",
+   "title": "Clients and ownership",
+   "start": 17682,
+   "title_len": 96,
+   "body_len": 1761,
+   "lines": [
+    {
+     "id": "c10p00",
+     "from": 10,
+     "dur": 166,
+     "text": "The screen you are seeing is a synthetic training environment. No live client data is used."
+    },
+    {
+     "id": "c10p01",
+     "from": 182,
+     "dur": 350,
+     "text": "Clients lists your book. All, Clients or Contacts. Quick filters for high value, high risk and not funded. Compact or detailed. Filters, columns and saved views."
+    },
+    {
+     "id": "c10p02",
+     "from": 538,
+     "dur": 96,
+     "text": "Before you approach anyone new, check ownership."
+    },
+    {
+     "id": "c10p03",
+     "from": 640,
+     "dur": 223,
+     "text": "Search by full name, exact email or phone, or the company domain. One search returns one verdict."
+    },
+    {
+     "id": "c10p04",
+     "from": 869,
+     "dur": 638,
+     "text": "Available. Free to approach. Claimed. Another RM owns them. Request reassignment if you have a case. Restricted. A funded client or a protected company. Do not approach. Needs narrowing. Add the domain or a full email. Not found. Add the contact to the CRM, and it is assigned to you."
+    },
+    {
+     "id": "c10p05",
+     "from": 1537,
+     "dur": 74,
+     "text": "You have one hundred searches a day."
+    },
+    {
+     "id": "c10p06",
+     "from": 1617,
+     "dur": 78,
+     "text": "Check ownership before approaching the contact."
+    }
+   ],
+   "len": 1857
+  },
+  {
+   "n": 11,
+   "num": "11",
+   "title": "Activity",
+   "start": 19539,
+   "title_len": 96,
+   "body_len": 1012,
+   "lines": [
+    {
+     "id": "c11p00",
+     "from": 10,
+     "dur": 365,
+     "text": "Activity is the full log of your book. Emails, calls, meetings, deposits, withdrawals, registrations, KYC events and requests. Topic tags tell you what each one was about."
+    },
+    {
+     "id": "c11p01",
+     "from": 381,
+     "dur": 69,
+     "text": "Open an item to read it in full."
+    },
+    {
+     "id": "c11p02",
+     "from": 456,
+     "dur": 357,
+     "text": "If something was recorded wrong, raise an issue from the item. Choose the category and the meeting type, and write a short, factual comment. The team reviews it within one to three business days."
+    },
+    {
+     "id": "c11p03",
+     "from": 819,
+     "dur": 137,
+     "text": "Record the activity. If it is not in the record, nobody else can see it."
+    }
+   ],
+   "len": 1108
+  },
+  {
+   "n": 12,
+   "num": "12",
+   "title": "Performance",
+   "start": 20647,
+   "title_len": 96,
+   "body_len": 854,
+   "lines": [
+    {
+     "id": "c12p00",
+     "from": 10,
+     "dur": 277,
+     "text": "Performance is one page with six sections. NAV milestones. Pipeline. Funding. Standing. Conversion. Communication."
+    },
+    {
+     "id": "c12p01",
+     "from": 293,
+     "dur": 438,
+     "text": "The period filter covers this month to all time. NAV milestones follow your tenure instead: own liquid NAV at month three, then total liquid NAV at six, twelve, twenty-four and thirty-six months."
+    },
+    {
+     "id": "c12p02",
+     "from": 749,
+     "dur": 69,
+     "text": "The figures you see here are synthetic."
+    }
+   ],
+   "len": 950
+  },
+  {
+   "n": 13,
+   "num": "13",
+   "title": "The Sales Plan",
+   "start": 21597,
+   "title_len": 96,
+   "body_len": 1427,
+   "lines": [
+    {
+     "id": "c13p00",
+     "from": 10,
+     "dur": 167,
+     "text": "The screen you are seeing is a synthetic training environment. No live client data is used."
+    },
+    {
+     "id": "c13p01",
+     "from": 183,
+     "dur": 110,
+     "text": "Your sales plan lives inside the Pipeline, on its own tab."
+    },
+    {
+     "id": "c13p02",
+     "from": 299,
+     "dur": 413,
+     "text": "Add an entry, and create the contact, or link the CRM record. Every entry needs a valid CRM link, or a written reason under Not Available. Be specific. N slash A is not a reason."
+    },
+    {
+     "id": "c13p03",
+     "from": 732,
+     "dur": 151,
+     "text": "New RMs finalise the plan within their first ten days. It is a compliance step."
+    },
+    {
+     "id": "c13p04",
+     "from": 889,
+     "dur": 492,
+     "text": "Link an entry to a CRM contact and a deal appears on the board at once. Filter by origin to see only plan deals. Sales Plan Progress, Entries Requiring Attention, Forecasted NAV, plan against reality, and plan history show where the plan stands."
+    }
+   ],
+   "len": 1523
+  },
+  {
+   "n": 14,
+   "num": "14",
+   "title": "Calendar and the day",
+   "start": 23120,
+   "title_len": 96,
+   "body_len": 1138,
+   "lines": [
+    {
+     "id": "c14p00",
+     "from": 10,
+     "dur": 159,
+     "text": "The screen you are seeing is a simulated permissions screen. No live connection is made."
+    },
+    {
+     "id": "c14p01",
+     "from": 175,
+     "dur": 180,
+     "text": "Connect Google once. Pick your work account, continue, select all, continue."
+    },
+    {
+     "id": "c14p02",
+     "from": 361,
+     "dur": 432,
+     "text": "From then on, your real meetings sit beside your tasks. A task with a time becomes a block in a separate calendar called SalesMind Tasks. Colleagues looking for a slot do not see it. A meeting you create does go to your main calendar."
+    },
+    {
+     "id": "c14p03",
+     "from": 813,
+     "dur": 114,
+     "text": "Deleting a time-blocked task deletes its calendar block too."
+    },
+    {
+     "id": "c14p04",
+     "from": 933,
+     "dur": 169,
+     "text": "The screen you are seeing is a synthetic training environment. No live client data is used."
+    }
+   ],
+   "len": 1234
+  },
+  {
+   "n": 15,
+   "num": "15",
+   "title": "Support",
+   "start": 24354,
+   "title_len": 96,
+   "body_len": 965,
+   "lines": [
+    {
+     "id": "c15p00",
+     "from": 10,
+     "dur": 247,
+     "text": "When you are unsure, the Guidebook has twenty short pages, from the new pipeline in one minute to the cheat sheet and glossary."
+    },
+    {
+     "id": "c15p01",
+     "from": 263,
+     "dur": 205,
+     "text": "Sales materials collects the current playbooks and battle cards. Use the latest version in every client conversation."
+    },
+    {
+     "id": "c15p02",
+     "from": 474,
+     "dur": 74,
+     "text": "The Changelog tells you what changed."
+    },
+    {
+     "id": "c15p03",
+     "from": 554,
+     "dur": 365,
+     "text": "Internal requests shows your open Jira, onboarding, KYC and Intercom requests. Raise a request from the top right. Open requests on a client show up under that deal's blocker."
+    }
+   ],
+   "len": 1061
+  },
+  {
+   "n": 16,
+   "num": "16",
+   "title": "End of day",
+   "start": 25415,
+   "title_len": 96,
+   "body_len": 1194,
+   "lines": [
+    {
+     "id": "c16p00",
+     "from": 10,
+     "dur": 66,
+     "text": "Close the day the same way every day."
+    },
+    {
+     "id": "c16p01",
+     "from": 82,
+     "dur": 613,
+     "text": "Critical alerts cleared. First contact deadlines protected. Overdue actions worked. Inbox triaged. Today planned. Activity recorded. Ownership checked. Client Growth reviewed. Sales Plan reviewed. Requests reviewed. Calendar capacity checked. Tomorrow planned."
+    },
+    {
+     "id": "c16p02",
+     "from": 721,
+     "dur": 83,
+     "text": "And every important deal has a next action."
+    },
+    {
+     "id": "c16p03",
+     "from": 840,
+     "dur": 174,
+     "text": "The screen you are seeing is a synthetic training environment. No live client data is used."
+    },
+    {
+     "id": "c16p04",
+     "from": 1020,
+     "dur": 88,
+     "text": "Your book is under control when the next action is clear."
+    }
+   ],
+   "len": 1290
+  }
+ ],
+ "end_card": {
+  "from": 26705,
+  "dur": 210
+ }
+}

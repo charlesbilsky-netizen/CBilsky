@@ -1,0 +1,99 @@
+;FFMETADATA1
+title=SalesMind: The RM Operating System
+comment=Training film. Synthetic data only. Not a live account.
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=0
+END=30200
+title=01 Cold open
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=30200
+END=71033
+title=02 What SalesMind is
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=71033
+END=115433
+title=03 Getting in and finding your way
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=115433
+END=180533
+title=04 The Dashboard
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=180533
+END=260833
+title=05 Task management
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=260833
+END=371267
+title=06 The Pipeline
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=371267
+END=450867
+title=07 Board and table
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=450867
+END=539667
+title=08 Working a deal
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=539667
+END=589567
+title=09 Client Growth
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=589567
+END=651467
+title=10 Clients and ownership
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=651467
+END=688400
+title=11 Activity
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=688400
+END=720100
+title=12 Performance
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=720100
+END=770900
+title=13 The Sales Plan
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=770900
+END=812033
+title=14 Calendar and the day
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=812033
+END=847433
+title=15 Support
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=847433
+END=897433
+title=16 End of day

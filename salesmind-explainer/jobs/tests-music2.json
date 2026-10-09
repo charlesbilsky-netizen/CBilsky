@@ -1,0 +1,24 @@
+[
+ {
+  "id": "test-music-electronic-1",
+  "kind": "music",
+  "model": "fal-ai/stable-audio-25/text-to-audio",
+  "input": {
+   "prompt": "Minimal modern electronic score for a premium product film. Warm analog synth arpeggio, deep soft sub-bass pulse, crisp but quiet electronic percussion, glassy pads, steady 100 BPM, confident and precise, clean mix, instrumental, no vocals, leaves room for a narrator.",
+   "seconds_total": 60
+  },
+  "out": "public/tests/music_C_electronic.wav",
+  "cost": 0.2
+ },
+ {
+  "id": "test-music-electronic-2",
+  "kind": "music",
+  "model": "fal-ai/stable-audio-25/text-to-audio",
+  "input": {
+   "prompt": "Atmospheric electronic underscore. Pulsing modular synth sequence, evolving ambient textures, subtle side-chained pads, light minimal techno hi-hats far in the background, 110 BPM, cool, focused, sophisticated, instrumental, no vocals, leaves room for a narrator.",
+   "seconds_total": 60
+  },
+  "out": "public/tests/music_D_electronic.wav",
+  "cost": 0.2
+ }
+]
