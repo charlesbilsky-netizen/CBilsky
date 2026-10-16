@@ -62,5 +62,12 @@ Status: ✓ matches the source · ◐ simplified, still accurate · ✗ not in s
 | 17 | Review message shape: target and due date, NAV, gap, days left, previous rung, recorded activity, named deals with stage, amount and KYC, a reading, one question, proposed agreement date | Same source, "What a review message carries" | ✓ |
 | 17 | Human line verbatim: "Committee decisions, pay and employment are decided by people." | Ollie's own description | ✓ |
 | 17 | Scripted as "Ollie reads your evidence and agrees your next step with you", never "Ollie grades you" | Explainer rules in the source skill | ✓ |
+| 1 | Cold open: inbound 24 h first-contact clock, SLA breach / Action overdue / Lead untouched alerts, days-since-contact weight at 14/30, Lost requires a reason | System guide §SLA and alerts; deck slides 9–12, 25 | ✓ |
+| 10 | Add contact: name; email or phone obligatory; phone digits only; Individual/Corporate; refusal = already another RM's lead; edits and corporate lists via a request | "New leads adding into CRM (Contacts)" page | ✓ |
+| 10 | Bulk import: plain-text XLSX template, keep columns, leave Corporate/Individual empty, exact emails, digits-only phones, Manager column assigns | Same page, template rules | ✓ |
+| 10 | Reassignment: untouched and >6 months → reassigned; older contact → RM asked to confirm; recent activity → stays | Same page, reassignment rules | ✓ |
+| 10 | CRM path Contacts → Registrants → Qualified → Waiting for Review → KYC passed → Funded, with Pending/Rejected beside | "Pipeline" CRM description page | ✓ |
+| 10 | Qualified requires the ten qualification tags plus a logged Sales activity (answered call or meeting); compliance requires qualification before Onboarding; SalesMind's qualification writes the tags | "Qualified lead tags" page | ✓ |
+| 15 | Monitoring requests: Requests tab; email within 3 days, call by day 14, follow-ups 30/60/87-90; Document pending at day 90 or on major documents; withdrawal only to the deposit account; Close only = no new positions; lift on delivered documents | "CRM requests from Onboarding — AM's guide" | ✓ |
 
 Not shown, by decision: Bonus page contents (no bonus figures), the Ask the coach panel (its button is visible, as documented, but it is never opened: it is an AI surface that writes to SalesMind), live URLs, and anything from the source's "deliberately not contained" list.

@@ -6,9 +6,9 @@
   "system reference snapshot 6-8 Oct 2026 (v0.6.1)",
   "Ollie snapshot 14 Oct 2026"
  ],
- "duration_frames": 30624,
+ "duration_frames": 33920,
  "fps": 30,
- "duration": "17.01 min",
+ "duration": "18.84 min",
  "chapters": 17,
  "build": "deterministic recreation: every screen is code (Remotion 4, React); no live capture; no AI-generated UI",
  "renders": {
@@ -36,6 +36,6 @@
   ],
   "label": "TRAINING ENVIRONMENT \u00b7 SYNTHETIC DATA \u00b7 NOT A LIVE ACCOUNT on every frame, top layer"
  },
- "fal_spend_usd": 16.99,
+ "fal_spend_usd": 17.05,
  "cap_usd": 20.0
 }

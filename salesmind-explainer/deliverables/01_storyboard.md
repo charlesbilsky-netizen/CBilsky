@@ -197,6 +197,10 @@ Title card 14:07.2 over plate F16.
 | 15:34.6 | c17p04 | Gold card, spoken and on screen: "Committee decisions, pay and employment are decided by people." |
 | 15:41.4 | c17p05 | The review loop over the owl plate: Log the work → Ollie reads it → Agree the next step. |
 
+## Revision note (v2.1)
+
+Chapter 1 now opens on the hero frame (the thumbnail) and the cold open: a synthetic quarter-million-euro deal dies in the dark — the 24-hour clock races to breach, alerts stack, thirty days of silence, CLOSED AS LOST — then "It never had to happen." and the signal storm follows. Chapter 10 gained the CRM entry section (add contact, bulk template, reassignment, the CRM's path). Chapter 15 gained the Onboarding monitoring-request section (the Requests tab clock and the hardening statuses). Times in the tables above are from v1/v2 and shift accordingly; `shot_map.csv` carries the current per-line times.
+
 ## End card · 15:49.9
 
 SalesMind · The RM Operating System · "A training film. Every name, number and screen in it is synthetic. For detail, open the Guidebook in SalesMind." No URLs.

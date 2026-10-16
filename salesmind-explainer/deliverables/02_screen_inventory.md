@@ -45,5 +45,11 @@ Every product-like screen in the film is a synthetic recreation built in code (R
 | S39 | End card | `Film.tsx · EndCard` | end | no URLs |
 | S40 | Ollie DM (simulated chat workspace) | `OllieDM.tsx` | 17 | all figures synthetic; owl mark drawn in code; BETA · PILOT tag; second label "SIMULATED TRAINING SCREEN · NO LIVE CONNECTION" |
 | S41 | The review loop (graphic) | `MG.tsx · StageFlow` | 17 | none |
+| S42 | Deal death (cold-open graphic: clock, alert stack, Lost stamp) | `MG.tsx · DealDeath` | 1 | Claire Dubois DEMO card, EUR 250,000, documented alert names |
+| S43 | Hero frame (the thumbnail, opening the film) | `Thumb3D.tsx · HeroScene` | 1 | synthetic dashboard |
+| S44 | CRM · Add contact (simulated, slate shell) | `Crm.tsx · CrmAddContact` | 10 | example.com email, fictional-range digits-only phone; refusal banner; second label |
+| S45 | CRM · bulk template (simulated) | `Crm.tsx · CrmBulkTemplate` | 10 | synthetic rows, Manager column; second label |
+| S46 | CRM · Requests tab (simulated) | `Crm.tsx · CrmRequests` | 15 | APP-DEMO-### rows, synthetic comments; second label |
+| S47 | The CRM's own path / status ladders (graphics) | `MG.tsx · StageFlow` | 10, 15 | documented tab and status names |
 
 Synthetic identifiers in use: CRM-DEMO-###, TRAIN-###, emails on example.com only, phones in the fictional ranges +44 20 7946 0xxx and +1 202 555 01xx, money in multiples of EUR 250,000. Source: `data/synthetic-data.json`, checked by `scripts/privacy-lint.mjs`.

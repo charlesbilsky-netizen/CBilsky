@@ -41,6 +41,14 @@
 - **Accuracy**: the stage graphic now notes Qualified also moves by itself once qualification is filled (Oct 2026 deck, slide 8).
 - New runtime 15 min 57 s, 17 chapters. fal spend about $16.92 of the $20 cap.
 
+## Version 2.1 (16 Oct 2026)
+
+- Cinematic cold open (a deal dies in the dark) and the 3D hero frame as the film's first image.
+- Full integration of the October 2026 deck, the CRM entry pages (add contact, bulk template, reassignment, the CRM's path, qualified lead tags) and the Onboarding monitoring-request guide.
+- 4K master (3840×2160, render-native, CRF 15, jpeg-quality 95 capture) plus a supersampled 1080p master; final QA in `final_qa_report.md`.
+- Runtime 18 min 51 s, 17 chapters, 103 narration lines, 175 sound cues, 8 score cues.
+- No trailer or 90-second cut in this version (dropped by the owner).
+
 ## Timing
 
 - v2: 17 chapters, 15 min 57 s, inside the 12–18 minute brief. (v1: 16 chapters, 14 min 57 s.)

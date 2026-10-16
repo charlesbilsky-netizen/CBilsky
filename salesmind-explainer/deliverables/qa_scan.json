@@ -1,10 +1,10 @@
 {
- "frames_sampled": 478,
- "label_template_min": 0.841,
- "label_template_median": 0.993,
- "label_ocr_confirmed": 477,
+ "frames_sampled": 565,
+ "label_template_min": 0.83,
+ "label_template_median": 0.995,
+ "label_ocr_confirmed": 565,
  "label_missing_at": [],
  "url_or_domain_hits": [],
  "integrated_lufs": -16.0,
- "true_peak_dbtp": -2.4
+ "true_peak_dbtp": -2.3
 }
