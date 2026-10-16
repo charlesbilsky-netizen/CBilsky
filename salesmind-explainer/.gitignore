@@ -1,8 +1,5 @@
 node_modules
 out
-public/fal
-public/voice
 .env
 __pycache__/
 public/tests
-public/audio
