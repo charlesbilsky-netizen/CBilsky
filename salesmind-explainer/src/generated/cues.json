@@ -575,202 +575,262 @@
   "gain": -4
  },
  {
-  "frame": 21989,
+  "frame": 22103,
+  "kind": "click",
+  "gain": -4
+ },
+ {
+  "frame": 22139,
+  "kind": "typing",
+  "gain": -6
+ },
+ {
+  "frame": 22384,
+  "kind": "alert",
+  "gain": -4
+ },
+ {
+  "frame": 22629,
+  "kind": "chip",
+  "gain": -6
+ },
+ {
+  "frame": 22936,
+  "kind": "stamp",
+  "gain": -6
+ },
+ {
+  "frame": 23091,
+  "kind": "chip",
+  "gain": -6
+ },
+ {
+  "frame": 23110,
+  "kind": "chip",
+  "gain": -6
+ },
+ {
+  "frame": 23173,
+  "kind": "chip",
+  "gain": -6
+ },
+ {
+  "frame": 23461,
+  "kind": "chip",
+  "gain": -6
+ },
+ {
+  "frame": 23500,
+  "kind": "chip",
+  "gain": -6
+ },
+ {
+  "frame": 23524,
+  "kind": "chip",
+  "gain": -6
+ },
+ {
+  "frame": 23625,
+  "kind": "confirm",
+  "gain": -4
+ },
+ {
+  "frame": 23750,
   "kind": "whoosh",
   "gain": -8
  },
  {
-  "frame": 22470,
+  "frame": 24231,
   "kind": "click",
   "gain": 0
  },
  {
-  "frame": 22599,
+  "frame": 24360,
   "kind": "click",
   "gain": 0
  },
  {
-  "frame": 22864,
+  "frame": 24625,
   "kind": "click",
   "gain": 0
  },
  {
-  "frame": 22867,
+  "frame": 24628,
   "kind": "confirm",
   "gain": -6
  },
  {
-  "frame": 22934,
+  "frame": 24695,
   "kind": "shimmer",
   "gain": -6
  },
  {
-  "frame": 23097,
+  "frame": 24858,
   "kind": "whoosh",
   "gain": -8
  },
  {
-  "frame": 24047,
+  "frame": 25808,
   "kind": "whoosh",
   "gain": -8
  },
  {
-  "frame": 25570,
+  "frame": 27331,
   "kind": "whoosh",
   "gain": -8
  },
  {
-  "frame": 26477,
+  "frame": 28238,
   "kind": "swipe",
   "gain": -6
  },
  {
-  "frame": 26804,
+  "frame": 28565,
   "kind": "whoosh",
   "gain": -8
  },
  {
-  "frame": 27264,
+  "frame": 29025,
   "kind": "shimmer",
   "gain": -6
  },
  {
-  "frame": 27694,
+  "frame": 29455,
   "kind": "swipe",
   "gain": -8
  },
  {
-  "frame": 27865,
+  "frame": 29626,
   "kind": "whoosh",
   "gain": -8
  },
  {
-  "frame": 28037,
+  "frame": 29798,
   "kind": "tick",
   "gain": -4
  },
  {
-  "frame": 28095,
+  "frame": 29856,
   "kind": "tick",
   "gain": -4
  },
  {
-  "frame": 28176,
+  "frame": 29937,
   "kind": "tick",
   "gain": -4
  },
  {
-  "frame": 28231,
+  "frame": 29992,
   "kind": "tick",
   "gain": -4
  },
  {
-  "frame": 28266,
+  "frame": 30027,
   "kind": "tick",
   "gain": -4
  },
  {
-  "frame": 28301,
+  "frame": 30062,
   "kind": "tick",
   "gain": -4
  },
  {
-  "frame": 28344,
+  "frame": 30105,
   "kind": "tick",
   "gain": -4
  },
  {
-  "frame": 28388,
+  "frame": 30149,
   "kind": "tick",
   "gain": -4
  },
  {
-  "frame": 28444,
+  "frame": 30205,
   "kind": "tick",
   "gain": -4
  },
  {
-  "frame": 28492,
+  "frame": 30253,
   "kind": "tick",
   "gain": -4
  },
  {
-  "frame": 28536,
+  "frame": 30297,
   "kind": "tick",
   "gain": -4
  },
  {
-  "frame": 28599,
+  "frame": 30360,
   "kind": "tick",
   "gain": -4
  },
  {
-  "frame": 28683,
+  "frame": 30444,
   "kind": "confirm",
   "gain": -2
  },
  {
-  "frame": 28979,
+  "frame": 30740,
   "kind": "shimmer",
   "gain": -2
  },
  {
-  "frame": 29155,
+  "frame": 30916,
   "kind": "whoosh",
   "gain": -8
  },
  {
-  "frame": 29259,
+  "frame": 31020,
   "kind": "shimmer",
   "gain": -4
  },
  {
-  "frame": 29894,
+  "frame": 31655,
   "kind": "typing",
   "gain": -2
  },
  {
-  "frame": 29927,
+  "frame": 31688,
   "kind": "hoot",
   "gain": -4
  },
  {
-  "frame": 29943,
+  "frame": 31704,
   "kind": "chip",
   "gain": -6
  },
  {
-  "frame": 30354,
+  "frame": 32115,
   "kind": "confirm",
   "gain": -4
  },
  {
-  "frame": 30523,
+  "frame": 32284,
   "kind": "shimmer",
   "gain": -2
  },
  {
-  "frame": 30728,
+  "frame": 32489,
   "kind": "chip",
   "gain": -4
  },
  {
-  "frame": 30758,
+  "frame": 32519,
   "kind": "chip",
   "gain": -4
  },
  {
-  "frame": 30792,
+  "frame": 32553,
   "kind": "chip",
   "gain": -4
  },
  {
-  "frame": 30841,
+  "frame": 32602,
   "kind": "confirm",
   "gain": -4
  },
  {
-  "frame": 30948,
+  "frame": 32709,
   "kind": "impact",
   "gain": -8
  }

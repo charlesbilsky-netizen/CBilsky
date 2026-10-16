@@ -2968,6 +2968,66 @@
       "status": "done",
       "request_id": "01a1448e-4b9a-71c1-8b9a-57cd6b276eae",
       "error": null
+    },
+    {
+      "id": "voice-c10p07",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.01,
+      "out": "public/voice/c10p07.mp3",
+      "input": {
+        "text": "Available? Then make the lead yours. It enters the CRM on the Contacts tab. Name. Email or phone, one of the two. Phone, digits only. Individual, or corporate. If the CRM refuses the add, stop: that lead already belongs to another RM.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Check ownership before approaching the contact.",
+        "next_text": "A whole list goes in as one plain-text spreadsheet, with your email in the Manager column, so every lead lands under your name. And leads are not forever. Left untouched for six months, a lead can be reassigned."
+      },
+      "status": "done",
+      "request_id": "01a14498-3f4f-7840-8025-2d48227423a1",
+      "error": null
+    },
+    {
+      "id": "voice-c10p08",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.01,
+      "out": "public/voice/c10p08.mp3",
+      "input": {
+        "text": "A whole list goes in as one plain-text spreadsheet, with your email in the Manager column, so every lead lands under your name. And leads are not forever. Left untouched for six months, a lead can be reassigned.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Available? Then make the lead yours. It enters the CRM on the Contacts tab. Name. Email or phone, one of the two. Phone, digits only. Individual, or corporate. If the CRM refuses the add, stop: that lead already belongs to another RM.",
+        "next_text": "From there, the lead walks the CRM's own path. Contacts. Registrants, when they sign up. Qualified, once the ten qualification tags are filled and an answered call or a meeting is logged. Compliance requires that before onboarding. Then Waiting for Review. KYC passed. Funded. And the qualification you fill in SalesMind writes those same tags."
+      },
+      "status": "done",
+      "request_id": "01a14498-3f38-73d1-9cac-e301d8388af5",
+      "error": null
+    },
+    {
+      "id": "voice-c10p09",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.01,
+      "out": "public/voice/c10p09.mp3",
+      "input": {
+        "text": "From there, the lead walks the CRM's own path. Contacts. Registrants, when they sign up. Qualified, once the ten qualification tags are filled and an answered call or a meeting is logged. Compliance requires that before onboarding. Then Waiting for Review. KYC passed. Funded. And the qualification you fill in SalesMind writes those same tags.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "A whole list goes in as one plain-text spreadsheet, with your email in the Manager column, so every lead lands under your name. And leads are not forever. Left untouched for six months, a lead can be reassigned.",
+        "next_text": "Activity is the full log of your book. Emails, calls, meetings, deposits, withdrawals, registrations, KYC events and requests. Topic tags tell you what each one was about."
+      },
+      "status": "done",
+      "request_id": "01a14498-3f18-7873-9a72-adb687289767",
+      "error": null
     }
   ]
 }

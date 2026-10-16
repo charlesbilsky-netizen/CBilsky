@@ -12,6 +12,7 @@ import { Signals, Hub, CrmSync, Ladder, AlertsMap, SlaClock, Cadence, StageFlow,
 import { SignIn, NavTour } from "../screens/Nav";
 import { OllieDM } from "../screens/OllieDM";
 import { HeroScene } from "./Thumb3D";
+import { CrmAddContact, CrmBulkTemplate } from "../screens/Crm";
 import { Dashboard } from "../screens/Dashboard";
 import { TasksInbox, TasksToday, PlanTheDay, Planning } from "../screens/Tasks";
 import { PipelineBoard, ClientGrowthBoard, FiltersPanel, PipelineMenus, PipelineTable, GrowthDeposit, SeveralOpenDeals, NB_STAGES } from "../screens/Pipeline";
@@ -1178,6 +1179,14 @@ const ch10 = (): Shot[] => {
   ["Available.", "Claimed.", "Restricted.", "Needs narrowing.", "Not found."].forEach((x) => S("drop", v(x), -6));
   S("alert", v("Do not approach"), -6);
   S("shimmer", L("c10p06") + 2, -4);
+  // The CRM side: add the lead, the bulk template, the lead's own path.
+  S("click", P("c10p07", "Contacts tab"), -4);
+  S("typing", P("c10p07", "Name"), -6);
+  S("alert", P("c10p07", "refuses the add"), -4);
+  S("chip", P("c10p08", "plain-text spreadsheet"), -6);
+  S("stamp", P("c10p08", "can be reassigned"), -6);
+  ["Contacts.", "Registrants,", "Qualified,", "Waiting for Review", "KYC passed", "Funded."].forEach((x) => S("chip", P("c10p09", x), -6));
+  S("confirm", P("c10p09", "writes those same tags"), -4);
   return [
     {
       at: 0,
@@ -1253,7 +1262,83 @@ const ch10 = (): Shot[] => {
               <Ownership start={0} shown={shown} focus={focus} />
             </Scr>
             <Principle f={bf} a={v("Do not approach")} b={v("Needs narrowing.")} text="Restricted: do not approach." gold />
-            <Principle f={bf} a={L("c10p06") + 2} text="Check ownership before approaching the contact." />
+            <Principle f={bf} a={L("c10p06") + 2} b={L("c10p07") - 6} text="Check ownership before approaching the contact." />
+          </>
+        );
+      },
+    },
+    {
+      at: L("c10p07") - 8,
+      node: (bf) => (
+        <Scr
+          cam={camPath(bf, [
+            [L("c10p07"), cam(960, 480, 1.08)],
+            [P("c10p07", "Name") - 6, cam(960, 500, 1.3)],
+            [P("c10p07", "refuses the add") - 6, cam(960, 620, 1.35)],
+          ])}
+          over={
+            <Callouts
+              f={bf}
+              items={[
+                { a: P("c10p07", "one of the two"), b: P("c10p07", "Individual"), box: [640, 452, 640, 70], label: "Email or phone — one is required", side: "right" },
+                { a: P("c10p07", "digits only"), b: P("c10p07", "Individual"), box: [640, 540, 640, 70], label: "Digits only", side: "left" },
+                { a: P("c10p07", "already belongs"), box: [640, 700, 640, 100], label: "Not yours: stop", side: "right", gold: true },
+              ]}
+            />
+          }
+        >
+          <CrmAddContact refuse={P("c10p07", "refuses the add") - 4} />
+        </Scr>
+      ),
+    },
+    {
+      at: L("c10p08") - 8,
+      node: (bf) => (
+        <>
+          <Scr
+            cam={camPath(bf, [
+              [L("c10p08"), cam(960, 420, 1.12)],
+              [P("c10p08", "Manager column") - 6, cam(1360, 360, 1.35)],
+              [P("c10p08", "not forever") - 4, cam(960, 500, 1.1)],
+            ])}
+            over={
+              <Callouts
+                f={bf}
+                items={[{ a: P("c10p08", "Manager column"), b: P("c10p08", "not forever"), box: [1468, 210, 390, 180], label: "Your email = your lead", side: "left" }]}
+              />
+            }
+          >
+            <CrmBulkTemplate />
+          </Scr>
+          <Note f={bf} a={P("c10p08", "six months")} x={1140} y={930} w={700} text="Untouched for six months: reassigned" sub="No comments, no calls — the lead moves on. Work your book, or lose it." gold />
+        </>
+      ),
+    },
+    {
+      at: L("c10p09") - 8,
+      node: (bf) => {
+        const at9 = ["Contacts.", "Registrants,", "Qualified,", "Waiting for Review", "KYC passed", "Funded."].map((x) => P("c10p09", x));
+        return (
+          <>
+            {plate("f10", 0.8)}
+            <StageFlow
+              f={bf}
+              a={L("c10p09")}
+              title="The CRM's own path"
+              stages={["Contacts", "Registrants", "Qualified", "Waiting for Review", "KYC passed", "Funded"]}
+              at={at9}
+              side={{ labels: ["Pending", "Rejected"], at: P("c10p09", "Waiting for Review") + 8 }}
+              movers={[
+                null,
+                { kind: "auto", how: "They sign up" },
+                { kind: "you", how: "10 tags filled · an answered call or meeting logged", label: "TAGS + ACTIVITY" },
+                { kind: "auto", how: "Documents uploaded" },
+                { kind: "auto", how: "Documents checked" },
+                { kind: "auto", how: "Money arrives" },
+              ]}
+              moverAt={[0, at9[1] + 6, P("c10p09", "ten qualification tags"), at9[3] + 6, at9[4] + 6, at9[5] + 6]}
+            />
+            <Note f={bf} a={P("c10p09", "writes those same tags")} x={660} y={880} w={620} text="SalesMind's qualification writes these tags" sub="Compliance requires qualification before onboarding" gold />
           </>
         );
       },

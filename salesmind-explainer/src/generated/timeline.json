@@ -1,6 +1,6 @@
 {
  "fps": 30,
- "total": 31154,
+ "total": 32915,
  "chapters": [
   {
    "n": 1,
@@ -495,7 +495,7 @@
    "title": "Clients and ownership",
    "start": 20130,
    "title_len": 96,
-   "body_len": 1761,
+   "body_len": 3522,
    "lines": [
     {
      "id": "c10p00",
@@ -538,15 +538,33 @@
      "from": 1617,
      "dur": 78,
      "text": "Check ownership before approaching the contact."
+    },
+    {
+     "id": "c10p07",
+     "from": 1721,
+     "dur": 616,
+     "text": "Available? Then make the lead yours. It enters the CRM on the Contacts tab. Name. Email or phone, one of the two. Phone, digits only. Individual, or corporate. If the CRM refuses the add, stop: that lead already belongs to another RM."
+    },
+    {
+     "id": "c10p08",
+     "from": 2355,
+     "dur": 404,
+     "text": "A whole list goes in as one plain-text spreadsheet, with your email in the Manager column, so every lead lands under your name. And leads are not forever. Left untouched for six months, a lead can be reassigned."
+    },
+    {
+     "id": "c10p09",
+     "from": 2777,
+     "dur": 683,
+     "text": "From there, the lead walks the CRM's own path. Contacts. Registrants, when they sign up. Qualified, once the ten qualification tags are filled and an answered call or a meeting is logged. Compliance requires that before onboarding. Then Waiting for Review. KYC passed. Funded. And the qualification you fill in SalesMind writes those same tags."
     }
    ],
-   "len": 1857
+   "len": 3618
   },
   {
    "n": 11,
    "num": "11",
    "title": "Activity",
-   "start": 21987,
+   "start": 23748,
    "title_len": 96,
    "body_len": 1012,
    "lines": [
@@ -581,7 +599,7 @@
    "n": 12,
    "num": "12",
    "title": "Performance",
-   "start": 23095,
+   "start": 24856,
    "title_len": 96,
    "body_len": 854,
    "lines": [
@@ -610,7 +628,7 @@
    "n": 13,
    "num": "13",
    "title": "The Sales Plan",
-   "start": 24045,
+   "start": 25806,
    "title_len": 96,
    "body_len": 1427,
    "lines": [
@@ -651,7 +669,7 @@
    "n": 14,
    "num": "14",
    "title": "Calendar and the day",
-   "start": 25568,
+   "start": 27329,
    "title_len": 96,
    "body_len": 1138,
    "lines": [
@@ -692,7 +710,7 @@
    "n": 15,
    "num": "15",
    "title": "Support",
-   "start": 26802,
+   "start": 28563,
    "title_len": 96,
    "body_len": 965,
    "lines": [
@@ -727,7 +745,7 @@
    "n": 16,
    "num": "16",
    "title": "End of day",
-   "start": 27863,
+   "start": 29624,
    "title_len": 96,
    "body_len": 1194,
    "lines": [
@@ -768,7 +786,7 @@
    "n": 17,
    "num": "17",
    "title": "Your standing, any day",
-   "start": 29153,
+   "start": 30914,
    "title_len": 96,
    "body_len": 1695,
    "lines": [
@@ -813,7 +831,7 @@
   }
  ],
  "end_card": {
-  "from": 30944,
+  "from": 32705,
   "dur": 210
  }
 }
