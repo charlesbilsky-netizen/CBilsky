@@ -3028,6 +3028,46 @@
       "status": "done",
       "request_id": "01a14498-3f18-7873-9a72-adb687289767",
       "error": null
+    },
+    {
+      "id": "voice-c15p04",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.01,
+      "out": "public/voice/c15p04.mp3",
+      "input": {
+        "text": "Onboarding can ask you, too. A monitoring request lands in the Requests tab, and the clock is yours. Email the client within three days. No answer in fourteen, call. Keep at it: thirty, sixty, ninety.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Internal requests shows your open Jira, onboarding, KYC and Intercom requests. Raise a request from the top right. Open requests on a client show up under that deal's blocker.",
+        "next_text": "Let it sit, and the statuses harden. Document pending. Withdrawal restriction: funds go back only to the account the deposit came from. Then Close only: no new positions. Deliver the documents, and it lifts."
+      },
+      "status": "done",
+      "request_id": "01a1449f-b71d-76a3-97c8-d5d486513c45",
+      "error": null
+    },
+    {
+      "id": "voice-c15p05",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.01,
+      "out": "public/voice/c15p05.mp3",
+      "input": {
+        "text": "Let it sit, and the statuses harden. Document pending. Withdrawal restriction: funds go back only to the account the deposit came from. Then Close only: no new positions. Deliver the documents, and it lifts.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Onboarding can ask you, too. A monitoring request lands in the Requests tab, and the clock is yours. Email the client within three days. No answer in fourteen, call. Keep at it: thirty, sixty, ninety.",
+        "next_text": "Close the day the same way every day."
+      },
+      "status": "done",
+      "request_id": "01a1449f-b929-7980-a88a-0d36f1675cd5",
+      "error": null
     }
   ]
 }

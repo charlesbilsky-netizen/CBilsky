@@ -12,7 +12,7 @@ import { Signals, Hub, CrmSync, Ladder, AlertsMap, SlaClock, Cadence, StageFlow,
 import { SignIn, NavTour } from "../screens/Nav";
 import { OllieDM } from "../screens/OllieDM";
 import { HeroScene } from "./Thumb3D";
-import { CrmAddContact, CrmBulkTemplate } from "../screens/Crm";
+import { CrmAddContact, CrmBulkTemplate, CrmRequests } from "../screens/Crm";
 import { Dashboard } from "../screens/Dashboard";
 import { TasksInbox, TasksToday, PlanTheDay, Planning } from "../screens/Tasks";
 import { PipelineBoard, ClientGrowthBoard, FiltersPanel, PipelineMenus, PipelineTable, GrowthDeposit, SeveralOpenDeals, NB_STAGES } from "../screens/Pipeline";
@@ -1633,6 +1633,10 @@ const ch15 = (): Shot[] => {
   const { S } = mk(15);
   S("shimmer", P("c15p01", "Use the latest"), -6);
   S("swipe", rq("Open requests on a client") + 14, -8);
+  S("alert", P("c15p04", "lands in the Requests tab"), -6);
+  ["three days", "fourteen", "thirty"].forEach((x) => S("tick", P("c15p04", x), -6));
+  ["Document pending", "Withdrawal restriction", "Close only"].forEach((x) => S("chip", P("c15p05", x), -5));
+  S("confirm", P("c15p05", "and it lifts"), -4);
   return [
     {
       at: 0,
@@ -1716,6 +1720,53 @@ const ch15 = (): Shot[] => {
           <Link2 f={bf} a={rq("Open requests on a client")} left={["TRAIN-101 · open", "A request on a client"]} right={["Blocker", "On that client's deal"]} label="shows up under" />
         </>
       ),
+    },
+    {
+      at: L("c15p04") - 8,
+      node: (bf) => (
+        <Scr
+          cam={camPath(bf, [
+            [L("c15p04"), cam(960, 420, 1.1)],
+            [P("c15p04", "Email the client") - 6, cam(820, 640, 1.3)],
+          ])}
+          over={
+            <Callouts
+              f={bf}
+              items={[
+                { a: P("c15p04", "lands in the Requests tab"), b: P("c15p04", "Email the client"), box: [640, 182, 420, 44], label: "Request type and comment", side: "bottom" },
+                { a: P("c15p04", "ninety") + 4, box: [40, 494, 1200, 48], label: "The clock is yours", side: "top", gold: true },
+              ]}
+            />
+          }
+        >
+          <CrmRequests />
+        </Scr>
+      ),
+    },
+    {
+      at: L("c15p05") - 8,
+      node: (bf) => {
+        const at5 = ["Document pending", "Withdrawal restriction", "Close only"].map((x) => P("c15p05", x));
+        return (
+          <>
+            {plate("f15", 0.8)}
+            <StageFlow
+              f={bf}
+              a={L("c15p05")}
+              title="Ignore a monitoring request, and the statuses harden"
+              stages={["Document pending", "Withdrawal restriction", "Close only"]}
+              at={at5}
+              movers={[
+                { kind: "auto", how: "Day 90, or major documents requested" },
+                { kind: "auto", how: "Funds return only to the deposit account" },
+                { kind: "auto", how: "No new positions" },
+              ]}
+              moverAt={[at5[0] + 8, at5[1] + 8, at5[2] + 8]}
+            />
+            <Note f={bf} a={P("c15p05", "Deliver the documents")} x={660} y={880} w={620} text="Deliver the documents, raise the ticket" sub="The restriction lifts once Onboarding checks them" gold />
+          </>
+        );
+      },
     },
   ];
 };

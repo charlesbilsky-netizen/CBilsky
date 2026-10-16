@@ -13,7 +13,7 @@ const LINE2 = "#2E3A41";
 const ACC = "#6FA8DC"; // the CRM's own accent: steel blue (the film's info tone)
 
 const Shell: React.FC<{ tab: string; children: React.ReactNode }> = ({ tab, children }) => {
-  const tabs = ["Contacts", "All Applications", "Registrants", "Qualified", "Waiting for Review", "Pending", "KYC passed", "Funded"];
+  const tabs = ["Contacts", "All Applications", "Registrants", "Qualified", "Waiting for Review", "Pending", "KYC passed", "Funded", "Requests"];
   return (
     <AbsoluteFill style={{ background: BG, fontFamily }}>
       <div style={{ display: "flex", alignItems: "center", gap: 18, padding: "16px 30px", borderBottom: `1px solid ${LINE2}` }}>
@@ -116,6 +116,45 @@ export const CrmBulkTemplate: React.FC<{ start?: number }> = ({ start = 0 }) => 
         <div style={{ display: "flex", flexWrap: "wrap", gap: 10, marginTop: 22 }}>
           {rules.map((r, i) => (
             <span key={r} style={{ padding: "9px 16px", borderRadius: 999, border: `1px solid ${ACC}66`, background: `${ACC}10`, color: "#C7D8E6", fontSize: 15.5, fontWeight: 600, ...reveal(stagger(f, i, 26, 4)) }}>
+              {r}
+            </span>
+          ))}
+        </div>
+      </div>
+    </Shell>
+  );
+};
+
+// S46 · The Requests tab: monitoring requests from Onboarding.
+export const CrmRequests: React.FC<{ start?: number }> = ({ start = 0 }) => {
+  const f = useCurrentFrame() - start;
+  const cols = ["Application", "Request type", "Comment", "Created", "Status"];
+  const rows: string[][] = [
+    ["APP-DEMO-001", "Request to Manager", "Please clarify the client's place of birth (synthetic)", "Day 44", "active"],
+    ["APP-DEMO-002", "Documents Pending", "Please provide a new LEI (synthetic)", "Day 41", "active"],
+    ["APP-DEMO-003", "Documents Pending", "Proof of address requested (synthetic)", "Day 38", "active"],
+  ];
+  return (
+    <Shell tab="Requests">
+      <div style={{ padding: "30px 40px", fontFamily }}>
+        <div style={{ fontSize: 15, color: "#7C8B95", marginBottom: 12, ...reveal(prog(f, 0, 10)) }}>Requests from Onboarding and Compliance · synthetic</div>
+        <div style={{ borderRadius: 12, overflow: "hidden", border: `1px solid ${LINE2}`, ...reveal(prog(f, 4, 12)) }}>
+          <div style={{ display: "flex", background: "#232D34" }}>
+            {cols.map((c0, i) => (
+              <div key={c0} style={{ flex: i === 2 ? 2 : 1, padding: "12px 14px", fontSize: 14.5, fontWeight: 700, color: "#C7D3DA", borderRight: `1px solid ${LINE2}` }}>{c0}</div>
+            ))}
+          </div>
+          {rows.map((r, ri) => (
+            <div key={ri} style={{ display: "flex", background: ri % 2 ? "#161D22" : "#121920", ...reveal(stagger(f, ri, 10, 5)) }}>
+              {r.map((v, i) => (
+                <div key={i} style={{ flex: i === 2 ? 2 : 1, padding: "13px 14px", fontSize: 15, color: i === 1 ? (r[1] === "Request to Manager" ? ACC : C.warning) : "#B9C6CE", fontWeight: i === 1 ? 650 : 400, borderRight: `1px solid ${LINE2}` }}>{v}</div>
+              ))}
+            </div>
+          ))}
+        </div>
+        <div style={{ display: "flex", gap: 10, marginTop: 24 }}>
+          {["Day 3 · email the client", "Day 14 · call", "Day 30 · 60 · 90 · keep at it", "Day 90 · the status hardens"].map((r, i) => (
+            <span key={r} style={{ padding: "9px 16px", borderRadius: 999, border: `1px solid ${i === 3 ? C.warning : ACC + "66"}`, background: i === 3 ? "rgba(224,165,60,0.10)" : `${ACC}10`, color: i === 3 ? C.warning : "#C7D8E6", fontSize: 15.5, fontWeight: 600, ...reveal(stagger(f, i, 20, 5)) }}>
               {r}
             </span>
           ))}

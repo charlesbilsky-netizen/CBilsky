@@ -1,6 +1,6 @@
 {
  "fps": 30,
- "total": 32915,
+ "total": 33920,
  "chapters": [
   {
    "n": 1,
@@ -712,7 +712,7 @@
    "title": "Support",
    "start": 28563,
    "title_len": 96,
-   "body_len": 965,
+   "body_len": 1970,
    "lines": [
     {
      "id": "c15p00",
@@ -737,15 +737,27 @@
      "from": 554,
      "dur": 365,
      "text": "Internal requests shows your open Jira, onboarding, KYC and Intercom requests. Raise a request from the top right. Open requests on a client show up under that deal's blocker."
+    },
+    {
+     "id": "c15p04",
+     "from": 935,
+     "dur": 486,
+     "text": "Onboarding can ask you, too. A monitoring request lands in the Requests tab, and the clock is yours. Email the client within three days. No answer in fourteen, call. Keep at it: thirty, sixty, ninety."
+    },
+    {
+     "id": "c15p05",
+     "from": 1437,
+     "dur": 475,
+     "text": "Let it sit, and the statuses harden. Document pending. Withdrawal restriction: funds go back only to the account the deposit came from. Then Close only: no new positions. Deliver the documents, and it lifts."
     }
    ],
-   "len": 1061
+   "len": 2066
   },
   {
    "n": 16,
    "num": "16",
    "title": "End of day",
-   "start": 29624,
+   "start": 30629,
    "title_len": 96,
    "body_len": 1194,
    "lines": [
@@ -786,7 +798,7 @@
    "n": 17,
    "num": "17",
    "title": "Your standing, any day",
-   "start": 30914,
+   "start": 31919,
    "title_len": 96,
    "body_len": 1695,
    "lines": [
@@ -831,7 +843,7 @@
   }
  ],
  "end_card": {
-  "from": 32705,
+  "from": 33710,
   "dur": 210
  }
 }

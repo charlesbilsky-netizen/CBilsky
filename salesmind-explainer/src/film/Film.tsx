@@ -126,11 +126,13 @@ const reassureAt = REASSURE.map((id) => {
 
 const ch10 = TL.chapters.find((x) => x.n === 10)!;
 const ch14 = TL.chapters.find((x) => x.n === 14)!;
+const ch15 = TL.chapters.find((x) => x.n === 15)!;
 const ch17 = TL.chapters.find((x) => x.n === 17)!;
-// Simulated-screen windows: ch10's CRM screens, ch14's Google screen, ch17's Ollie chat.
+// Simulated-screen windows: the CRM screens (ch10, ch15), ch14's Google screen, ch17's Ollie chat.
 const SIM: Array<[number, number]> = [
   [ch10.start + ch10.title_len + lineFrom(10, "c10p07") - 8, ch10.start + ch10.title_len + lineFrom(10, "c10p09") - 8 + XF],
   [ch14.start + ch14.title_len, ch14.start + ch14.title_len + lineFrom(14, "c14p02") - 8 + XF],
+  [ch15.start + ch15.title_len + lineFrom(15, "c15p04") - 8, ch15.start + ch15.title_len + lineFrom(15, "c15p05") - 8 + XF],
   [ch17.start + ch17.title_len + lineFrom(17, "c17p01") - 8, ch17.start + ch17.title_len + lineFrom(17, "c17p05") - 8 + XF],
 ];
 
