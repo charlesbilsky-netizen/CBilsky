@@ -5,7 +5,7 @@
 | File | What it is |
 |---|---|
 | `SalesMind_The_RM_Operating_System.mp4` | Master, 1920×1080, 30 fps, H.264, AAC 256 kb/s, about 14 min 57 s |
-| `SalesMind_Ch01…Ch16_*.mp4` | One file per chapter, cut from the master, for sharing |
+| `SalesMind_Ch01…Ch17_*.mp4` | One file per chapter, cut from the master, for sharing |
 | `SalesMind_Trailer_30s.mp4` | 30-second trailer |
 | `SalesMind_Onboarding_90s.mp4` | 90-second onboarding cut |
 | `SalesMind_The_RM_Operating_System.en.srt` | English subtitles |

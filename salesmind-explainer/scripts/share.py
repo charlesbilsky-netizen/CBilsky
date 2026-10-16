@@ -35,10 +35,11 @@ def main():
     tl = json.loads((ROOT / "src/generated/timeline.json").read_text())
     outdir = ROOT / "out/share"
     outdir.mkdir(parents=True, exist_ok=True)
+    last = max(c["n"] for c in tl["chapters"])
     for c in tl["chapters"]:
         a = c["start"] / FPS
         d = c["len"] / FPS
-        if c["n"] == 16:
+        if c["n"] == last:  # the end card rides the final chapter
             d += tl["end_card"]["dur"] / FPS
         slug = re.sub(r"[^A-Za-z0-9]+", "_", c["title"]).strip("_")
         dst = outdir / f"SalesMind_Ch{c['num']}_{slug}.mp4"
