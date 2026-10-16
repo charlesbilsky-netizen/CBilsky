@@ -48,7 +48,7 @@ export const HeroScene: React.FC<{ f?: number; badge?: boolean }> = ({ f = 0, ba
         <div style={{ height: 2, width: 420, background: `linear-gradient(90deg, ${C.bright}, transparent)`, margin: "26px 0 30px" }} />
         <div style={{ color: C.off, fontSize: 136, fontWeight: 600, letterSpacing: -4, lineHeight: 1, textShadow: "0 8px 40px rgba(0,0,0,0.6)" }}>SalesMind</div>
         <div style={{ color: C.text, fontSize: 52, fontWeight: 500, marginTop: 18 }}>The RM Operating System</div>
-        <div style={{ color: C.muted, fontSize: 26, marginTop: 34 }}>17 chapters · about 16 minutes</div>
+        <div style={{ color: C.muted, fontSize: 26, marginTop: 34 }}>17 chapters · about 17 minutes</div>
       </AbsoluteFill>
       {badge ? <TrainingBadge /> : null}
     </AbsoluteFill>
