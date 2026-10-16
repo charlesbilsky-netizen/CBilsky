@@ -830,3 +830,148 @@ export const TenDays: React.FC<{ f: number; a: number; mark: number; out?: numbe
     </AbsoluteFill>
   );
 };
+
+// ---------------------------------------------------------------------------
+// Cold open · a deal dies in the dark. One synthetic card, the first-contact
+// clock racing to zero, alerts stacking, thirty days of silence, closed as
+// Lost. Every state is from the documented alert and SLA rules.
+export const DealDeath: React.FC<{
+  f: number;
+  tick: number;    // clock starts racing
+  breach: number;  // 24 h gone: SLA breach
+  a2: number;      // Action overdue
+  a3: number;      // Lead untouched
+  days: number;    // the 30-day silence counter races
+  death: number;   // the card falls
+  stamp: number;   // CLOSED AS LOST
+  never: number;   // "It never had to happen."
+  out?: number;
+}> = ({ f, tick, breach, a2, a3, days, death, stamp, never, out }) => {
+  const fade = out == null ? 1 : 1 - prog(f, out, 16);
+  // Clock: 24:00:00 racing down, easing into a sprint.
+  const cp = Math.min(1, Math.max(0, (f - tick) / Math.max(1, breach - tick)));
+  const left = Math.max(0, 86400 * (1 - cp * cp * cp));
+  const hh = Math.floor(left / 3600), mm = Math.floor((left % 3600) / 60), ss = Math.floor(left % 60);
+  const breached = f >= breach;
+  // Days of silence: 0 → 34, racing during the "thirty days" phrase.
+  const dp = Math.min(1, Math.max(0, (f - days) / 50));
+  const nDays = Math.floor(dp * 34);
+  const dead = f >= death;
+  const dq = prog(f, death, 26);
+  const decay = Math.min(1, Math.max(0, (f - days) / 80));
+  const ember = Math.min(prog(f, death - 20, 40), fade);
+  const chips: Array<[number, string, boolean]> = [
+    [breach, "SLA breach", true],
+    [a2, "Action overdue", false],
+    [a3, "Lead untouched", false],
+  ];
+  return (
+    <AbsoluteFill style={{ background: "#020403", fontFamily, opacity: fade }}>
+      <AbsoluteFill style={{ background: `radial-gradient(900px 600px at 50% 46%, rgba(0,77,36,${0.16 * (1 - decay)}), transparent 70%)` }} />
+      <AbsoluteFill style={{ background: `radial-gradient(1100px 700px at 50% 60%, rgba(176,46,32,${0.14 * ember}), transparent 72%)` }} />
+      {/* the clock */}
+      <div style={{ position: "absolute", left: 0, right: 0, top: 170, textAlign: "center", opacity: Math.min(prog(f, tick, 12), dead ? 1 - dq : 1) }}>
+        <div style={{ fontSize: 15, letterSpacing: 4, color: C.muted, fontWeight: 600 }}>FIRST CONTACT · INBOUND · 24 HOURS</div>
+        <div
+          style={{
+            fontSize: 84,
+            fontWeight: 650,
+            letterSpacing: 2,
+            marginTop: 10,
+            fontVariantNumeric: "tabular-nums",
+            color: breached ? C.critical : C.off,
+            textShadow: breached ? `0 0 40px ${C.critical}66` : "0 0 30px rgba(38,191,107,0.25)",
+          }}
+        >
+          {breached ? "00:00:00" : `${String(hh).padStart(2, "0")}:${String(mm).padStart(2, "0")}:${String(ss).padStart(2, "0")}`}
+        </div>
+      </div>
+      {/* the card */}
+      <div style={{ position: "absolute", left: 0, right: 0, top: 380, display: "flex", justifyContent: "center", perspective: 1400 }}>
+        <div
+          style={{
+            width: 680,
+            borderRadius: 18,
+            padding: "30px 36px",
+            background: "#10171A",
+            border: `1.5px solid ${dead ? "#3a2a28" : "rgba(38,191,107,0.35)"}`,
+            boxShadow: dead ? "0 60px 120px rgba(0,0,0,0.9)" : "0 30px 90px rgba(0,0,0,0.7), 0 0 60px rgba(38,191,107,0.10)",
+            filter: `saturate(${1 - 0.75 * Math.max(decay, dq)}) brightness(${1 - 0.45 * dq})`,
+            transform: `rotateX(${dq * 38}deg) translateY(${dq * 150}px)`,
+            transformOrigin: "50% 100%",
+            opacity: 1 - dq * 0.55,
+          }}
+        >
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
+            <span style={{ fontSize: 30, fontWeight: 650, color: C.off }}>
+              Claire Dubois <span style={{ fontSize: 14, color: C.gold, border: `1px solid ${C.gold}88`, borderRadius: 6, padding: "2px 8px", marginLeft: 10, verticalAlign: "middle" }}>DEMO</span>
+            </span>
+            <span style={{ fontSize: 34, fontWeight: 650, color: C.off }}>EUR 250,000</span>
+          </div>
+          <div style={{ display: "flex", gap: 26, marginTop: 18, fontSize: 19, color: C.muted }}>
+            <span>New Opportunity</span>
+            <span>·</span>
+            <span style={{ color: nDays >= 14 ? (nDays >= 30 ? C.critical : C.warning) : C.muted, fontWeight: nDays >= 14 ? 650 : 400 }}>
+              {f < days ? "No contact yet" : `${nDays}d no contact`}
+            </span>
+            <span>·</span>
+            <span>Contact</span>
+          </div>
+          <div style={{ display: "flex", gap: 10, marginTop: 20, minHeight: 38 }}>
+            {chips.map(([at, label, crit]) =>
+              f >= at ? (
+                <span
+                  key={label}
+                  style={{
+                    padding: "7px 14px",
+                    borderRadius: 999,
+                    fontSize: 16,
+                    fontWeight: 650,
+                    color: crit ? C.critical : C.warning,
+                    background: crit ? "rgba(226,109,90,0.12)" : "rgba(224,165,60,0.10)",
+                    border: `1px solid ${crit ? C.critical : C.warning}`,
+                    opacity: prog(f, at, 10),
+                    transform: `translateY(${(1 - prog(f, at, 10)) * 8}px)`,
+                    boxShadow: f >= a3 + 20 ? `0 0 ${14 + Math.sin(f / 5) * 6}px ${crit ? C.critical : C.warning}44` : undefined,
+                  }}
+                >
+                  ⚠ {label}
+                </span>
+              ) : null
+            )}
+          </div>
+        </div>
+      </div>
+      {/* the stamp */}
+      {f >= stamp ? (
+        <div style={{ position: "absolute", left: 0, right: 0, top: 500, display: "flex", justifyContent: "center" }}>
+          <div
+            style={{
+              padding: "16px 34px",
+              border: `3px solid ${C.critical}`,
+              borderRadius: 10,
+              color: C.critical,
+              fontSize: 40,
+              fontWeight: 750,
+              letterSpacing: 3,
+              transform: `rotate(-7deg) scale(${1.5 - 0.5 * Math.min(1, prog(f, stamp, 7))})`,
+              opacity: Math.min(1, prog(f, stamp, 7)) * (never ? 1 - prog(f, never - 6, 14) : 1),
+              boxShadow: `0 0 60px ${C.critical}44`,
+              background: "rgba(2,4,3,0.8)",
+            }}
+          >
+            CLOSED AS LOST · INVALID CONTACT
+          </div>
+        </div>
+      ) : null}
+      {/* the beat */}
+      {f >= never ? (
+        <AbsoluteFill style={{ alignItems: "center", justifyContent: "center" }}>
+          <div style={{ fontSize: 54, fontWeight: 600, letterSpacing: -0.5, color: C.off, opacity: prog(f, never, 22), textShadow: "0 6px 40px rgba(0,0,0,0.8)" }}>
+            It never had to happen.
+          </div>
+        </AbsoluteFill>
+      ) : null}
+    </AbsoluteFill>
+  );
+};

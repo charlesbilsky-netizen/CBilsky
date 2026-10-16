@@ -1,5 +1,26 @@
 [
  {
+  "id": "c01a00",
+  "chapter": "01",
+  "idx": 0,
+  "text": "This is a quarter of a million euros. And this is how it dies.",
+  "dur": 3.84
+ },
+ {
+  "id": "c01a01",
+  "chapter": "01",
+  "idx": 1,
+  "text": "No first call in twenty-four hours. No next action. No decision. Thirty days of silence, while the alerts watched it happen.",
+  "dur": 9.378
+ },
+ {
+  "id": "c01a02",
+  "chapter": "01",
+  "idx": 2,
+  "text": "It never had to happen.",
+  "dur": 1.515
+ },
+ {
   "id": "c01p00",
   "chapter": "01",
   "idx": 0,

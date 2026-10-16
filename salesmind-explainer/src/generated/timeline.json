@@ -1,6 +1,6 @@
 {
  "fps": 30,
- "total": 30624,
+ "total": 31154,
  "chapters": [
   {
    "n": 1,
@@ -8,38 +8,56 @@
    "title": "Cold open",
    "start": 0,
    "title_len": 0,
-   "body_len": 803,
+   "body_len": 1333,
    "lines": [
     {
-     "id": "c01p00",
+     "id": "c01a00",
      "from": 84,
+     "dur": 116,
+     "text": "This is a quarter of a million euros. And this is how it dies."
+    },
+    {
+     "id": "c01a01",
+     "from": 226,
+     "dur": 282,
+     "text": "No first call in twenty-four hours. No next action. No decision. Thirty days of silence, while the alerts watched it happen."
+    },
+    {
+     "id": "c01a02",
+     "from": 528,
+     "dur": 46,
+     "text": "It never had to happen."
+    },
+    {
+     "id": "c01p00",
+     "from": 614,
      "dur": 92,
      "text": "Every RM starts the day with competing signals."
     },
     {
      "id": "c01p01",
-     "from": 182,
+     "from": 712,
      "dur": 397,
      "text": "A first contact coming due. A next action already overdue. A follow-up to send. A deal with no next step at all. An internal request still open. And a calendar with less room than it looks."
     },
     {
      "id": "c01p02",
-     "from": 597,
+     "from": 1127,
      "dur": 146,
      "text": "Every RM starts with competing signals. The work is knowing what moves first."
     }
    ],
    "main_title": {
-    "from": 803,
+    "from": 1333,
     "dur": 132
    },
-   "len": 935
+   "len": 1465
   },
   {
    "n": 2,
    "num": "02",
    "title": "What SalesMind is",
-   "start": 935,
+   "start": 1465,
    "title_len": 96,
    "body_len": 1129,
    "lines": [
@@ -68,7 +86,7 @@
    "n": 3,
    "num": "03",
    "title": "Getting in and finding your way",
-   "start": 2160,
+   "start": 2690,
    "title_len": 96,
    "body_len": 1713,
    "lines": [
@@ -133,7 +151,7 @@
    "n": 4,
    "num": "04",
    "title": "The Dashboard",
-   "start": 3969,
+   "start": 4499,
    "title_len": 96,
    "body_len": 1856,
    "lines": [
@@ -186,7 +204,7 @@
    "n": 5,
    "num": "05",
    "title": "Task management",
-   "start": 5921,
+   "start": 6451,
    "title_len": 96,
    "body_len": 2312,
    "lines": [
@@ -245,7 +263,7 @@
    "n": 6,
    "num": "06",
    "title": "The Pipeline",
-   "start": 8329,
+   "start": 8859,
    "title_len": 96,
    "body_len": 3754,
    "lines": [
@@ -304,7 +322,7 @@
    "n": 7,
    "num": "07",
    "title": "Board and table",
-   "start": 12179,
+   "start": 12709,
    "title_len": 96,
    "body_len": 2292,
    "lines": [
@@ -351,7 +369,7 @@
    "n": 8,
    "num": "08",
    "title": "Working a deal",
-   "start": 14567,
+   "start": 15097,
    "title_len": 96,
    "body_len": 2567,
    "lines": [
@@ -422,7 +440,7 @@
    "n": 9,
    "num": "09",
    "title": "Client Growth",
-   "start": 17230,
+   "start": 17760,
    "title_len": 96,
    "body_len": 2274,
    "lines": [
@@ -475,7 +493,7 @@
    "n": 10,
    "num": "10",
    "title": "Clients and ownership",
-   "start": 19600,
+   "start": 20130,
    "title_len": 96,
    "body_len": 1761,
    "lines": [
@@ -528,7 +546,7 @@
    "n": 11,
    "num": "11",
    "title": "Activity",
-   "start": 21457,
+   "start": 21987,
    "title_len": 96,
    "body_len": 1012,
    "lines": [
@@ -563,7 +581,7 @@
    "n": 12,
    "num": "12",
    "title": "Performance",
-   "start": 22565,
+   "start": 23095,
    "title_len": 96,
    "body_len": 854,
    "lines": [
@@ -592,7 +610,7 @@
    "n": 13,
    "num": "13",
    "title": "The Sales Plan",
-   "start": 23515,
+   "start": 24045,
    "title_len": 96,
    "body_len": 1427,
    "lines": [
@@ -633,7 +651,7 @@
    "n": 14,
    "num": "14",
    "title": "Calendar and the day",
-   "start": 25038,
+   "start": 25568,
    "title_len": 96,
    "body_len": 1138,
    "lines": [
@@ -674,7 +692,7 @@
    "n": 15,
    "num": "15",
    "title": "Support",
-   "start": 26272,
+   "start": 26802,
    "title_len": 96,
    "body_len": 965,
    "lines": [
@@ -709,7 +727,7 @@
    "n": 16,
    "num": "16",
    "title": "End of day",
-   "start": 27333,
+   "start": 27863,
    "title_len": 96,
    "body_len": 1194,
    "lines": [
@@ -750,7 +768,7 @@
    "n": 17,
    "num": "17",
    "title": "Your standing, any day",
-   "start": 28623,
+   "start": 29153,
    "title_len": 96,
    "body_len": 1695,
    "lines": [
@@ -795,7 +813,7 @@
   }
  ],
  "end_card": {
-  "from": 30414,
+  "from": 30944,
   "dur": 210
  }
 }

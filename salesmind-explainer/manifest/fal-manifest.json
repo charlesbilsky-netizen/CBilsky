@@ -2877,6 +2877,97 @@
       "status": "done",
       "request_id": "01a14471-0385-7fd2-a276-8345bf274a1f",
       "error": null
+    },
+    {
+      "id": "voice-c01a00",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.01,
+      "out": "public/voice/c01a00.mp3",
+      "input": {
+        "text": "This is a quarter of a million euros. And this is how it dies.",
+        "voice": "Brian",
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "speed": 0.92,
+        "next_text": "No first call in twenty-four hours. No next action. No decision. Thirty days of silence, while the alerts watched it happen."
+      },
+      "status": "done",
+      "request_id": "01a1448e-4b24-7911-8e41-f97c1b8bec83",
+      "error": null
+    },
+    {
+      "id": "voice-c01a01",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.01,
+      "out": "public/voice/c01a01.mp3",
+      "input": {
+        "text": "No first call in twenty-four hours. No next action. No decision. Thirty days of silence, while the alerts watched it happen.",
+        "voice": "Brian",
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "speed": 0.92,
+        "next_text": "It never had to happen.",
+        "previous_text": "This is a quarter of a million euros. And this is how it dies."
+      },
+      "status": "done",
+      "request_id": "01a1448e-4c4b-79b2-96df-fcd1b9c4b410",
+      "error": null
+    },
+    {
+      "id": "voice-c01a02",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.01,
+      "out": "public/voice/c01a02.mp3",
+      "input": {
+        "text": "It never had to happen.",
+        "voice": "Brian",
+        "stability": 0.55,
+        "similarity_boost": 0.75,
+        "style": 0.15,
+        "speed": 0.92,
+        "next_text": "Every RM starts the day with competing signals.",
+        "previous_text": "No first call in twenty-four hours. No next action. No decision. Thirty days of silence, while the alerts watched it happen."
+      },
+      "status": "done",
+      "request_id": "01a1448e-4b76-7471-88a2-db097734a106",
+      "error": null
+    },
+    {
+      "id": "sfx-tickrace",
+      "model": "fal-ai/elevenlabs/sound-effects/v2",
+      "kind": "sfx",
+      "cost": 0.01,
+      "out": "public/audio/sfx/tickrace.mp3",
+      "input": {
+        "text": "a clock ticking, steadily accelerating faster and faster, tense, dry, no reverb",
+        "duration_seconds": 6.0,
+        "prompt_influence": 0.6,
+        "output_format": "mp3_44100_128"
+      },
+      "status": "done",
+      "request_id": "01a1448e-4b8e-7461-8d5d-966013a6e5b8",
+      "error": null
+    },
+    {
+      "id": "sfx-subdrop",
+      "model": "fal-ai/elevenlabs/sound-effects/v2",
+      "kind": "sfx",
+      "cost": 0.01,
+      "out": "public/audio/sfx/subdrop.mp3",
+      "input": {
+        "text": "a single deep cinematic sub bass drop impact, dark, heavy, short, clean tail",
+        "duration_seconds": 2.0,
+        "prompt_influence": 0.6,
+        "output_format": "mp3_44100_128"
+      },
+      "status": "done",
+      "request_id": "01a1448e-4b9a-71c1-8b9a-57cd6b276eae",
+      "error": null
     }
   ]
 }

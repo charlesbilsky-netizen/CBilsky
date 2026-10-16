@@ -21,6 +21,7 @@ END_CARD = 210      # end card
 
 # Extra hold after a line, in frames: peak moments and key screen states land.
 PAD = {
+    "c01a00": 20, "c01a01": 14, "c01a02": 34,
     "c01p01": 12, "c01p02": 24,
     "c02p01": 10, "c02p02": 12,
     "c03p07": 10,

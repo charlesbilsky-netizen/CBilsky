@@ -8,7 +8,7 @@ import { C } from "../theme";
 import { chapter, lineFrom, phraseAt, lineEnd, camPath, step } from "./tl";
 import { cue, SfxKind } from "./cues";
 import { Shot, Scr, Callouts, Principle, Keys, Note, Box, Spot, press } from "./kit";
-import { Signals, Hub, CrmSync, Ladder, AlertsMap, SlaClock, Cadence, StageFlow, Checklist, Link2, TenDays } from "../mg/MG";
+import { Signals, Hub, CrmSync, Ladder, AlertsMap, SlaClock, Cadence, StageFlow, Checklist, Link2, TenDays, DealDeath } from "../mg/MG";
 import { SignIn, NavTour } from "../screens/Nav";
 import { OllieDM } from "../screens/OllieDM";
 import { HeroScene } from "./Thumb3D";
@@ -43,15 +43,31 @@ const bodyLen = (n: number) => {
 
 // ---------------------------------------------------------------------------
 const ch1 = (): Shot[] => {
-  const { P } = mk(1);
+  const { L, P, E, S } = mk(1);
   const mt = chapter(1).main_title!.from;
   const at = ["A first contact", "A next action", "A follow-up", "A deal with no", "An internal request", "And a calendar"].map((x) => P("c01p01", x));
-  const { S } = mk(1);
   at.forEach((t) => S("drop", t, -4));
   S("swipe", P("c01p02", "The work is knowing"), -6);
   S("shimmer", P("c01p02", "The work is knowing") + 30, -6);
   S("riser", mt - 75, -4);
   S("impact", mt + 6, -4);
+  // The cold open: a deal dies in the dark.
+  const cut = P("c01a00", "And this is how") - 4;
+  const tick = P("c01a00", "how it dies") + 6;
+  const breach = P("c01a01", "twenty-four hours", 2);
+  const a2 = P("c01a01", "No next action", 2);
+  const a3 = P("c01a01", "No decision", 2);
+  const days = P("c01a01", "Thirty days", 2);
+  const death = E("c01a01") + 6;
+  const stampAt = death + 10;
+  const never = L("c01a02") - 4;
+  S("tickrace", tick, -4);
+  S("alert", breach, -4);
+  S("alert", a2, -8);
+  S("alert", a3, -8);
+  S("subdrop", death, 0);
+  S("stamp", stampAt, -2);
+  S("shimmer", never, -8);
   return [
     {
       // The hero frame: the film opens on the thumbnail image itself.
@@ -59,7 +75,14 @@ const ch1 = (): Shot[] => {
       node: (bf) => <HeroScene f={bf} badge={false} />,
     },
     {
-      at: 64,
+      at: cut,
+      cut: true,
+      node: (bf) => (
+        <DealDeath f={bf} tick={tick} breach={breach} a2={a2} a3={a3} days={days} death={death} stamp={stampAt} never={never} out={L("c01p00") - 14} />
+      ),
+    },
+    {
+      at: L("c01p00") - 8,
       node: (bf) => (
         <>
           <Plate src="fal/loop/f01.mp4" dim={0.32} scaleFrom={1.02} scaleTo={1.16} />

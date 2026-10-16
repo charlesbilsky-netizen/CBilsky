@@ -42,9 +42,9 @@ VOICE_LUFS = -16.0
 SFX_PEAK = {
     "click": -22, "chip": -25, "toggle": -24, "drop": -25, "confirm": -21, "tick": -23, "alert": -23,
     "whoosh": -22, "riser": -21, "impact": -17, "keys": -25, "typing": -28, "shimmer": -24, "stamp": -23, "swipe": -25,
-    "hoot": -24,
+    "hoot": -24, "tickrace": -23, "subdrop": -14,
 }
-SFX_FILE = {"click": "click2", "keys": "keys", "hoot": "ollie_hoot"}
+SFX_FILE = {"click": "click2", "keys": "keys", "hoot": "ollie_hoot", "tickrace": "tickrace", "subdrop": "subdrop"}
 
 
 def load(path, start=0.0, dur=None):
