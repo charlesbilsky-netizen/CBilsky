@@ -15,7 +15,7 @@ TITLE = 96          # chapter title card, 3.2 s
 LEAD = 10           # breath between the title card and the first line
 GAP = 6             # between lines; each voice file already ends on ~0.4 s of air
 TAIL = 36           # resolution beat at the end of every chapter
-OPEN_LEAD = 54      # cold open: the plate breathes before the first line
+OPEN_LEAD = 84      # cold open: the 3D hero frame, then the plate, before the first line
 MAIN_TITLE = 132    # film title after the cold open
 END_CARD = 210      # end card
 
@@ -38,6 +38,7 @@ PAD = {
     "c15p03": 10,
     "c16p01": 20, "c16p02": 30, "c16p04": 50,
     "c17p00": 10, "c17p02": 14, "c17p03": 12, "c17p04": 40, "c17p05": 30,
+    "c03p08": 16, "c06p07": 16, "c09p05": 12, "c09p06": 20,
 }
 
 

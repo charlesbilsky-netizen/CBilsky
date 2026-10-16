@@ -1,671 +1,741 @@
 [
  {
-  "frame": 148,
+  "frame": 178,
   "kind": "drop",
   "gain": -4
  },
  {
-  "frame": 205,
+  "frame": 235,
   "kind": "drop",
   "gain": -4
  },
  {
-  "frame": 268,
+  "frame": 298,
   "kind": "drop",
   "gain": -4
  },
  {
-  "frame": 311,
+  "frame": 341,
   "kind": "drop",
   "gain": -4
  },
  {
-  "frame": 378,
+  "frame": 408,
   "kind": "drop",
   "gain": -4
  },
  {
-  "frame": 443,
+  "frame": 473,
   "kind": "drop",
   "gain": -4
  },
  {
-  "frame": 633,
+  "frame": 663,
   "kind": "swipe",
   "gain": -6
  },
  {
-  "frame": 663,
+  "frame": 693,
   "kind": "shimmer",
   "gain": -6
  },
  {
-  "frame": 698,
+  "frame": 728,
   "kind": "riser",
   "gain": -4
  },
  {
-  "frame": 779,
+  "frame": 809,
   "kind": "impact",
   "gain": -4
  },
  {
-  "frame": 907,
+  "frame": 937,
   "kind": "whoosh",
   "gain": -8
  },
  {
-  "frame": 1235,
+  "frame": 1265,
   "kind": "chip",
   "gain": -8
  },
  {
-  "frame": 1261,
+  "frame": 1291,
   "kind": "chip",
   "gain": -8
  },
  {
-  "frame": 1288,
+  "frame": 1318,
   "kind": "chip",
   "gain": -8
  },
  {
-  "frame": 1339,
+  "frame": 1369,
   "kind": "chip",
   "gain": -8
  },
  {
-  "frame": 1392,
+  "frame": 1422,
   "kind": "chip",
   "gain": -8
  },
  {
-  "frame": 1429,
+  "frame": 1459,
   "kind": "chip",
   "gain": -8
  },
  {
-  "frame": 1502,
+  "frame": 1532,
   "kind": "chip",
   "gain": -8
  },
  {
-  "frame": 1535,
+  "frame": 1565,
   "kind": "chip",
   "gain": -8
  },
  {
-  "frame": 1638,
+  "frame": 1668,
   "kind": "chip",
   "gain": -8
  },
  {
-  "frame": 1838,
+  "frame": 1868,
   "kind": "shimmer",
   "gain": -4
  },
  {
-  "frame": 1905,
+  "frame": 1935,
   "kind": "swipe",
   "gain": -8
  },
  {
-  "frame": 1974,
+  "frame": 2004,
   "kind": "swipe",
   "gain": -8
  },
  {
-  "frame": 2132,
+  "frame": 2162,
   "kind": "whoosh",
   "gain": -8
  },
  {
-  "frame": 2406,
+  "frame": 2436,
   "kind": "click",
   "gain": 0
  },
  {
-  "frame": 3463,
+  "frame": 3556,
+  "kind": "chip",
+  "gain": -4
+ },
+ {
+  "frame": 3656,
+  "kind": "chip",
+  "gain": -4
+ },
+ {
+  "frame": 3725,
+  "kind": "chip",
+  "gain": -4
+ },
+ {
+  "frame": 3787,
+  "kind": "confirm",
+  "gain": -6
+ },
+ {
+  "frame": 3971,
   "kind": "whoosh",
   "gain": -8
- },
- {
-  "frame": 4144,
-  "kind": "click",
-  "gain": 0
- },
- {
-  "frame": 4388,
-  "kind": "chip",
-  "gain": 0
- },
- {
-  "frame": 4417,
-  "kind": "chip",
-  "gain": 0
- },
- {
-  "frame": 4461,
-  "kind": "chip",
-  "gain": 0
- },
- {
-  "frame": 4489,
-  "kind": "chip",
-  "gain": 0
  },
  {
   "frame": 4652,
+  "kind": "click",
+  "gain": 0
+ },
+ {
+  "frame": 4896,
+  "kind": "chip",
+  "gain": 0
+ },
+ {
+  "frame": 4925,
+  "kind": "chip",
+  "gain": 0
+ },
+ {
+  "frame": 4969,
+  "kind": "chip",
+  "gain": 0
+ },
+ {
+  "frame": 4997,
+  "kind": "chip",
+  "gain": 0
+ },
+ {
+  "frame": 5160,
   "kind": "alert",
   "gain": -2
  },
  {
-  "frame": 4688,
+  "frame": 5196,
   "kind": "drop",
   "gain": -4
  },
  {
-  "frame": 4746,
+  "frame": 5254,
   "kind": "drop",
   "gain": -4
  },
  {
-  "frame": 4814,
+  "frame": 5322,
   "kind": "drop",
   "gain": -4
  },
  {
-  "frame": 4900,
+  "frame": 5408,
   "kind": "drop",
   "gain": -4
  },
  {
-  "frame": 4942,
+  "frame": 5450,
   "kind": "drop",
   "gain": -4
  },
  {
-  "frame": 5029,
+  "frame": 5537,
   "kind": "shimmer",
   "gain": -2
  },
  {
-  "frame": 5234,
+  "frame": 5742,
   "kind": "chip",
   "gain": 0
  },
  {
-  "frame": 5271,
+  "frame": 5779,
   "kind": "chip",
   "gain": 0
  },
  {
-  "frame": 5415,
+  "frame": 5923,
   "kind": "whoosh",
   "gain": -8
  },
  {
-  "frame": 6042,
+  "frame": 6550,
   "kind": "click",
   "gain": 0
  },
  {
-  "frame": 6170,
+  "frame": 6678,
   "kind": "keys",
   "gain": -6
  },
  {
-  "frame": 6185,
+  "frame": 6693,
   "kind": "keys",
   "gain": -6
  },
  {
-  "frame": 6198,
+  "frame": 6706,
   "kind": "keys",
   "gain": -6
  },
  {
-  "frame": 6213,
+  "frame": 6721,
   "kind": "keys",
   "gain": -6
  },
  {
-  "frame": 6344,
+  "frame": 6852,
   "kind": "keys",
   "gain": -6
  },
  {
-  "frame": 6363,
+  "frame": 6871,
   "kind": "typing",
   "gain": -8
  },
  {
-  "frame": 6384,
+  "frame": 6892,
   "kind": "keys",
   "gain": -6
  },
  {
-  "frame": 6688,
+  "frame": 7196,
   "kind": "chip",
   "gain": 0
  },
  {
-  "frame": 7058,
+  "frame": 7566,
   "kind": "keys",
   "gain": -6
  },
  {
-  "frame": 7464,
+  "frame": 7972,
   "kind": "click",
   "gain": 0
  },
  {
-  "frame": 7467,
+  "frame": 7975,
   "kind": "confirm",
   "gain": -4
  },
  {
-  "frame": 7785,
+  "frame": 8293,
   "kind": "tick",
   "gain": -4
  },
  {
-  "frame": 7823,
+  "frame": 8331,
   "kind": "whoosh",
   "gain": -8
  },
  {
-  "frame": 8946,
+  "frame": 9454,
   "kind": "click",
   "gain": 0
  },
  {
-  "frame": 9000,
+  "frame": 9508,
   "kind": "chip",
   "gain": 0
  },
  {
-  "frame": 9325,
+  "frame": 9833,
   "kind": "alert",
   "gain": -6
  },
  {
-  "frame": 9840,
+  "frame": 10348,
   "kind": "tick",
   "gain": -4
  },
  {
-  "frame": 10350,
+  "frame": 10858,
   "kind": "stamp",
   "gain": -4
  },
  {
-  "frame": 10556,
+  "frame": 11064,
   "kind": "tick",
   "gain": -8
  },
  {
-  "frame": 10619,
+  "frame": 11127,
   "kind": "tick",
   "gain": -8
  },
  {
-  "frame": 10656,
+  "frame": 11164,
   "kind": "tick",
   "gain": -8
  },
  {
-  "frame": 10723,
+  "frame": 11231,
   "kind": "tick",
   "gain": -8
  },
  {
-  "frame": 10848,
+  "frame": 11356,
   "kind": "tick",
   "gain": -8
  },
  {
-  "frame": 11136,
+  "frame": 11618,
+  "kind": "click",
+  "gain": -4
+ },
+ {
+  "frame": 11848,
+  "kind": "chip",
+  "gain": -6
+ },
+ {
+  "frame": 12073,
+  "kind": "stamp",
+  "gain": -6
+ },
+ {
+  "frame": 12181,
   "kind": "whoosh",
   "gain": -8
  },
  {
-  "frame": 11912,
+  "frame": 12957,
   "kind": "chip",
   "gain": -8
  },
  {
-  "frame": 12079,
+  "frame": 13124,
   "kind": "chip",
   "gain": -8
  },
  {
-  "frame": 12130,
+  "frame": 13175,
   "kind": "chip",
   "gain": -8
  },
  {
-  "frame": 12156,
+  "frame": 13201,
   "kind": "chip",
   "gain": -8
  },
  {
-  "frame": 12225,
+  "frame": 13270,
   "kind": "chip",
   "gain": -8
  },
  {
-  "frame": 13524,
+  "frame": 14569,
   "kind": "whoosh",
   "gain": -8
  },
  {
-  "frame": 14672,
+  "frame": 15717,
   "kind": "click",
   "gain": 0
  },
  {
-  "frame": 14675,
+  "frame": 15720,
   "kind": "confirm",
   "gain": -2
  },
  {
-  "frame": 14684,
+  "frame": 15729,
   "kind": "shimmer",
   "gain": -4
  },
  {
-  "frame": 15161,
+  "frame": 16206,
   "kind": "click",
   "gain": 0
  },
  {
-  "frame": 15164,
+  "frame": 16209,
   "kind": "confirm",
   "gain": -6
  },
  {
-  "frame": 15535,
+  "frame": 16580,
   "kind": "click",
   "gain": 0
  },
  {
-  "frame": 16049,
+  "frame": 17094,
   "kind": "shimmer",
   "gain": -4
  },
  {
-  "frame": 16187,
+  "frame": 17232,
   "kind": "whoosh",
   "gain": -8
  },
  {
-  "frame": 16467,
+  "frame": 17512,
   "kind": "click",
   "gain": 0
  },
  {
-  "frame": 16602,
+  "frame": 17647,
   "kind": "click",
   "gain": 0
  },
  {
-  "frame": 16849,
+  "frame": 17894,
   "kind": "click",
   "gain": 0
  },
  {
-  "frame": 16852,
+  "frame": 17897,
   "kind": "confirm",
   "gain": -6
  },
  {
-  "frame": 17032,
+  "frame": 18077,
   "kind": "alert",
   "gain": -8
  },
  {
-  "frame": 17684,
+  "frame": 18703,
+  "kind": "click",
+  "gain": -4
+ },
+ {
+  "frame": 18831,
+  "kind": "tick",
+  "gain": -6
+ },
+ {
+  "frame": 18886,
+  "kind": "tick",
+  "gain": -6
+ },
+ {
+  "frame": 18954,
+  "kind": "tick",
+  "gain": -6
+ },
+ {
+  "frame": 19199,
+  "kind": "alert",
+  "gain": -8
+ },
+ {
+  "frame": 19306,
+  "kind": "click",
+  "gain": -4
+ },
+ {
+  "frame": 19465,
+  "kind": "stamp",
+  "gain": -6
+ },
+ {
+  "frame": 19602,
   "kind": "whoosh",
   "gain": -8
  },
  {
-  "frame": 18374,
+  "frame": 20292,
   "kind": "click",
   "gain": 0
  },
  {
-  "frame": 18643,
+  "frame": 20561,
   "kind": "drop",
   "gain": -6
  },
  {
-  "frame": 18707,
+  "frame": 20625,
   "kind": "drop",
   "gain": -6
  },
  {
-  "frame": 18866,
+  "frame": 20784,
   "kind": "drop",
   "gain": -6
  },
  {
-  "frame": 18980,
+  "frame": 20898,
   "kind": "alert",
   "gain": -6
  },
  {
-  "frame": 19018,
+  "frame": 20936,
   "kind": "drop",
   "gain": -6
  },
  {
-  "frame": 19126,
+  "frame": 21044,
   "kind": "drop",
   "gain": -6
  },
  {
-  "frame": 19397,
+  "frame": 21315,
   "kind": "shimmer",
   "gain": -4
  },
  {
-  "frame": 19541,
+  "frame": 21459,
   "kind": "whoosh",
   "gain": -8
  },
  {
-  "frame": 20022,
+  "frame": 21940,
   "kind": "click",
   "gain": 0
  },
  {
-  "frame": 20151,
+  "frame": 22069,
   "kind": "click",
   "gain": 0
  },
  {
-  "frame": 20416,
+  "frame": 22334,
   "kind": "click",
   "gain": 0
  },
  {
-  "frame": 20419,
+  "frame": 22337,
   "kind": "confirm",
   "gain": -6
  },
  {
-  "frame": 20486,
+  "frame": 22404,
   "kind": "shimmer",
   "gain": -6
  },
  {
-  "frame": 20649,
+  "frame": 22567,
   "kind": "whoosh",
   "gain": -8
  },
  {
-  "frame": 21599,
+  "frame": 23517,
   "kind": "whoosh",
   "gain": -8
  },
  {
-  "frame": 23122,
+  "frame": 25040,
   "kind": "whoosh",
   "gain": -8
  },
  {
-  "frame": 24029,
+  "frame": 25947,
   "kind": "swipe",
   "gain": -6
  },
  {
-  "frame": 24356,
+  "frame": 26274,
   "kind": "whoosh",
   "gain": -8
  },
  {
-  "frame": 24816,
+  "frame": 26734,
   "kind": "shimmer",
   "gain": -6
  },
  {
-  "frame": 25246,
+  "frame": 27164,
   "kind": "swipe",
   "gain": -8
  },
  {
-  "frame": 25417,
+  "frame": 27335,
   "kind": "whoosh",
   "gain": -8
  },
  {
-  "frame": 25589,
+  "frame": 27507,
   "kind": "tick",
   "gain": -4
  },
  {
-  "frame": 25647,
+  "frame": 27565,
   "kind": "tick",
   "gain": -4
  },
  {
-  "frame": 25728,
+  "frame": 27646,
   "kind": "tick",
   "gain": -4
  },
  {
-  "frame": 25783,
+  "frame": 27701,
   "kind": "tick",
   "gain": -4
  },
  {
-  "frame": 25818,
+  "frame": 27736,
   "kind": "tick",
   "gain": -4
  },
  {
-  "frame": 25853,
+  "frame": 27771,
   "kind": "tick",
   "gain": -4
  },
  {
-  "frame": 25896,
+  "frame": 27814,
   "kind": "tick",
   "gain": -4
  },
  {
-  "frame": 25940,
+  "frame": 27858,
   "kind": "tick",
   "gain": -4
  },
  {
-  "frame": 25996,
+  "frame": 27914,
   "kind": "tick",
   "gain": -4
  },
  {
-  "frame": 26044,
+  "frame": 27962,
   "kind": "tick",
   "gain": -4
  },
  {
-  "frame": 26088,
+  "frame": 28006,
   "kind": "tick",
   "gain": -4
  },
  {
-  "frame": 26151,
+  "frame": 28069,
   "kind": "tick",
   "gain": -4
  },
  {
-  "frame": 26235,
+  "frame": 28153,
   "kind": "confirm",
   "gain": -2
  },
  {
-  "frame": 26531,
+  "frame": 28449,
   "kind": "shimmer",
   "gain": -2
  },
  {
-  "frame": 26707,
+  "frame": 28625,
   "kind": "whoosh",
   "gain": -8
  },
  {
-  "frame": 26811,
+  "frame": 28729,
   "kind": "shimmer",
   "gain": -4
  },
  {
-  "frame": 27446,
+  "frame": 29364,
   "kind": "typing",
   "gain": -2
  },
  {
-  "frame": 27479,
+  "frame": 29397,
   "kind": "hoot",
   "gain": -4
  },
  {
-  "frame": 27495,
+  "frame": 29413,
   "kind": "chip",
   "gain": -6
  },
  {
-  "frame": 27906,
+  "frame": 29824,
   "kind": "confirm",
   "gain": -4
  },
  {
-  "frame": 28075,
+  "frame": 29993,
   "kind": "shimmer",
   "gain": -2
  },
  {
-  "frame": 28280,
+  "frame": 30198,
   "kind": "chip",
   "gain": -4
  },
  {
-  "frame": 28310,
+  "frame": 30228,
   "kind": "chip",
   "gain": -4
  },
  {
-  "frame": 28344,
+  "frame": 30262,
   "kind": "chip",
   "gain": -4
  },
  {
-  "frame": 28393,
+  "frame": 30311,
   "kind": "confirm",
   "gain": -4
  },
  {
-  "frame": 28500,
+  "frame": 30418,
   "kind": "impact",
   "gain": -8
  }

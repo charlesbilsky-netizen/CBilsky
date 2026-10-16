@@ -13,17 +13,37 @@ const NAVY2 = "#1A2033";
 const NAVY3 = "#222941";
 const LINE = "#2E3650";
 
-// The owl mark, drawn as a small geometric constellation. No logo file.
+// The owl mark, drawn in code after the product's green geometric owl:
+// a V brow sweeping into ears, two big ringed eyes, a triangle-tessellated
+// chest, leaf-shaped wings and a perch. No logo file is used.
 export const OwlMark: React.FC<{ size?: number; glow?: number }> = ({ size = 44, glow = 1 }) => (
   <svg width={size} height={size} viewBox="0 0 44 44">
-    <g stroke={C.bright} strokeWidth={1.6} fill="none" opacity={0.95}>
-      <path d="M8 14 L14 6 L18 13 L26 13 L30 6 L36 14 L34 28 L22 38 L10 28 Z" />
-      <path d="M14 6 L22 11 L30 6" opacity={0.7} />
-      <path d="M10 28 L22 24 L34 28" opacity={0.5} />
-    </g>
-    <circle cx={16.5} cy={19} r={3.2} fill={C.bright} opacity={0.9 * glow} />
-    <circle cx={27.5} cy={19} r={3.2} fill={C.bright} opacity={0.9 * glow} />
-    <path d="M20 25 L22 28 L24 25" stroke={C.gold} strokeWidth={1.4} fill="none" opacity={0.8} />
+    <defs>
+      <linearGradient id="owlg" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stopColor={C.bright} />
+        <stop offset="1" stopColor={C.green} />
+      </linearGradient>
+    </defs>
+    {/* body */}
+    <path d="M22 10 C32 10 35 18 35 25 C35 33 29 37 22 37 C15 37 9 33 9 25 C9 18 12 10 22 10 Z" fill="url(#owlg)" opacity={0.28} />
+    {/* wings */}
+    <path d="M9 20 C5 24 5 30 9 34 C11 31 11 23 9 20 Z" fill="url(#owlg)" opacity={0.75} />
+    <path d="M35 20 C39 24 39 30 35 34 C33 31 33 23 35 20 Z" fill="url(#owlg)" opacity={0.75} />
+    {/* brow: V sweeping up into the ears */}
+    <path d="M5 9 L22 16 L39 9 L31 17 L22 14.5 L13 17 Z" fill="url(#owlg)" opacity={0.95} />
+    {/* eyes */}
+    <circle cx={15} cy={21} r={5.4} stroke={C.bright} strokeWidth={1.8} fill="none" opacity={0.95} />
+    <circle cx={29} cy={21} r={5.4} stroke={C.bright} strokeWidth={1.8} fill="none" opacity={0.95} />
+    <circle cx={15} cy={21} r={2.4} fill={C.bright} opacity={0.95 * glow} />
+    <circle cx={29} cy={21} r={2.4} fill={C.bright} opacity={0.95 * glow} />
+    {/* triangle chest */}
+    {[[19, 28], [25, 28], [22, 31.6]].map(([x, y], i) => (
+      <path key={i} d={`M${x - 2.4} ${y} L${x + 2.4} ${y} L${x} ${y + 3.4} Z`} fill={C.bright} opacity={0.85} />
+    ))}
+    {/* perch and feet */}
+    <rect x={10} y={38} width={24} height={1.8} rx={0.9} fill={C.mid} opacity={0.9} />
+    <rect x={17.4} y={35.4} width={3} height={3.4} rx={1.4} fill={C.mid} />
+    <rect x={23.6} y={35.4} width={3} height={3.4} rx={1.4} fill={C.mid} />
   </svg>
 );
 

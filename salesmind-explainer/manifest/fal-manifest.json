@@ -2797,6 +2797,86 @@
       "status": "done",
       "request_id": "01a142f1-6605-7c52-95af-cd567a0eae7c",
       "error": null
+    },
+    {
+      "id": "voice-c03p08",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.01,
+      "out": "public/voice/c03p08.mp3",
+      "input": {
+        "text": "Before your first real day, clean the book once. Check every deal is real and at the right stage. Tidy duplicates and old blockers. Give everything a next action. One to two hours, once. Then the routine keeps it clean.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Eleven pages. Most days, you work in a handful of them.",
+        "next_text": "Start here. This is the control surface."
+      },
+      "status": "done",
+      "request_id": "01a14471-0380-7731-8325-2dbf25c8d022",
+      "error": null
+    },
+    {
+      "id": "voice-c06p07",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.01,
+      "out": "public/voice/c06p07.mp3",
+      "input": {
+        "text": "One more dialog to know. Moving a deal into Contact Established with no reply on record, SalesMind asks how you reached them. Pick what happened. That records the contact in SalesMind only. Keeping a marketing lead still takes a call logged as answered in the CRM.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "No answer? Follow the schedule. Day zero, call and email. Day one, call. Day three, call and email. Day seven, call: the last step for outbound leads. Day twelve, a break-up email for inbound. Then decide whether to close the deal as Lost.",
+        "next_text": "The board shows the stages as columns."
+      },
+      "status": "done",
+      "request_id": "01a14471-03b8-74a0-aa98-9cfc202f617a",
+      "error": null
+    },
+    {
+      "id": "voice-c09p05",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.01,
+      "out": "public/voice/c09p05.mp3",
+      "input": {
+        "text": "Open the deal, and the expected deposit panel shows how far you are. The schedule from the CRM. Every deposit and withdrawal. And the amount still to go.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "From there you move it. Discovery. Validation. Negotiation. Approval. In Progress. Funded.",
+        "next_text": "And one piece of housekeeping. A client works one deal."
+      },
+      "status": "done",
+      "request_id": "01a14471-038b-7c31-9e27-8713dae21df2",
+      "error": null
+    },
+    {
+      "id": "voice-c09p06",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.01,
+      "out": "public/voice/c09p06.mp3",
+      "input": {
+        "text": "And one piece of housekeeping. A client works one deal. If old data left several open, an amber button lists them. Keep the right one, and close the rest as duplicates. One exception: if a White Label deal is involved, choose Later, and close nothing.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Open the deal, and the expected deposit panel shows how far you are. The schedule from the CRM. Every deposit and withdrawal. And the amount still to go.",
+        "next_text": "Clients is the register of your book."
+      },
+      "status": "done",
+      "request_id": "01a14471-0385-7fd2-a276-8345bf274a1f",
+      "error": null
     }
   ]
 }

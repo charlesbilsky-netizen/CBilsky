@@ -577,7 +577,7 @@ export const Cadence: React.FC<{ f: number; a: number; at: number[]; decide: num
 
 // ---------------------------------------------------------------------------
 // Ch7 / Ch9 · who moves each stage. Labels follow the guide's reference table.
-export type Mover = { kind: "auto" | "you"; how?: string; lock?: boolean };
+export type Mover = { kind: "auto" | "you"; how?: string; lock?: boolean; label?: string };
 
 export const StageFlow: React.FC<{
   f: number;
@@ -639,7 +639,7 @@ export const StageFlow: React.FC<{
             {m ? (
               <div style={{ position: "absolute", left: x, top: 548, width: w, display: "flex", flexDirection: "column", alignItems: "center", gap: 10, opacity: mq, transform: `translateY(${(1 - mq) * 10}px)` }}>
                 <div style={{ display: "flex", alignItems: "center", gap: 8, padding: "6px 12px", borderRadius: 999, background: `${mc}22`, border: `1px solid ${mc}`, color: mc, fontSize: 17, fontWeight: 700, letterSpacing: 1 }}>
-                  {auto ? "BY ITSELF" : "YOU MOVE IT"}
+                  {m.label ?? (auto ? "BY ITSELF" : "YOU MOVE IT")}
                 </div>
                 {m.how ? <div style={{ fontSize: 19, color: C.text, textAlign: "center", lineHeight: 1.35 }}>{m.how}</div> : null}
                 {m.lock ? <div style={{ fontSize: 17, color: C.gold, fontWeight: 600 }}>never by hand</div> : null}

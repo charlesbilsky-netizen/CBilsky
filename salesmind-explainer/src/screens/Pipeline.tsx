@@ -1,10 +1,11 @@
 import React from "react";
-import { useCurrentFrame } from "remotion";
+import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { AppShell } from "../ui/AppShell";
 import { AlertBadge, Button, Chip, Demo, Icon, Label, Panel, Suggested, Table, Tabs } from "../ui/primitives";
 import { C, eur, fontFamily } from "../theme";
 import { deals } from "../data";
 import { prog, reveal, stagger } from "../ui/anim";
+import { Modal } from "./DealPage";
 
 export const NB_STAGES = ["New Opportunity", "Contact Established", "Qualified", "Solution Presented", "Onboarding", "Funding Pending", "Funded", "Won", "Lost", "On Hold"];
 export const CG_STAGES = ["Discovery", "Validation", "Negotiation", "Approval", "In Progress", "Funded", "Won", "Lost", "On Hold"];
@@ -229,6 +230,7 @@ export const PipelineTable: React.FC<{ start?: number; hiCol?: "next" | "sla" | 
     { key: "stage", label: "Stage", w: 190 },
     { key: "status", label: "Status", w: 120 },
     { key: "dep", label: "Expected deposit", w: 160, align: "right" as const },
+    { key: "aum", label: "Potential AUM", w: 140, align: "right" as const },
     { key: "pad", label: "", w: 20 },
     { key: "in", label: "In stage", w: 90 },
     { key: "next", label: "Next stage action", w: 270 },
@@ -242,9 +244,15 @@ export const PipelineTable: React.FC<{ start?: number; hiCol?: "next" | "sla" | 
         {d.co ? <Demo /> : null}
       </span>
     ),
-    stage: d.stage,
+    stage: (
+      <span>
+        {d.stage}
+        <span style={{ color: C.faint, fontSize: 14 }}> · {NB_STAGES.indexOf(d.stage) + 1} of 8</span>
+      </span>
+    ),
     status: d.status,
     dep: d.expected_deposit ? eur(d.expected_deposit) : <span style={{ color: C.faint }}>No amount</span>,
+    aum: d.potential_aum ? eur(d.potential_aum) : <span style={{ color: C.faint }}>—</span>,
     pad: "",
     in: `${d.days_in_stage}d`,
     next: (
@@ -265,10 +273,114 @@ export const PipelineTable: React.FC<{ start?: number; hiCol?: "next" | "sla" | 
             rows={rows}
             rowH={66}
             reveal={(i) => reveal(stagger(f, i, 4, 2))}
-            footer={{ client: "Totals", dep: eur(nb.reduce((a, d) => a + (d.expected_deposit ?? 0), 0)) }}
+            footer={{ client: "Totals · filtered list", dep: eur(nb.reduce((a, d) => a + (d.expected_deposit ?? 0), 0)), aum: eur(nb.reduce((a, d) => a + (d.potential_aum ?? 0), 0)) }}
           />
         </Panel>
       </div>
     </AppShell>
+  );
+};
+
+// S42 · Client Growth: the expected deposit panel (deck slide 28).
+export const GrowthDeposit: React.FC<{ start?: number }> = ({ start = 0 }) => {
+  const f = useCurrentFrame() - start;
+  const rows: [string, string, string][] = [
+    ["Funded", "Day 30", "+ " + eur(250000)],
+    ["Deposit · scheduled", "Day 60", eur(250000)],
+    ["Deposit · scheduled", "Day 90", eur(250000)],
+  ];
+  return (
+    <AppShell page="Pipeline" title="Pipeline">
+      <div style={{ fontFamily, display: "flex", gap: 20, height: "100%" }}>
+        <Panel style={{ flex: 1.2, padding: 26, ...reveal(prog(f, 0, 12)) }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
+            <Label>Expected deposit</Label>
+            <span style={{ fontSize: 14, color: C.muted }}>Meridian Family Office Demo <Demo /></span>
+          </div>
+          <div style={{ marginTop: 16, fontSize: 34, fontWeight: 600, color: C.off }}>
+            {eur(250000)} <span style={{ color: C.muted, fontSize: 22, fontWeight: 500 }}>of {eur(500000)}</span>
+          </div>
+          <div style={{ height: 8, borderRadius: 8, background: C.line, marginTop: 14 }}>
+            <div style={{ width: `${50 * Math.min(1, prog(f, 8, 20))}%`, height: 8, borderRadius: 8, background: C.bright }} />
+          </div>
+          <div style={{ marginTop: 10, fontSize: 16, color: C.muted }}>{eur(250000)} to go · figures are synthetic</div>
+          <div style={{ marginTop: 22 }}>
+            <Label>Schedule · from the CRM</Label>
+            <div style={{ marginTop: 10 }}>
+              {rows.map(([k, d, v], i) => (
+                <div key={i} style={{ display: "flex", justifyContent: "space-between", padding: "10px 0", borderBottom: `1px solid ${C.line}`, fontSize: 17, ...reveal(stagger(f, i, 14, 4)) }}>
+                  <span style={{ color: k === "Funded" ? C.bright : C.text }}>{k}</span>
+                  <span style={{ color: C.muted }}>{d}</span>
+                  <span style={{ color: C.off, fontWeight: 600 }}>{v}</span>
+                </div>
+              ))}
+              <div style={{ display: "flex", justifyContent: "space-between", padding: "10px 0", fontSize: 17, ...reveal(prog(f, 28, 10)) }}>
+                <span style={{ color: C.text }}>Total withdrawn</span>
+                <span />
+                <span style={{ color: C.off, fontWeight: 600 }}>{eur(0)}</span>
+              </div>
+            </div>
+          </div>
+        </Panel>
+        <Panel style={{ flex: 1, padding: 26, ...reveal(prog(f, 6, 12)) }}>
+          <Label>Deposits and withdrawals</Label>
+          <svg width="100%" height="420" viewBox="0 0 600 420" style={{ marginTop: 18 }}>
+            <line x1={0} y1={120} x2={600 * Math.min(1, prog(f, 10, 24))} y2={120} stroke={C.gold} strokeWidth={1.5} strokeDasharray="6 6" opacity={0.7} />
+            <text x={8} y={110} fill={C.gold} fontSize={15} fontFamily={fontFamily} opacity={0.9}>Expected deposit</text>
+            <path d={`M0 400 L150 400 L170 260 L${150 + 300 * Math.min(1, prog(f, 16, 26))} 260`} stroke={C.bright} strokeWidth={3} fill="none" />
+            <circle cx={170} cy={260} r={6} fill={C.bright} opacity={prog(f, 20, 10)} />
+            <text x={186} y={252} fill={C.text} fontSize={15} fontFamily={fontFamily} opacity={prog(f, 22, 10)}>Day 30 · + {eur(250000)} · Funded</text>
+          </svg>
+          <div style={{ fontSize: 15, color: C.muted }}>Deal type: Brokerage · filterable</div>
+        </Panel>
+      </div>
+    </AppShell>
+  );
+};
+
+// S43 · Several open deals: keep one, close the rest (deck slide 29).
+export const SeveralOpenDeals: React.FC<{ start?: number }> = ({ start = 0 }) => {
+  const f = useCurrentFrame() - start;
+  const deal = (num: string, type: string, stage: string, opened: string, amt: number, picked?: boolean, wl?: boolean) => (
+    <div style={{ display: "flex", alignItems: "center", gap: 12, padding: "10px 12px", borderRadius: 8, border: `1px solid ${picked ? C.bright : C.line}`, background: picked ? "rgba(38,191,107,0.07)" : undefined, fontSize: 15.5, color: C.text }}>
+      <span style={{ width: 16, height: 16, borderRadius: 16, border: `2px solid ${picked ? C.bright : C.faint}`, background: picked ? C.bright : undefined, flexShrink: 0 }} />
+      <span style={{ fontWeight: 600, color: wl ? C.gold : C.off }}>{type}</span>
+      <span style={{ color: C.muted }}>{num} · {stage} · opened {opened}</span>
+      <span style={{ marginLeft: "auto", fontWeight: 600, color: C.off }}>{eur(amt)}</span>
+    </div>
+  );
+  return (
+    <AbsoluteFill>
+      <AppShell page="Pipeline" title="Pipeline">
+        <div style={{ opacity: 0.35, fontFamily, display: "flex", gap: 12, alignItems: "center" }}>
+          <span style={{ fontSize: 18, color: C.muted }}>Client Growth</span>
+          <span style={{ padding: "6px 14px", borderRadius: 999, border: `1px solid ${C.warning}`, background: `${C.warning}1a`, color: C.warning, fontSize: 15, fontWeight: 600 }}>⚠ with several open deals</span>
+        </div>
+      </AppShell>
+      <Modal title="Several open deals" p={prog(f, 0, 12)} width={900}>
+        <div style={{ fontSize: 16, color: C.muted, marginTop: -6 }}>A client works one deal. Keep one — the others are closed as Lost in the CRM, noted as duplicates.</div>
+        <div style={{ ...reveal(prog(f, 8, 12)) }}>
+          <div style={{ fontSize: 17, fontWeight: 600, color: C.off, margin: "8px 0" }}>Greenfield Institutional Lab <Demo /></div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+            {deal("CRM-DEMO-311", "Brokerage", "Discovery", "Day 2", 250000, true)}
+            {deal("CRM-DEMO-312", "Brokerage", "Discovery", "Day 9", 250000)}
+          </div>
+          <div style={{ display: "flex", justifyContent: "flex-end", marginTop: 10 }}>
+            <Button primary>Close 1 other deal</Button>
+          </div>
+        </div>
+        <div style={{ ...reveal(prog(f, 18, 12)) }}>
+          <div style={{ fontSize: 17, fontWeight: 600, color: C.off, margin: "8px 0" }}>Redwood Trading Education <Demo /></div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+            {deal("CRM-DEMO-313", "Brokerage", "Validation", "Day 4", 500000, true)}
+            {deal("CRM-DEMO-314", "White label", "Discovery", "Day 11", 250000, false, true)}
+          </div>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: 10 }}>
+            <span style={{ fontSize: 15, color: C.gold }}>White Label involved — choose Later and close nothing</span>
+            <Button>Later</Button>
+          </div>
+        </div>
+      </Modal>
+    </AbsoluteFill>
   );
 };

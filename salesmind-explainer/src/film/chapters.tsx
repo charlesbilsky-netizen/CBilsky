@@ -11,9 +11,10 @@ import { Shot, Scr, Callouts, Principle, Keys, Note, Box, Spot, press } from "./
 import { Signals, Hub, CrmSync, Ladder, AlertsMap, SlaClock, Cadence, StageFlow, Checklist, Link2, TenDays } from "../mg/MG";
 import { SignIn, NavTour } from "../screens/Nav";
 import { OllieDM } from "../screens/OllieDM";
+import { HeroScene } from "./Thumb3D";
 import { Dashboard } from "../screens/Dashboard";
 import { TasksInbox, TasksToday, PlanTheDay, Planning } from "../screens/Tasks";
-import { PipelineBoard, ClientGrowthBoard, FiltersPanel, PipelineMenus, PipelineTable, NB_STAGES } from "../screens/Pipeline";
+import { PipelineBoard, ClientGrowthBoard, FiltersPanel, PipelineMenus, PipelineTable, GrowthDeposit, SeveralOpenDeals, NB_STAGES } from "../screens/Pipeline";
 import { DealPage, CompleteDialog, MoveDialog, HoldCloseDialogs, CreateDeal } from "../screens/DealPage";
 import { Clients, Ownership, Activity, ActivityItem } from "../screens/Book";
 import { Performance, SalesPlan, GooglePermission, Guidebook, Materials, Changelog, Requests } from "../screens/Rest";
@@ -53,7 +54,12 @@ const ch1 = (): Shot[] => {
   S("impact", mt + 6, -4);
   return [
     {
+      // The hero frame: the film opens on the thumbnail image itself.
       at: 0,
+      node: (bf) => <HeroScene f={bf} badge={false} />,
+    },
+    {
+      at: 64,
       node: (bf) => (
         <>
           <Plate src="fal/loop/f01.mp4" dim={0.32} scaleFrom={1.02} scaleTo={1.16} />
@@ -113,6 +119,9 @@ const ch3 = (): Shot[] => {
   const tour = P("c03p01", "and your workspace") - 6;
   const { S } = mk(3);
   S("click", click);
+  const clean = ["Check every deal", "Tidy duplicates", "Give everything"].map((x) => P("c03p08", x));
+  clean.forEach((t) => S("chip", t, -4));
+  S("confirm", P("c03p08", "One to two hours"), -6);
   return [
     {
       at: 0,
@@ -177,6 +186,16 @@ const ch3 = (): Shot[] => {
           </>
         );
       },
+    },
+    {
+      at: L("c03p08") - 8,
+      node: (bf) => (
+        <>
+          {plate("f03", 0.8)}
+          <StageFlow f={bf} a={L("c03p08")} title="Your first session · clean the book once" stages={["Check every deal", "Tidy up", "Fill in"]} at={clean} />
+          <Note f={bf} a={P("c03p08", "One to two hours")} x={710} y={700} w={520} text="One to two hours, once" sub="Then the routine keeps it clean" gold />
+        </>
+      ),
     },
   ];
 };
@@ -469,6 +488,9 @@ const ch6 = (): Shot[] => {
   S("tick", P("c06p04", "Alerts clear by themselves") + 4, -4);
   S("stamp", P("c06p05", "Contact late"), -4);
   ["Day zero", "Day one", "Day three", "Day seven", "Day twelve"].forEach((x) => S("tick", P("c06p06", x), -8));
+  S("click", L("c06p07") + 6, -4);
+  S("chip", P("c06p07", "Pick what happened"), -6);
+  S("stamp", P("c06p07", "answered in the CRM"), -6);
   return [
     {
       at: 0,
@@ -615,6 +637,7 @@ const ch6 = (): Shot[] => {
         <>
           {plate("f06", 0.78)}
           <SlaClock f={bf} a={L("c06p05")} inbound={P("c06p05", "Inbound leads")} example={P("c06p05", "Assigned Friday")} outbound={P("c06p05", "Outbound:")} late={P("c06p05", "Contact late")} />
+          <Note f={bf} a={P("c06p05", "marked late") + 10} x={660} y={930} w={620} text="A breach stays on record" sub="No SLA once a deal is Lost, On Hold, Funded or Won" />
         </>
       ),
     },
@@ -625,6 +648,28 @@ const ch6 = (): Shot[] => {
           {plate("f06", 0.78)}
           <Cadence f={bf} a={L("c06p06")} at={["Day zero", "Day one", "Day three", "Day seven", "Day twelve"].map((x) => P("c06p06", x))} decide={P("c06p06", "Then decide")} />
         </>
+      ),
+    },
+    {
+      at: L("c06p07") - 8,
+      node: (bf) => (
+        <Scr
+          cam={camPath(bf, [
+            [L("c06p07"), cam(960, 480, 1.12)],
+            [P("c06p07", "asks how you reached") - 6, cam(960, 500, 1.35)],
+          ])}
+          over={
+            <Callouts
+              f={bf}
+              items={[
+                { a: P("c06p07", "Pick what happened"), b: P("c06p07", "SalesMind only"), box: [585, 468, 750, 90], label: "Pick what happened", side: "right" },
+                { a: P("c06p07", "SalesMind only") + 4, box: [585, 735, 330, 30], label: "SalesMind's record only", side: "right", gold: true },
+              ]}
+            />
+          }
+        >
+          <MoveDialog variant="reach" />
+        </Scr>
       ),
     },
   ];
@@ -667,7 +712,7 @@ const ch7 = (): Shot[] => {
             side={{ labels: ["Lost", "On Hold"], at: P("c07p01", "Lost and On Hold") }}
             movers={[
               null,
-              { kind: "auto", how: "Reply · call over 10 s · accepted invite" },
+              { kind: "auto", how: "A reply, a meeting, an answered call · or you", label: "BY ITSELF · OR YOU" },
               { kind: "you", how: "Your judgement · auto once qualification is filled" },
               { kind: "you", how: "Your judgement" },
               { kind: "auto", how: "Application submitted" },
@@ -683,25 +728,28 @@ const ch7 = (): Shot[] => {
     {
       at: L("c07p03") - 8,
       node: (bf) => (
-        <Scr
-          cam={camPath(bf, [
-            [L("c07p03"), cam(960, 420, 1.3)],
-            [P("c07p03", "How long in this stage") - 6, cam(960, 360, 2.0)],
-          ])}
-          over={
-            <Callouts
-              f={bf}
-              items={[
-                { a: P("c07p03", "How long in this stage"), b: P("c07p03", "How much money") + 30, box: [848, 344, 80, 20], label: "In this stage", side: "left" },
-                { a: P("c07p03", "How long since contact"), b: P("c07p03", "How much money") + 30, box: [946, 344, 116, 20], label: "Since contact", side: "right" },
-                { a: P("c07p03", "How much money"), b: P("c07p03", "Days in stage turns"), box: [848, 368, 98, 20], label: "Expected deposit", side: "left" },
-                { a: P("c07p03", "turns bold"), box: [848, 344, 80, 20], label: "Bold = late", side: "left", gold: true },
-              ]}
-            />
-          }
-        >
-          <PipelineBoard start={SETTLED} focusId="d6" />
-        </Scr>
+        <>
+          <Scr
+            cam={camPath(bf, [
+              [L("c07p03"), cam(960, 420, 1.3)],
+              [P("c07p03", "How long in this stage") - 6, cam(960, 360, 2.0)],
+            ])}
+            over={
+              <Callouts
+                f={bf}
+                items={[
+                  { a: P("c07p03", "How long in this stage"), b: P("c07p03", "How much money") + 30, box: [848, 344, 80, 20], label: "In this stage", side: "left" },
+                  { a: P("c07p03", "How long since contact"), b: P("c07p03", "How much money") + 30, box: [946, 344, 116, 20], label: "Since contact", side: "right" },
+                  { a: P("c07p03", "How much money"), b: P("c07p03", "Days in stage turns"), box: [848, 368, 98, 20], label: "Expected deposit", side: "left" },
+                  { a: P("c07p03", "turns bold"), box: [848, 344, 80, 20], label: "Bold = late", side: "left", gold: true },
+                ]}
+              />
+            }
+          >
+            <PipelineBoard start={SETTLED} focusId="d6" />
+          </Scr>
+          <Note f={bf} a={E("c07p03") - 26} x={1180} y={940} w={660} text="Keyboard: Space · arrows · Space" sub="Pick up a card, choose a stage, drop it. Nothing saves until you confirm." />
+        </>
       ),
     },
     {
@@ -931,6 +979,11 @@ const ch9 = (): Shot[] => {
   S("click", submit);
   S("confirm", submit + 3, -6);
   S("alert", P("c09p03", "If the client already") + 20, -8);
+  S("click", L("c09p05") + 6, -4);
+  ["The schedule from the CRM", "Every deposit and withdrawal", "the amount still to go"].forEach((x) => S("tick", P("c09p05", x), -6));
+  S("alert", P("c09p06", "an amber button") - 4, -8);
+  S("click", P("c09p06", "close the rest"), -4);
+  S("stamp", P("c09p06", "choose Later"), -6);
   return [
     {
       at: 0,
@@ -1040,6 +1093,54 @@ const ch9 = (): Shot[] => {
           </>
         );
       },
+    },
+    {
+      at: L("c09p05") - 8,
+      node: (bf) => (
+        <Scr
+          cam={camPath(bf, [
+            [L("c09p05"), cam(960, 460, 1.1)],
+            [P("c09p05", "The schedule from") - 6, cam(700, 620, 1.3)],
+            [P("c09p05", "Every deposit") - 6, cam(1300, 500, 1.25)],
+          ])}
+          over={
+            <Callouts
+              f={bf}
+              items={[
+                { a: P("c09p05", "how far you are"), b: P("c09p05", "The schedule from"), box: [300, 250, 560, 110], label: "Progress to the expected deposit", side: "right" },
+                { a: P("c09p05", "The schedule from"), b: P("c09p05", "Every deposit"), box: [300, 460, 560, 190], label: "From the CRM", side: "right" },
+                { a: P("c09p05", "the amount still to go"), box: [300, 388, 560, 30], label: "Still to go", side: "right", gold: true },
+              ]}
+            />
+          }
+        >
+          <GrowthDeposit />
+        </Scr>
+      ),
+    },
+    {
+      at: L("c09p06") - 8,
+      node: (bf) => (
+        <Scr
+          cam={camPath(bf, [
+            [L("c09p06"), cam(960, 480, 1.1)],
+            [P("c09p06", "Keep the right one") - 6, cam(860, 440, 1.3)],
+            [P("c09p06", "White Label") - 6, cam(900, 700, 1.3)],
+          ])}
+          over={
+            <Callouts
+              f={bf}
+              items={[
+                { a: P("c09p06", "an amber button"), b: P("c09p06", "Keep the right one"), box: [585, 260, 750, 50], label: "The amber button lists them", side: "right" },
+                { a: P("c09p06", "close the rest"), b: P("c09p06", "One exception"), box: [1140, 540, 196, 40], label: "Closed as Lost · duplicates", side: "right" },
+                { a: P("c09p06", "choose Later"), box: [1240, 870, 96, 40], label: "White Label: Later", side: "right", gold: true },
+              ]}
+            />
+          }
+        >
+          <SeveralOpenDeals />
+        </Scr>
+      ),
     },
   ];
 };
@@ -1484,6 +1585,7 @@ const ch15 = (): Shot[] => {
           [rq("Raise a request"), 0],
         ]);
         return (
+          <>
           <Scr
             cam={camPath(bf, [
               [L("c15p03"), cam(900, 300, 1.3)],
@@ -1493,6 +1595,8 @@ const ch15 = (): Shot[] => {
           >
             <Requests tab={tab} />
           </Scr>
+          <Note f={bf} a={rq("Raise a request") + 26} x={1160} y={930} w={680} text="Questions and bugs: #salesmind on Slack" sub="The Guidebook answers the how; the channel takes the rest" />
+          </>
         );
       },
     },

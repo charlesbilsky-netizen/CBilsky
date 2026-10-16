@@ -20,7 +20,7 @@ const ShotFrame: React.FC<{ at: number; first: boolean; cut?: boolean; node: Sho
     <AbsoluteFill
       style={{
         opacity: op,
-        transform: p >= 1 ? undefined : `perspective(1600px) rotateY(${(1 - p) * 3}deg) scale(${1 + (1 - p) * 0.014})`,
+        transform: p >= 1 ? undefined : `perspective(1600px) rotateY(${(1 - p) * 4.2}deg) scale(${1 + (1 - p) * 0.018})`,
         transformOrigin: "50% 50%",
       }}
     >

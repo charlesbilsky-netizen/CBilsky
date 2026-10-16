@@ -1,0 +1,41 @@
+{
+ "project": "SalesMind: The RM Operating System \u2014 training film v2.1",
+ "audience": "internal training (RMs and sales coaches); synthetic data only",
+ "source_of_truth": [
+  "RM Pipeline user guide deck (Oct 2026, 33 slides)",
+  "system reference snapshot 6-8 Oct 2026 (v0.6.1)",
+  "Ollie snapshot 14 Oct 2026"
+ ],
+ "duration_frames": 30624,
+ "fps": 30,
+ "duration": "17.01 min",
+ "chapters": 17,
+ "build": "deterministic recreation: every screen is code (Remotion 4, React); no live capture; no AI-generated UI",
+ "renders": {
+  "styleproof": "out/preview_styleproof_v01.mp4 (frames 0-1500, 3840x2160, crf 15)",
+  "master_4k": "out/SalesMind_The_RM_Operating_System_4K.mp4 (3840x2160, H.264 crf 14, jpeg-quality 95 frame capture)",
+  "master_1080": "out/SalesMind_The_RM_Operating_System.mp4 (lanczos downscale of the 4K render: supersampled)",
+  "mezzanine_note": "a ProRes/DNxHR mezzanine exceeds this workstation's disk allowance; the 4K H.264 crf14 file is the archival master"
+ },
+ "audio": {
+  "narration": "ElevenLabs Multilingual v2, voice Brian, via fal",
+  "score": "Stable Audio 2.5, option D family, 8 cues",
+  "sfx": "ElevenLabs SFX v2, 18 elements, 148 cues",
+  "stems": [
+   "out/stem_voice.wav",
+   "out/stem_music.wav",
+   "out/stem_sfx.wav"
+  ],
+  "mix_target": "-16 LUFS integrated, <=-1.5 dBTP, linear normalisation after a transparent limiter"
+ },
+ "privacy": {
+  "gates": [
+   "scripts/privacy-lint.mjs on data, code, subtitles, manifest (external blocklist)",
+   "OCR label scan of the export",
+   "no live data to fal"
+  ],
+  "label": "TRAINING ENVIRONMENT \u00b7 SYNTHETIC DATA \u00b7 NOT A LIVE ACCOUNT on every frame, top layer"
+ },
+ "fal_spend_usd": 16.99,
+ "cap_usd": 20.0
+}

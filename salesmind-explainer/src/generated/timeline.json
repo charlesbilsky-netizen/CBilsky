@@ -1,6 +1,6 @@
 {
  "fps": 30,
- "total": 28706,
+ "total": 30624,
  "chapters": [
   {
    "n": 1,
@@ -8,38 +8,38 @@
    "title": "Cold open",
    "start": 0,
    "title_len": 0,
-   "body_len": 773,
+   "body_len": 803,
    "lines": [
     {
      "id": "c01p00",
-     "from": 54,
+     "from": 84,
      "dur": 92,
      "text": "Every RM starts the day with competing signals."
     },
     {
      "id": "c01p01",
-     "from": 152,
+     "from": 182,
      "dur": 397,
      "text": "A first contact coming due. A next action already overdue. A follow-up to send. A deal with no next step at all. An internal request still open. And a calendar with less room than it looks."
     },
     {
      "id": "c01p02",
-     "from": 567,
+     "from": 597,
      "dur": 146,
      "text": "Every RM starts with competing signals. The work is knowing what moves first."
     }
    ],
    "main_title": {
-    "from": 773,
+    "from": 803,
     "dur": 132
    },
-   "len": 905
+   "len": 935
   },
   {
    "n": 2,
    "num": "02",
    "title": "What SalesMind is",
-   "start": 905,
+   "start": 935,
    "title_len": 96,
    "body_len": 1129,
    "lines": [
@@ -68,9 +68,9 @@
    "n": 3,
    "num": "03",
    "title": "Getting in and finding your way",
-   "start": 2130,
+   "start": 2160,
    "title_len": 96,
-   "body_len": 1235,
+   "body_len": 1713,
    "lines": [
     {
      "id": "c03p00",
@@ -119,15 +119,21 @@
      "from": 1072,
      "dur": 117,
      "text": "Eleven pages. Most days, you work in a handful of them."
+    },
+    {
+     "id": "c03p08",
+     "from": 1205,
+     "dur": 456,
+     "text": "Before your first real day, clean the book once. Check every deal is real and at the right stage. Tidy duplicates and old blockers. Give everything a next action. One to two hours, once. Then the routine keeps it clean."
     }
    ],
-   "len": 1331
+   "len": 1809
   },
   {
    "n": 4,
    "num": "04",
    "title": "The Dashboard",
-   "start": 3461,
+   "start": 3969,
    "title_len": 96,
    "body_len": 1856,
    "lines": [
@@ -180,7 +186,7 @@
    "n": 5,
    "num": "05",
    "title": "Task management",
-   "start": 5413,
+   "start": 5921,
    "title_len": 96,
    "body_len": 2312,
    "lines": [
@@ -239,9 +245,9 @@
    "n": 6,
    "num": "06",
    "title": "The Pipeline",
-   "start": 7821,
+   "start": 8329,
    "title_len": 96,
-   "body_len": 3217,
+   "body_len": 3754,
    "lines": [
     {
      "id": "c06p00",
@@ -284,15 +290,21 @@
      "from": 2564,
      "dur": 599,
      "text": "No answer? Follow the schedule. Day zero, call and email. Day one, call. Day three, call and email. Day seven, call: the last step for outbound leads. Day twelve, a break-up email for inbound. Then decide whether to close the deal as Lost."
+    },
+    {
+     "id": "c06p07",
+     "from": 3187,
+     "dur": 515,
+     "text": "One more dialog to know. Moving a deal into Contact Established with no reply on record, SalesMind asks how you reached them. Pick what happened. That records the contact in SalesMind only. Keeping a marketing lead still takes a call logged as answered in the CRM."
     }
    ],
-   "len": 3313
+   "len": 3850
   },
   {
    "n": 7,
    "num": "07",
    "title": "Board and table",
-   "start": 11134,
+   "start": 12179,
    "title_len": 96,
    "body_len": 2292,
    "lines": [
@@ -339,7 +351,7 @@
    "n": 8,
    "num": "08",
    "title": "Working a deal",
-   "start": 13522,
+   "start": 14567,
    "title_len": 96,
    "body_len": 2567,
    "lines": [
@@ -410,9 +422,9 @@
    "n": 9,
    "num": "09",
    "title": "Client Growth",
-   "start": 16185,
+   "start": 17230,
    "title_len": 96,
-   "body_len": 1401,
+   "body_len": 2274,
    "lines": [
     {
      "id": "c09p00",
@@ -443,15 +455,27 @@
      "from": 973,
      "dur": 392,
      "text": "From there you move it. Discovery. Validation. Negotiation. Approval. In Progress. Funded. Once deposits reach the expected deposit, Won is set by itself."
+    },
+    {
+     "id": "c09p05",
+     "from": 1371,
+     "dur": 319,
+     "text": "Open the deal, and the expected deposit panel shows how far you are. The schedule from the CRM. Every deposit and withdrawal. And the amount still to go."
+    },
+    {
+     "id": "c09p06",
+     "from": 1708,
+     "dur": 510,
+     "text": "And one piece of housekeeping. A client works one deal. If old data left several open, an amber button lists them. Keep the right one, and close the rest as duplicates. One exception: if a White Label deal is involved, choose Later, and close nothing."
     }
    ],
-   "len": 1497
+   "len": 2370
   },
   {
    "n": 10,
    "num": "10",
    "title": "Clients and ownership",
-   "start": 17682,
+   "start": 19600,
    "title_len": 96,
    "body_len": 1761,
    "lines": [
@@ -504,7 +528,7 @@
    "n": 11,
    "num": "11",
    "title": "Activity",
-   "start": 19539,
+   "start": 21457,
    "title_len": 96,
    "body_len": 1012,
    "lines": [
@@ -539,7 +563,7 @@
    "n": 12,
    "num": "12",
    "title": "Performance",
-   "start": 20647,
+   "start": 22565,
    "title_len": 96,
    "body_len": 854,
    "lines": [
@@ -568,7 +592,7 @@
    "n": 13,
    "num": "13",
    "title": "The Sales Plan",
-   "start": 21597,
+   "start": 23515,
    "title_len": 96,
    "body_len": 1427,
    "lines": [
@@ -609,7 +633,7 @@
    "n": 14,
    "num": "14",
    "title": "Calendar and the day",
-   "start": 23120,
+   "start": 25038,
    "title_len": 96,
    "body_len": 1138,
    "lines": [
@@ -650,7 +674,7 @@
    "n": 15,
    "num": "15",
    "title": "Support",
-   "start": 24354,
+   "start": 26272,
    "title_len": 96,
    "body_len": 965,
    "lines": [
@@ -685,7 +709,7 @@
    "n": 16,
    "num": "16",
    "title": "End of day",
-   "start": 25415,
+   "start": 27333,
    "title_len": 96,
    "body_len": 1194,
    "lines": [
@@ -726,7 +750,7 @@
    "n": 17,
    "num": "17",
    "title": "Your standing, any day",
-   "start": 26705,
+   "start": 28623,
    "title_len": 96,
    "body_len": 1695,
    "lines": [
@@ -771,7 +795,7 @@
   }
  ],
  "end_card": {
-  "from": 28496,
+  "from": 30414,
   "dur": 210
  }
 }

@@ -84,6 +84,7 @@ export const DealPage: React.FC<{ na?: NAState; stage?: string; start?: number; 
                   <Chip key={x} style={{ fontSize: 14, color: x.includes("✓") ? C.text : C.warning }}>{x}</Chip>
                 ))}
               </div>
+              <div style={{ fontSize: 13.5, color: C.faint, marginTop: 12 }}>Saved to the CRM · Client type stays in SalesMind</div>
             </Panel>
           </div>
           <div style={{ width: 640, display: "flex", flexDirection: "column", gap: 16 }}>
@@ -118,6 +119,7 @@ export const DealPage: React.FC<{ na?: NAState; stage?: string; start?: number; 
             <Panel style={{ padding: 22, ...reveal(stagger(f, 2, 9, 3)) }}>
               <Label>Blocker</Label>
               <div style={{ fontSize: 16, color: C.muted, marginTop: 8 }}>Nothing blocking this deal.</div>
+              <div style={{ fontSize: 14, color: C.faint, marginTop: 8 }}>Blocked history (1) ›</div>
             </Panel>
             <Panel style={{ padding: 22, flex: 1, ...reveal(stagger(f, 3, 9, 3)) }}>
               <Label>Latest notes</Label>
@@ -130,7 +132,7 @@ export const DealPage: React.FC<{ na?: NAState; stage?: string; start?: number; 
   );
 };
 
-const Modal: React.FC<{ title: string; width?: number; children: React.ReactNode; p?: number; left?: number }> = ({ title, width = 760, children, p = 1, left }) => (
+export const Modal: React.FC<{ title: string; width?: number; children: React.ReactNode; p?: number; left?: number }> = ({ title, width = 760, children, p = 1, left }) => (
   <AbsoluteFill style={{ background: `rgba(0,0,0,${0.5 * p})`, alignItems: left == null ? "center" : undefined, justifyContent: "center" }}>
     <Panel style={{ width, padding: 30, display: "flex", flexDirection: "column", gap: 18, fontFamily, marginLeft: left, boxShadow: "0 40px 100px rgba(0,0,0,0.7)", background: "#192124", ...reveal(p, 24) }}>
       <div style={{ fontSize: 24, fontWeight: 600, color: C.off }}>{title}</div>
@@ -172,8 +174,38 @@ export const CompleteDialog: React.FC<{ start?: number; press?: number }> = ({ s
 };
 
 // S22 · The move dialog: a reminder, not a wall.
-export const MoveDialog: React.FC<{ start?: number }> = ({ start = 0 }) => {
+// The "How did you reach them?" variant: moving into Contact Established with
+// no reply on record (deck slide 21). Picking one records contact in
+// SalesMind only; it does not log a CRM Call.
+const REACH = ["Inbound email reply", "Inbound call", "Outbound call answered", "Post-meeting email", "Client accepted a meeting invitation", "Offline meeting"];
+
+export const MoveDialog: React.FC<{ start?: number; variant?: "qualify" | "reach"; picked?: number }> = ({ start = 0, variant = "qualify", picked = 2 }) => {
   const f = useCurrentFrame() - start;
+  if (variant === "reach")
+    return (
+      <AbsoluteFill>
+        <DealPage na="accepted" />
+        <Modal title="Move to Contact Established" p={prog(f, 0, 12)}>
+          <div style={{ padding: 16, borderRadius: 10, border: `1px solid ${C.info}66`, background: `${C.info}12`, fontSize: 16, color: C.text }}>
+            The system hasn't seen a reply from this client yet
+          </div>
+          <span style={{ fontSize: 15, color: C.muted }}>How did you reach them?</span>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+            {REACH.map((r, i) => (
+              <Chip key={r} active={i === picked}>{r}</Chip>
+            ))}
+          </div>
+          <Box label="Suggested next action" value="Qualify the opportunity · Day 10" />
+          <div style={{ display: "flex", alignItems: "center", gap: 10, fontSize: 16, color: C.text }}>
+            <span style={{ width: 20, height: 20, borderRadius: 5, border: `2px solid ${C.faint}`, display: "inline-block" }} /> Add to my tasks
+          </div>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+            <span style={{ fontSize: 14.5, color: C.muted }}>Records the contact in SalesMind only</span>
+            <Button primary>Move anyway</Button>
+          </div>
+        </Modal>
+      </AbsoluteFill>
+    );
   return (
     <AbsoluteFill>
       <DealPage na="accepted" />
@@ -218,7 +250,12 @@ export const HoldCloseDialogs: React.FC<{ start?: number; reason?: number }> = (
         </Panel>
         <Panel style={{ width: 600, padding: 28, display: "flex", flexDirection: "column", gap: 16, background: "#192124", ...reveal(prog(f, 8, 12), 24) }}>
           <div style={{ fontSize: 24, fontWeight: 600, color: C.off }}>Close deal</div>
-          <Box label="Loss reason" placeholder="Pick the closest reason ▾" />
+          <span style={{ fontSize: 15, color: C.muted }}>Loss reason</span>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+            {["Not Interested", "No Current Need", "Using Another Broker", "Restricted Jurisdiction", "Wrong Client Profile", "Invalid Contact", "Duplicate", "Other"].map((r) => (
+              <Chip key={r} active={r === "Using Another Broker"}>{r}</Chip>
+            ))}
+          </div>
           <Box label="Notes" hint="required" value="Synthetic note: the training client chose to stay with its current provider for this year." tall />
           <div style={{ display: "flex", justifyContent: "flex-end" }}>
             <Button>Close deal</Button>

@@ -28,7 +28,8 @@
    "Results holds Performance and Bonus.",
    "Support holds the Guidebook, Sales materials and the Changelog.",
    "Across the top: Search, for pages and clients. Change theme. And your account menu. The menu collapses at its foot when you need the room.",
-   "Eleven pages. Most days, you work in a handful of them."
+   "Eleven pages. Most days, you work in a handful of them.",
+   "Before your first real day, clean the book once. Check every deal is real and at the right stage. Tidy duplicates and old blockers. Give everything a next action. One to two hours, once. Then the routine keeps it clean."
   ]
  },
  {
@@ -68,7 +69,8 @@
    "Every morning, open Filters, then Alert, then Has alert. Overdue actions are included. Save it under Views, and it is one click tomorrow.",
    "Alerts tell you where to look first. Four are critical: SLA breach, Stopped responding to onboarding, Funding not arriving, and Qualification missing. The warnings are Lead untouched, Action overdue, Rescheduled repeatedly, Check contact details, and Back from Lost. Suspected duplicate is information. Alerts clear by themselves once you fix the problem. Back from Lost stays.",
    "The clock that matters most is first contact. Inbound leads: twenty-four hours, weekends excluded. Assigned Friday at three, due Monday at three. Outbound: one calendar month. Contact late, and the deal is marked late for good.",
-   "No answer? Follow the schedule. Day zero, call and email. Day one, call. Day three, call and email. Day seven, call: the last step for outbound leads. Day twelve, a break-up email for inbound. Then decide whether to close the deal as Lost."
+   "No answer? Follow the schedule. Day zero, call and email. Day one, call. Day three, call and email. Day seven, call: the last step for outbound leads. Day twelve, a break-up email for inbound. Then decide whether to close the deal as Lost.",
+   "One more dialog to know. Moving a deal into Contact Established with no reply on record, SalesMind asks how you reached them. Pick what happened. That records the contact in SalesMind only. Keeping a marketing lead still takes a call logged as answered in the CRM."
   ]
  },
  {
@@ -107,7 +109,9 @@
    "On the Client Growth tab, click Create deal. Type three or more letters of the client's name. Pick Meridian Family Office Demo, and the type. Brokerage, or White label. Add the expected deposit if you know it.",
    "A funded client gets a deal at Discovery, with a suggested next action.",
    "If the client already has an open deal, SalesMind will not open a second one. Edit the existing deal instead.",
-   "From there you move it. Discovery. Validation. Negotiation. Approval. In Progress. Funded. Once deposits reach the expected deposit, Won is set by itself."
+   "From there you move it. Discovery. Validation. Negotiation. Approval. In Progress. Funded. Once deposits reach the expected deposit, Won is set by itself.",
+   "Open the deal, and the expected deposit panel shows how far you are. The schedule from the CRM. Every deposit and withdrawal. And the amount still to go.",
+   "And one piece of housekeeping. A client works one deal. If old data left several open, an amber button lists them. Keep the right one, and close the rest as duplicates. One exception: if a White Label deal is involved, choose Later, and close nothing."
   ]
  },
  {

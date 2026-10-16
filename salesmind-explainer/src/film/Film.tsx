@@ -79,7 +79,7 @@ const FadeIn: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     <AbsoluteFill
       style={{
         opacity: interpolate(f, [0, XF + 2], [0, 1], { extrapolateRight: "clamp" }),
-        transform: `perspective(1600px) rotateX(${(1 - p) * 3.5}deg) scale(${1 + (1 - p) * 0.02})`,
+        transform: `perspective(1600px) rotateX(${(1 - p) * 5}deg) scale(${1 + (1 - p) * 0.025})`,
         transformOrigin: "50% 65%",
       }}
     >

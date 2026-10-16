@@ -98,6 +98,13 @@
   "dur": 3.892
  },
  {
+  "id": "c03p08",
+  "chapter": "03",
+  "idx": 8,
+  "text": "Before your first real day, clean the book once. Check every deal is real and at the right stage. Tidy duplicates and old blockers. Give everything a next action. One to two hours, once. Then the routine keeps it clean.",
+  "dur": 15.177
+ },
+ {
   "id": "c04p00",
   "chapter": "04",
   "idx": 0,
@@ -252,6 +259,13 @@
   "dur": 19.957
  },
  {
+  "id": "c06p07",
+  "chapter": "06",
+  "idx": 7,
+  "text": "One more dialog to know. Moving a deal into Contact Established with no reply on record, SalesMind asks how you reached them. Pick what happened. That records the contact in SalesMind only. Keeping a marketing lead still takes a call logged as answered in the CRM.",
+  "dur": 17.136
+ },
+ {
   "id": "c07p00",
   "chapter": "07",
   "idx": 0,
@@ -397,6 +411,20 @@
   "idx": 4,
   "text": "From there you move it. Discovery. Validation. Negotiation. Approval. In Progress. Funded. Once deposits reach the expected deposit, Won is set by itself.",
   "dur": 13.035
+ },
+ {
+  "id": "c09p05",
+  "chapter": "09",
+  "idx": 5,
+  "text": "Open the deal, and the expected deposit panel shows how far you are. The schedule from the CRM. Every deposit and withdrawal. And the amount still to go.",
+  "dur": 10.632
+ },
+ {
+  "id": "c09p06",
+  "chapter": "09",
+  "idx": 6,
+  "text": "And one piece of housekeeping. A client works one deal. If old data left several open, an amber button lists them. Keep the right one, and close the rest as duplicates. One exception: if a White Label deal is involved, choose Later, and close nothing.",
+  "dur": 16.98
  },
  {
   "id": "c10p00",
