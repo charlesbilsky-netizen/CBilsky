@@ -57,5 +57,10 @@ Status: ✓ matches the source · ◐ simplified, still accurate · ✗ not in s
 | 15 | Changelog v0.6.1 | G §13 | ✓ |
 | 15 | Internal requests: Jira, Onboarding, KYC, Intercom; Raise a request top right; open requests show under the deal's Blocker | G §5, l.393; S l.252 | ✓ |
 | 16 | End-of-day checklist (12 lines) | G §15 daily routine | ✓ |
+| 7 | Qualified: you move it, and it also moves by itself once qualification is filled | Guide addendum; Oct 2026 deck, slide 8 | ✓ |
+| 17 | Ollie: reads the evidence, talks the review through, files it marked as filed by the AI; escalation to people; beta status | Ollie skill snapshot 14 Oct 2026 (About tab, Marketplace, framework) | ✓ |
+| 17 | Review message shape: target and due date, NAV, gap, days left, previous rung, recorded activity, named deals with stage, amount and KYC, a reading, one question, proposed agreement date | Same source, "What a review message carries" | ✓ |
+| 17 | Human line verbatim: "Committee decisions, pay and employment are decided by people." | Ollie's own description | ✓ |
+| 17 | Scripted as "Ollie reads your evidence and agrees your next step with you", never "Ollie grades you" | Explainer rules in the source skill | ✓ |
 
 Not shown, by decision: Bonus page contents (no bonus figures), the Ask the coach panel (its button is visible, as documented, but it is never opened: it is an AI surface that writes to SalesMind), live URLs, and anything from the source's "deliberately not contained" list.

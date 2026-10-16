@@ -184,5 +184,17 @@
    "The screen you are seeing is a synthetic training environment. No live client data is used.",
    "Your book is under control when the next action is clear."
   ]
+ },
+ {
+  "num": "17",
+  "title": "Your standing, any day",
+  "paras": [
+   "One more thing. Everything you logged today is evidence. Your review reads SalesMind and the CRM, not your memory.",
+   "Meet Ollie, EXANTE's review assistant, in beta. It lives in Slack, as a direct message. The screen you are seeing is a simulated training screen. Every figure on it is synthetic.",
+   "Ask it: how am I tracking. It answers with the target, the gap, and your next agreement. Any day. No waiting for a review meeting.",
+   "Before a scheduled review, Ollie talks it through with you. You agree, or you dispute a fact. Then it files the review, clearly marked as filed by the AI.",
+   "And the line that matters: committee decisions, pay and employment are decided by people.",
+   "So the loop closes. Log the work. Ollie reads it. The review agrees your next step."
+  ]
  }
 ]

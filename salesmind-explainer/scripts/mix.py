@@ -26,9 +26,9 @@ SR = 48000
 FPS = 30
 
 # Score plan: cue, first chapter, first chapter of the next cue (None = end).
-CUES = [("m1", 1, 4), ("m2", 4, 6), ("m3", 6, 7), ("m4", 7, 9), ("m5", 9, 12), ("m6", 12, 15), ("m7", 15, None)]
+CUES = [("m1", 1, 4), ("m2", 4, 6), ("m3", 6, 7), ("m4", 7, 9), ("m5", 9, 12), ("m6", 12, 15), ("m7", 15, 17), ("m8", 17, None)]
 # Skip the near-silent intro some cues open with (seconds).
-OFFSET = {"m1": 0.0, "m2": 9.0, "m3": 9.0, "m4": 0.0, "m5": 8.0, "m6": 3.0, "m7": 0.0}
+OFFSET = {"m1": 0.0, "m2": 9.0, "m3": 9.0, "m4": 0.0, "m5": 8.0, "m6": 3.0, "m7": 0.0, "m8": 0.0}
 XF_MUSIC = 4.0
 BAR = 4 * 60 / 110.0
 
@@ -42,8 +42,9 @@ VOICE_LUFS = -16.0
 SFX_PEAK = {
     "click": -22, "chip": -25, "toggle": -24, "drop": -25, "confirm": -21, "tick": -23, "alert": -23,
     "whoosh": -22, "riser": -21, "impact": -17, "keys": -25, "typing": -28, "shimmer": -24, "stamp": -23, "swipe": -25,
+    "hoot": -24,
 }
-SFX_FILE = {"click": "click2", "keys": "keys"}
+SFX_FILE = {"click": "click2", "keys": "keys", "hoot": "ollie_hoot"}
 
 
 def load(path, start=0.0, dur=None):

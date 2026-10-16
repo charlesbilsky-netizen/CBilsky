@@ -14,7 +14,19 @@ export type Shot = { at: number; node: (bf: number) => React.ReactNode; cut?: bo
 const ShotFrame: React.FC<{ at: number; first: boolean; cut?: boolean; node: Shot["node"] }> = ({ at, first, cut, node }) => {
   const f = useCurrentFrame();
   const op = first || cut ? 1 : interpolate(f, [0, XF], [0, 1], { extrapolateRight: "clamp" });
-  return <AbsoluteFill style={{ opacity: op }}>{node(f + at)}</AbsoluteFill>;
+  // Incoming shots settle in 3D: a slight turn and over-scale easing to rest.
+  const p = first || cut ? 1 : prog(f, 0, XF + 10);
+  return (
+    <AbsoluteFill
+      style={{
+        opacity: op,
+        transform: p >= 1 ? undefined : `perspective(1600px) rotateY(${(1 - p) * 3}deg) scale(${1 + (1 - p) * 0.014})`,
+        transformOrigin: "50% 50%",
+      }}
+    >
+      {node(f + at)}
+    </AbsoluteFill>
+  );
 };
 
 export const Body: React.FC<{ shots: Shot[]; len: number }> = ({ shots, len }) => (

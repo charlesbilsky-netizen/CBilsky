@@ -1,7 +1,7 @@
 // Sound-design cue registry. Chapter builders register cues as they compute
 // their timing, so picture and sound share one clock. scripts/export-cues
 // reads this back for the mixer. Frames are chapter-body relative.
-export type SfxKind = "click" | "chip" | "toggle" | "drop" | "confirm" | "tick" | "alert" | "whoosh" | "riser" | "impact" | "keys" | "typing" | "shimmer" | "stamp" | "swipe";
+export type SfxKind = "click" | "chip" | "toggle" | "drop" | "confirm" | "tick" | "alert" | "whoosh" | "riser" | "impact" | "keys" | "typing" | "shimmer" | "stamp" | "swipe" | "hoot";
 export type CueEntry = { n: number; f: number; kind: SfxKind; gain: number };
 
 const reg = new Map<string, CueEntry>();

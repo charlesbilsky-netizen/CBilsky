@@ -610,7 +610,62 @@
   "gain": -2
  },
  {
-  "frame": 26709,
+  "frame": 26707,
+  "kind": "whoosh",
+  "gain": -8
+ },
+ {
+  "frame": 26811,
+  "kind": "shimmer",
+  "gain": -4
+ },
+ {
+  "frame": 27446,
+  "kind": "typing",
+  "gain": -2
+ },
+ {
+  "frame": 27479,
+  "kind": "hoot",
+  "gain": -4
+ },
+ {
+  "frame": 27495,
+  "kind": "chip",
+  "gain": -6
+ },
+ {
+  "frame": 27906,
+  "kind": "confirm",
+  "gain": -4
+ },
+ {
+  "frame": 28075,
+  "kind": "shimmer",
+  "gain": -2
+ },
+ {
+  "frame": 28280,
+  "kind": "chip",
+  "gain": -4
+ },
+ {
+  "frame": 28310,
+  "kind": "chip",
+  "gain": -4
+ },
+ {
+  "frame": 28344,
+  "kind": "chip",
+  "gain": -4
+ },
+ {
+  "frame": 28393,
+  "kind": "confirm",
+  "gain": -4
+ },
+ {
+  "frame": 28500,
   "kind": "impact",
   "gain": -8
  }

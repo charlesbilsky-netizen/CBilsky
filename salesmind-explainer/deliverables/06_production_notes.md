@@ -32,9 +32,18 @@
   - Ducking follows the known line times, so it never pumps.
   - A transparent master limiter, then linear loudness normalisation: −16.0 LUFS integrated, −2.4 dBTP.
 
+## Version 2 (16 Oct 2026)
+
+- **New chapter 17, "Your standing, any day"**: Ollie, the review assistant, from the updated source skill (snapshot 14 Oct 2026). A simulated chat workspace drawn in code, the owl mark included; six new narration lines (same voice and settings); the human line spoken and on screen. The chapter ends on the review loop.
+- **3D pass**: incoming shots settle in perspective (a 3-degree turn easing to rest), each chapter's first screen rises in 3D after the title card, title cards and the main title gained depth, and the stage breathes (a slow ±0.5-degree drift). The training label stays flat on the top layer and never transforms.
+- **Sound**: one new score cue (m8, warmer and resolved, same 110 BPM D minor family) under chapter 17 and the end card; a soft owl-hoot notification and chat sound design on the new cues; full remix and re-master.
+- **One new plate** (p_owl): a wireframe owl constellation, generated like the others and looped; it also serves as chapter 17's title plate.
+- **Accuracy**: the stage graphic now notes Qualified also moves by itself once qualification is filled (Oct 2026 deck, slide 8).
+- New runtime 15 min 57 s, 17 chapters. fal spend about $16.92 of the $20 cap.
+
 ## Timing
 
-- 16 chapters, 14 min 57 s, inside the 12–18 minute brief.
+- v2: 17 chapters, 15 min 57 s, inside the 12–18 minute brief. (v1: 16 chapters, 14 min 57 s.)
 - The narration alone runs 12 min 56 s. The rest is title cards (3.2 s each), holds on key states and resolution beats.
 - Peak moments get longer holds: prioritisation, accepting the next action, the ownership verdicts and the end-of-day check.
 

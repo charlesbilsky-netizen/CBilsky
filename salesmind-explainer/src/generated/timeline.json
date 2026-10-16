@@ -1,6 +1,6 @@
 {
  "fps": 30,
- "total": 26915,
+ "total": 28706,
  "chapters": [
   {
    "n": 1,
@@ -721,10 +721,57 @@
     }
    ],
    "len": 1290
+  },
+  {
+   "n": 17,
+   "num": "17",
+   "title": "Your standing, any day",
+   "start": 26705,
+   "title_len": 96,
+   "body_len": 1695,
+   "lines": [
+    {
+     "id": "c17p00",
+     "from": 10,
+     "dur": 227,
+     "text": "One more thing. Everything you logged today is evidence. Your review reads SalesMind and the CRM, not your memory."
+    },
+    {
+     "id": "c17p01",
+     "from": 253,
+     "dur": 375,
+     "text": "Meet Ollie, EXANTE's review assistant, in beta. It lives in Slack, as a direct message. The screen you are seeing is a simulated training screen. Every figure on it is synthetic."
+    },
+    {
+     "id": "c17p02",
+     "from": 634,
+     "dur": 262,
+     "text": "Ask it: how am I tracking. It answers with the target, the gap, and your next agreement. Any day. No waiting for a review meeting."
+    },
+    {
+     "id": "c17p03",
+     "from": 916,
+     "dur": 304,
+     "text": "Before a scheduled review, Ollie talks it through with you. You agree, or you dispute a fact. Then it files the review, clearly marked as filed by the AI."
+    },
+    {
+     "id": "c17p04",
+     "from": 1238,
+     "dur": 156,
+     "text": "And the line that matters: committee decisions, pay and employment are decided by people."
+    },
+    {
+     "id": "c17p05",
+     "from": 1440,
+     "dur": 189,
+     "text": "So the loop closes. Log the work. Ollie reads it. The review agrees your next step."
+    }
+   ],
+   "len": 1791
   }
  ],
  "end_card": {
-  "from": 26705,
+  "from": 28496,
   "dur": 210
  }
 }

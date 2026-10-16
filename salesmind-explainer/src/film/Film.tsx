@@ -25,10 +25,11 @@ const KICKER: Record<number, string> = {
   14: "Your real day beside your tasks",
   15: "Guidebook, materials, changelog and requests",
   16: "Close the day the same way every day",
+  17: "Ollie reads the work you log",
 };
 
 // Lines where the narrator says the reassurance; the label answers with a glow.
-const REASSURE = ["c03p00", "c08p00", "c10p00", "c13p00", "c14p00", "c14p04", "c16p03"];
+const REASSURE = ["c03p00", "c08p00", "c10p00", "c13p00", "c14p00", "c14p04", "c16p03", "c17p01"];
 
 const MainTitle: React.FC = () => {
   const f = useCurrentFrame();
@@ -39,8 +40,8 @@ const MainTitle: React.FC = () => {
   return (
     <AbsoluteFill style={{ opacity: Math.min(1, f / 10) }}>
       <Plate src="fal/loop/p_orbit.mp4" dim={0.4} scaleFrom={1.0} scaleTo={1.08} />
-      <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", fontFamily, opacity: out }}>
-        <div style={{ fontSize: 136, fontWeight: 600, color: C.off, letterSpacing: -4, opacity: p, transform: `translateY(${(1 - p) * 20}px)` }}>SalesMind</div>
+      <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", fontFamily, opacity: out, perspective: 1400 }}>
+        <div style={{ fontSize: 136, fontWeight: 600, color: C.off, letterSpacing: -4, opacity: p, transform: `translateY(${(1 - p) * 20}px) rotateX(${(1 - p) * 9}deg) translateZ(${(1 - p) * -80}px)` }}>SalesMind</div>
         <div style={{ height: 2, width: 620 * rule, margin: "26px 0 30px", background: `linear-gradient(90deg, transparent, ${C.bright}, transparent)` }} />
         <div style={{ fontSize: 46, fontWeight: 500, color: C.text, letterSpacing: 0.5, opacity: prog(f, 26, 26) }}>The RM Operating System</div>
       </AbsoluteFill>
@@ -73,7 +74,18 @@ export const EndCard: React.FC = () => {
 
 const FadeIn: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const f = useCurrentFrame();
-  return <AbsoluteFill style={{ opacity: interpolate(f, [0, XF + 2], [0, 1], { extrapolateRight: "clamp" }) }}>{children}</AbsoluteFill>;
+  const p = prog(f, 0, XF + 14);
+  return (
+    <AbsoluteFill
+      style={{
+        opacity: interpolate(f, [0, XF + 2], [0, 1], { extrapolateRight: "clamp" }),
+        transform: `perspective(1600px) rotateX(${(1 - p) * 3.5}deg) scale(${1 + (1 - p) * 0.02})`,
+        transformOrigin: "50% 65%",
+      }}
+    >
+      {children}
+    </AbsoluteFill>
+  );
 };
 
 const ChapterView: React.FC<{ c: ChapterTL }> = ({ c }) => {
@@ -113,8 +125,12 @@ const reassureAt = REASSURE.map((id) => {
 });
 
 const ch14 = TL.chapters.find((x) => x.n === 14)!;
-const simFrom = ch14.start + ch14.title_len;
-const simTo = ch14.start + ch14.title_len + lineFrom(14, "c14p02") - 8 + XF;
+const ch17 = TL.chapters.find((x) => x.n === 17)!;
+// Simulated-screen windows: ch14's Google screen, ch17's Ollie chat.
+const SIM: Array<[number, number]> = [
+  [ch14.start + ch14.title_len, ch14.start + ch14.title_len + lineFrom(14, "c14p02") - 8 + XF],
+  [ch17.start + ch17.title_len + lineFrom(17, "c17p01") - 8, ch17.start + ch17.title_len + lineFrom(17, "c17p05") - 8 + XF],
+];
 
 const BadgeLayer: React.FC = () => {
   const f = useCurrentFrame();
@@ -122,7 +138,8 @@ const BadgeLayer: React.FC = () => {
   for (const r of reassureAt) {
     if (f >= r.a - 6 && f <= r.b + 10) glow = Math.max(glow, Math.min(prog(f, r.a - 6, 14), 1 - prog(f, r.b - 4, 14)));
   }
-  const sim = Math.min(prog(f, simFrom, 10), 1 - prog(f, simTo - 10, 10));
+  let sim = 0;
+  for (const [a, b] of SIM) sim = Math.max(sim, Math.min(prog(f, a, 10), 1 - prog(f, b - 10, 10)));
   return (
     <>
       <TrainingBadge glow={glow} />

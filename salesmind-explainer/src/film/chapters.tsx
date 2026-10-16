@@ -10,6 +10,7 @@ import { cue, SfxKind } from "./cues";
 import { Shot, Scr, Callouts, Principle, Keys, Note, Box, Spot, press } from "./kit";
 import { Signals, Hub, CrmSync, Ladder, AlertsMap, SlaClock, Cadence, StageFlow, Checklist, Link2, TenDays } from "../mg/MG";
 import { SignIn, NavTour } from "../screens/Nav";
+import { OllieDM } from "../screens/OllieDM";
 import { Dashboard } from "../screens/Dashboard";
 import { TasksInbox, TasksToday, PlanTheDay, Planning } from "../screens/Tasks";
 import { PipelineBoard, ClientGrowthBoard, FiltersPanel, PipelineMenus, PipelineTable, NB_STAGES } from "../screens/Pipeline";
@@ -667,7 +668,7 @@ const ch7 = (): Shot[] => {
             movers={[
               null,
               { kind: "auto", how: "Reply · call over 10 s · accepted invite" },
-              { kind: "you", how: "Your judgement" },
+              { kind: "you", how: "Your judgement · auto once qualification is filled" },
               { kind: "you", how: "Your judgement" },
               { kind: "auto", how: "Application submitted" },
               { kind: "auto", how: "KYC passed" },
@@ -1558,7 +1559,66 @@ const ch16 = (): Shot[] => {
   ];
 };
 
-const BUILDERS: Record<number, () => Shot[]> = { 1: ch1, 2: ch2, 3: ch3, 4: ch4, 5: ch5, 6: ch6, 7: ch7, 8: ch8, 9: ch9, 10: ch10, 11: ch11, 12: ch12, 13: ch13, 14: ch14, 15: ch15, 16: ch16 };
+// ---------------------------------------------------------------------------
+// Ch17 · Ollie, the review assistant. A simulated chat screen, synthetic
+// figures only. The gold peak is the human line, spoken and on screen.
+const ch17 = (): Shot[] => {
+  const { L, P, E, S } = mk(17);
+  const scrAt = L("c17p01") - 8;
+  const ask = P("c17p02", "how am I tracking") - scrAt;
+  const answer = P("c17p02", "It answers") - scrAt;
+  const filed = P("c17p03", "files the review") - scrAt;
+  const human = P("c17p04", "committee decisions", 8) - scrAt;
+  const loopAt = ["Log the work", "Ollie reads it", "The review agrees"].map((x) => P("c17p05", x));
+  S("shimmer", L("c17p00"), -4);
+  S("typing", scrAt + ask, -2);
+  S("hoot", scrAt + answer - 4, -4);
+  S("chip", scrAt + answer + 12, -6);
+  S("confirm", scrAt + filed, -4);
+  S("shimmer", scrAt + human, -2);
+  loopAt.forEach((t) => S("chip", t, -4));
+  S("confirm", P("c17p05", "next step"), -4);
+  return [
+    {
+      at: 0,
+      node: (bf) => (
+        <>
+          <Plate src="fal/loop/p_owl.mp4" dim={0.46} />
+          <Principle f={bf} a={L("c17p00")} b={L("c17p01") - 4} text="What you log is what the review reads." y={480} />
+        </>
+      ),
+    },
+    {
+      at: scrAt,
+      node: (bf) => (
+        <Scr
+          cam={camPath(bf - scrAt, [
+            [L("c17p01") - scrAt, cam(880, 440, 1.5)],
+            [ask - 10, cam(1050, 470, 1.3)],
+            [answer + 10, cam(1000, 580, 1.28)],
+            [filed - 12, cam(1000, 620, 1.3)],
+            [filed + 8, cam(900, 640, 1.38)],
+            [human + 6, cam(960, 660, 1.42)],
+            [E("c17p04") - scrAt + 16, cam(960, 600, 1.2)],
+          ])}
+        >
+          <OllieDM start={0} ask={ask} answer={answer} filed={filed} human={human} />
+        </Scr>
+      ),
+    },
+    {
+      at: L("c17p05") - 8,
+      node: (bf) => (
+        <>
+          {plate("p_owl", 0.8)}
+          <StageFlow f={bf} a={L("c17p05")} title="The review loop" stages={["Log the work", "Ollie reads it", "Agree the next step"]} at={loopAt} />
+        </>
+      ),
+    },
+  ];
+};
+
+const BUILDERS: Record<number, () => Shot[]> = { 1: ch1, 2: ch2, 3: ch3, 4: ch4, 5: ch5, 6: ch6, 7: ch7, 8: ch8, 9: ch9, 10: ch10, 11: ch11, 12: ch12, 13: ch13, 14: ch14, 15: ch15, 16: ch16, 17: ch17 };
 
 export const shotsFor = (n: number) => BUILDERS[n]();
 export const bodyLength = bodyLen;

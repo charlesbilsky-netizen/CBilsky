@@ -1,7 +1,7 @@
 @echo off
-rem Joins the 16 SalesMind chapter files into one film with chapter markers.
+rem Joins the 17 SalesMind chapter files into one film with chapter markers.
 rem Put this file, SalesMind_chapters.txt, SalesMind_soundtrack.m4a, SalesMind_thumbnail.jpg and the
-rem 16 SalesMind_ChXX files in one folder, then double-click this file.
+rem 17 SalesMind_ChXX files in one folder, then double-click this file.
 cd /d "%~dp0"
 where ffmpeg >nul 2>nul
 if errorlevel 1 (
@@ -12,9 +12,9 @@ if errorlevel 1 (
   pause
   exit /b 1
 )
-for %%n in (01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16) do (
+for %%n in (01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17) do (
   if not exist SalesMind_Ch%%n_*.mp4 (
-    echo Chapter %%n is missing. All 16 SalesMind_ChXX files must be in this folder.
+    echo Chapter %%n is missing. All 17 SalesMind_ChXX files must be in this folder.
     pause
     exit /b 1
   )
@@ -24,7 +24,7 @@ if not exist SalesMind_soundtrack.m4a (
   pause
   exit /b 1
 )
-(for %%n in (01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16) do @for %%f in (SalesMind_Ch%%n_*.mp4) do @echo file '%%f') > _list.txt
+(for %%n in (01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17) do @for %%f in (SalesMind_Ch%%n_*.mp4) do @echo file '%%f') > _list.txt
 set COVERIN=
 set COVERMAP=
 if exist SalesMind_thumbnail.jpg (
@@ -40,5 +40,5 @@ if not "%RESULT%"=="0" (
   exit /b 1
 )
 echo.
-echo Done. SalesMind_The_RM_Operating_System.mp4 is in this folder, with 16 chapters and the cover image.
+echo Done. SalesMind_The_RM_Operating_System.mp4 is in this folder, with 17 chapters and the cover image.
 pause

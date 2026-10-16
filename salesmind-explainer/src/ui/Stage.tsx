@@ -66,7 +66,7 @@ export const Stage: React.FC<{ cam?: Cam; children: React.ReactNode; overlay?: R
           width: W,
           height: H,
           transformOrigin: "0 0",
-          transform: `translate(${tx}px, ${ty}px) scale(${s}) rotateX(${1.2 * tilt}deg) rotateY(${-0.8 * tilt}deg)`,
+          transform: `translate(${tx}px, ${ty}px) scale(${s}) rotateX(${(1.2 + Math.sin(f / 95) * 0.35) * tilt}deg) rotateY(${(-0.8 + Math.cos(f / 130) * 0.5) * tilt}deg)`,
           borderRadius: 18,
           overflow: "hidden",
           boxShadow: `0 40px 120px rgba(0,0,0,0.6), 0 0 0 1px rgba(38,191,107,0.25), 0 0 80px rgba(38,191,107,0.12)`,

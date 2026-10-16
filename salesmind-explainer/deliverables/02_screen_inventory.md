@@ -43,5 +43,7 @@ Every product-like screen in the film is a synthetic recreation built in code (R
 | S37 | Internal requests (Jira, Onboarding, KYC, Intercom) | `Rest.tsx · Requests` | 15 | TRAIN-101…104 |
 | S38 | End-of-day checklist (graphic) | `MG.tsx · Checklist` | 16 | the 12 documented checks |
 | S39 | End card | `Film.tsx · EndCard` | end | no URLs |
+| S40 | Ollie DM (simulated chat workspace) | `OllieDM.tsx` | 17 | all figures synthetic; owl mark drawn in code; BETA · PILOT tag; second label "SIMULATED TRAINING SCREEN · NO LIVE CONNECTION" |
+| S41 | The review loop (graphic) | `MG.tsx · StageFlow` | 17 | none |
 
 Synthetic identifiers in use: CRM-DEMO-###, TRAIN-###, emails on example.com only, phones in the fictional ranges +44 20 7946 0xxx and +1 202 555 01xx, money in multiples of EUR 250,000. Source: `data/synthetic-data.json`, checked by `scripts/privacy-lint.mjs`.

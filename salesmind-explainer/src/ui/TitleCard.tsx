@@ -41,15 +41,17 @@ export const TitleCard: React.FC<{ num: string; title: string; kicker?: string; 
   return (
     <AbsoluteFill>
       <Plate src={plate} dim={0.5} />
-      <AbsoluteFill style={{ justifyContent: "center", paddingLeft: 180, fontFamily, opacity: out }}>
-        <div style={{ color: C.bright, fontWeight: 600, fontSize: 26, letterSpacing: 4, opacity: pIn, transform: `translateY(${(1 - pIn) * 12}px)` }}>{num}</div>
-        <div style={{ height: 2, width: 560 * rule, background: `linear-gradient(90deg, ${C.bright}, transparent)`, margin: "22px 0 26px" }} />
-        <div style={{ color: C.off, fontWeight: 600, fontSize: 78, letterSpacing: -1.6, lineHeight: 1.05, maxWidth: 1300, opacity: pIn, transform: `translateY(${(1 - pIn) * 18}px)` }}>
-          {title}
+      <AbsoluteFill style={{ justifyContent: "center", paddingLeft: 180, fontFamily, opacity: out, perspective: 1200 }}>
+        <div style={{ transform: `rotateX(${(1 - pIn) * 7}deg) translateZ(${(1 - pIn) * -60}px)`, transformOrigin: "20% 80%" }}>
+          <div style={{ color: C.bright, fontWeight: 600, fontSize: 26, letterSpacing: 4, opacity: pIn, transform: `translateY(${(1 - pIn) * 12}px)` }}>{num}</div>
+          <div style={{ height: 2, width: 560 * rule, background: `linear-gradient(90deg, ${C.bright}, transparent)`, margin: "22px 0 26px" }} />
+          <div style={{ color: C.off, fontWeight: 600, fontSize: 78, letterSpacing: -1.6, lineHeight: 1.05, maxWidth: 1300, opacity: pIn, transform: `translateY(${(1 - pIn) * 18}px)` }}>
+            {title}
+          </div>
+          {kicker ? (
+            <div style={{ marginTop: 22, color: C.muted, fontSize: 28, fontWeight: 500, opacity: prog(f, 20, 20), transform: `translateY(${(1 - prog(f, 20, 20)) * 10}px)` }}>{kicker}</div>
+          ) : null}
         </div>
-        {kicker ? (
-          <div style={{ marginTop: 22, color: C.muted, fontSize: 28, fontWeight: 500, opacity: prog(f, 20, 20) }}>{kicker}</div>
-        ) : null}
       </AbsoluteFill>
     </AbsoluteFill>
   );

@@ -186,6 +186,17 @@ Title card 14:07.2 over plate F16.
 | 14:38.4 | c16p03 | Calm Dashboard; label glows on the reassurance line. |
 | 14:44.4 | c16p04 | Gold principle on the icosahedron: "Your book is under control when the next action is clear." End card. |
 
-## End card · 14:50.2
+## Chapter 17 · Your standing, any day · 14:50.2
+
+| Time | Line | Picture |
+|---|---|---|
+| 14:53.7 | c17p00 | Principle over the owl constellation plate: "What you log is what the review reads." |
+| 15:01.8 | c17p01 | Simulated chat workspace: Ollie DM, owl mark, BETA · PILOT tag, starter buttons. Both labels on; the training label glows on the reassurance line. |
+| 15:14.5 | c17p02 | "How am I tracking?" typed and sent; Ollie answers with the synthetic review message (target, gap, days left, two DEMO deals, ON TRACK). |
+| 15:23.9 | c17p03 | The review files: "Review agreed and filed · FILED BY THE AI". |
+| 15:34.6 | c17p04 | Gold card, spoken and on screen: "Committee decisions, pay and employment are decided by people." |
+| 15:41.4 | c17p05 | The review loop over the owl plate: Log the work → Ollie reads it → Agree the next step. |
+
+## End card · 15:49.9
 
 SalesMind · The RM Operating System · "A training film. Every name, number and screen in it is synthetic. For detail, open the Guidebook in SalesMind." No URLs.

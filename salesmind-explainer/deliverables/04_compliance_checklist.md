@@ -23,4 +23,7 @@ Internal training film. Checked against the brief's rules and the MiFID II commu
 | 17 | Subtitles available | Pass | `SalesMind_The_RM_Operating_System.en.srt`, 208 cues, at most 2 lines of 42 characters. |
 | 18 | Loudness suitable for intranet and laptop playback | Pass | −16.0 LUFS integrated, −2.4 dBTP. A −23 LUFS version can be made for a broadcast chain. |
 
+| 19 | Ollie chapter: beta labelled on screen; the human line shown and spoken verbatim; scripted as "agrees your next step with you", not "grades you"; no frame or figure from any real Ollie thread; simulated-screen label for the whole chat scene | Pass | `OllieDM.tsx`, `chapters.tsx` ch17, storyboard 01 |
+| 20 | Ollie figures: synthetic only (EUR multiples of 250,000, Day-number dates, DEMO deals); no real standing, target or NAV | Pass | Lint on `OllieDM.tsx`; figures mirror the film's synthetic dataset |
+
 Open point for the owner: the film says "SalesMind is EXANTE's RM workspace". If it will be shown outside the RM team, confirm with Compliance that naming the firm in an internal training film is fine.

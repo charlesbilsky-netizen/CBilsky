@@ -2183,7 +2183,7 @@
       },
       "status": "failed",
       "request_id": "01a11d44-5c02-77e2-afb6-7bc52af26d21",
-      "error": "HTTP 403 https://queue.fal.run/fal-ai/kling-video/requests/01a11d44-5c02-77e2-afb6-7bc52af26d21: {\"detail\":\"User is locked. Reason: TOP_UP.\"}"
+      "error": "HTTP 403 [queue URL redacted] {\"detail\":\"User is locked. Reason: TOP_UP.\"}"
     },
     {
       "id": "insert-f15c",
@@ -2214,7 +2214,7 @@
         "generate_audio": false
       },
       "status": "failed",
-      "error": "HTTP 403 https://queue.fal.run/fal-ai/kling-video/o3/pro/text-to-video: {\"detail\":\"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing.\"}"
+      "error": "HTTP 403 [queue URL redacted] {\"detail\":\"User is locked. Reason: Exhausted balance. Top up your balance at fal.ai/dashboard/billing.\"}"
     },
     {
       "id": "plate-p_paths",
@@ -2632,6 +2632,170 @@
       },
       "status": "done",
       "request_id": "01a11d59-8aa0-7472-a35f-e5e226cc6fb0",
+      "error": null
+    },
+    {
+      "id": "voice-c17p00",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.01,
+      "out": "public/voice/c17p00.mp3",
+      "input": {
+        "text": "One more thing. Everything you logged today is evidence. Your review reads SalesMind and the CRM, not your memory.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Your book is under control when the next action is clear.",
+        "next_text": "Meet Ollie, EXANTE's review assistant, in beta. It lives in Slack, as a direct message. The screen you are seeing is a simulated training screen. Every figure on it is synthetic."
+      },
+      "status": "done",
+      "request_id": "01a142f4-f20d-75a2-befd-716b56bfc452",
+      "error": null
+    },
+    {
+      "id": "voice-c17p01",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.01,
+      "out": "public/voice/c17p01.mp3",
+      "input": {
+        "text": "Meet Ollie, EXANTE's review assistant, in beta. It lives in Slack, as a direct message. The screen you are seeing is a simulated training screen. Every figure on it is synthetic.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "One more thing. Everything you logged today is evidence. Your review reads SalesMind and the CRM, not your memory.",
+        "next_text": "Ask it: how am I tracking. It answers with the target, the gap, and your next agreement. Any day. No waiting for a review meeting."
+      },
+      "status": "done",
+      "request_id": "01a142f4-f21f-7000-995e-a70ed8647606",
+      "error": null
+    },
+    {
+      "id": "voice-c17p02",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.01,
+      "out": "public/voice/c17p02.mp3",
+      "input": {
+        "text": "Ask it: how am I tracking. It answers with the target, the gap, and your next agreement. Any day. No waiting for a review meeting.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Meet Ollie, EXANTE's review assistant, in beta. It lives in Slack, as a direct message. The screen you are seeing is a simulated training screen. Every figure on it is synthetic.",
+        "next_text": "Before a scheduled review, Ollie talks it through with you. You agree, or you dispute a fact. Then it files the review, clearly marked as filed by the AI."
+      },
+      "status": "done",
+      "request_id": "01a142f4-f208-7592-9bf5-8d4ac9f338ac",
+      "error": null
+    },
+    {
+      "id": "voice-c17p03",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.01,
+      "out": "public/voice/c17p03.mp3",
+      "input": {
+        "text": "Before a scheduled review, Ollie talks it through with you. You agree, or you dispute a fact. Then it files the review, clearly marked as filed by the AI.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Ask it: how am I tracking. It answers with the target, the gap, and your next agreement. Any day. No waiting for a review meeting.",
+        "next_text": "And the line that matters: committee decisions, pay and employment are decided by people."
+      },
+      "status": "done",
+      "request_id": "01a142f4-f20c-72b2-971b-eff0be579e44",
+      "error": null
+    },
+    {
+      "id": "voice-c17p04",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.01,
+      "out": "public/voice/c17p04.mp3",
+      "input": {
+        "text": "And the line that matters: committee decisions, pay and employment are decided by people.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "Before a scheduled review, Ollie talks it through with you. You agree, or you dispute a fact. Then it files the review, clearly marked as filed by the AI.",
+        "next_text": "So the loop closes. Log the work. Ollie reads it. The review agrees your next step."
+      },
+      "status": "done",
+      "request_id": "01a142f4-f25b-7851-bfab-4a527c05850a",
+      "error": null
+    },
+    {
+      "id": "voice-c17p05",
+      "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+      "kind": "voice",
+      "cost": 0.01,
+      "out": "public/voice/c17p05.mp3",
+      "input": {
+        "text": "So the loop closes. Log the work. Ollie reads it. The review agrees your next step.",
+        "voice": "Brian",
+        "stability": 0.6,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "speed": 0.95,
+        "previous_text": "And the line that matters: committee decisions, pay and employment are decided by people."
+      },
+      "status": "done",
+      "request_id": "01a142f4-f246-71d2-a7a0-ad4c170267cd",
+      "error": null
+    },
+    {
+      "id": "insert-p_owl",
+      "model": "fal-ai/kling-video/o3/pro/text-to-video",
+      "kind": "insert",
+      "cost": 0.56,
+      "out": "public/fal/p_owl.mp4",
+      "input": {
+        "prompt": "A minimal constellation of thin glowing green lines on near-black deep navy, slowly connecting into an abstract geometric form suggesting a watchful owl made of light, two soft luminous points like calm eyes, elegant slow drift and gentle rotation. Premium brand film, quiet intelligence, reassurance. Deep refined green, desaturated in the shadows and luminous in the highlights. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no real bird, no feathers, no watermark.",
+        "aspect_ratio": "16:9",
+        "duration": "5",
+        "generate_audio": false
+      },
+      "status": "done",
+      "request_id": "01a142f4-f248-7fe0-b307-04703e91d686",
+      "error": null
+    },
+    {
+      "id": "music-m8",
+      "model": "fal-ai/stable-audio-25/text-to-audio",
+      "kind": "music",
+      "cost": 0.2,
+      "out": "public/audio/score/m8.wav",
+      "input": {
+        "prompt": "Atmospheric electronic underscore. Pulsing modular synth sequence, evolving ambient textures, subtle side-chained pads, 110 BPM, D minor, warm, reassuring, resolved, sophisticated, instrumental, no vocals, sparse mid-range that leaves room for a narrator. Warmer and calmer than a tense cue: soft pads carry a settled, trusting mood, the sequence gentle and steady, a quiet sense of being looked after, then a clean gentle ending that fades out completely.",
+        "seconds_total": 100
+      },
+      "status": "done",
+      "request_id": "01a142f4-f268-7c63-a912-3c98368a0301",
+      "error": null
+    },
+    {
+      "id": "sfx-ollie-hoot",
+      "model": "fal-ai/elevenlabs/sound-effects/v2",
+      "kind": "sfx",
+      "cost": 0.01,
+      "out": "public/audio/sfx/ollie_hoot.mp3",
+      "input": {
+        "text": "a single soft digital owl hoot notification, warm, short",
+        "duration_seconds": 1.0,
+        "output_format": "mp3_44100_128"
+      },
+      "status": "done",
+      "request_id": "01a142f1-6605-7c52-95af-cd567a0eae7c",
       "error": null
     }
   ]
