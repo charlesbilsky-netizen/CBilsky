@@ -1,0 +1,27 @@
+{
+  "name": "salesmind-explainer",
+  "version": "1.0.0",
+  "description": "SalesMind: The RM Operating System. Internal training film on synthetic data.",
+  "private": true,
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "@remotion/cli": "4.0.532",
+    "@remotion/fonts": "^4.0.532",
+    "@remotion/google-fonts": "4.0.532",
+    "@remotion/media": "4.0.532",
+    "@remotion/transitions": "4.0.532",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.532"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.7",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "dev": "remotion studio",
+    "lint": "tsc && node scripts/privacy-lint.mjs data/synthetic-data.json",
+    "privacy": "node scripts/privacy-lint.mjs data/synthetic-data.json script/narration.md"
+  }
+}

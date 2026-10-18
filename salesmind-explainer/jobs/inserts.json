@@ -1,0 +1,184 @@
+[
+ {
+  "id": "insert-f02",
+  "kind": "insert",
+  "model": "fal-ai/kling-video/o3/pro/text-to-video",
+  "input": {
+   "prompt": "Fine threads of green light arrive from many directions and converge into one calm luminous hub suspended in darkness; slow orbit around the hub. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+   "aspect_ratio": "16:9",
+   "duration": "5",
+   "generate_audio": false
+  },
+  "out": "public/fal/f02.mp4",
+  "cost": 0.56
+ },
+ {
+  "id": "insert-f03",
+  "kind": "insert",
+  "model": "fal-ai/kling-video/o3/pro/text-to-video",
+  "input": {
+   "prompt": "Layered translucent dark-glass panes float in depth and slide gently past one another; a soft green light sweep crosses them; slow lateral track with parallax. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+   "aspect_ratio": "16:9",
+   "duration": "5",
+   "generate_audio": false
+  },
+  "out": "public/fal/f03.mp4",
+  "cost": 0.56
+ },
+ {
+  "id": "insert-f04",
+  "kind": "insert",
+  "model": "fal-ai/kling-video/o3/pro/text-to-video",
+  "input": {
+   "prompt": "An abstract control surface of thin concentric rings of light on a dark plane; a few soft points of warm gold and cool grey glow and settle into an ordered row; slow push in. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+   "aspect_ratio": "16:9",
+   "duration": "5",
+   "generate_audio": false
+  },
+  "out": "public/fal/f04.mp4",
+  "cost": 0.56
+ },
+ {
+  "id": "insert-f05",
+  "kind": "insert",
+  "model": "fal-ai/kling-video/o3/pro/text-to-video",
+  "input": {
+   "prompt": "Blank glowing tiles settle one by one into a precise lattice timeline floating in space; one tile lifts slightly and locks into place with a soft pulse; macro detail, slow push in. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+   "aspect_ratio": "16:9",
+   "duration": "5",
+   "generate_audio": false
+  },
+  "out": "public/fal/f05.mp4",
+  "cost": 0.56
+ },
+ {
+  "id": "insert-f07",
+  "kind": "insert",
+  "model": "fal-ai/kling-video/o3/pro/text-to-video",
+  "input": {
+   "prompt": "Blank luminous tiles rearrange from tidy columns into rows and back, precise and architectural, like a calm mechanism; slow overhead track. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+   "aspect_ratio": "16:9",
+   "duration": "5",
+   "generate_audio": false
+  },
+  "out": "public/fal/f07.mp4",
+  "cost": 0.56
+ },
+ {
+  "id": "insert-f08",
+  "kind": "insert",
+  "model": "fal-ai/kling-video/o3/pro/text-to-video",
+  "input": {
+   "prompt": "A single bright node travels along a gently curving path of light; one small point of light always waits ahead of it and moves forward as it arrives; slow tracking shot. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+   "aspect_ratio": "16:9",
+   "duration": "5",
+   "generate_audio": false
+  },
+  "out": "public/fal/f08.mp4",
+  "cost": 0.56
+ },
+ {
+  "id": "insert-f09",
+  "kind": "insert",
+  "model": "fal-ai/kling-video/o3/pro/text-to-video",
+  "input": {
+   "prompt": "Branches of green light grow outward from a calm, solid glowing core, unhurried and organic but precise; slow orbit. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+   "aspect_ratio": "16:9",
+   "duration": "5",
+   "generate_audio": false
+  },
+  "out": "public/fal/f09.mp4",
+  "cost": 0.56
+ },
+ {
+  "id": "insert-f10",
+  "kind": "insert",
+  "model": "fal-ai/kling-video/o3/pro/text-to-video",
+  "input": {
+   "prompt": "Thin beams of light scan slowly across a crystalline faceted landscape; a few facets lock into place with a soft glow while others stay dim; slow push in. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+   "aspect_ratio": "16:9",
+   "duration": "5",
+   "generate_audio": false
+  },
+  "out": "public/fal/f10.mp4",
+  "cost": 0.56
+ },
+ {
+  "id": "insert-f11",
+  "kind": "insert",
+  "model": "fal-ai/kling-video/o3/pro/text-to-video",
+  "input": {
+   "prompt": "Small pulses of light travel along thin parallel horizontal lines and leave short bright marks, like an ordered ledger being written; slow lateral track. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+   "aspect_ratio": "16:9",
+   "duration": "5",
+   "generate_audio": false
+  },
+  "out": "public/fal/f11.mp4",
+  "cost": 0.56
+ },
+ {
+  "id": "insert-f12",
+  "kind": "insert",
+  "model": "fal-ai/kling-video/o3/pro/text-to-video",
+  "input": {
+   "prompt": "Columns of frosted green glass rise slowly from a dark reflective plane to different heights, calm and measured; low angle slow push in. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+   "aspect_ratio": "16:9",
+   "duration": "5",
+   "generate_audio": false
+  },
+  "out": "public/fal/f12.mp4",
+  "cost": 0.56
+ },
+ {
+  "id": "insert-f13",
+  "kind": "insert",
+  "model": "fal-ai/kling-video/o3/pro/text-to-video",
+  "input": {
+   "prompt": "Fine blueprint lines of green light draw themselves in space and resolve into a clean, balanced architectural structure; slow orbit. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+   "aspect_ratio": "16:9",
+   "duration": "5",
+   "generate_audio": false
+  },
+  "out": "public/fal/f13.mp4",
+  "cost": 0.56
+ },
+ {
+  "id": "insert-f14",
+  "kind": "insert",
+  "model": "fal-ai/kling-video/o3/pro/text-to-video",
+  "input": {
+   "prompt": "Soft daylight moves slowly across a grid of blank tiles on a dark surface, shifting from cool dawn to warm afternoon; slow top-down drift. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+   "aspect_ratio": "16:9",
+   "duration": "5",
+   "generate_audio": false
+  },
+  "out": "public/fal/f14.mp4",
+  "cost": 0.56
+ },
+ {
+  "id": "insert-f15",
+  "kind": "insert",
+  "model": "fal-ai/kling-video/o3/pro/text-to-video",
+  "input": {
+   "prompt": "Interlocking rings of light turn slowly; a brief spark of friction where two touch resolves into smooth, aligned motion; macro, shallow depth of field. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+   "aspect_ratio": "16:9",
+   "duration": "5",
+   "generate_audio": false
+  },
+  "out": "public/fal/f15.mp4",
+  "cost": 0.56
+ },
+ {
+  "id": "insert-f16",
+  "kind": "insert",
+  "model": "fal-ai/kling-video/o3/pro/text-to-video",
+  "input": {
+   "prompt": "A calm horizon of soft green light at the edge of darkness; a thin-line icosahedron slowly dissolves into fine motes of light that drift upward; slow push in. Premium brand film, quiet power and a sense of order being restored. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean refined geometry, elegant restrained particles. Slow, controlled camera move. No text, no letters, no numbers, no logos, no user interface, no screens, no monitors, no picture frames, no people, no faces, no watermark.",
+   "aspect_ratio": "16:9",
+   "duration": "5",
+   "generate_audio": false
+  },
+  "out": "public/fal/f16.mp4",
+  "cost": 0.56
+ }
+]

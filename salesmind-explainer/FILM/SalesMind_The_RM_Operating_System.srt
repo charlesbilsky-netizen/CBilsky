@@ -1,0 +1,1254 @@
+1
+00:00:02,800 --> 00:00:06,267
+This is a quarter of a million euros. And
+this is how it dies.
+
+2
+00:00:07,533 --> 00:00:12,216
+No first call in twenty-four hours. No
+next action. No decision.
+
+3
+00:00:12,216 --> 00:00:16,533
+Thirty days of silence, while the alerts
+watched it happen.
+
+4
+00:00:17,600 --> 00:00:18,733
+It never had to happen.
+
+5
+00:00:20,467 --> 00:00:23,133
+Every RM starts the day with competing
+signals.
+
+6
+00:00:23,733 --> 00:00:27,714
+A first contact coming due. A next action
+already overdue.
+
+7
+00:00:27,714 --> 00:00:31,351
+A follow-up to send. A deal with no next
+step at all.
+
+8
+00:00:31,351 --> 00:00:36,567
+An internal request still open. And a
+calendar with less room than it looks.
+
+9
+00:00:37,567 --> 00:00:39,859
+Every RM starts with competing signals.
+
+10
+00:00:39,859 --> 00:00:42,033
+The work is knowing what moves first.
+
+11
+00:00:52,367 --> 00:00:55,183
+SalesMind is EXANTE's RM workspace.
+
+12
+00:00:55,183 --> 00:00:59,367
+One place for your book, your pipeline and
+your day.
+
+13
+00:00:59,967 --> 00:01:05,184
+Your deals. Your tasks. What your clients
+did. How you are performing.
+
+14
+00:01:05,184 --> 00:01:09,953
+Your sales plan. Your requests to internal
+teams. The guidebook.
+
+15
+00:01:09,953 --> 00:01:11,444
+The sales materials.
+
+16
+00:01:11,444 --> 00:01:15,767
+And, once you connect it, your calendar
+beside your tasks.
+
+17
+00:01:16,700 --> 00:01:22,258
+It reads from the CRM and writes back to
+it. So treat every click as real.
+
+18
+00:01:22,258 --> 00:01:27,667
+Qualification you fill in, and loss
+reasons you choose, land in the CRM.
+
+19
+00:01:33,200 --> 00:01:36,415
+The screen you are seeing is a synthetic
+training environment.
+
+20
+00:01:36,415 --> 00:01:37,867
+No live client data is used.
+
+21
+00:01:38,467 --> 00:01:42,188
+You sign in, and your workspace opens on
+the left-hand menu.
+
+22
+00:01:42,188 --> 00:01:43,367
+It has four groups.
+
+23
+00:01:43,967 --> 00:01:48,033
+Workspace holds the Dashboard, Task
+management and Internal requests.
+
+24
+00:01:48,633 --> 00:01:51,833
+Book holds Pipeline, Clients and Activity.
+
+25
+00:01:52,433 --> 00:01:54,467
+Results holds Performance and Bonus.
+
+26
+00:01:55,067 --> 00:01:59,000
+Support holds the Guidebook, Sales
+materials and the Changelog.
+
+27
+00:01:59,600 --> 00:02:03,306
+Across the top: Search, for pages and
+clients. Change theme.
+
+28
+00:02:03,306 --> 00:02:04,665
+And your account menu.
+
+29
+00:02:04,665 --> 00:02:08,000
+The menu collapses at its foot when you
+need the room.
+
+30
+00:02:08,600 --> 00:02:12,100
+Eleven pages. Most days, you work in a
+handful of them.
+
+31
+00:02:13,033 --> 00:02:16,322
+Before your first real day, clean the book
+once.
+
+32
+00:02:16,322 --> 00:02:19,611
+Check every deal is real and at the right
+stage.
+
+33
+00:02:19,611 --> 00:02:23,996
+Tidy duplicates and old blockers. Give
+everything a next action.
+
+34
+00:02:23,996 --> 00:02:27,833
+One to two hours, once. Then the routine
+keeps it clean.
+
+35
+00:02:33,500 --> 00:02:36,000
+Start here. This is the control surface.
+
+36
+00:02:36,600 --> 00:02:39,286
+Across the top, your active milestone:
+
+37
+00:02:39,286 --> 00:02:44,377
+liquid NAV against the target, what
+remains, and the date it is checked.
+
+38
+00:02:44,377 --> 00:02:49,608
+Beside it, net new money for the year
+against your goal. Then three tiles.
+
+39
+00:02:49,608 --> 00:02:52,365
+My clients. Total NAV. Open deal value.
+
+40
+00:02:52,365 --> 00:02:55,900
+Click Open deal value and you are in the
+Pipeline.
+
+41
+00:02:56,833 --> 00:03:02,018
+Below sits the list that runs your
+morning. Four tabs. Going quiet.
+
+42
+00:03:02,018 --> 00:03:05,500
+New opportunities. Open deals. Open
+requests.
+
+43
+00:03:06,100 --> 00:03:09,200
+Open deals are already sorted, most urgent
+first.
+
+44
+00:03:09,800 --> 00:03:15,203
+Critical alerts. Then overdue next
+actions. Then deals with no next action.
+
+45
+00:03:15,203 --> 00:03:19,454
+Then deals past the stage's time limit.
+Then blocked deals.
+
+46
+00:03:19,454 --> 00:03:20,967
+Then everything else.
+
+47
+00:03:22,167 --> 00:03:24,467
+Sort by urgency. Work from the top.
+
+48
+00:03:26,400 --> 00:03:28,267
+On the right, recent activity.
+
+49
+00:03:28,267 --> 00:03:31,691
+Switch between the last seven days and the
+last thirty.
+
+50
+00:03:31,691 --> 00:03:33,433
+View all opens the full log.
+
+51
+00:03:38,600 --> 00:03:42,166
+Task management is where a task and an
+hour become the same thing.
+
+52
+00:03:42,766 --> 00:03:48,533
+Three tabs, in the order you use them.
+Inbox. Today. Planning.
+
+53
+00:03:49,133 --> 00:03:52,417
+The Inbox holds everything without a day
+yet.
+
+54
+00:03:52,417 --> 00:03:55,848
+Tasks you captured, and the emails you
+starred.
+
+55
+00:03:55,848 --> 00:04:01,322
+Pick one, read it in the pane on the
+right, and give it a day. Today. Week.
+
+56
+00:04:01,322 --> 00:04:04,533
+Month. Or Later. The keys are T, W, M and
+L.
+
+57
+00:04:05,466 --> 00:04:08,738
+To capture, press C, type one line and
+press Enter.
+
+58
+00:04:08,738 --> 00:04:13,100
+An at sign links a client. A time makes it
+a block on your calendar.
+
+59
+00:04:13,100 --> 00:04:16,500
+An exclamation mark sets the horizon or
+the priority.
+
+60
+00:04:17,100 --> 00:04:18,466
+Give the task a day.
+
+61
+00:04:19,066 --> 00:04:22,333
+Today shows your list beside your
+calendar.
+
+62
+00:04:22,333 --> 00:04:27,879
+Each task carries its age, its time if it
+has one, and how long it takes.
+
+63
+00:04:27,879 --> 00:04:30,766
+Filter by client. Undo with Control Z.
+
+64
+00:04:31,366 --> 00:04:35,948
+Once a day, run Plan the day. First,
+yesterday as it really went.
+
+65
+00:04:35,948 --> 00:04:36,948
+Then today,
+
+66
+00:04:36,724 --> 00:04:41,306
+with a ring that shows how much of the day
+is already spoken for.
+
+67
+00:04:41,306 --> 00:04:44,266
+Clear the Inbox. Fill Today. Start my day.
+
+68
+00:04:45,400 --> 00:04:49,293
+Planning shows what is further out, as a
+board or a list.
+
+69
+00:04:49,293 --> 00:04:53,733
+Inbox, Today, Coming week, Coming month,
+Later, Blocked and Done.
+
+70
+00:04:58,900 --> 00:05:02,681
+The Pipeline holds your deals, and only
+yours. Three tabs.
+
+71
+00:05:02,681 --> 00:05:05,940
+New Business, for clients who have not
+funded yet.
+
+72
+00:05:05,940 --> 00:05:10,634
+Client Growth, for new money from clients
+who have. And your Sales plan.
+
+73
+00:05:11,234 --> 00:05:14,004
+The toolbar: Search client. Filters.
+
+74
+00:05:14,004 --> 00:05:19,543
+Closed window, which sets how far back
+closed deals stay visible. Views.
+
+75
+00:05:19,543 --> 00:05:21,467
+Sort. And Board or Table.
+
+76
+00:05:22,067 --> 00:05:27,429
+The fastest filters are the focus chips.
+Overdue. Due this week.
+
+77
+00:05:27,429 --> 00:05:31,367
+No contact in thirty days or more. With
+amount.
+
+78
+00:05:31,967 --> 00:05:35,894
+Every morning, open Filters, then Alert,
+then Has alert.
+
+79
+00:05:35,894 --> 00:05:37,927
+Overdue actions are included.
+
+80
+00:05:37,927 --> 00:05:41,434
+Save it under Views, and it is one click
+tomorrow.
+
+81
+00:05:42,034 --> 00:05:46,656
+Alerts tell you where to look first. Four
+are critical: SLA breach,
+
+82
+00:05:46,656 --> 00:05:50,451
+Stopped responding to onboarding, Funding
+not arriving,
+
+83
+00:05:50,451 --> 00:05:55,626
+and Qualification missing. The warnings
+are Lead untouched, Action overdue,
+
+84
+00:05:55,626 --> 00:06:00,180
+Rescheduled repeatedly, Check contact
+details, and Back from Lost.
+
+85
+00:06:00,180 --> 00:06:02,595
+Suspected duplicate is information.
+
+86
+00:06:02,595 --> 00:06:07,700
+Alerts clear by themselves once you fix
+the problem. Back from Lost stays.
+
+87
+00:06:08,900 --> 00:06:12,668
+The clock that matters most is first
+contact. Inbound leads:
+
+88
+00:06:12,668 --> 00:06:14,992
+twenty-four hours, weekends excluded.
+
+89
+00:06:14,992 --> 00:06:19,764
+Assigned Friday at three, due Monday at
+three. Outbound: one calendar month.
+
+90
+00:06:19,764 --> 00:06:22,967
+Contact late, and the deal is marked late
+for good.
+
+91
+00:06:24,034 --> 00:06:30,003
+No answer? Follow the schedule. Day zero,
+call and email. Day one, call.
+
+92
+00:06:30,003 --> 00:06:33,568
+Day three, call and email. Day seven,
+call:
+
+93
+00:06:33,568 --> 00:06:39,786
+the last step for outbound leads. Day
+twelve, a break-up email for inbound.
+
+94
+00:06:39,786 --> 00:06:43,600
+Then decide whether to close the deal as
+Lost.
+
+95
+00:06:44,800 --> 00:06:46,348
+One more dialog to know.
+
+96
+00:06:46,348 --> 00:06:50,411
+Moving a deal into Contact Established
+with no reply on record,
+
+97
+00:06:50,411 --> 00:06:54,022
+SalesMind asks how you reached them. Pick
+what happened.
+
+98
+00:06:54,022 --> 00:06:56,795
+That records the contact in SalesMind
+only.
+
+99
+00:06:56,795 --> 00:07:01,567
+Keeping a marketing lead still takes a
+call logged as answered in the CRM.
+
+100
+00:07:07,234 --> 00:07:09,834
+On the board, each column is a stage,
+
+101
+00:07:09,834 --> 00:07:13,067
+with its count and its total expected
+deposit.
+
+102
+00:07:13,667 --> 00:07:19,622
+New Business runs from New Opportunity, to
+Contact Established, Qualified,
+
+103
+00:07:19,622 --> 00:07:24,772
+Solution Presented, Onboarding, Funding
+Pending, Funded and Won.
+
+104
+00:07:24,772 --> 00:07:27,267
+Lost and On Hold sit alongside.
+
+105
+00:07:27,867 --> 00:07:32,066
+Most of it moves by itself. A reply, a
+call over ten seconds,
+
+106
+00:07:32,066 --> 00:07:35,301
+or an accepted invite moves New
+Opportunity on.
+
+107
+00:07:35,301 --> 00:07:40,188
+A submitted application, a passed KYC and
+arriving money move the rest.
+
+108
+00:07:40,188 --> 00:07:42,941
+You move the stages that need judgement.
+
+109
+00:07:42,941 --> 00:07:46,934
+New Business Funded, and every Won, are
+never set by hand.
+
+110
+00:07:48,067 --> 00:07:52,189
+A card answers three questions. How long
+in this stage.
+
+111
+00:07:52,189 --> 00:07:55,111
+How long since contact. How much money.
+
+112
+00:07:55,111 --> 00:07:58,634
+Days in stage turns bold when the deal is
+late.
+
+113
+00:07:59,234 --> 00:08:01,185
+Switch to Table for a review.
+
+114
+00:08:01,185 --> 00:08:05,827
+The next stage action shows in violet
+while it is still a suggestion.
+
+115
+00:08:05,827 --> 00:08:10,267
+The first contact column says Met, Late,
+Overdue, or the due date.
+
+116
+00:08:11,200 --> 00:08:13,557
+Client Growth has its own stages.
+
+117
+00:08:13,557 --> 00:08:18,843
+Discovery, Validation, Negotiation,
+Approval, In Progress, Funded and Won.
+
+118
+00:08:18,843 --> 00:08:21,700
+You move every one of them up to Funded.
+
+119
+00:08:26,834 --> 00:08:30,439
+The screen you are seeing is a synthetic
+training environment.
+
+120
+00:08:30,439 --> 00:08:32,067
+No live client data is used.
+
+121
+00:08:32,667 --> 00:08:36,904
+This is Northstar Capital Training, a
+training deal at Contact Established,
+
+122
+00:08:36,904 --> 00:08:40,067
+with an expected deposit of five hundred
+thousand euros.
+
+123
+00:08:40,667 --> 00:08:45,330
+On the left: the stage, the money, the
+account lifecycle, and qualification.
+
+124
+00:08:45,330 --> 00:08:46,330
+On the right:
+
+125
+00:08:46,127 --> 00:08:50,667
+About this deal, the next stage action,
+the blocker, and the latest notes.
+
+126
+00:08:51,267 --> 00:08:54,301
+Every active deal has exactly one next
+action.
+
+127
+00:08:54,301 --> 00:08:56,477
+SalesMind suggests it, in violet.
+
+128
+00:08:56,477 --> 00:09:00,434
+Change the words or the date if you need
+to. Then accept it.
+
+129
+00:09:01,434 --> 00:09:05,534
+Accept the next action. It becomes your
+task, with its due date.
+
+130
+00:09:07,334 --> 00:09:10,925
+When it is done, mark it complete. Say
+what happened.
+
+131
+00:09:10,925 --> 00:09:12,484
+Add a note if it helps.
+
+132
+00:09:12,484 --> 00:09:16,685
+Set the next action, because a deal is
+never left without one.
+
+133
+00:09:16,685 --> 00:09:19,667
+Here, choose Complete and move to
+Qualified.
+
+134
+00:09:20,867 --> 00:09:24,012
+If something is missing, the move dialog
+tells you.
+
+135
+00:09:24,012 --> 00:09:25,800
+It is a reminder, not a wall.
+
+136
+00:09:26,400 --> 00:09:30,320
+Need a reminder about the client that is
+not the deal's next step?
+
+137
+00:09:30,320 --> 00:09:31,567
+Add an ordinary task.
+
+138
+00:09:32,167 --> 00:09:34,484
+The client is real, but not now?
+
+139
+00:09:34,484 --> 00:09:39,553
+Put the deal on hold, with a reason and,
+if you can, a follow-up date.
+
+140
+00:09:39,553 --> 00:09:44,912
+It is over? Close the deal, pick the loss
+reason with care, and write why.
+
+141
+00:09:44,912 --> 00:09:46,867
+The reason goes to the CRM.
+
+142
+00:09:47,467 --> 00:09:49,667
+Do not leave an important deal without a
+next move.
+
+143
+00:09:55,633 --> 00:09:58,867
+Client Growth is new money from clients
+who have already funded.
+
+144
+00:09:59,467 --> 00:10:02,635
+On the Client Growth tab, click Create
+deal.
+
+145
+00:10:02,635 --> 00:10:06,091
+Type three or more letters of the client's
+name.
+
+146
+00:10:06,091 --> 00:10:11,420
+Pick Meridian Family Office Demo, and the
+type. Brokerage, or White label.
+
+147
+00:10:11,420 --> 00:10:14,300
+Add the expected deposit if you know it.
+
+148
+00:10:14,900 --> 00:10:19,200
+A funded client gets a deal at Discovery,
+with a suggested next action.
+
+149
+00:10:19,800 --> 00:10:22,328
+If the client already has an open deal,
+
+150
+00:10:22,328 --> 00:10:26,800
+SalesMind will not open a second one. Edit
+the existing deal instead.
+
+151
+00:10:27,733 --> 00:10:33,483
+From there you move it. Discovery.
+Validation. Negotiation. Approval.
+
+152
+00:10:33,483 --> 00:10:35,150
+In Progress. Funded.
+
+153
+00:10:35,150 --> 00:10:40,400
+Once deposits reach the expected deposit,
+Won is set by itself.
+
+154
+00:10:41,000 --> 00:10:45,608
+Open the deal, and the expected deposit
+panel shows how far you are.
+
+155
+00:10:45,608 --> 00:10:49,404
+The schedule from the CRM. Every deposit
+and withdrawal.
+
+156
+00:10:49,404 --> 00:10:51,233
+And the amount still to go.
+
+157
+00:10:52,233 --> 00:10:55,915
+And one piece of housekeeping. A client
+works one deal.
+
+158
+00:10:55,915 --> 00:10:59,797
+If old data left several open, an amber
+button lists them.
+
+159
+00:10:59,797 --> 00:11:04,349
+Keep the right one, and close the rest as
+duplicates. One exception:
+
+160
+00:11:04,349 --> 00:11:08,833
+if a White Label deal is involved, choose
+Later, and close nothing.
+
+161
+00:11:14,633 --> 00:11:18,170
+The screen you are seeing is a synthetic
+training environment.
+
+162
+00:11:18,170 --> 00:11:19,767
+No live client data is used.
+
+163
+00:11:20,367 --> 00:11:23,910
+Clients lists your book. All, Clients or
+Contacts.
+
+164
+00:11:23,910 --> 00:11:29,295
+Quick filters for high value, high risk
+and not funded. Compact or detailed.
+
+165
+00:11:29,295 --> 00:11:31,633
+Filters, columns and saved views.
+
+166
+00:11:32,233 --> 00:11:35,033
+Before you approach anyone new, check
+ownership.
+
+167
+00:11:35,633 --> 00:11:40,395
+Search by full name, exact email or phone,
+or the company domain.
+
+168
+00:11:40,395 --> 00:11:42,667
+One search returns one verdict.
+
+169
+00:11:43,267 --> 00:11:47,664
+Available. Free to approach. Claimed.
+Another RM owns them.
+
+170
+00:11:47,664 --> 00:11:51,539
+Request reassignment if you have a case.
+Restricted.
+
+171
+00:11:51,539 --> 00:11:56,979
+A funded client or a protected company. Do
+not approach. Needs narrowing.
+
+172
+00:11:56,979 --> 00:12:00,109
+Add the domain or a full email. Not found.
+
+173
+00:12:00,109 --> 00:12:04,133
+Add the contact to the CRM, and it is
+assigned to you.
+
+174
+00:12:05,533 --> 00:12:07,600
+You have one hundred searches a day.
+
+175
+00:12:08,200 --> 00:12:10,400
+Check ownership before approaching the
+contact.
+
+176
+00:12:11,667 --> 00:12:18,203
+Available? Then make the lead yours. It
+enters the CRM on the Contacts tab.
+
+177
+00:12:18,203 --> 00:12:23,171
+Name. Email or phone, one of the two.
+Phone, digits only.
+
+178
+00:12:23,171 --> 00:12:28,314
+Individual, or corporate. If the CRM
+refuses the add, stop:
+
+179
+00:12:28,314 --> 00:12:31,800
+that lead already belongs to another RM.
+
+180
+00:12:32,800 --> 00:12:36,004
+A whole list goes in as one plain-text
+spreadsheet,
+
+181
+00:12:36,004 --> 00:12:40,715
+with your email in the Manager column, so
+every lead lands under your name.
+
+182
+00:12:40,715 --> 00:12:42,349
+And leads are not forever.
+
+183
+00:12:42,349 --> 00:12:45,867
+Left untouched for six months, a lead can
+be reassigned.
+
+184
+00:12:46,867 --> 00:12:50,561
+From there, the lead walks the CRM's own
+path. Contacts.
+
+185
+00:12:50,561 --> 00:12:53,333
+Registrants, when they sign up. Qualified,
+
+186
+00:12:53,333 --> 00:12:59,073
+once the ten qualification tags are filled and
+an answered call or a meeting is logged.
+
+187
+00:12:59,073 --> 00:13:03,559
+Compliance requires that before
+onboarding. Then Waiting for Review.
+
+188
+00:13:03,559 --> 00:13:04,813
+KYC passed. Funded.
+
+189
+00:13:04,813 --> 00:13:09,233
+And the qualification you fill in
+SalesMind writes those same tags.
+
+190
+00:13:15,233 --> 00:13:20,316
+Activity is the full log of your book.
+Emails, calls, meetings, deposits,
+
+191
+00:13:20,316 --> 00:13:23,936
+withdrawals, registrations, KYC events and
+requests.
+
+192
+00:13:23,936 --> 00:13:27,000
+Topic tags tell you what each one was
+about.
+
+193
+00:13:27,600 --> 00:13:29,500
+Open an item to read it in full.
+
+194
+00:13:30,100 --> 00:13:33,794
+If something was recorded wrong, raise an
+issue from the item.
+
+195
+00:13:33,794 --> 00:13:37,369
+Choose the category and the meeting type,
+and write a short,
+
+196
+00:13:37,369 --> 00:13:41,600
+factual comment. The team reviews it
+within one to three business days.
+
+197
+00:13:42,200 --> 00:13:46,367
+Record the activity. If it is not in the
+record, nobody else can see it.
+
+198
+00:13:52,167 --> 00:13:57,482
+Performance is one page with six sections.
+NAV milestones. Pipeline.
+
+199
+00:13:57,482 --> 00:14:01,000
+Funding. Standing. Conversion.
+Communication.
+
+200
+00:14:01,600 --> 00:14:05,132
+The period filter covers this month to all
+time.
+
+201
+00:14:05,132 --> 00:14:10,503
+NAV milestones follow your tenure instead:
+own liquid NAV at month three,
+
+202
+00:14:10,503 --> 00:14:15,800
+then total liquid NAV at six, twelve,
+twenty-four and thirty-six months.
+
+203
+00:14:16,800 --> 00:14:18,700
+The figures you see here are synthetic.
+
+204
+00:14:23,866 --> 00:14:27,426
+The screen you are seeing is a synthetic
+training environment.
+
+205
+00:14:27,426 --> 00:14:29,033
+No live client data is used.
+
+206
+00:14:29,633 --> 00:14:32,900
+Your sales plan lives inside the Pipeline,
+on its own tab.
+
+207
+00:14:33,500 --> 00:14:38,132
+Add an entry, and create the contact, or
+link the CRM record.
+
+208
+00:14:38,132 --> 00:14:43,904
+Every entry needs a valid CRM link, or a
+written reason under Not Available.
+
+209
+00:14:43,904 --> 00:14:46,866
+Be specific. N slash A is not a reason.
+
+210
+00:14:47,933 --> 00:14:51,141
+New RMs finalise the plan within their
+first ten days.
+
+211
+00:14:51,141 --> 00:14:52,566
+It is a compliance step.
+
+212
+00:14:53,166 --> 00:14:57,861
+Link an entry to a CRM contact and a deal
+appears on the board at once.
+
+213
+00:14:57,861 --> 00:15:01,894
+Filter by origin to see only plan deals.
+Sales Plan Progress,
+
+214
+00:15:01,894 --> 00:15:06,257
+Entries Requiring Attention, Forecasted
+NAV, plan against reality,
+
+215
+00:15:06,257 --> 00:15:09,166
+and plan history show where the plan
+stands.
+
+216
+00:15:14,667 --> 00:15:18,046
+The screen you are seeing is a simulated
+permissions screen.
+
+217
+00:15:18,046 --> 00:15:19,567
+No live connection is made.
+
+218
+00:15:20,167 --> 00:15:25,767
+Connect Google once. Pick your work
+account, continue, select all, continue.
+
+219
+00:15:26,367 --> 00:15:29,700
+From then on, your real meetings sit
+beside your tasks.
+
+220
+00:15:29,700 --> 00:15:34,609
+A task with a time becomes a block in a
+separate calendar called SalesMind Tasks.
+
+221
+00:15:34,609 --> 00:15:37,276
+Colleagues looking for a slot do not see
+it.
+
+222
+00:15:37,276 --> 00:15:40,367
+A meeting you create does go to your main
+calendar.
+
+223
+00:15:41,434 --> 00:15:44,834
+Deleting a time-blocked task deletes its
+calendar block too.
+
+224
+00:15:45,434 --> 00:15:49,039
+The screen you are seeing is a synthetic
+training environment.
+
+225
+00:15:49,039 --> 00:15:50,667
+No live client data is used.
+
+226
+00:15:55,800 --> 00:15:59,406
+When you are unsure, the Guidebook has
+twenty short pages,
+
+227
+00:15:59,406 --> 00:16:03,634
+from the new pipeline in one minute to the
+cheat sheet and glossary.
+
+228
+00:16:04,234 --> 00:16:07,783
+Sales materials collects the current
+playbooks and battle cards.
+
+229
+00:16:07,783 --> 00:16:10,667
+Use the latest version in every client
+conversation.
+
+230
+00:16:11,267 --> 00:16:13,334
+The Changelog tells you what changed.
+
+231
+00:16:13,934 --> 00:16:17,402
+Internal requests shows your open Jira,
+onboarding,
+
+232
+00:16:17,402 --> 00:16:21,619
+KYC and Intercom requests. Raise a request
+from the top right.
+
+233
+00:16:21,619 --> 00:16:25,700
+Open requests on a client show up under
+that deal's blocker.
+
+234
+00:16:26,634 --> 00:16:28,879
+Onboarding can ask you, too.
+
+235
+00:16:28,879 --> 00:16:34,574
+A monitoring request lands in the Requests
+tab, and the clock is yours.
+
+236
+00:16:34,574 --> 00:16:40,669
+Email the client within three days. No
+answer in fourteen, call. Keep at it:
+
+237
+00:16:40,669 --> 00:16:42,434
+thirty, sixty, ninety.
+
+238
+00:16:43,367 --> 00:16:47,452
+Let it sit, and the statuses harden.
+Document pending.
+
+239
+00:16:47,452 --> 00:16:49,192
+Withdrawal restriction:
+
+240
+00:16:49,192 --> 00:16:54,715
+funds go back only to the account the
+deposit came from. Then Close only:
+
+241
+00:16:54,715 --> 00:16:58,800
+no new positions. Deliver the documents,
+and it lifts.
+
+242
+00:17:04,700 --> 00:17:06,500
+Close the day the same way every day.
+
+243
+00:17:07,100 --> 00:17:11,699
+Critical alerts cleared. First contact
+deadlines protected.
+
+244
+00:17:11,699 --> 00:17:17,312
+Overdue actions worked. Inbox triaged.
+Today planned. Activity recorded.
+
+245
+00:17:17,312 --> 00:17:22,222
+Ownership checked. Client Growth reviewed.
+Sales Plan reviewed.
+
+246
+00:17:22,222 --> 00:17:27,133
+Requests reviewed. Calendar capacity
+checked. Tomorrow planned.
+
+247
+00:17:28,400 --> 00:17:30,767
+And every important deal has a next
+action.
+
+248
+00:17:32,367 --> 00:17:36,087
+The screen you are seeing is a synthetic
+training environment.
+
+249
+00:17:36,087 --> 00:17:37,767
+No live client data is used.
+
+250
+00:17:38,367 --> 00:17:40,900
+Your book is under control when the next
+action is clear.
+
+251
+00:17:47,700 --> 00:17:51,252
+One more thing. Everything you logged
+today is evidence.
+
+252
+00:17:51,252 --> 00:17:54,867
+Your review reads SalesMind and the CRM,
+not your memory.
+
+253
+00:17:55,800 --> 00:17:59,050
+Meet Ollie, EXANTE's review assistant, in
+beta.
+
+254
+00:17:59,050 --> 00:18:01,746
+It lives in Slack, as a direct message.
+
+255
+00:18:01,746 --> 00:18:05,687
+The screen you are seeing is a simulated
+training screen.
+
+256
+00:18:05,687 --> 00:18:07,900
+Every figure on it is synthetic.
+
+257
+00:18:08,500 --> 00:18:10,193
+Ask it: how am I tracking.
+
+258
+00:18:10,193 --> 00:18:14,750
+It answers with the target, the gap, and
+your next agreement. Any day.
+
+259
+00:18:14,750 --> 00:18:16,833
+No waiting for a review meeting.
+
+260
+00:18:17,900 --> 00:18:21,678
+Before a scheduled review, Ollie talks it
+through with you.
+
+261
+00:18:21,678 --> 00:18:23,791
+You agree, or you dispute a fact.
+
+262
+00:18:23,791 --> 00:18:27,633
+Then it files the review, clearly marked
+as filed by the AI.
+
+263
+00:18:28,633 --> 00:18:30,052
+And the line that matters:
+
+264
+00:18:30,052 --> 00:18:33,433
+committee decisions, pay and employment
+are decided by people.
+
+265
+00:18:35,367 --> 00:18:38,892
+So the loop closes. Log the work. Ollie
+reads it.
+
+266
+00:18:38,892 --> 00:18:41,267
+The review agrees your next step.

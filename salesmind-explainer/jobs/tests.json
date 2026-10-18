@@ -1,0 +1,123 @@
+[
+ {
+  "id": "test-voice-george",
+  "kind": "voice",
+  "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+  "input": {
+   "text": "Start here. This is the control surface. The screen you are seeing is a synthetic training environment. No live client data is used. Every morning, the Dashboard tells you what moves first. Open deals are already sorted for you. Critical alerts. Then overdue next actions. Then deals with no next action at all. Past the stage's time limit. Blocked. Everything else. Work from the top. And do not leave an important deal without a next move.",
+   "voice": "George",
+   "stability": 0.6,
+   "similarity_boost": 0.75,
+   "style": 0.1,
+   "speed": 0.95
+  },
+  "out": "public/tests/voice_george.mp3",
+  "cost": 0.044
+ },
+ {
+  "id": "test-voice-daniel",
+  "kind": "voice",
+  "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+  "input": {
+   "text": "Start here. This is the control surface. The screen you are seeing is a synthetic training environment. No live client data is used. Every morning, the Dashboard tells you what moves first. Open deals are already sorted for you. Critical alerts. Then overdue next actions. Then deals with no next action at all. Past the stage's time limit. Blocked. Everything else. Work from the top. And do not leave an important deal without a next move.",
+   "voice": "Daniel",
+   "stability": 0.6,
+   "similarity_boost": 0.75,
+   "style": 0.1,
+   "speed": 0.95
+  },
+  "out": "public/tests/voice_daniel.mp3",
+  "cost": 0.044
+ },
+ {
+  "id": "test-voice-brian",
+  "kind": "voice",
+  "model": "fal-ai/elevenlabs/tts/multilingual-v2",
+  "input": {
+   "text": "Start here. This is the control surface. The screen you are seeing is a synthetic training environment. No live client data is used. Every morning, the Dashboard tells you what moves first. Open deals are already sorted for you. Critical alerts. Then overdue next actions. Then deals with no next action at all. Past the stage's time limit. Blocked. Everything else. Work from the top. And do not leave an important deal without a next move.",
+   "voice": "Brian",
+   "stability": 0.6,
+   "similarity_boost": 0.75,
+   "style": 0.1,
+   "speed": 0.95
+  },
+  "out": "public/tests/voice_brian.mp3",
+  "cost": 0.044
+ },
+ {
+  "id": "test-f01-pro",
+  "kind": "insert",
+  "model": "fal-ai/kling-video/o3/pro/text-to-video",
+  "input": {
+   "prompt": "Slow push in through a near-black void toward a thin-line glowing green icosahedron suspended in space. Six small points of light on its vertices pulse softly one after another, as if signals are being weighed and ordered. Premium brand film. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean geometry, calm and precise, a sense of order. No text, no letters, no numbers, no logos, no user interface, no screens, no people, no faces, no watermark.",
+   "aspect_ratio": "16:9",
+   "duration": "5",
+   "generate_audio": false
+  },
+  "out": "public/tests/f01_pro.mp4",
+  "cost": 0.56
+ },
+ {
+  "id": "test-f01-standard",
+  "kind": "insert",
+  "model": "fal-ai/kling-video/o3/standard/text-to-video",
+  "input": {
+   "prompt": "Slow push in through a near-black void toward a thin-line glowing green icosahedron suspended in space. Six small points of light on its vertices pulse softly one after another, as if signals are being weighed and ordered. Premium brand film. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean geometry, calm and precise, a sense of order. No text, no letters, no numbers, no logos, no user interface, no screens, no people, no faces, no watermark.",
+   "aspect_ratio": "16:9",
+   "duration": "5",
+   "generate_audio": false
+  },
+  "out": "public/tests/f01_standard.mp4",
+  "cost": 0.42
+ },
+ {
+  "id": "test-f06-pro",
+  "kind": "insert",
+  "model": "fal-ai/kling-video/o3/pro/text-to-video",
+  "input": {
+   "prompt": "Slow lateral tracking shot along a calm river of fine green light particles flowing through a series of luminous rectangular gates, each gate glowing a little brighter as the flow passes, orderly and unhurried. Premium brand film. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean geometry, calm and precise, a sense of order. No text, no letters, no numbers, no logos, no user interface, no screens, no people, no faces, no watermark.",
+   "aspect_ratio": "16:9",
+   "duration": "5",
+   "generate_audio": false
+  },
+  "out": "public/tests/f06_pro.mp4",
+  "cost": 0.56
+ },
+ {
+  "id": "test-f06-standard",
+  "kind": "insert",
+  "model": "fal-ai/kling-video/o3/standard/text-to-video",
+  "input": {
+   "prompt": "Slow lateral tracking shot along a calm river of fine green light particles flowing through a series of luminous rectangular gates, each gate glowing a little brighter as the flow passes, orderly and unhurried. Premium brand film. Deep refined green, desaturated in the shadows and luminous in the highlights, on near-black. Soft volumetric light, shallow depth of field, gentle vignette, clean geometry, calm and precise, a sense of order. No text, no letters, no numbers, no logos, no user interface, no screens, no people, no faces, no watermark.",
+   "aspect_ratio": "16:9",
+   "duration": "5",
+   "generate_audio": false
+  },
+  "out": "public/tests/f06_standard.mp4",
+  "cost": 0.42
+ },
+ {
+  "id": "test-music-elevenlabs",
+  "kind": "music",
+  "model": "fal-ai/elevenlabs/music",
+  "input": {
+   "prompt": "Restrained modern cinematic underscore for a premium enterprise product film. Sparse soft electronic pulses, warm analog pads, a few felt piano notes, muted strings far in the background. Slow, around 80 BPM, calm, confident, intelligent. No drums, no build-ups, no vocals, no hype. Spacious, leaving room for a narrator.",
+   "force_instrumental": true,
+   "music_length_ms": 60000,
+   "output_format": "mp3_44100_192"
+  },
+  "out": "public/tests/music_elevenlabs.mp3",
+  "cost": 0.6
+ },
+ {
+  "id": "test-music-stableaudio",
+  "kind": "music",
+  "model": "fal-ai/stable-audio-25/text-to-audio",
+  "input": {
+   "prompt": "Restrained modern cinematic underscore for a premium enterprise product film. Sparse soft electronic pulses, warm analog pads, a few felt piano notes, muted strings far in the background. Slow, around 80 BPM, calm, confident, intelligent. No drums, no build-ups, no vocals, no hype. Spacious, leaving room for a narrator.",
+   "seconds_total": 60
+  },
+  "out": "public/tests/music_stableaudio.wav",
+  "cost": 0.2
+ }
+]
